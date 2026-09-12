@@ -43,7 +43,7 @@ export default async function ConfirmInterstitialPage({
   return (
     <StatusShell
       heading="Confirm your filing alerts"
-      body="One more step: confirm you want an email when executive-branch officials report new stock trades."
+      body="One more step: confirm you want an email when a tracked official's new 278-T stock trade report is added."
     >
       <form
         method="POST"

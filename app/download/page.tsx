@@ -52,7 +52,7 @@ export default async function DownloadPage() {
       file: "/data/full-dataset.json",
       format: "JSON",
       description:
-        "Complete structured dataset with every transaction. transactionCount excludes score-0 rows; underReviewCount reports them separately, per official and for the dataset.",
+        "Complete structured dataset with every 278-T transaction on the site. transactionCount excludes score-0 rows; underReviewCount reports them separately, per official and for the dataset.",
       rows: `${officialCount} officials, ${fmt(txCount)} transactions`,
     },
   ];

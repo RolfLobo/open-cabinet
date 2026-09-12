@@ -7,13 +7,13 @@ const STEPS = [
     id: "nominated",
     label: "Nominated",
     title: "The president nominates a candidate",
-    body: "When the president selects someone for a cabinet or senior position, the ethics clock starts. The nominee must disclose every financial holding before confirmation hearings begin, as required by the Ethics in Government Act (Pub. L. 95-521).",
+    body: "When the president selects someone for a cabinet or senior position, the ethics clock starts. The nominee must disclose reportable financial holdings above statutory thresholds before confirmation hearings begin, as required by the Ethics in Government Act (Pub. L. 95-521).",
   },
   {
     id: "disclosure",
     label: "Disclosure",
     title: "They file a financial report",
-    body: "The nominee submits a Public Financial Disclosure Report (OGE Form 278e) listing all assets, income sources, liabilities and positions held (5 U.S.C. \u00A713104). This is the baseline portrait of their financial life.",
+    body: "The nominee submits a Public Financial Disclosure Report (OGE Form 278e) listing reportable assets, income sources, liabilities and positions held (5 U.S.C. \u00A713104). This is the baseline portrait of their financial life.",
   },
   {
     id: "ethics",
@@ -30,7 +30,7 @@ const STEPS = [
   {
     id: "reporting",
     label: "Ongoing",
-    title: "Every trade gets disclosed",
+    title: "Covered trades get disclosed",
     body: "Under the STOCK Act (5 U.S.C. \u00A713104), officials must report individual securities transactions over $1,000 within 30 days of notification, or 45 days of the trade, whichever comes first (5 U.S.C. \u00A713105(l)). Mutual funds and ETFs are generally exempt from transaction reporting as excepted investment funds. These are filed as OGE Form 278-T reports, the core data that powers this tracker.",
   },
   {

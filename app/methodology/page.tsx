@@ -106,7 +106,10 @@ export default async function MethodologyPage() {
             <strong className="text-neutral-900">OGE Form 278-T (Periodic Transaction Report).</strong>{" "}
             Covered securities transactions over $1,000 must be reported within
             30 days of notification, and no later than 45 days after the trade,
-            subject to applicable extensions and reporting exemptions. This is what powers the trades, dollar volume and
+            subject to applicable extensions and reporting exemptions. Trades in
+            excepted investment funds (most mutual funds and ETFs), real property
+            and trades made before entering government are exempt from 278-T
+            reporting. This is what powers the trades, dollar volume and
             late-filing counts on this site.
           </li>
           <li>
@@ -120,7 +123,22 @@ export default async function MethodologyPage() {
             <strong className="text-neutral-900">OGE Form 278e (Annual Report).</strong>{" "}
             Generally due May 15, subject to eligibility rules and extensions,
             reporting holdings and other financial activity for the prior year.
-            Annual-report ingestion is not part of the current trade pipeline.
+            OGE&rsquo;s guide lets filers omit from the annual any trade already
+            reported on a 278-T unless their agency requires repetition, and
+            requires the annual to list trades not previously reported. Open
+            Cabinet does not yet ingest annual reports, so a trade that was
+            not on any 278-T OGE had posted appears only on the annual and is
+            missing from this site. As of September 11, 2026, 14 tracked
+            officials have a 2026 annual report posted on OGE.
+          </li>
+          <li>
+            <strong className="text-neutral-900">Trades never filed on a 278-T are not on this site.</strong>{" "}
+            Fund and ETF trades, real-property sales and pre-service trades are
+            exempt from 278-T reporting, and any other trade an official did
+            not report on a 278-T appears only in an annual or termination
+            report, which Open Cabinet does not yet ingest. The trade counts,
+            dollar totals and late-filing rates here describe 278-T rows only,
+            not everything an official traded.
           </li>
         </ul>
         <p className="text-sm text-neutral-500 mb-4">
@@ -203,6 +221,20 @@ export default async function MethodologyPage() {
               executive-branch record. Hundreds more have filed transaction
               reports that require individual Form 201 requests from OGE, a
               process we are working to expand.
+            </li>
+            <li>
+              <strong className="text-neutral-900">
+                Trades never filed on a 278-T are not on this site.
+              </strong>{" "}
+              The trade dataset comes from 278-T periodic transaction reports
+              only. Fund and ETF trades, real-property sales and pre-service
+              trades are exempt from 278-Ts, and OGE&rsquo;s guide lets filers
+              omit from the annual 278e any trade already reported on a 278-T
+              while requiring the annual to list trades not previously
+              reported. A trade an official did not report on a 278-T therefore
+              appears only in an annual or termination report, which Open
+              Cabinet does not yet ingest. Counts, totals and late-filing
+              rates here describe 278-T rows, not every trade an official made.
             </li>
             <li>
               <strong className="text-neutral-900">
@@ -553,7 +585,8 @@ export default async function MethodologyPage() {
             This tool is for informational and journalism purposes only. Nothing
             here constitutes investment advice. Asset values and transaction
             amounts are reported in ranges as required by federal law. This
-            database may not include all executive branch filers. Data sourced
+            database may not include all executive branch filers, and covers
+            only trades reported on 278-T periodic transaction reports. Data sourced
             from the U.S. Office of Government Ethics under the Ethics in
             Government Act (5 U.S.C. Section 13107). Federal government
             documents carry no copyright (17 U.S.C. Section 105).

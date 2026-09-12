@@ -6,8 +6,8 @@ Built and maintained by Trevor Brown, a journalist and developer (https://trevor
 
 ## What is in the data
 
-- Transactions from OGE Form 278-T periodic transaction reports only. Not the annual 278e, not asset holdings, not income.
-- Per transaction: the description as filed, a ticker where the filing prints one, transaction type (purchase, sale, exchange, or unstated when the filing states none), transaction date, the dollar range the filing reports (or "not readily ascertainable" when the filing says so), and the filing's own notification flag (whether the filer told the agency more than 30 days after the trade).
+- Transactions from OGE Form 278-T periodic transaction reports only. Not the annual 278e, not asset holdings, not income. Fund and ETF trades, real-property sales and pre-service trades are exempt from 278-Ts, and a trade an official did not report on a 278-T appears only in an annual or termination report, which Open Cabinet does not ingest. Counts and late-filing rates describe 278-T rows only.
+- Per transaction: the description as filed, a ticker where the filing prints one, transaction type (purchase, sale, exchange, or unstated when the filing states none), transaction date, the dollar range the filing reports (or "not readily ascertainable" when the filing says so), and the filing's own late flag: the filer certified that notification of the trade was received more than 30 days before the report was filed. Open Cabinet does not compute deadlines.
 - A verification state per row: checked (an independent program or a second company's model agreed on type, date, amount and late flag, and a page audit confirmed the row), checked by a person, not yet independently checked, or under review. Company names and tickers are not part of the automated comparison. The methodology page explains each.
 - Which filing disclosed each row, with a link to the PDF.
 
@@ -19,11 +19,11 @@ Each filing is read by a vision model. Where the PDF has a text layer, a program
 
 - /: overview and directory of tracked officials
 - /officials/[slug]: one official's transactions, with the filings that disclosed them
-- /all: every tracked transaction
+- /all: every tracked 278-T transaction
 - /companies and /companies/[ticker]: transactions by symbol, with what the SEC calls the registrant and what the filings called it
 - /dashboard: aggregate trade flow and disclosure activity
 - /late-filings: transactions whose filings carried the late-notification flag
-- /filings: dated log of filings as OGE posts them
+- /filings: dated log of 278-T filings as OGE posts them
 - /methodology: how the data is collected, checked and updated
 - /download: bulk data export (CSV and JSON), with a verification state per row
 

@@ -504,7 +504,7 @@ export default async function OfficialPage({
                 {formatDate(ogeFilingDate)}.
               </>
             )}
-            {" "}Officials have 30 to 45 days to report each trade, so
+            {" "}Officials have 30 to 45 days to report each covered trade, so
             transaction dates can be earlier than the filing date.
           </span>
         </div>

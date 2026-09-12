@@ -135,7 +135,7 @@ export function reconcileHoldingsAgainstTrades(
     } else {
       status = "no-sale-on-file";
       note =
-        "No 278-T sale on file. May be still held, sold via Form 201 Certificate of Divestiture, or not yet reported.";
+        "No 278-T sale on file. May be still held, or the sale may have been of an exempt fund or property, or reported only on an annual report, which this site does not ingest.";
     }
 
     out.push({

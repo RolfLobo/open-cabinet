@@ -223,10 +223,10 @@ export default async function Home() {
               Buying and Selling?
             </h1>
             <p className="text-neutral-500 max-w-xl leading-relaxed">
-              Individual stock trades disclosed to the Office of Government
-              Ethics &mdash; the slice of executive financial activity the
-              public is allowed to see. Open Cabinet makes the filings
-              sortable, searchable and visual.
+              Individual stock trades reported to the Office of Government
+              Ethics on 278-T periodic transaction reports &mdash; one slice of
+              the executive financial activity the public is allowed to see.
+              Open Cabinet makes the filings sortable, searchable and visual.
             </p>
             <p className="mt-5 text-base text-neutral-800 leading-relaxed max-w-xl">
               And most of it arrives late:{" "}
@@ -241,7 +241,7 @@ export default async function Home() {
             <p className="text-xs text-neutral-400 mt-3">
               Latest filing posted to OGE:{" "}
               {formatDate(mostRecentFiling)}{" "}
-              · Data checked weekly
+              · Data checked daily
             </p>
           </header>
 

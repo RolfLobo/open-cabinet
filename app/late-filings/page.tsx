@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/late-filings" },
   title: "Late-Filed Stock Trades by Executive Branch Officials",
   description:
-    "Which Trump administration officials reported stock trades after the STOCK Act deadline, how the 30-day rule works, and what the law actually does about it.",
+    "Which Trump administration officials certified on their own 278-T filings that stock trades were reported late, how the 30-day rule works, and what the law actually does about it.",
 };
 
 function isSale(type: string): boolean {
@@ -188,7 +188,8 @@ export default async function LateFilingsPage() {
                 A late filing is not proof of wrongdoing. A slow broker can
                 blow the 45-day cap through no fault of the filer. Amended
                 reports re-list old trades. Agencies can extend deadlines by
-                up to 90 days, and extensions are not visible in this data.
+                up to 90 days, and extensions are not visible in this data
+                except where a filing carries an extension notice.
                 Patterns across many trades tell the story &mdash; not any
                 single flag.
               </p>
@@ -497,7 +498,8 @@ export default async function LateFilingsPage() {
         Source: U.S. Office of Government Ethics, 278-T Periodic Transaction
         Reports. Late filing status is self-reported by filers on each form.
         Agencies may grant filing extensions of up to 90 days; extensions are
-        not visible in this data.{" "}
+        not visible in this data except where a filing carries an extension
+        notice.{" "}
         <Link href="/methodology" className="underline hover:text-neutral-600">
           Read more about methodology
         </Link>

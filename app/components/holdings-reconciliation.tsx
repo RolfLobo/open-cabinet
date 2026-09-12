@@ -116,9 +116,9 @@ export default function HoldingsReconciliation({
         Source: Lutnick&rsquo;s January 24, 2025 Nominee 278 entry-disclosure
         filing. Parsed via natural-pdf section extraction with regex-based
         row interpretation. The reconciliation does not show full divestiture
-        compliance &mdash; some sold positions may have used the Form 201
-        Certificate of Divestiture channel (Lutnick has five such certificates,
-        OGE-2025-070 through 074, which we do not yet ingest).
+        compliance &mdash; where no 278-T sale is on file, the sale may have
+        been of an exempt fund or property, or reported only on an annual
+        report, which this site does not ingest.
       </p>
     </section>
   );
