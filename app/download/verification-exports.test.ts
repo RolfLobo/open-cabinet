@@ -83,6 +83,8 @@ describe("published verification exports", () => {
       "type_note", "date_note", "row_note",
       "instrument_type", "issuer_label", "resolved_ticker", "resolution_tier",
       "historical_report", "date_scope", "former_official",
+      // Annual-report lane (Sep 2026), trailing so positional parsers are unaffected.
+      "source_kind", "periodic_status", "source_page", "source_row", "account_label",
     ]);
     const transactions = dataset.officials.flatMap((official) => official.transactions);
     expect(rows).toHaveLength(transactions.length);
@@ -94,6 +96,11 @@ describe("published verification exports", () => {
       expect(row.slice(13, 16)).toEqual([tx.recordId, String(tx.verificationScore), tx.verificationState]);
       expect(row[7]).toBe(tx.date ?? "");
       expect(row[23]).toBe(tx.historical ? "yes" : "no");
+      // An annual-lane row has no late column: blank, and null in the JSON.
+      expect(row[10]).toBe(tx.lateFilingFlag === null ? "" : tx.lateFilingFlag ? "yes" : "no");
+      expect(row[26]).toBe(tx.sourceKind ?? "278-T");
+      expect(row[27]).toBe(tx.periodicStatus ?? "reported");
+      if (tx.sourceKind) expect(tx.lateFilingFlag).toBeNull();
     });
   });
 });

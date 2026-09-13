@@ -45,15 +45,6 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0B06315BB4E757EE85258B0B002F0FC4/$FILE/Michael-Whitaker-03.07.2024-278T.pdf"
     },
     {
-      "description": "Microsoft Corp. (MSFT)",
-      "ticker": "MSFT",
-      "type": "Sale",
-      "date": "2024-01-09",
-      "amount": "$15,001-$50,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9FE9B64160567BA585258AE8002F0EEE/$FILE/Michael-Whitaker-01.24.2024-278T.pdf"
-    },
-    {
       "description": "Alphabet, Inc. Class A (GOOGL)",
       "ticker": "GOOGL",
       "type": "Sale",
@@ -63,10 +54,10 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9FE9B64160567BA585258AE8002F0EEE/$FILE/Michael-Whitaker-01.24.2024-278T.pdf"
     },
     {
-      "description": "ANRA Technologies",
-      "ticker": null,
+      "description": "Microsoft Corp. (MSFT)",
+      "ticker": "MSFT",
       "type": "Sale",
-      "date": "2024-01-03",
+      "date": "2024-01-09",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9FE9B64160567BA585258AE8002F0EEE/$FILE/Michael-Whitaker-01.24.2024-278T.pdf"
@@ -81,13 +72,13 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9FE9B64160567BA585258AE8002F0EEE/$FILE/Michael-Whitaker-01.24.2024-278T.pdf"
     },
     {
-      "description": "Amazon.com, Inc. (AMZN)",
-      "ticker": "AMZN",
+      "description": "ANRA Technologies",
+      "ticker": null,
       "type": "Sale",
-      "date": "2023-11-07",
+      "date": "2024-01-03",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9FE9B64160567BA585258AE8002F0EEE/$FILE/Michael-Whitaker-01.24.2024-278T.pdf"
     },
     {
       "description": "Broadcom, Inc. (AVGO)",
@@ -108,8 +99,17 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
     },
     {
-      "description": "The PNC Financial Services Group, Inc. (PNC)",
-      "ticker": "PNC",
+      "description": "Pfizer Inc. (PFE)",
+      "ticker": "PFE",
+      "type": "Sale",
+      "date": "2023-11-14",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
+    },
+    {
+      "description": "Target Corp. (TGT)",
+      "ticker": "TGT",
       "type": "Sale",
       "date": "2023-11-14",
       "amount": "$15,001-$50,000",
@@ -117,8 +117,8 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
     },
     {
-      "description": "Target Corp. (TGT)",
-      "ticker": "TGT",
+      "description": "The PNC Financial Services Group, Inc. (PNC)",
+      "ticker": "PNC",
       "type": "Sale",
       "date": "2023-11-14",
       "amount": "$15,001-$50,000",
@@ -135,11 +135,11 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
     },
     {
-      "description": "Pfizer Inc. (PFE)",
-      "ticker": "PFE",
+      "description": "Amazon.com, Inc. (AMZN)",
+      "ticker": "AMZN",
       "type": "Sale",
-      "date": "2023-11-14",
-      "amount": "$1,001-$15,000",
+      "date": "2023-11-07",
+      "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9AA54EBCD9524B2785258AA2003493CD/$FILE/Michael-Whitaker-12.05.2023-278T.pdf"
     }
@@ -148,6 +148,13 @@
   "party": "D",
   "departedDate": "2025-01-20",
   "sourceFilings": [
+    {
+      "date": "2025-02-19",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0E9ECA729ECF6EC285258C360032069C/$FILE/Michael-Whitaker-2025-278TERM.pdf",
+      "label": "Michael-Whitaker-2025-278TERM",
+      "kind": "termination-278e",
+      "pageCount": 15
+    },
     {
       "date": "2025-02-19",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/6FD7FCF61FFBC2E585258C36003206A2/$FILE/Michael-Whitaker-01.02.2025-278T.pdf",

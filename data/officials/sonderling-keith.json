@@ -8,13 +8,43 @@
   "mostRecentFilingDate": "2025-05-14",
   "transactions": [
     {
-      "description": "Apple, Inc.",
-      "ticker": "AAPL",
-      "type": "Sale",
-      "date": "2025-03-28",
+      "description": "iShares Core High Dividend ETF (HDV)",
+      "ticker": "HDV",
+      "type": "Purchase",
+      "date": "2025-05-19",
       "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 35
+    },
+    {
+      "description": "Proshares S&P 500 Dividend Aristocrats ETF (NOBL)",
+      "ticker": "NOBL",
+      "type": "Purchase",
+      "date": "2025-05-19",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 37
+    },
+    {
+      "description": "Schwab U.S. Dividend Equity",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-05-19",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 39
     },
     {
       "description": "Abbott Laboratories",
@@ -28,6 +58,15 @@
     {
       "description": "AbbVie, Inc.",
       "ticker": "ABBV",
+      "type": "Sale",
+      "date": "2025-03-28",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+    },
+    {
+      "description": "Altria Group, Inc.",
+      "ticker": "MO",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -53,8 +92,8 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
-      "description": "Altria Group, Inc.",
-      "ticker": "MO",
+      "description": "Apple, Inc.",
+      "ticker": "AAPL",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -98,26 +137,8 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
-      "description": "Energy Select Sector SPDR Fund",
-      "ticker": "XLE",
-      "type": "Sale",
-      "date": "2025-03-28",
-      "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
-    },
-    {
       "description": "Chevron Corp.",
       "ticker": "CVX",
-      "type": "Sale",
-      "date": "2025-03-28",
-      "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
-    },
-    {
-      "description": "Fifth Third Bancorp",
-      "ticker": "FITB",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -134,8 +155,8 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
-      "description": "General Dynamics Corp.",
-      "ticker": "GD",
+      "description": "Energy Select Sector SPDR Fund",
+      "ticker": "XLE",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -143,8 +164,17 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
-      "description": "The Home Depot, Inc.",
-      "ticker": "HD",
+      "description": "Fifth Third Bancorp",
+      "ticker": "FITB",
+      "type": "Sale",
+      "date": "2025-03-28",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+    },
+    {
+      "description": "General Dynamics Corp.",
+      "ticker": "GD",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -269,8 +299,26 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
+      "description": "The Home Depot, Inc.",
+      "ticker": "HD",
+      "type": "Sale",
+      "date": "2025-03-28",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+    },
+    {
       "description": "The Sherwin-Williams Co.",
       "ticker": "SHW",
+      "type": "Sale",
+      "date": "2025-03-28",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+    },
+    {
+      "description": "The Williams Cos., Inc.",
+      "ticker": "WMB",
       "type": "Sale",
       "date": "2025-03-28",
       "amount": "$1,001-$15,000",
@@ -296,13 +344,69 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
     },
     {
-      "description": "The Williams Cos., Inc.",
-      "ticker": "WMB",
-      "type": "Sale",
-      "date": "2025-03-28",
+      "description": "Invesco S&P 500 Equal Weight Industrials ETF (RGI)",
+      "ticker": "RGI",
+      "type": "Purchase",
+      "date": "2025-02-02",
       "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf"
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 38
+    },
+    {
+      "description": "Invesco S&P 500 High Beta ETF (SPHB)",
+      "ticker": "SPHB",
+      "type": "Purchase",
+      "date": "2025-02-02",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 40
+    },
+    {
+      "description": "iShares Core S&P Small-Cap ETF (IJR)",
+      "ticker": "IJR",
+      "type": "Purchase",
+      "date": "2025-02-02",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 36
+    },
+    {
+      "description": "State Street Dow Jones Industrial Average (DIA)",
+      "ticker": "DIA",
+      "type": "Purchase",
+      "date": "2025-02-02",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 34
+    },
+    {
+      "description": "State Street SPDR S&P 500 ETF Trust",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-02-02",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 41
     }
   ],
   "summary": "Sonderling reported 33 sales estimated at $264K, all dated March 28, 2025. Assets sold included AAPL, ABT, ABBV, AMZN and AMGN. None of the transactions were flagged as filed late.",
@@ -310,9 +414,17 @@
   "party": "R",
   "sourceFilings": [
     {
+      "date": "2026-07-01",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+      "label": "Keith-Sonderling-2026-278ANNU",
+      "kind": "annual-278e",
+      "pageCount": 14
+    },
+    {
       "date": "2025-05-14",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7ADAE025CB4460B285258C8A002C85CE/$FILE/Keith-Sonderling-04.21.2025-278T.pdf",
       "label": "278-T"
     }
-  ]
+  ],
+  "summaryStaleSince": "2026-09-13"
 }

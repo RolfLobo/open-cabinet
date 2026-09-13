@@ -17,10 +17,10 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1F2CA5D27DDE1D9085258D460031984D/$FILE/Lee-Zeldin-09-24-2025-278T.pdf"
     },
     {
-      "description": "NeuroSense Therapeutics Ltd. Ordinary Shares",
-      "ticker": "NRSN",
+      "description": "Datavault",
+      "ticker": "DVLT",
       "type": "Sale",
-      "date": "2025-05-13",
+      "date": "2025-05-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BFB742EED1C86DA85258CC8002C8F28/$FILE/Lee-Zeldin-06.17.2025-278T.pdf"
@@ -35,10 +35,10 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BFB742EED1C86DA85258CC8002C8F28/$FILE/Lee-Zeldin-06.17.2025-278T.pdf"
     },
     {
-      "description": "Datavault",
-      "ticker": "DVLT",
+      "description": "NeuroSense Therapeutics Ltd. Ordinary Shares",
+      "ticker": "NRSN",
       "type": "Sale",
-      "date": "2025-05-16",
+      "date": "2025-05-13",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BFB742EED1C86DA85258CC8002C8F28/$FILE/Lee-Zeldin-06.17.2025-278T.pdf"
@@ -48,6 +48,13 @@
   "confirmedDate": "2025-01-29",
   "party": "R",
   "sourceFilings": [
+    {
+      "date": "2026-05-27",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/A9F88F6167796EF985258E04002DDA12/$FILE/Lee-Zeldin-2026-278ANNU.pdf",
+      "label": "Lee-Zeldin-2026-278ANNU",
+      "kind": "annual-278e",
+      "pageCount": 12
+    },
     {
       "date": "2025-11-18",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1F2CA5D27DDE1D9085258D460031984D/$FILE/Lee-Zeldin-09-24-2025-278T.pdf",

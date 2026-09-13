@@ -13,6 +13,7 @@ import {
 } from "../lib/amounts";
 import type { Transaction } from "../lib/types";
 import { rowsForTotals, transactionScopeLabel } from "../lib/format";
+import { lateStats } from "../lib/source-lane";
 import { verificationForOfficial, recordIdsFor } from "../lib/row-verification";
 import { readAssetResolution, publicTicker } from "../lib/asset-resolution";
 
@@ -117,6 +118,13 @@ async function main() {
     "historical_report",
     "date_scope",
     "former_official",
+    // Annual-report lane (Sep 2026): which form disclosed the row, where
+    // it stands with the periodic-report rule, and where it prints.
+    "source_kind",
+    "periodic_status",
+    "source_page",
+    "source_row",
+    "account_label",
   ];
   const txRows = exportOfficials.flatMap((o) =>
     o.transactions.map((tx) =>
@@ -133,7 +141,8 @@ async function main() {
         // The site's labeled estimate (midpoint, or 1.5x the floor for an
         // open-ended range). Blank, not zero, when the filing gave no value.
         tx.amount === null ? "" : String(transactionEstimate(tx)),
-        tx.lateFilingFlag ? "yes" : "no",
+        // Blank, not "no", on an annual-lane row: the form has no late column.
+        tx.lateFilingFlag === null ? "" : tx.lateFilingFlag ? "yes" : "no",
         tx.sourceUrl || "",
         escapeCsv(tx.amountNote ?? ""),
         tx.recordId,
@@ -149,6 +158,11 @@ async function main() {
         tx.historical ? "yes" : "no",
         escapeCsv(transactionScopeLabel(tx) ?? ""),
         o.formerOfficial ? "yes" : "no",
+        tx.sourceKind ?? "278-T",
+        tx.periodicStatus ?? "reported",
+        tx.sourcePage == null ? "" : String(tx.sourcePage),
+        tx.sourceRow == null ? "" : String(tx.sourceRow),
+        escapeCsv(tx.accountLabel ?? ""),
       ].join(",")
     )
   );
@@ -173,6 +187,8 @@ async function main() {
     "most_recent_oge_filing_date",
     "under_review_count",
     "historical_count",
+    "periodic_278t_count",
+    "annual_lane_count",
   ];
   const sumRows = exportOfficials.map((o) => {
     const counted = o.transactions.filter((tx) => !tx.historical && tx.verificationScore !== 0);
@@ -182,7 +198,9 @@ async function main() {
     const purchases = counted.filter(
       (t) => t.type === "Purchase"
     ).length;
-    const late = counted.filter((t) => t.lateFilingFlag).length;
+    // Late counts describe 278-T rows only (lib/source-lane.ts).
+    const late = lateStats(counted).late;
+    const annualLane = lateStats(counted).annualLane;
     const totalValue = sumAmountEstimates(counted).estimate;
     return [
       escapeCsv(o.name),
@@ -200,6 +218,8 @@ async function main() {
       o.mostRecentFilingDate,
       String(o.underReviewCount),
       String(o.historicalCount),
+      String(counted.length - annualLane),
+      String(annualLane),
     ].join(",");
   });
   const sumCsv = [sumHeaders.join(","), ...sumRows].join("\n") + "\n";

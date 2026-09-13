@@ -13,7 +13,8 @@
       "type": "Purchase",
       "date": "2026-06-16",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf"
     },
     {
       "description": "SPDR S&P 500 ETF Trust (SPY)",
@@ -21,7 +22,8 @@
       "type": "Purchase",
       "date": "2026-06-16",
       "amount": "$50,001-$100,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf"
     },
     {
       "description": "Humana, Inc. (HUM)",
@@ -29,7 +31,8 @@
       "type": "Sale",
       "date": "2025-12-24",
       "amount": "$15,001-$50,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -37,7 +40,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -45,7 +49,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -53,7 +58,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -61,7 +67,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -69,7 +76,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -77,7 +85,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -85,7 +94,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -93,7 +103,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -101,7 +112,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -109,7 +121,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -117,7 +130,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -125,7 +139,8 @@
       "type": "Sale",
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
     },
     {
       "description": "SPDR S&P 500 ETF Trust (SPY)",
@@ -133,7 +148,203 @@
       "type": "Sale",
       "date": "2025-12-04",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+    },
+    {
+      "description": "NJ State EDL Facs Auth Rev (Princeton Univ.)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-10-29",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 144
+    },
+    {
+      "description": "ECCO Multi-family Real Estate Development Elizabeth NJ",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-10-10",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "unresolved",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 132
+    },
+    {
+      "description": "Sea Isle City NJ Government Bond 5%",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-25",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 136
+    },
+    {
+      "description": "Sea Isle City NJ Government Bond 4%",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-17",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 134
+    },
+    {
+      "description": "NJ State EDL FACS Auth. Rev (Princeton University)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-15",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 135
+    },
+    {
+      "description": "Washington Township NJ Gloucester Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-15",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 155
+    },
+    {
+      "description": "NJ State EDL FACS Auth. Rev (Princeton University)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-14",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 161
+    },
+    {
+      "description": "Port Authority NY & NJ Rev 5%",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-14",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 137
+    },
+    {
+      "description": "Port Authority NY & NJ Rev 5%",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-14",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 164
+    },
+    {
+      "description": "North Wildwood NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-13",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 159
+    },
+    {
+      "description": "NJ State Government Bonds",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-12",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 149
+    },
+    {
+      "description": "NJ State Government Bonds",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-12",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 160
+    },
+    {
+      "description": "Gloucester Country NJ Import Authority Rev Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-07",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 151
+    },
+    {
+      "description": "NEW JERSEY TRANSPORTATION TRUST FUND AUTHORITY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-07",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 154
+    },
+    {
+      "description": "Sea Isle City NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-07",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 153
     },
     {
       "description": "The Travelers Companies, Inc. (TRV)",
@@ -141,7 +352,21 @@
       "type": "Sale",
       "date": "2025-08-07",
       "amount": "$1,001-$15,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+    },
+    {
+      "description": "Willingboro Township NJ School District",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-08-06",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 133
     },
     {
       "description": "Allspring Short-Term Hi Inc A",
@@ -149,7 +374,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Allspring Short-Term Hi Inc A (SSTHX)",
@@ -157,7 +383,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "anguard Tax-Exempt Bond Index Fund ETF Shares (VTEB)",
@@ -165,7 +392,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "BrandywineGLOBAL - HIGH YIELD FUND Class A",
@@ -173,7 +401,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "BrandywineGLOBAL - HIGH YIELD FUND Class A (BGHAX)",
@@ -181,7 +410,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -189,7 +419,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Franklin NJ Tax Free Income A (FNJQX)",
@@ -197,7 +428,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -205,7 +437,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Invesco New Jersey Municipal A (ONJAX)",
@@ -213,7 +446,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -221,7 +455,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF (SHYG)",
@@ -229,7 +464,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -237,7 +473,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF (FALN)",
@@ -245,7 +482,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Janus Henderson AAA CLO ETF (JAAA)",
@@ -253,7 +491,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -261,7 +500,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -269,7 +509,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen NJ Municipal Bond A (NNJAX)",
@@ -277,7 +518,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -285,7 +527,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A (NVHAX)",
@@ -293,7 +536,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -301,7 +545,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PGIM Ultra Short Bond ETF (PULS)",
@@ -309,7 +554,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -317,7 +563,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PIMCO Income Fund Class A Shares (PONAX)",
@@ -325,7 +572,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -333,7 +581,8 @@
       "type": "Purchase",
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Fiserv, Inc. (FISV)",
@@ -341,7 +590,34 @@
       "type": "Sale",
       "date": "2025-08-01",
       "amount": "$15,001-$50,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+    },
+    {
+      "description": "NJ State Turnpike Authority Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-30",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 142
+    },
+    {
+      "description": "Wildwood Crest NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-29",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 143
     },
     {
       "description": "Allspring Short-Term Hi Inc A",
@@ -349,7 +625,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -357,7 +634,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -365,7 +643,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -373,7 +652,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -381,7 +661,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -389,7 +670,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -397,7 +679,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -405,7 +688,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -413,7 +697,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -421,7 +706,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -429,7 +715,8 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -437,7 +724,203 @@
       "type": "Purchase",
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+    },
+    {
+      "description": "Freehold Township NJ Board of Education Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-24",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 148
+    },
+    {
+      "description": "Freehold Township NJ Board of Education Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-24",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 163
+    },
+    {
+      "description": "Cranford Township NJ Board of Education Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 141
+    },
+    {
+      "description": "Egg Harbor Township NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 145
+    },
+    {
+      "description": "Gloucester County NJ Import Authority Rev Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 140
+    },
+    {
+      "description": "Gloucester County NJ Impt. Authority Rev",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 146
+    },
+    {
+      "description": "Secaucus NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 138
+    },
+    {
+      "description": "Secaucus NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-23",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 156
+    },
+    {
+      "description": "Monmouth County NJ Import Authority Rev Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-21",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 139
+    },
+    {
+      "description": "NEW JERSEY TRANSPORTATION TRUST FUND AUTHORITY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-21",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 152
+    },
+    {
+      "description": "North Wildwood NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-17",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 147
+    },
+    {
+      "description": "Lawrence Township NJ School District Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-16",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 157
+    },
+    {
+      "description": "Lawrence Township NJ School District Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-16",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 158
+    },
+    {
+      "description": "Parsippany Troy Hills Township NJ Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-16",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 29,
+      "sourceRow": 150
+    },
+    {
+      "description": "NJ State Turnpike Authority Government Bond",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-07-15",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "not-on-posted-278t",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 30,
+      "sourceRow": 162
     },
     {
       "description": "Allspring Short-Term Hi Inc A",
@@ -445,7 +928,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -453,7 +937,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -461,7 +946,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -469,7 +955,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -477,7 +964,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -485,7 +973,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -493,7 +982,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -501,7 +991,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -509,7 +1000,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -517,7 +1009,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -525,7 +1018,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -533,7 +1027,8 @@
       "type": "Purchase",
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -541,7 +1036,47 @@
       "type": "Sale",
       "date": "2025-07-01",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+    },
+    {
+      "description": "KKR Global Impact Fund SBS (Unlev) L.P.",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2025-07-01",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 129
+    },
+    {
+      "description": "KKR Global Impact Fund SBS (Unlev) L.P.",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2025-07-01",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 130
+    },
+    {
+      "description": "KKR NGT Growth Fund II SBC (Unlev) LP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2025-07-01",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 131
     },
     {
       "description": "Fiserv",
@@ -549,7 +1084,8 @@
       "type": "Sale",
       "date": "2025-06-30",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -557,7 +1093,8 @@
       "type": "Sale",
       "date": "2025-06-27",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -565,7 +1102,8 @@
       "type": "Sale",
       "date": "2025-06-26",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -573,7 +1111,8 @@
       "type": "Sale",
       "date": "2025-06-24",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "Allspring Short-Term Hi Inc A",
@@ -581,7 +1120,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -589,7 +1129,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -597,7 +1138,8 @@
       "type": "Sale",
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -605,7 +1147,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -613,7 +1156,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -621,7 +1165,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -629,7 +1174,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -637,7 +1183,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -645,7 +1192,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -653,7 +1201,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -661,7 +1210,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -669,7 +1219,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -677,7 +1228,8 @@
       "type": "Purchase",
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -685,7 +1237,8 @@
       "type": "Sale",
       "date": "2025-06-20",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -693,7 +1246,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -701,7 +1255,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -709,7 +1264,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -717,7 +1273,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -725,7 +1282,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -733,7 +1291,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -741,7 +1300,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -749,7 +1309,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$15,001-$50,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -757,7 +1318,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -765,7 +1327,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -773,7 +1336,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -781,7 +1345,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$50,001-$100,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -789,7 +1354,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -797,7 +1363,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -805,7 +1372,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -813,7 +1381,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -821,7 +1390,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -829,7 +1399,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$1,001-$15,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -837,7 +1408,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -845,7 +1417,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -853,7 +1426,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -861,7 +1435,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -869,7 +1444,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -877,7 +1453,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -885,7 +1462,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -893,7 +1471,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -901,7 +1480,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -909,7 +1489,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -917,7 +1498,8 @@
       "type": "Purchase",
       "date": "2025-06-18",
       "amount": "$50,001-$100,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -925,7 +1507,8 @@
       "type": "Sale",
       "date": "2025-06-17",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -933,7 +1516,8 @@
       "type": "Sale",
       "date": "2025-06-16",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -941,7 +1525,8 @@
       "type": "Sale",
       "date": "2025-06-10",
       "amount": "$250,001-$500,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -949,7 +1534,8 @@
       "type": "Sale",
       "date": "2025-06-09",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -957,7 +1543,8 @@
       "type": "Sale",
       "date": "2025-06-06",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv Option contract sale",
@@ -965,7 +1552,8 @@
       "type": "Sale",
       "date": "2025-06-06",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -973,7 +1561,8 @@
       "type": "Sale",
       "date": "2025-06-05",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -981,7 +1570,8 @@
       "type": "Sale",
       "date": "2025-06-04",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -989,7 +1579,8 @@
       "type": "Sale",
       "date": "2025-05-30",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -997,7 +1588,8 @@
       "type": "Sale",
       "date": "2025-05-29",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -1005,7 +1597,8 @@
       "type": "Sale",
       "date": "2025-05-27",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -1013,7 +1606,8 @@
       "type": "Sale",
       "date": "2025-05-20",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -1021,7 +1615,8 @@
       "type": "Sale",
       "date": "2025-05-19",
       "amount": "$25,000,001-$50,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv Option contract sale",
@@ -1029,7 +1624,8 @@
       "type": "Sale",
       "date": "2025-05-19",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
     },
     {
       "description": "Fiserv",
@@ -1037,13 +1633,34 @@
       "type": "Sale",
       "date": "2025-05-16",
       "amount": "$5,000,001-$25,000,000",
-      "lateFilingFlag": true
+      "lateFilingFlag": true,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+    },
+    {
+      "description": "Real Estate - 6H (NYC)",
+      "ticker": "NYC",
+      "type": "Sale",
+      "date": "2025-03-04",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "sourcePage": 28,
+      "sourceRow": 128
     }
   ],
-  "summary": "Bisignano reported 38 sales and 80 purchases across 118 transactions in 278-T filings tracked by Open Cabinet. 1 transaction were marked as filed late.",
+  "summary": "Bisignano disclosed 118 transactions between May 16, 2025, and June 16, 2026, consisting of 80 purchases (estimated $535.9 million) and 38 sales (estimated $434.4 million), for a cumulative estimated total of $970.4 million across all tracked filings. The largest single transaction was a trade in Franklin NJ Tax Free Income A (FNJQX), with an estimated value between $25,000,001 and $50,000,000. The most-traded asset was Fiserv, appearing in 20 transactions, followed by several Vanguard exchange-traded funds. One of the 118 transactions, or 1 percent, was filed late.",
   "confirmedDate": "2025-05-06",
   "party": "R",
   "sourceFilings": [
+    {
+      "date": "2026-08-26",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+      "label": "Frank-J-Bisignano-2026-278ANNU",
+      "kind": "annual-278e",
+      "pageCount": 36
+    },
     {
       "date": "2026-08-08",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf",
@@ -1076,5 +1693,24 @@
     }
   ],
   "lastIngestedDate": "2026-08-13",
-  "lastIngestedNewCount": 2
+  "lastIngestedNewCount": 2,
+  "lastIngestedTrades": [
+    {
+      "description": "SPDR S&P 500 ETF Trust (SPY)",
+      "ticker": "SPY",
+      "type": "Purchase",
+      "date": "2026-06-16",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false
+    },
+    {
+      "description": "SPDR S&P 500 ETF Trust (SPY)",
+      "ticker": "SPY",
+      "type": "Purchase",
+      "date": "2026-06-16",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false
+    }
+  ],
+  "summaryStaleSince": "2026-09-06"
 }
