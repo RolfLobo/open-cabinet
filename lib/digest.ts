@@ -23,7 +23,7 @@
  */
 import { createHash } from "crypto";
 import type { AmountRange, OfficialData, Transaction } from "@/lib/types";
-import { periodicFilings } from "@/lib/source-lane";
+import { periodicFilings, periodicRows } from "@/lib/source-lane";
 
 export interface DigestTrade {
   description: string;
@@ -250,11 +250,13 @@ export function selectDigestItems(
     // proxy for officials ingested before lastIngestedTrades existed. The
     // proxy is wrong whenever a filing discloses old-dated trades (late
     // filings), which is why the exact list wins when present.
-    const trades = (
+    // Either way only 278-T rows are previewed: a digest announces
+    // periodic reports, and a row read from an annual report (the
+    // annual-report lane) is never a "new trade" here even when it is the
+    // newest-dated row on file.
+    const trades = periodicRows(
       o.lastIngestedTrades ??
-      [...o.transactions]
-        .sort((a, b) => ((a.date ?? "") < (b.date ?? "") ? 1 : -1))
-        .slice(0, Math.min(newCount, MAX_TRADES_SHOWN))
+        [...o.transactions].sort((a, b) => ((a.date ?? "") < (b.date ?? "") ? 1 : -1))
     )
       .slice(0, MAX_TRADES_SHOWN)
       .map(toTrade);
