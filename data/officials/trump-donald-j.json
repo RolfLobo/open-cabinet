@@ -125960,7 +125960,7 @@
     },
     {
       "description": "PUBLIC STORAGE (MD)",
-      "ticker": "MD",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-10-28",
       "amount": "$100,001-$250,000",
@@ -153851,7 +153851,7 @@
     },
     {
       "description": "PUBLIC STORAGE (MD)",
-      "ticker": "MD",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-09-24",
       "amount": "$100,001-$250,000",
@@ -204703,7 +204703,7 @@
     },
     {
       "description": "PUBLIC STORAGE (MD)",
-      "ticker": "MD",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-07-23",
       "amount": "$50,001-$100,000",
@@ -228682,7 +228682,7 @@
     },
     {
       "description": "PUBLIC STORAGE (MD)",
-      "ticker": "MD",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-06-02",
       "amount": "$15,001-$50,000",
@@ -250719,7 +250719,7 @@
     },
     {
       "description": "PUBLIC STORAGE (MD)",
-      "ticker": "MD",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-05-15",
       "amount": "$50,001-$100,000",

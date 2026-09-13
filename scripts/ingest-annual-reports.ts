@@ -52,6 +52,9 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import path from "path";
 import { isAmountRange } from "../lib/amounts";
 import { resolveTicker } from "../lib/assets";
+import { registryDisplayName } from "../lib/asset-registry";
+import { loadAssetReference } from "../lib/asset-reference";
+import { sharesAssetWord } from "../lib/reverify-diff";
 import { periodicStatusFor } from "../lib/source-lane";
 import { buildDeterministic, computeStats } from "../lib/summary-facts";
 import { reconcileSummaryAfterIngest } from "../lib/summary-review";
@@ -210,6 +213,27 @@ function accountLabel(printed: string | null | undefined): string | undefined {
   return printed.trim().toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
 }
 
+/**
+ * A symbol from a parenthetical in the description, kept only when the
+ * site's asset registry knows it. The 278-T parser's inference accepted
+ * any symbol-shaped token and read "NYC" out of "Real Estate - 6H (NYC)";
+ * an annual row has no model read to argue with, so a token no listing
+ * corroborates stays null.
+ */
+function tickerFromDescription(description: string): string | null {
+  const ticker = resolveTicker(description, null, { fillFromParenthetical: true }).ticker;
+  if (!ticker) return null;
+  // The symbol must be a real one (the SEC-based registry, or an exchange
+  // listing in the reference lists the company pages resolve against) AND
+  // the name it belongs to must share a word with the printed description.
+  // "NYC" is a listed symbol, but its issuer is not "Real Estate - 6H".
+  const names = [
+    registryDisplayName(ticker),
+    loadAssetReference().listedBySymbol.get(ticker)?.name ?? null,
+  ].filter((n): n is string => Boolean(n));
+  return names.some((n) => sharesAssetWord(description, n)) ? ticker : null;
+}
+
 function sourceKindOfReport(kind: string): SourceKind {
   return /term/i.test(kind) ? "termination-278e" : "annual-278e";
 }
@@ -315,7 +339,7 @@ function main() {
 
       const tx: Transaction = {
         description,
-        ticker: resolveTicker(description, null, { fillFromParenthetical: true }).ticker,
+        ticker: tickerFromDescription(description),
         type: toType(row.type),
         date,
         amount: toAmount(row.amount),
@@ -336,12 +360,19 @@ function main() {
 
     // Replace any earlier run's rows for this report, then merge and sort
     // the way the 278-T ingest does (date descending, description).
-    // Only this lane's own rows are replaced. Molinaro's three rows were
-    // parsed from his termination report by the 278-T pipeline before this
-    // lane existed; they are matched rows here and stay as they are.
-    const kept = official.transactions.filter(
-      (tx) => !(tx.sourceUrl === dl.pdfUrl && (tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e"))
+    // Only this lane's own rows are replaced. A report whose every row is
+    // already on the site (Molinaro's termination report, parsed by the
+    // 278-T pipeline before this lane existed and migrated to
+    // termination-278e by scripts/migrate-molinaro-termination.ts) has
+    // nothing of this lane's to replace, and its rows stay as they are.
+    const laneWritesNothing = read.rows.every(
+      (row) => matched.has(`${row.account ?? ""}|${row.row}`) || decisions?.rows[String(row.row)] === "matched"
     );
+    const kept = laneWritesNothing
+      ? official.transactions
+      : official.transactions.filter(
+          (tx) => !(tx.sourceUrl === dl.pdfUrl && (tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e"))
+        );
     const replaced = official.transactions.length - kept.length;
     const byDateDesc = (a: Transaction, b: Transaction) => {
       const d = (b.date || "").localeCompare(a.date || "");
@@ -353,9 +384,9 @@ function main() {
     const pageCount = pageMap?.pageCount ?? (dl.pages ? Number(dl.pages) : undefined);
     const existingFiling = (official.sourceFilings ?? []).find((f) => f.url === dl.pdfUrl);
     // A report the 278-T pipeline already lists (Molinaro's termination
-    // report) keeps its entry; this lane only records the page count.
+    // report) keeps its entry, with its kind and page count recorded.
     const filing: SourceFiling = existingFiling
-      ? { ...existingFiling, ...(pageCount ? { pageCount } : {}) }
+      ? { ...existingFiling, kind: existingFiling.kind ?? sourceKind, ...(pageCount ? { pageCount } : {}) }
       : {
           date: dl.docDate.slice(0, 10),
           url: dl.pdfUrl,

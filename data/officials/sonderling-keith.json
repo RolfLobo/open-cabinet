@@ -411,7 +411,7 @@
     },
     {
       "description": "Invesco S&P 500 Equal Weight Industrials ETF (RGI)",
-      "ticker": "RGI",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-02-02",
       "amount": "$1,001-$15,000",

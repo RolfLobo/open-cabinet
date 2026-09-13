@@ -240,7 +240,7 @@
     },
     {
       "description": "[IRA] American FundsGlobal Insight Fund Class F-2 Shares (AGVGX)",
-      "ticker": "AGVGX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",
@@ -253,7 +253,7 @@
     },
     {
       "description": "[IRA] Capital World Growth & Income Fund Class F2 Shares (WGIFX)",
-      "ticker": "WGIFX",
+      "ticker": null,
       "type": "Sale",
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",
@@ -266,7 +266,7 @@
     },
     {
       "description": "[IRA] EuroPacific Growth Fund Class F2 Shares (AEPFX)",
-      "ticker": "AEPFX",
+      "ticker": null,
       "type": "Sale",
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",
@@ -279,7 +279,7 @@
     },
     {
       "description": "[IRA] New World Fund, Inc Class F2 Shares (NFFFX)",
-      "ticker": "NFFFX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",

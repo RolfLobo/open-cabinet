@@ -9,7 +9,7 @@
   "transactions": [
     {
       "description": "GQG PartnersEmerging Markets Equity Fund Institutional Class Shares (GQGIX)",
-      "ticker": "GQGIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-06-24",
       "amount": "$250,001-$500,000",
@@ -22,7 +22,7 @@
     },
     {
       "description": "GQG PartnersEmerging Markets Equity Fund Institutional Class Shares (GQGIX)",
-      "ticker": "GQGIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-06-24",
       "amount": "$5,000,001-$25,000,000",
@@ -35,7 +35,7 @@
     },
     {
       "description": "Invesco Oppenheimer Developing Markets Fund Class Y Shares (ODVYX)",
-      "ticker": "ODVYX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-06-24",
       "amount": "$250,001-$500,000",
@@ -48,7 +48,7 @@
     },
     {
       "description": "Invesco Oppenheimer Developing Markets Fund Class Y Shares (ODVYX)",
-      "ticker": "ODVYX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-06-24",
       "amount": "$5,000,001-$25,000,000",
@@ -83,7 +83,7 @@
     },
     {
       "description": "BlackRock Health Sciences Opportunities Portfolio Institutional Shares (SHSSX)",
-      "ticker": "SHSSX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-05-12",
       "amount": "$500,001-$1,000,000",
@@ -96,7 +96,7 @@
     },
     {
       "description": "BlackRock Health Sciences Opportunities Portfolio Institutional Shares (SHSSX)",
-      "ticker": "SHSSX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-05-12",
       "amount": "$5,000,001-$25,000,000",

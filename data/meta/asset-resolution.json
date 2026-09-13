@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T01:15:46.094Z",
+  "generatedAt": "2026-09-13T17:39:08.843Z",
   "generatedBy": "scripts/build-asset-resolution.ts",
   "sources": {
     "nasdaqlisted.txt": {
@@ -214,7 +214,7 @@
       ],
       "slug": "bedford-bryan"
     },
-    "dcbb482e4c86272feac45d8d": {
+    "e29f600d5c38d0d2892b4f6b": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "MFS MUNICIPAL HIGH INCOME FUND CLASS R6",
@@ -227,7 +227,7 @@
       "candidates": [],
       "slug": "bedford-bryan"
     },
-    "c93e423ca94c391858a9f0fe": {
+    "ab7e33fcbfb0f44781014061": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NUVEEN SHORT DURATION HIGH",
@@ -4476,7 +4476,7 @@
       ],
       "slug": "bisignano-frank-j"
     },
-    "320186fea5b4d5b6235dc4e8": {
+    "c3853a80a588bdf8ed703fd1": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "REAL ESTATE 6H",
@@ -4484,7 +4484,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol NYC (filed)",
+        "printed symbol NYC (parenthetical)",
         "listed as \"American Strategic Investment Co. Class A Common Stock\" (no name match)",
         "SEC: \"American Strategic Investment Co.\""
       ],
@@ -10111,7 +10111,7 @@
       "candidates": [],
       "slug": "dixon-stacey"
     },
-    "ef8948d6be74f0776a87f221": {
+    "45745074c569a6305df11e3d": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "IRA AMER FUNDSGLOBAL INSIGHT FUND CLASS F 2",
@@ -10124,7 +10124,7 @@
       "candidates": [],
       "slug": "dixon-stacey"
     },
-    "b58438bca2dc3a7a64e2d558": {
+    "3ec6fc74a8e5e9e45cc61476": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "IRA CAPITAL WORLD GROWTH INCOME FUND CLASS F2",
@@ -10137,7 +10137,7 @@
       "candidates": [],
       "slug": "dixon-stacey"
     },
-    "7c0bd6881cceea46489aee6d": {
+    "7744d6cea34ea4f4df3ed8a1": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "IRA EUROPACIFIC GROWTH FUND CLASS F2",
@@ -10150,7 +10150,7 @@
       "candidates": [],
       "slug": "dixon-stacey"
     },
-    "001cc2e5e49c619045d74439": {
+    "539e98f92383741ed2ccd6eb": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "IRA WORLD FUND CLASS F2",
@@ -22401,7 +22401,7 @@
       ],
       "slug": "markwayne-mullin"
     },
-    "f0e9ce00458aba22a0b7d46f": {
+    "7fa0dec37693109fe7d7175e": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "GQG PARTNERSEMERGING MARKETS EQUITY FUND INSTITUTIONAL CLASS",
@@ -22414,7 +22414,7 @@
       "candidates": [],
       "slug": "mcmahon-linda"
     },
-    "392ff63ba954a0d27e1b872c": {
+    "cc76675e3613bc55059335ac": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "GQG PARTNERSEMERGING MARKETS EQUITY FUND INSTITUTIONAL CLASS",
@@ -22427,7 +22427,7 @@
       "candidates": [],
       "slug": "mcmahon-linda"
     },
-    "2de43fd96b6f7fb0feed9909": {
+    "68672ddc6f4ecb65adee0e62": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "INVESCO OPPENHEIMER DEVELOPING MARKETS FUND CLASS Y",
@@ -22440,7 +22440,7 @@
       "candidates": [],
       "slug": "mcmahon-linda"
     },
-    "361c2cc1c0b9cd2ad92c5b61": {
+    "2cd3b473a4096706f66b073a": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "INVESCO OPPENHEIMER DEVELOPING MARKETS FUND CLASS Y",
@@ -22487,7 +22487,7 @@
       ],
       "slug": "mcmahon-linda"
     },
-    "fe1ab635fec015a6a7d22a2b": {
+    "1970137aa758778cee2e169d": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "BLACKROCK HLTH SCIENCES OPPORTUNITIES PORTFOLIO INSTITUTIONAL",
@@ -22500,7 +22500,7 @@
       "candidates": [],
       "slug": "mcmahon-linda"
     },
-    "1a42571fdb1e252e352d366f": {
+    "b4de2b2815b66cd2f16e61c1": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "BLACKROCK HLTH SCIENCES OPPORTUNITIES PORTFOLIO INSTITUTIONAL",
@@ -34444,7 +34444,7 @@
       ],
       "slug": "sonderling-keith"
     },
-    "1b434df229134acc2ba9c6c8": {
+    "7c4328482860676afb359b1e": {
       "instrumentType": "etf",
       "issuerLabel": null,
       "nameKey": "INVESCO S P 500 EQUAL WEIGHT INDUSTRIALS ETF",
@@ -34452,7 +34452,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol RGI (filed)",
+        "printed symbol RGI (parenthetical)",
         "not in the Nasdaq directory",
         "not in the SEC issuer list"
       ],
@@ -215353,7 +215353,7 @@
       ],
       "slug": "trump-donald-j"
     },
-    "0a226e4d6b868bfad6dceb3b": {
+    "23c15642190c580afbb03f12": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "PUBLIC STORAGE",
@@ -215361,7 +215361,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol MD (filed)",
+        "printed symbol MD (parenthetical)",
         "listed as \"Pediatrix Medical Group, Inc. Common Stock\" (no name match)",
         "SEC: \"Pediatrix Medical Group, Inc.\""
       ],
@@ -246192,7 +246192,7 @@
       ],
       "slug": "trump-donald-j"
     },
-    "0f2e18be9c8b4db47fcc2190": {
+    "5a28f22d3e1ff52c5779bbcb": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "PUBLIC STORAGE",
@@ -246200,7 +246200,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol MD (filed)",
+        "printed symbol MD (parenthetical)",
         "listed as \"Pediatrix Medical Group, Inc. Common Stock\" (no name match)",
         "SEC: \"Pediatrix Medical Group, Inc.\""
       ],
@@ -302992,7 +302992,7 @@
       "candidates": [],
       "slug": "trump-donald-j"
     },
-    "6a79efe22b82cb50e9d12984": {
+    "c33a61d7d1acc8d7c040a925": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "PUBLIC STORAGE",
@@ -303000,7 +303000,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol MD (filed)",
+        "printed symbol MD (parenthetical)",
         "listed as \"Pediatrix Medical Group, Inc. Common Stock\" (no name match)",
         "SEC: \"Pediatrix Medical Group, Inc.\""
       ],
@@ -330325,7 +330325,7 @@
       ],
       "slug": "trump-donald-j"
     },
-    "f27c8698f0c3c8a1d3f0db0f": {
+    "a29692f9cb53b30d2d06fb8f": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "PUBLIC STORAGE",
@@ -330333,7 +330333,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol MD (filed)",
+        "printed symbol MD (parenthetical)",
         "listed as \"Pediatrix Medical Group, Inc. Common Stock\" (no name match)",
         "SEC: \"Pediatrix Medical Group, Inc.\""
       ],
@@ -354492,7 +354492,7 @@
       ],
       "slug": "trump-donald-j"
     },
-    "f4d295feb4f183f06367ad8b": {
+    "8d18c62fc0281ae97ecc17b9": {
       "instrumentType": "common_stock",
       "issuerLabel": null,
       "nameKey": "PUBLIC STORAGE",
@@ -354500,7 +354500,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol MD (filed)",
+        "printed symbol MD (parenthetical)",
         "listed as \"Pediatrix Medical Group, Inc. Common Stock\" (no name match)",
         "SEC: \"Pediatrix Medical Group, Inc.\""
       ],
@@ -491467,7 +491467,7 @@
       ],
       "slug": "turner-eric-scott"
     },
-    "ddd99b0b0bb822bcad00d85d": {
+    "bccdca331abf4cb7ae7bba67": {
       "instrumentType": "etf",
       "issuerLabel": null,
       "nameKey": "SCHWAB S P 500 INDEX FUND",
@@ -491475,7 +491475,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol SWPPX (filed)",
+        "printed symbol SWPPX (parenthetical)",
         "not in the Nasdaq directory",
         "not in the SEC issuer list"
       ],
@@ -491484,7 +491484,7 @@
       ],
       "slug": "turner-eric-scott"
     },
-    "5f163790ae11f2a5012b0018": {
+    "a62ac1ca98d83f7a7fd38770": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "BARON PARTNERS FUND INSTITUTIONAL CLASS",
@@ -491497,7 +491497,7 @@
       "candidates": [],
       "slug": "turner-eric-scott"
     },
-    "318b5f65157732976d9f8248": {
+    "4dd67e2f71c26ee24cfbdb71": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "EVENTIDE LARGE CAP FOCUS FUND EVENTIDE LARGE CAP FOCUS FUND CLASS I",
@@ -491510,7 +491510,7 @@
       "candidates": [],
       "slug": "turner-eric-scott"
     },
-    "4d6f9722d7048d24ccce1368": {
+    "3abe5bfaa9b283fc277a4677": {
       "instrumentType": "etf",
       "issuerLabel": null,
       "nameKey": "SCHWAB S P 500 INDEX FUND",
@@ -491518,7 +491518,7 @@
       "tier": "T2",
       "rule": "R6 filed ticker, uncorroborated",
       "evidence": [
-        "printed symbol SWPPX (filed)",
+        "printed symbol SWPPX (parenthetical)",
         "not in the Nasdaq directory",
         "not in the SEC issuer list"
       ],
@@ -491595,7 +491595,7 @@
       ],
       "slug": "turner-eric-scott"
     },
-    "7eb850fee23f0d7e299e0f10": {
+    "1e01626b3df5ebe6bad439f0": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "BARON PARTNERS FUND INSTITUTIONAL CLASS",
@@ -492253,7 +492253,7 @@
       ],
       "slug": "ueland-eric-m"
     },
-    "fec6d7e5bf42ed6ae507f3b3": {
+    "032742ffca2f6576753be672": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "FEDFUND INSTITUTIONAL",
@@ -492266,7 +492266,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "27740ed4024de8a06a16ded4": {
+    "3c7799897fcc0987a50b3796": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "FRANKLIN INCOME FUND CLASS A1",
@@ -492279,7 +492279,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "443af221e5bf8062de393cdf": {
+    "efc70eaccb8e98e362f95fb4": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "DELAWARE SMALL CAP CORE FUND INSTITUTIONAL CLASS",
@@ -492292,7 +492292,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "7bb83ec7f0ad5af02377513d": {
+    "2f039f4261b310bd2425a06f": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "FIDELITY ADVISOR MUNICIPAL INCOME FUND CLASS I",
@@ -492373,7 +492373,7 @@
       ],
       "slug": "ueland-eric-m"
     },
-    "30ea1c996adadca85b7dd6b7": {
+    "d59a6ffc8e248c4de7253661": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "MFS MUNICIPAL INCOME FUND CLASS I",
@@ -492454,7 +492454,7 @@
       ],
       "slug": "ueland-eric-m"
     },
-    "1462ca60410ba8e52805c65f": {
+    "3861f16f84270da4360a1b4d": {
       "instrumentType": "preferred",
       "issuerLabel": "Preferred stock, Cohen And Steers Preferred Securities And",
       "nameKey": "COHEN STEERS PREFERRED SECURITIES INCOME FUND CLASS I",
@@ -492467,7 +492467,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "d4347b0180c4b3a685061c30": {
+    "0de462d5a4310b497ddd2f18": {
       "instrumentType": "preferred",
       "issuerLabel": "Preferred stock, Cohen And Steers Preferred Securities And",
       "nameKey": "COHEN STEERS PREFERRED SECURITIES INCOME FUND CLASS I",
@@ -492480,7 +492480,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "9a7ecb3f2fcd7995f3427d38": {
+    "5f1032beffc5d8acc45fd3ab": {
       "instrumentType": "preferred",
       "issuerLabel": "Preferred stock, Cohen And Steers Preferred Securities And",
       "nameKey": "COHEN STEERS PREFERRED SECURITIES INCOME FUND CLASS I",
@@ -492527,7 +492527,7 @@
       ],
       "slug": "ueland-eric-m"
     },
-    "a02e6af45ea723ac2b3f742b": {
+    "5ea6be912fdb468e9c2d03df": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "LORD ABBETT FLOATING RATE FUND CLASS I",
@@ -492540,7 +492540,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "74d3c1f6d98c66928ae65f32": {
+    "c9cf3f5e3845bdcbaffa808a": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "LORD ABBETT FLOATING RATE FUND CLASS I",
@@ -492553,7 +492553,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "a8d943f5b710923638f42eac": {
+    "f91f3913285d782fea437b18": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "LORD ABBETT FLOATING RATE FUND CLASS I",
@@ -492566,7 +492566,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "3b79e2a03b57bb61627432f3": {
+    "9da68b2f436ebbb580d67fa7": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NEUBERGER BERMAN STRATEGIC INCOME FUND INSTITUTIONAL CLASS",
@@ -492579,7 +492579,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "7ab4c6fed415bb71fedb82cf": {
+    "6f7453fcd81505a78ba6d54e": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NEUBERGER BERMAN STRATEGIC INCOME FUND INSTITUTIONAL CLASS",
@@ -492592,7 +492592,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "ee1b3bbd347b5fb38da0caea": {
+    "88b9d58ff0309d5791ea2f40": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NEUBERGER BERMAN STRATEGIC INCOME FUND INSTITUTIONAL CLASS",
@@ -492605,7 +492605,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "91f9f7f809f50fcdb94ac822": {
+    "0963763e75503f0006363d9f": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NUVEEN STRATEGIC INCOME FUND CLASS I",
@@ -492618,7 +492618,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "1faa9edbb39a4f178796cfd4": {
+    "5d80d3cfb85d1233f98eca1f": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NUVEEN STRATEGIC INCOME FUND CLASS I",
@@ -492631,7 +492631,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "9a258126fbcf6828a2a6aaca": {
+    "6b890222d4be92671c464096": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "NUVEEN STRATEGIC INCOME FUND CLASS I",
@@ -492644,7 +492644,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "575dc8e6d1d64c9d66ab998b": {
+    "2b95e1162c1095ed74fd4156": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "PIMCO INCOME FUND CLASS I 2",
@@ -492657,7 +492657,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "a8e14b1a7e750903859854e8": {
+    "f05581571587e6ad99808856": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "PIMCO INCOME FUND CLASS I 2",
@@ -492670,7 +492670,7 @@
       "candidates": [],
       "slug": "ueland-eric-m"
     },
-    "8ff768387ea43e41326079e3": {
+    "d03a68eaff9e35b61fd78d76": {
       "instrumentType": "mutual_fund",
       "issuerLabel": null,
       "nameKey": "PIMCO INCOME FUND CLASS I 2",

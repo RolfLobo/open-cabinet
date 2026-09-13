@@ -416,7 +416,7 @@
     },
     {
       "description": "FedFund Institutional Shares (TFDXX)",
-      "ticker": "TFDXX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-12-15",
       "amount": "$500,001-$1,000,000",
@@ -429,7 +429,7 @@
     },
     {
       "description": "Franklin Income Fund Class A1 Shares (FKINX)",
-      "ticker": "FKINX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-12-15",
       "amount": "$50,001-$100,000",
@@ -442,7 +442,7 @@
     },
     {
       "description": "Delaware Small Cap Core Fund Institutional Class Shares (DCCIX)",
-      "ticker": "DCCIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-13",
       "amount": "$1,001-$15,000",
@@ -455,7 +455,7 @@
     },
     {
       "description": "Fidelity Advisor Municipal Income Fund Class I Shares (FROGX)",
-      "ticker": "FROGX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-03-13",
       "amount": "$1,001-$15,000",
@@ -520,7 +520,7 @@
     },
     {
       "description": "MFS Municipal Income Fund Class I Shares (MIMIX)",
-      "ticker": "MIMIX",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-03-13",
       "amount": "$1,001-$15,000",
@@ -585,7 +585,7 @@
     },
     {
       "description": "Cohen & Steers Preferred Securities and Income Fund, Inc Class I Shares (CPXIX)",
-      "ticker": "CPXIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$15,001-$50,000",
@@ -598,7 +598,7 @@
     },
     {
       "description": "Cohen & Steers Preferred Securities and Income Fund, Inc Class I Shares (CPXIX)",
-      "ticker": "CPXIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -611,7 +611,7 @@
     },
     {
       "description": "Cohen & Steers Preferred Securities and Income Fund, Inc Class I Shares (CPXIX)",
-      "ticker": "CPXIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -650,7 +650,7 @@
     },
     {
       "description": "Lord Abbett Floating Rate Fund Class I Shares (LFRIX)",
-      "ticker": "LFRIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$15,001-$50,000",
@@ -663,7 +663,7 @@
     },
     {
       "description": "Lord Abbett Floating Rate Fund Class I Shares (LFRIX)",
-      "ticker": "LFRIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -676,7 +676,7 @@
     },
     {
       "description": "Lord Abbett Floating Rate Fund Class I Shares (LFRIX)",
-      "ticker": "LFRIX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -689,7 +689,7 @@
     },
     {
       "description": "Neuberger Berman Strategic Income Fund Institutional Class Shares (NSTLX)",
-      "ticker": "NSTLX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$100,001-$250,000",
@@ -702,7 +702,7 @@
     },
     {
       "description": "Neuberger Berman Strategic Income Fund Institutional Class Shares (NSTLX)",
-      "ticker": "NSTLX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$15,001-$50,000",
@@ -715,7 +715,7 @@
     },
     {
       "description": "Neuberger Berman Strategic Income Fund Institutional Class Shares (NSTLX)",
-      "ticker": "NSTLX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -728,7 +728,7 @@
     },
     {
       "description": "Nuveen Strategic Income Fund Class I Shares (FCBYX)",
-      "ticker": "FCBYX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$100,001-$250,000",
@@ -741,7 +741,7 @@
     },
     {
       "description": "Nuveen Strategic Income Fund Class I Shares (FCBYX)",
-      "ticker": "FCBYX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$15,001-$50,000",
@@ -754,7 +754,7 @@
     },
     {
       "description": "Nuveen Strategic Income Fund Class I Shares (FCBYX)",
-      "ticker": "FCBYX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",
@@ -767,7 +767,7 @@
     },
     {
       "description": "PIMCO Income Fund Class I-2 Shares (PONPX)",
-      "ticker": "PONPX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$100,001-$250,000",
@@ -780,7 +780,7 @@
     },
     {
       "description": "PIMCO Income Fund Class I-2 Shares (PONPX)",
-      "ticker": "PONPX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$15,001-$50,000",
@@ -793,7 +793,7 @@
     },
     {
       "description": "PIMCO Income Fund Class I-2 Shares (PONPX)",
-      "ticker": "PONPX",
+      "ticker": null,
       "type": "Purchase",
       "date": "2025-03-06",
       "amount": "$1,001-$15,000",

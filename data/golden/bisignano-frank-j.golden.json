@@ -1896,7 +1896,7 @@
     },
     {
       "description": "Real Estate - 6H (NYC)",
-      "ticker": "NYC",
+      "ticker": null,
       "type": "Sale",
       "date": "2025-03-04",
       "amount": "$500,001-$1,000,000",

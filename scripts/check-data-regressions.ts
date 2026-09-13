@@ -69,7 +69,9 @@ async function main() {
       (n, o) => n + o.transactions.filter((tx) => (tx as { sourceKind?: string }).sourceKind === undefined).length,
       0
     ),
-    11555,
+    // Sep 13: Molinaro's three termination-report rows, parsed by the
+    // 278-T pipeline in April, are termination-278e rows now: 11,555 -> 11,552.
+    11552,
     "Full dataset 278-T rows"
   );
 
