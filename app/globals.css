@@ -18,3 +18,10 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Annual-report lane: the evidence strip is the table row after the row
+   whose "Evidence" <details> is open. A sibling rule rather than a script,
+   so the table renders and works with no client JavaScript. */
+tr:has(details[data-evidence][open]) + tr[data-evidence-panel] {
+  display: table-row;
+}

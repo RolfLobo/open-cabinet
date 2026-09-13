@@ -17,8 +17,8 @@ import { monthTotals, type MonthlySummary } from "@/lib/monthly-summary";
  * The chart takes a server-computed monthly summary (lib/monthly-summary.ts)
  * rather than the rows themselves. It used to bucket every row in the
  * browser, which meant the page serialised every row into the HTML as
- * props; at 30,000 rows for President Trump that was several megabytes
- * for twelve numbers a month. The summary carries counts, late flags and
+ * props; at tens of thousands of rows on the largest page that was
+ * several megabytes for twelve numbers a month. The summary carries counts, late flags and
  * dollar estimates per month and source kind, so the hover label can say
  * how many of a month's trades came from an annual report.
  *

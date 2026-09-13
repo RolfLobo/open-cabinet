@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import { existsSync } from "fs";
 import path from "path";
 import { datedRows } from "@/lib/types";
@@ -430,8 +431,11 @@ export default async function OfficialPage({
     amount: tx.amount,
     lateFilingFlag: tx.lateFilingFlag,
   });
-  // Bars read a server-computed monthly summary; the rows stay here.
-  const monthlySummary = summarizeByMonth(chartTransactions);
+  // Bars read a server-computed monthly summary; the rows stay here. The
+  // summary respects the source filter (a month filter is the chart's own
+  // click, so the chart keeps every month) so the bars under "Annual"
+  // are the annual rows, not the whole record.
+  const monthlySummary = summarizeByMonth(chartTransactions.filter(passesSource));
   const dotRows = datedRows(
     visibleTransactions.filter((tx) => !tx.historical && verificationByTransaction.get(tx)?.score !== 0)
   );
@@ -488,6 +492,12 @@ export default async function OfficialPage({
   // the banner can say "+3,627 trades added" instead of conflating it with
   // the cumulative total.
   const ogeFilingDate = official.mostRecentFilingDate;
+  // "Last filing" on the page counts annual and termination reports too;
+  // mostRecentFilingDate stays the 278-T date the banner and digest use.
+  const lastPostedDate = (official.sourceFilings ?? []).reduce(
+    (latest, f) => (f.date > latest ? f.date : latest),
+    ogeFilingDate
+  );
   const ingestedDate = official.lastIngestedDate;
   const newCount = official.lastIngestedNewCount ?? 0;
   const indexDate = new Date(index.lastUpdated + "T00:00:00");
@@ -739,7 +749,7 @@ export default async function OfficialPage({
         </p>
       )}
       <p className="text-xs text-neutral-400 mb-2">
-        Last filing: {formatDate(ogeFilingDate)}
+        Last filing: {formatDate(lastPostedDate)}
         <span className="text-neutral-300 mx-1.5">|</span>
         Transactions: {formatDate(earliest.toISOString().split("T")[0])} – {formatDate(latest.toISOString().split("T")[0])}
       </p>
@@ -920,7 +930,7 @@ export default async function OfficialPage({
                 Disclosed
               </th>
               <th
-                className="pb-2 font-medium text-right"
+                className="pb-2 font-medium text-right hidden md:table-cell"
                 title="The form that disclosed the row, its physical PDF page and printed row number where known"
               >
                 Source
@@ -956,8 +966,8 @@ export default async function OfficialPage({
                   ? `${sourceFiling.url}#page=${tx.sourcePage}`
                   : sourceFiling?.url ?? null;
               return (
+              <Fragment key={`${tx.date}-${tx.description}-${i}`}>
               <tr
-                key={`${tx.date}-${tx.description}-${i}`}
                 className={`border-b border-neutral-100 ${
                   rowVerification?.score === 0
                     ? "bg-amber-50"
@@ -1005,32 +1015,28 @@ export default async function OfficialPage({
                   <NoteMark numbers={marksFor(notes, "row")} />
                   <VerificationMarker verification={rowVerification} />
                   {evidence && (
-                    // The row's band cropped from the report page, opened
-                    // in place. A <details> element: no script, and closed
-                    // by default so the table stays a table.
-                    <details className="relative mt-1 text-xs text-neutral-500">
+                    // The toggle only. The strip itself is the next table
+                    // row (full table width), shown by the :has() rule in
+                    // globals.css while this <details> is open: no script,
+                    // and closed by default so the table stays a table.
+                    <details data-evidence className="mt-1 text-xs text-neutral-500">
                       <summary className="cursor-pointer inline-block underline decoration-dotted underline-offset-2 hover:text-neutral-900">
                         Evidence
                       </summary>
-                      {/* The strip is a full-page-width band; inside the
-                          description column it would be a thumbnail. It
-                          opens as a panel over the rows below instead, as
-                          wide as the page allows, and closes with the toggle. */}
-                      <div className="absolute left-0 top-full z-10 mt-1 w-[min(1100px,calc(100vw-2rem))] bg-white border border-neutral-300 p-2 shadow-sm">
-                        <a href={sourceHref ?? undefined} target="_blank" rel="noopener noreferrer" title="Open the report at this page">
-                          {/* eslint-disable-next-line @next/next/no-img-element -- a static PNG rendered at 2x; next/image would re-encode it */}
-                          <img
-                            src={evidence}
-                            alt={`Row ${tx.sourceRow} of page ${tx.sourcePage} of the report, as printed`}
-                            className="block w-full border border-neutral-200"
-                            loading="lazy"
-                          />
-                        </a>
-                        <span className="block mt-1 text-neutral-400">
-                          Page {tx.sourcePage}, row {tx.sourceRow}, cropped from the OGE PDF at 2x. Click the image to open the report at that page.
-                        </span>
-                      </div>
                     </details>
+                  )}
+                  {/* Below md the Source column is off-screen inside the
+                      scroll wrapper; the same string sits under the
+                      description instead. */}
+                  {sourceHref && (
+                    <a
+                      href={sourceHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="md:hidden block mt-0.5 text-[11px] font-[family-name:var(--font-dm-mono)] tabular-nums text-neutral-500 underline underline-offset-2 decoration-neutral-200"
+                    >
+                      {sourceText}
+                    </a>
                   )}
                 </td>
                 <td className="py-2.5 pr-4 font-[family-name:var(--font-dm-mono)] text-neutral-500 hidden sm:table-cell">
@@ -1101,7 +1107,7 @@ export default async function OfficialPage({
                     );
                   })()}
                 </td>
-                <td className="py-2.5 text-right whitespace-nowrap">
+                <td className="py-2.5 text-right whitespace-nowrap hidden md:table-cell">
                   <SourceAvailabilityNote url={sourceFiling?.url} />
                   {sourceHref ? (
                     // Form, physical page and printed row number, the whole
@@ -1129,6 +1135,38 @@ export default async function OfficialPage({
                   )}
                 </td>
               </tr>
+              {evidence && (
+                // The strip: a full-page-width band cropped at 2x. It spans
+                // the table; below md the box is pinned to the wrapper's
+                // visible width and the image keeps a readable height and
+                // scrolls sideways inside it. Tapping opens the PDF page.
+                <tr data-evidence-panel className="hidden border-b border-neutral-100 bg-stone-50">
+                  <td colSpan={8} className="py-2 pr-4">
+                    <div className="sticky left-0 w-[calc(100vw-2rem)] md:w-auto max-w-full">
+                      <a
+                        href={sourceHref ?? undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Open the report at this page"
+                        className="block overflow-x-auto"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element -- a static PNG rendered at 2x; next/image would re-encode it */}
+                        <img
+                          src={evidence}
+                          alt={`Row ${tx.sourceRow} of page ${tx.sourcePage} of the report, as printed`}
+                          className="block h-12 w-auto max-w-none md:h-auto md:w-full md:max-w-full border border-neutral-200 bg-white"
+                          loading="lazy"
+                        />
+                      </a>
+                      <span className="block mt-1 text-xs text-neutral-400">
+                        Page {tx.sourcePage}, row {tx.sourceRow}, cropped from the OGE PDF at 2x.
+                        Tap the image to open the report at that page.
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              )}
+              </Fragment>
               );
             })}
           </tbody>

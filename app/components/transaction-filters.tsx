@@ -108,8 +108,10 @@ function TransactionFiltersContent({
       </div>
 
       {showSource && (
-        <>
-          <span className="text-[10px] uppercase tracking-wider text-neutral-500 ml-2 mr-1">
+        // One flex item, so a narrow screen wraps the label with its
+        // chips instead of leaving "Source" alone on a line.
+        <div className="inline-flex items-center gap-2 md:ml-2">
+          <span className="text-[10px] uppercase tracking-wider text-neutral-500">
             Source
           </span>
           <div className="inline-flex border border-neutral-200 text-xs">
@@ -132,7 +134,7 @@ function TransactionFiltersContent({
               );
             })}
           </div>
-        </>
+        </div>
       )}
 
       {monthKey && monthLabel && (

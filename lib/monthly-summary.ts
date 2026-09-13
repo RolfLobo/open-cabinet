@@ -3,9 +3,9 @@
  *
  * The monthly bars used to receive every dated row of the official and
  * bucket them in the browser. That was tolerable at 8,940 rows and is not
- * at 30,000: with the annual-report lane, President Trump's page would
- * serialise every row into the HTML twice (once for the chart props, once
- * for the table). The chart needs about twelve numbers per month, so the
+ * at 30,000: with the annual-report lane, the largest official page
+ * would serialise every row into the HTML twice (once for the chart
+ * props, once for the table). The chart needs about twelve numbers per month, so the
  * server computes those and the rows stay on the server, where only the
  * paginated table reads them.
  *
