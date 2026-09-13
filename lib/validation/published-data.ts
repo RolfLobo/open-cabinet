@@ -24,7 +24,8 @@ interface Transaction {
   amount: string | null;
   amountNote?: string;
   dateNote?: string;
-  lateFilingFlag: boolean;
+  lateFilingFlag: boolean | null;
+  sourceKind?: string;
   sourceUrl?: string;
   notes?: string;
 }
@@ -94,8 +95,15 @@ function validateSchema(tx: Transaction, official: string, index: number): strin
       errors.push(`${prefix} Date before 2019: "${tx.date}"`);
     }
   }
-  if (typeof tx.lateFilingFlag !== "boolean") {
-    errors.push(`${prefix} lateFilingFlag not boolean`);
+  // A 278-T row carries the form's Yes/No; an annual-lane row carries
+  // null because the annual's Part 7 has no such column. Anything else
+  // (undefined, a string) is a schema error either way.
+  const annualLane = tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e";
+  if (annualLane ? tx.lateFilingFlag !== null : typeof tx.lateFilingFlag !== "boolean") {
+    errors.push(`${prefix} lateFilingFlag ${annualLane ? "must be null on an annual-lane row" : "not boolean"}`);
+  }
+  if (annualLane && !tx.sourceUrl) {
+    errors.push(`${prefix} annual-lane row without a sourceUrl`);
   }
   // Symbol shape only. Whether a symbol is right is layer 3 and a person.
   if (tx.ticker && !SYMBOL_SHAPE.test(tx.ticker)) {

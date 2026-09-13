@@ -41,7 +41,7 @@ export interface ResultRow {
   dateDisplay: string;
   amount: string | null;
   amountLabel: string | null;
-  lateFilingFlag: boolean;
+  lateFilingFlag: boolean | null;
   sourceUrl: string | null;
   verificationState: string;
 }

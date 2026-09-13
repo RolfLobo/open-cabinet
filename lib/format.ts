@@ -66,7 +66,14 @@ export function getSourceFilingForTransaction(
     const exact = sourceFilings.find((f) => f.url === tx.sourceUrl);
     if (exact) return exact;
   }
-  const periodics = sourceFilings.filter((f) => f.url || f.label);
+  // An annual-lane row is always stamped; with no matching filing entry
+  // there is nothing honest to fall back to.
+  if (tx.sourceKind && tx.sourceKind !== "278-T") return null;
+  // Only 278-T filings take part in the heuristic. An annual or
+  // termination report lists a year of trades under one posting date; an
+  // unstamped 278-T row that happened to fall before it would otherwise be
+  // attributed to the annual, and its disclosure lag would be a year off.
+  const periodics = sourceFilings.filter((f) => (f.url || f.label) && (f.kind ?? "278-T") === "278-T");
   if (periodics.length === 0) return null;
   const txTime = new Date(tx.date + "T00:00:00").getTime();
   const eligible = periodics.filter(

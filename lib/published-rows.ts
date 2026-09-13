@@ -50,7 +50,8 @@ export interface PublishedRow {
   /** ISO date, or null when the filing prints no date for the row. */
   date: string | null;
   amount: AmountRange | null;
-  lateFilingFlag: boolean;
+  /** Null on a row from an annual or termination report (no late column). */
+  lateFilingFlag: boolean | null;
   sourceUrl: string | null;
   verificationState: VerificationState;
 }

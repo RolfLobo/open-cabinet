@@ -70,7 +70,8 @@ export interface CompanyTrade {
   type: string;
   date: string | null;
   amount: AmountRange | null;
-  lateFilingFlag: boolean;
+  /** Null on a row from an annual or termination report (no late column). */
+  lateFilingFlag: boolean | null;
 }
 
 export interface CompanyData {

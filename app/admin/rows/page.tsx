@@ -50,7 +50,7 @@ export default async function RowsPage({ searchParams }: { searchParams: Promise
   const all = (await Promise.all((await getAllOfficialSlugs()).map((slug) => getOfficialBySlug(slug)))).filter((o): o is OfficialData => o !== null);
   const officials = all.filter((o) => !slugFilter || o.slug === slugFilter);
 
-  type Line = { official: string; slug: string; tx: { date: string | null; description: string; type: string; amount: string | null; lateFilingFlag: boolean }; v: RowVerification };
+  type Line = { official: string; slug: string; tx: { date: string | null; description: string; type: string; amount: string | null; lateFilingFlag: boolean | null }; v: RowVerification };
   const lines: Line[] = [];
   const tally = { rows: 0, disagree: 0, human: 0, lowconf: 0 };
   for (const o of officials) {
