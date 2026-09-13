@@ -87,13 +87,14 @@ function TransactionFiltersContent({
       <span className="text-[10px] uppercase tracking-wider text-neutral-500 mr-1">
         Filter
       </span>
-      <div className="inline-flex border border-neutral-200 text-xs">
+      <div role="group" aria-label="Filter trades by type" className="inline-flex border border-neutral-200 text-xs">
         {FILTER_PILLS.map((p) => {
           const active = type === p.value;
           return (
             <button
               key={p.value}
               type="button"
+              aria-pressed={active}
               onClick={() => setParam("type", p.value)}
               className={`px-2.5 py-1 transition-colors ${
                 active
@@ -114,13 +115,14 @@ function TransactionFiltersContent({
           <span className="text-[10px] uppercase tracking-wider text-neutral-500">
             Source
           </span>
-          <div className="inline-flex border border-neutral-200 text-xs">
+          <div role="group" aria-label="Filter trades by source form" className="inline-flex border border-neutral-200 text-xs">
             {SOURCE_PILLS.map((p) => {
               const active = source === p.value;
               return (
                 <button
                   key={p.value}
                   type="button"
+                  aria-pressed={active}
                   title={p.title}
                   onClick={() => setParam("source", p.value)}
                   className={`px-2.5 py-1 transition-colors ${

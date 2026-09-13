@@ -289,7 +289,7 @@ export default async function Home() {
             {periodicCount.toLocaleString()} from 278-Ts, {latePct}% filed late.{" "}
             {annualLaneCount.toLocaleString()}{" "}
             <Link href="/methodology#annual-reports" className="underline decoration-dotted underline-offset-2 hover:text-neutral-900">
-              disclosed only in annual reports
+              read from annual or termination reports
             </Link>
             .
           </p>

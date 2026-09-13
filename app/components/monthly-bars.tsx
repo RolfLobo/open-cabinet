@@ -171,8 +171,28 @@ function MonthlyBarsContent({ summary, selectedMonth, clickToZoom }: Props) {
               key={b.monthKey}
               onMouseEnter={() => setHover({ b, x: cx })}
               onMouseLeave={() => setHover(null)}
+              onFocus={() => setHover({ b, x: cx })}
+              onBlur={() => setHover(null)}
               onClick={() => clickable && handleClick(b.monthKey)}
-              style={{ cursor: clickable ? "pointer" : "default" }}
+              // A clickable month is a button for the keyboard too: Tab to
+              // it, Enter or Space to zoom. SVG groups take focus with a
+              // tabIndex like any element.
+              role={clickable ? "button" : undefined}
+              tabIndex={clickable ? 0 : undefined}
+              aria-label={
+                clickable
+                  ? `${monthLabel(b.month)} ${yearLabel(b.month)}: ${b.total.toLocaleString()} trade${b.total === 1 ? "" : "s"}${b.late > 0 ? `, ${b.late.toLocaleString()} late` : ""}${isSelected ? " (selected)" : ""}`
+                  : undefined
+              }
+              aria-pressed={clickable ? isSelected : undefined}
+              onKeyDown={(e) => {
+                if (!clickable) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleClick(b.monthKey);
+                }
+              }}
+              style={{ cursor: clickable ? "pointer" : "default", outline: "none" }}
             >
               {/* Selected highlight, drawn behind the bars */}
               {isSelected && (

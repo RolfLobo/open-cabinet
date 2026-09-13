@@ -133,8 +133,8 @@ export default async function MethodologyPage() {
             annual and termination report OGE has posted for a tracked
             official. A row already on the site from a 278-T is not added
             again. Every other row is added with a label under its
-            description: &ldquo;no 278-T on file&rdquo; when no 278-T OGE had
-            posted discloses it; &ldquo;278-T exempt&rdquo; for excepted
+            description: &ldquo;not found on posted 278-Ts&rdquo; when no 278-T
+            OGE had posted discloses it; &ldquo;278-T exempt&rdquo; for excepted
             investment funds, real property and other classes the form does
             not require; &ldquo;before covered service&rdquo; for trades made
             before the official took office; &ldquo;on an unposted
@@ -241,8 +241,8 @@ export default async function MethodologyPage() {
               reported. A trade an official did not report on a 278-T
               therefore appears only in an annual or termination report.
               Open Cabinet reads those reports for tracked officials and
-              labels each such row; &ldquo;no 278-T on file&rdquo; means no
-              278-T OGE had posted as of the read, not that none was filed,
+              labels each such row; &ldquo;not found on posted 278-Ts&rdquo;
+              means no 278-T OGE had posted as of the read, not that none was filed,
               since OGE&rsquo;s public index omits some reports. Late-filing
               counts and rates describe
               278-T rows only, and the annual rows were read once by the
