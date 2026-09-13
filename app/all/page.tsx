@@ -29,8 +29,9 @@ export default async function AllTradesPage() {
   const underReviewCount = countedOfficials.reduce((sum, o) => sum + o.underReviewCount, 0);
   // Rows read from annual and termination reports (the annual-report lane)
   // stay off this canvas. The chart ships every plotted row to the browser,
-  // and President Trump's annual alone adds 21,000; they are on his page,
-  // where the table is paginated and the charts read a monthly rollup.
+  // and the largest annual report alone adds more rows than the whole
+  // 278-T record; they are on the officials' pages, where the table is
+  // paginated and the charts read a monthly rollup.
   const annualLaneCount = countedOfficials.reduce((sum, o) => sum + annualLaneRows(o.transactions).length, 0);
   const officials = countedOfficials.map((o) => ({ ...o, transactions: periodicRows(o.transactions) }));
 
@@ -81,9 +82,9 @@ export default async function AllTradesPage() {
           and rows under review are excluded from these totals and the chart.
           {annualLaneCount > 0 && (
             <>
-              {" "}A further {annualLaneCount.toLocaleString()} trades read from
-              annual and termination reports appear on the officials&apos; own
-              pages, not here.
+              {" "}A further {annualLaneCount.toLocaleString()}{" "}
+              trades read from annual and termination reports appear on the
+              officials&apos; own pages, not here.
             </>
           )}
         </p>

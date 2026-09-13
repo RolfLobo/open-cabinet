@@ -99,7 +99,9 @@ export default async function MethodologyPage() {
           Executive branch public financial disclosures include periodic
           transaction reports and reports of holdings, income and other
           financial interests. Open Cabinet&rsquo;s trade dataset comes from
-          278-T reports.
+          278-T reports, plus the Part 7 transaction tables of the annual
+          and termination reports OGE has posted for tracked officials
+          (the annual-report lane, below).
         </p>
         <ul className="space-y-3 text-neutral-600 leading-relaxed mb-4">
           <li>
@@ -142,8 +144,9 @@ export default async function MethodologyPage() {
             volume. They are outside every late-filing count and rate, which
             describe 278-T rows only: the annual form has no
             late-notification column. Each row links to its page of the
-            PDF, and on every report except President Trump&rsquo;s a cropped
-            image of the printed row can be opened under it.
+            PDF, and on every report except the largest, whose Part 7 runs
+            687 pages, a cropped image of the printed row can be opened
+            under it.
           </li>
         </ul>
         <p className="text-sm text-neutral-500 mb-4">
@@ -239,9 +242,9 @@ export default async function MethodologyPage() {
               therefore appears only in an annual or termination report.
               Open Cabinet reads those reports for tracked officials and
               labels each such row; &ldquo;no 278-T on file&rdquo; means no
-              278-T OGE had posted as of the read, not that none was filed
-              (OGE&rsquo;s index omits some reports, as a Duffy 278-T of
-              Feb. 28, 2025 showed). Late-filing counts and rates describe
+              278-T OGE had posted as of the read, not that none was filed,
+              since OGE&rsquo;s public index omits some reports. Late-filing
+              counts and rates describe
               278-T rows only, and the annual rows were read once by the
               audit rather than by the 278-T pipeline&rsquo;s checking
               lanes, so they carry the &ldquo;not yet checked&rdquo; mark.

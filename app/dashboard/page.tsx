@@ -10,7 +10,7 @@ import {
 import OfficialRankings from "../components/official-rankings";
 import BuySellRatio from "../components/buy-sell-ratio";
 import SectorTreemap from "../components/sector-treemap";
-import { lateStats } from "@/lib/source-lane";
+import { lateStats, periodicRows } from "@/lib/source-lane";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/dashboard" },
@@ -25,8 +25,13 @@ function isSale(type: string): boolean {
 
 export default async function DashboardPage() {
   const sourceOfficials = await getAllOfficials();
-  const officials = sourceOfficials.map(officialForTotals);
-  const underReviewCount = officials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  const countedOfficials = sourceOfficials.map(officialForTotals);
+  const underReviewCount = countedOfficials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  // Aggregates here describe 278-T rows, the same population as /all, so
+  // the two overview pages agree; rows read from annual and termination
+  // reports are counted on the officials' own pages.
+  const annualLaneCount = countedOfficials.reduce((sum, o) => sum + lateStats(o.transactions).annualLane, 0);
+  const officials = countedOfficials.map((o) => ({ ...o, transactions: periodicRows(o.transactions) }));
 
   const allTx = officials.flatMap((o) =>
     o.transactions.map((tx) => ({ ...tx, officialName: o.name, officialSlug: o.slug }))
@@ -106,6 +111,13 @@ export default async function DashboardPage() {
         <p className="text-neutral-500 max-w-xl leading-relaxed">
           Aggregate view of all executive branch financial transactions tracked
           by Open Cabinet.
+          {annualLaneCount > 0 && (
+            <>
+              {" "}These totals cover 278-T periodic reports; a further{" "}
+              {annualLaneCount.toLocaleString()} trades read from annual and
+              termination reports are counted on the officials&apos; own pages.
+            </>
+          )}
         </p>
       </header>
 
