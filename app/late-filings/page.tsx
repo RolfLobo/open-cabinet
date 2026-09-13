@@ -3,7 +3,7 @@ import { getAllOfficials, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
 import { getFeePayments } from "@/lib/fee-payments";
 import { displayName, formatDate } from "@/lib/format";
-import { lateStats, periodicRows } from "@/lib/source-lane";
+import { lateStats, periodicFilings, periodicRows } from "@/lib/source-lane";
 import Link from "next/link";
 
 /**
@@ -102,7 +102,8 @@ export default async function LateFilingsPage() {
   // possible fee exposure is report count x $200. Trump's report count makes
   // the flat-fee math concrete against thousands of late-flagged trades.
   const trump = officials.find((o) => o.slug === "trump-donald-j");
-  const trumpReports = trump?.sourceFilings?.length ?? 0;
+  // The fee is per 278-T report; an annual report is not one of them.
+  const trumpReports = periodicFilings(trump?.sourceFilings ?? []).length;
   const trumpLate = trump ? lateStats(trump.transactions).late : 0;
 
   return (

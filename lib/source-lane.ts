@@ -52,7 +52,7 @@ export const SOURCE_KIND_TITLE: Record<SourceKind, string> = {
  * Muted wording on purpose: each says where the row stands with the
  * periodic-report rule, not what a reader should think of the filer. */
 export const PERIODIC_STATUS_LABEL: Record<Exclude<PeriodicStatus, "reported">, string> = {
-  "not-on-posted-278t": "no 278-T on file",
+  "not-on-posted-278t": "not found on posted 278-Ts",
   exempt: "278-T exempt",
   "pre-service": "before covered service",
   "unposted-278t": "on an unposted 278-T",
@@ -124,7 +124,7 @@ export function annualLaneRows<T extends SourceKindRow>(rows: T[]): T[] {
 
 /** The 278-T source filings of an official: what the digest, the filing
  * monitor and the date heuristic may consider. */
-export function periodicFilings<T extends { kind?: SourceKind }>(filings: T[]): T[] {
+export function periodicFilings<T extends { kind?: SourceKind | string }>(filings: T[]): T[] {
   return filings.filter((f) => (f.kind ?? "278-T") === "278-T");
 }
 

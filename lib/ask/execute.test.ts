@@ -17,6 +17,7 @@ function row(partial: Partial<PublishedRow> & { id: string }): PublishedRow {
     date: "2025-03-04",
     amount: "$15,001-$50,000",
     lateFilingFlag: false,
+    sourceKind: "278-T",
     sourceUrl: "https://example.gov/a.pdf",
     verificationState: "checked",
     ...partial,
@@ -261,6 +262,20 @@ describe("late_share", () => {
     const three = { ...DATA, rows: ROWS.slice(0, 3) };
     const result = execute(plan({ aggregate: "late_share" }), three);
     expect(result.lateShare?.percent).toBe(33.3);
+  });
+
+  it("counts 278-T rows only: one late periodic row plus one checked annual row is 100 percent", () => {
+    const rows = [
+      row({ id: "p", lateFilingFlag: true }),
+      row({ id: "q", sourceKind: "annual-278e", lateFilingFlag: null, date: "2025-08-06" }),
+    ];
+    const result = execute(plan({ aggregate: "late_share" }), { ...DATA, rows });
+    expect(result.lateShare).toEqual({
+      late: 1,
+      total: 1,
+      percent: 100,
+      display: "1 of 1 checked trades in this query (100 percent) were flagged late",
+    });
   });
 
   it("vouches for the percentage so a sentence may state it", () => {

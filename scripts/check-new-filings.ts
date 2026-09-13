@@ -30,6 +30,7 @@ import {
   MIN_DOC_DATE,
   type TargetFiling,
 } from "../lib/oge-filings";
+import { periodicFilings } from "../lib/source-lane";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const PDF_DIR = path.join(DATA_DIR, "pdfs");
@@ -98,13 +99,14 @@ async function projectFilingCadence(): Promise<CadenceProjection[]> {
     if (!file.endsWith(".json")) continue;
     const official = JSON.parse(
       await readFile(path.join(officialsDir, file), "utf-8")
-    ) as { name: string; sourceFilings?: Array<{ date?: string }> };
+    ) as { name: string; sourceFilings?: Array<{ date?: string; kind?: string }> };
 
-    // Restrict to the current administration's window so pre-2025 annual
-    // filings from holdover officials don't distort the gap statistics.
+    // Restrict to 278-Ts in the current administration's window: an annual
+    // or termination report is posted once and would put a false gap into
+    // a filer's periodic cadence.
     const dates = [
       ...new Set(
-        (official.sourceFilings || [])
+        periodicFilings(official.sourceFilings || [])
           .map((f) => f.date?.slice(0, 10))
           .filter((d): d is string => Boolean(d) && d! >= MIN_DOC_DATE)
       ),
