@@ -14,8 +14,9 @@ top to the next row's top is cropped at full page width and rendered at
 
     public/evidence/<slug>/<sourceKind>-<page>-<row>.png
 
-Trump's rows are skipped on purpose: 21,000 strips would be a 100 MB
-commit for a report whose rows link to their page instead.
+The largest report (SKIP_SLUGS) is skipped on purpose: tens of thousands
+of strips would be a 100 MB commit for rows that link to their page
+instead.
 
 The PDFs are looked up by the last path segment of the row's sourceUrl in
 <dir> (the audit's annuals/ folder names files by slug and report, so a
@@ -101,11 +102,13 @@ def main() -> int:
                         continue
                     page = doc.pages[pno - 1]
                     # A last row's band runs to the end of the table on the
-                    # page (endnotes, a following part). Cap it at twice the
-                    # median row height so the strip shows one row.
-                    heights = sorted(r.bottom - r.top for r in cache[pno])
-                    median = heights[len(heights) // 2] if heights else 30
-                    bottom = min(band.bottom, band.top + 2 * median)
+                    # page (a footer, the next part's heading). Cap it at
+                    # 2.2x the shortest row on the page (a wrapped two-line
+                    # row is twice a one-line row), or 40 points when the
+                    # page has one row, so the strip shows one row.
+                    heights = sorted(r.bottom - r.top for r in cache[pno] if r is not band)
+                    unit = heights[0] if heights else 40 / 2.2
+                    bottom = min(band.bottom, band.top + 2.2 * unit)
                     top = max(0, band.top - 1)
                     crop = page.crop((0, top, page.width, min(page.height, bottom + 1)))
                     img = crop.to_image(resolution=72 * SCALE)
