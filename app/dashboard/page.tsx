@@ -10,6 +10,7 @@ import {
 import OfficialRankings from "../components/official-rankings";
 import BuySellRatio from "../components/buy-sell-ratio";
 import SectorTreemap from "../components/sector-treemap";
+import { lateStats } from "@/lib/source-lane";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/dashboard" },
@@ -39,7 +40,8 @@ export default async function DashboardPage() {
 
   const salesCount = allTx.filter((tx) => isSale(tx.type)).length;
   const purchasesCount = allTx.filter((tx) => tx.type === "Purchase").length;
-  const lateCount = allTx.filter((tx) => tx.lateFilingFlag).length;
+  // Late counts describe 278-T rows only (lib/source-lane.ts).
+  const lateCount = lateStats(allTx).late;
 
   // Official rankings data
   const rankings = officials
@@ -127,9 +129,9 @@ export default async function DashboardPage() {
           late-filed transactions
           <span className="text-neutral-400 ml-1">
             ({officials.find((o) => o.slug === "trump-donald-j")
-              ? `${officials
-                  .find((o) => o.slug === "trump-donald-j")!
-                  .transactions.filter((t) => t.lateFilingFlag).length.toLocaleString()} from Trump`
+              ? `${lateStats(
+                  officials.find((o) => o.slug === "trump-donald-j")!.transactions
+                ).late.toLocaleString()} from Trump`
               : ""})
           </span>
         </div>

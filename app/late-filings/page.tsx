@@ -3,6 +3,7 @@ import { getAllOfficials, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
 import { getFeePayments } from "@/lib/fee-payments";
 import { displayName, formatDate } from "@/lib/format";
+import { lateStats, periodicRows } from "@/lib/source-lane";
 import Link from "next/link";
 
 /**
@@ -45,12 +46,15 @@ export default async function LateFilingsPage() {
         latest: string;
       }[]
     >((stats, o) => {
-      const total = o.transactions.length;
+      // Rates are over 278-T rows only; a row from an annual report has no
+      // late column and would only dilute the denominator (lib/source-lane.ts).
+      const periodic = periodicRows(o.transactions);
+      const total = periodic.length;
       let late = 0;
       let lateSales = 0;
       let latePurchases = 0;
       const lateDates: string[] = [];
-      for (const t of o.transactions) {
+      for (const t of periodic) {
         if (!t.lateFilingFlag) continue;
         late += 1;
         if (isSale(t.type)) lateSales += 1;
@@ -80,9 +84,10 @@ export default async function LateFilingsPage() {
 
   const totalLate = officialStats.reduce((sum, o) => sum + o.late, 0);
   const totalTransactions = officials.reduce(
-    (sum, o) => sum + o.transactions.length,
+    (sum, o) => sum + periodicRows(o.transactions).length,
     0
   );
+  const annualLaneCount = officials.reduce((sum, o) => sum + lateStats(o.transactions).annualLane, 0);
   const overallRate = totalTransactions > 0 ? ((totalLate / totalTransactions) * 100).toFixed(1) : "0.0";
   const officialsWithLate = officialStats.length;
 
@@ -98,8 +103,7 @@ export default async function LateFilingsPage() {
   // the flat-fee math concrete against thousands of late-flagged trades.
   const trump = officials.find((o) => o.slug === "trump-donald-j");
   const trumpReports = trump?.sourceFilings?.length ?? 0;
-  const trumpLate =
-    trump?.transactions.filter((t) => t.lateFilingFlag).length ?? 0;
+  const trumpLate = trump ? lateStats(trump.transactions).late : 0;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16">
@@ -210,7 +214,7 @@ export default async function LateFilingsPage() {
             <span className="text-2xl font-semibold text-neutral-900 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1.5">
               {overallRate}%
             </span>
-            of all transactions
+            of 278-T transactions
           </div>
           <div>
             <span className="text-2xl font-semibold text-neutral-900 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1.5">
@@ -222,6 +226,13 @@ export default async function LateFilingsPage() {
         <p className="text-xs text-neutral-400 mt-3">
           All counts come from the officials{"'"} own certifications on OGE
           Form 278-T.
+          {annualLaneCount > 0 && (
+            <>
+              {" "}The {annualLaneCount.toLocaleString()} trades read from annual
+              and termination reports are outside these rates: that form has no
+              late-notification column.
+            </>
+          )}
         </p>
       </div>
 

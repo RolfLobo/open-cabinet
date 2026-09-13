@@ -6,6 +6,7 @@ import {
   displayName,
   formatDate, sumAmountEstimates } from "@/lib/format";
 import { getNewsCoverage } from "@/lib/news";
+import { lateStats } from "@/lib/source-lane";
 import OfficialsTable from "./components/officials-table";
 import Explainer from "./components/explainer";
 import HeroMonthlyChart from "./components/hero-monthly-chart";
@@ -49,11 +50,16 @@ export default async function Home() {
   const allTx = countedOfficials.flatMap((o) => o.transactions);
   const totalTransactions = allTx.length;
   const estimatedTotal = sumAmountEstimates(allTx).estimate;
-  const lateCount = allTx.filter((tx) => tx.lateFilingFlag).length;
-  // Headline accountability finding, surfaced on the hero: the share of all
-  // disclosed trades reported after the STOCK Act deadline.
-  const latePct =
-    allTx.length > 0 ? Math.round((lateCount / allTx.length) * 100) : 0;
+  // Late counts and the late share describe 278-T rows only: a row read
+  // from an annual report (the annual-report lane) has no late column.
+  // The headline total still counts every row.
+  const lateScope = lateStats(allTx);
+  const lateCount = lateScope.late;
+  const periodicCount = lateScope.periodic;
+  const annualLaneCount = lateScope.annualLane;
+  // Headline accountability finding, surfaced on the hero: the share of
+  // 278-T trades reported after the STOCK Act deadline.
+  const latePct = lateScope.latePct;
 
   // Most recent OGE filing/posting date across all officials.
   const mostRecentFiling = officials.reduce(
@@ -234,7 +240,7 @@ export default async function Home() {
                 href="/late-filings"
                 className="font-semibold text-amber-700 underline decoration-amber-700/30 underline-offset-2 hover:decoration-amber-700 transition-colors"
               >
-                {latePct}% of disclosed trades were reported late
+                {latePct}% of trades on periodic reports were reported late
               </Link>{" "}
               &mdash; by the officials{"'"} own certification.
             </p>
@@ -278,6 +284,16 @@ export default async function Home() {
           </div>
         </div>
         <UnderReviewNote count={underReviewCount} />
+        {annualLaneCount > 0 && (
+          <p className="text-sm text-neutral-600 mt-3">
+            {periodicCount.toLocaleString()} from 278-Ts, {latePct}% filed late.{" "}
+            {annualLaneCount.toLocaleString()}{" "}
+            <Link href="/methodology#annual-reports" className="underline decoration-dotted underline-offset-2 hover:text-neutral-900">
+              disclosed only in annual reports
+            </Link>
+            .
+          </p>
+        )}
         <p className="text-xs text-neutral-400 mt-2 pb-4 border-b border-neutral-200">
           Transactions filed January 2025 to present. Trade volume is the
           midpoint of the reporting ranges, summed across counted
