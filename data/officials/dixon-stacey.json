@@ -14,7 +14,9 @@
       "date": "2025-01-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN STRATEGIC BOND F2 (ANBFX)",
@@ -22,7 +24,9 @@
       "date": "2025-01-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "ISHARES CORE AGGRESSIVE ALLO (AOA)",
@@ -30,7 +34,9 @@
       "date": "2025-01-27",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BD FD OF AMERICA F2 (ABNFX)",
@@ -38,7 +44,9 @@
       "date": "2024-12-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 44,
+      "sourcePage": 4
     },
     {
       "description": "AMERICAN STRATEGIC BOND F2 (ANBFX)",
@@ -46,7 +54,9 @@
       "date": "2024-12-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 45,
+      "sourcePage": 4
     },
     {
       "description": "ISHARES CORE AGGRESSIVE ALLO (AOA)",
@@ -54,7 +64,9 @@
       "date": "2024-12-27",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP INC BUILDER F2 (CAIFX)",
@@ -62,7 +74,9 @@
       "date": "2024-12-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 41,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN WA MUTUAL F2 (WMFFX)",
@@ -70,7 +84,9 @@
       "date": "2024-12-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 39,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN BALANCED F2 (AMBFX)",
@@ -78,7 +94,9 @@
       "date": "2024-12-19",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 42,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN CAP WRLD GR & INC F2 (WGIFX)",
@@ -86,7 +104,9 @@
       "date": "2024-12-19",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 37,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN GW FD OF AMERICA F2 (GFFFX)",
@@ -94,7 +114,9 @@
       "date": "2024-12-19",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 40,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN INV CO OF AMER F2 (ICAFX)",
@@ -102,7 +124,9 @@
       "date": "2024-12-19",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 36,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN BALANCED F2 (AMBFX)",
@@ -110,7 +134,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 20,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BD FD OF AMERICA F2 (ABNFX)",
@@ -118,7 +144,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 28,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN CAP INC BUILDER F2 (CAIFX)",
@@ -126,7 +154,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP WRLD GR & INC F2 (WGIFX)",
@@ -134,7 +164,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN GLOBAL INSIGHT F2 (AGVGX)",
@@ -142,7 +174,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 32,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN GW FD OF AMERICA F2 (GFFFX)",
@@ -150,7 +184,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 31,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN INV CO OF AMER F2 (ICAFX)",
@@ -158,7 +194,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN MULTI SECTOR INC F2 (MIAYX)",
@@ -166,7 +204,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 29,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN SMALL CAP WORLD F2 (SMCFX)",
@@ -174,7 +214,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 22,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN STRATEGIC BOND F2 (ANBFX)",
@@ -182,7 +224,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 30,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN WA MUTUAL F2 (WMFFX)",
@@ -190,7 +234,9 @@
       "date": "2024-11-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 2
     },
     {
       "description": "[IRA] American FundsGlobal Insight Fund Class F-2 Shares (AGVGX)",
@@ -250,7 +296,9 @@
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 46,
+      "sourcePage": 4
     },
     {
       "description": "AMERICAN GLOBAL INSIGHT F2 (AGVGX)",
@@ -258,7 +306,9 @@
       "date": "2024-05-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BALANCED F2 (AMBFX)",
@@ -266,7 +316,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BD FD OF AMERICA F2 (ABNFX)",
@@ -274,7 +326,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 33,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN CAP INC BUILDER F2 (CAIFX)",
@@ -282,7 +336,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP WRLD GR & INC F2 (WGIFX)",
@@ -290,7 +346,9 @@
       "date": "2024-02-21",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN GW FD OF AMERICA F2 (GFFFX)",
@@ -298,7 +356,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 27,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN INV CO OF AMER F2 (ICAFX)",
@@ -306,7 +366,9 @@
       "date": "2024-02-21",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN MULTI SECTOR INC F2 (MIAYX)",
@@ -314,7 +376,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 35,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN SMALL CAP WORLD F2 (SMCFX)",
@@ -322,7 +386,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 24,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN STRATEGIC BOND F2 (ANBFX)",
@@ -330,7 +396,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 34,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN WA MUTUAL F2 (WMFFX)",
@@ -338,7 +406,9 @@
       "date": "2024-02-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 21,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BALANCED F2 (AMBFX)",
@@ -346,7 +416,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BD FD OF AMERICA F2 (ABNFX)",
@@ -354,7 +426,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 23,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN CAP INC BUILDER F2 (CAIFX)",
@@ -362,7 +436,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP WRLD GR & INC F2 (WGIFX)",
@@ -370,7 +446,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN GW FD OF AMERICA F2 (GFFFX)",
@@ -378,7 +456,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN INV CO OF AMER F2 (ICAFX)",
@@ -386,7 +466,9 @@
       "date": "2024-01-11",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN MULTI SECTOR INC F2 (MIAYX)",
@@ -394,7 +476,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 26,
+      "sourcePage": 3
     },
     {
       "description": "AMERICAN SMALL CAP WORLD F2 (SMCFX)",
@@ -402,7 +486,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN STRATEGIC BOND F2 (ANBFX)",
@@ -410,7 +496,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 25,
+      "sourcePage": 3
     },
     {
       "description": "ISHARES CORE AGGRESSIVE ALLO (AOA)",
@@ -418,7 +506,9 @@
       "date": "2024-01-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 43,
+      "sourcePage": 4
     },
     {
       "description": "ISHARES CORE AGGRESSIVE ALLO (AOA)",
@@ -426,7 +516,9 @@
       "date": "2024-01-11",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 47,
+      "sourcePage": 4
     },
     {
       "description": "ISHARES CORE AGGRESSIVE ALLO (AOA)",
@@ -434,7 +526,9 @@
       "date": "2024-01-02",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F2DB7167AE9E497285258C58002C7886/$FILE/Stacey-Dixon-02.10.2025-278T.pdf",
+      "sourceRow": 38,
+      "sourcePage": 3
     },
     {
       "description": "10X GENOMICS INC CL A (TXG)",
@@ -442,7 +536,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "AIRBNB INC CL A (ABNB)",
@@ -450,7 +546,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "Amazon.com, Inc. (AMZN)",
@@ -458,7 +556,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E19691CF6317598D85258742002E54E1/$FILE/Stacey-Dixon-08.24.2021-278T(1).pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E19691CF6317598D85258742002E54E1/$FILE/Stacey-Dixon-08.24.2021-278T(1).pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BALANCED F2 CONFIRM NBR (AMBFX)",
@@ -466,7 +566,9 @@
       "date": "2021-08-23",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN BD FD OF AMERICA F2 CONFIRM NBR (ABNFX)",
@@ -474,7 +576,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP INC BUILDER F2 CONFIRM NBR (CAIFX)",
@@ -482,7 +586,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN CAP WRLD GR & INC F2 CONFIRM NBR (WGIFX)",
@@ -490,7 +596,9 @@
       "date": "2021-08-23",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN GW FD OF AMERICA F2 CONFIRM NBR (GFFFX)",
@@ -498,7 +606,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN INV CO OF AMER F2 CONFIRM NBR (ICAFX)",
@@ -506,7 +616,9 @@
       "date": "2021-08-23",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN SMALL CAP WORLD F2 CONFIRM NBR (SMCFX)",
@@ -514,7 +626,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "AMERICAN WA MUTUAL F2 CONFIRM NBR (WMFFX)",
@@ -522,7 +636,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "CARVANA CO CL A (CVNA)",
@@ -530,7 +646,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "CLOUDFLARE INC CL A (NET)",
@@ -538,7 +656,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "COUPA SOFTWARE INC (COUP)",
@@ -546,7 +666,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "CROWDSTRIKE HLDGS INC CL A (CRWD)",
@@ -554,7 +676,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 2
     },
     {
       "description": "DATADOG INC CL A (DDOG)",
@@ -562,7 +686,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 2
     },
     {
       "description": "DEXCOM INC (DXCM)",
@@ -570,7 +696,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 2
     },
     {
       "description": "DOCUSIGN INC (DOCU)",
@@ -578,7 +706,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 3
     },
     {
       "description": "DOORDASH INC CL A (DASH)",
@@ -586,7 +716,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 3
     },
     {
       "description": "ILLUMINA INC (ILMN)",
@@ -594,7 +726,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 20,
+      "sourcePage": 3
     },
     {
       "description": "MODERNA INC (MRNA)",
@@ -602,7 +736,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 21,
+      "sourcePage": 3
     },
     {
       "description": "MONGODB INC CL A (MDB)",
@@ -610,7 +746,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 22,
+      "sourcePage": 3
     },
     {
       "description": "NVIDIA CORPORATION (NVDA)",
@@ -618,7 +756,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 23,
+      "sourcePage": 3
     },
     {
       "description": "OKTA, INC CL A (OKTA)",
@@ -626,7 +766,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 24,
+      "sourcePage": 3
     },
     {
       "description": "PINTEREST INC CL A (PINS)",
@@ -634,7 +776,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 25,
+      "sourcePage": 3
     },
     {
       "description": "ROBLOX CORP CL A (RBLX)",
@@ -642,7 +786,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 26,
+      "sourcePage": 3
     },
     {
       "description": "ROYALTY PHARMA PLC SHS CLASS A (RPRX)",
@@ -650,7 +796,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 27,
+      "sourcePage": 3
     },
     {
       "description": "SEA LIMITED ADR (SE)",
@@ -658,7 +806,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 28,
+      "sourcePage": 3
     },
     {
       "description": "SHOPIFY INC (SHOP)",
@@ -666,7 +816,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 29,
+      "sourcePage": 3
     },
     {
       "description": "SNAP INC. CL A (SNAP)",
@@ -674,7 +826,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 30,
+      "sourcePage": 3
     },
     {
       "description": "SNOWFLAKE INC CL A (SNOW)",
@@ -682,7 +836,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 31,
+      "sourcePage": 3
     },
     {
       "description": "SPOTIFY TECHNOLOGY SA (SPOT)",
@@ -690,7 +846,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 32,
+      "sourcePage": 3
     },
     {
       "description": "SQUARE INC CLASS A (SQ)",
@@ -698,7 +856,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 33,
+      "sourcePage": 3
     },
     {
       "description": "STRATEGIC BOND F2 CONFIRM NBR (ANBFX)",
@@ -706,7 +866,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "TRADE DESK INC CLASS A (TTD)",
@@ -714,7 +876,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 34,
+      "sourcePage": 3
     },
     {
       "description": "TWILIO INC CL A (TWLO)",
@@ -722,7 +886,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 35,
+      "sourcePage": 3
     },
     {
       "description": "TWITTER INC (TSTR)",
@@ -730,7 +896,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 36,
+      "sourcePage": 3
     },
     {
       "description": "UBER TECHNOLOGIES INC (UBER)",
@@ -738,7 +906,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 37,
+      "sourcePage": 3
     },
     {
       "description": "UNITY SOFTWARE INC (U)",
@@ -746,7 +916,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 38,
+      "sourcePage": 3
     },
     {
       "description": "VEEVA SYS INC CL A (VEEV)",
@@ -754,7 +926,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 39,
+      "sourcePage": 4
     },
     {
       "description": "WAYFAIR INC (W)",
@@ -762,7 +936,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 40,
+      "sourcePage": 4
     },
     {
       "description": "ZILLOW GROUP INC CL C CAP STK (Z)",
@@ -770,7 +946,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 41,
+      "sourcePage": 4
     },
     {
       "description": "ZOOM VIDEO COMMUNICATIONS-A (ZM)",
@@ -778,7 +956,9 @@
       "date": "2021-08-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 42,
+      "sourcePage": 4
     },
     {
       "description": "INTUITIVE SURGICAL INC (ISRG)",
@@ -786,7 +966,9 @@
       "date": "2021-08-12",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 43,
+      "sourcePage": 4
     },
     {
       "description": "UNITY SOFTWARE INC (U)",
@@ -794,7 +976,9 @@
       "date": "2021-08-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/706D50AB594C0CB985258742002E54E3/$FILE/Stacey-Dixon-08.24.2021-278T.pdf",
+      "sourceRow": 44,
+      "sourcePage": 4
     },
     {
       "description": "DASH - DOORDASH INC CL A",
@@ -802,7 +986,9 @@
       "date": "2021-08-10",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "SPOT - SPOTIFY TECHNOLOGY SA",
@@ -810,7 +996,9 @@
       "date": "2021-08-10",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "RBLX - ROBLOX CORP CL A",
@@ -818,7 +1006,9 @@
       "date": "2021-08-09",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "VEEV - VEEVA SYS INC CL A",
@@ -826,7 +1016,9 @@
       "date": "2021-08-09",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "OKTA - OKTA, INC CL A",
@@ -834,7 +1026,9 @@
       "date": "2021-07-26",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "IWF - ISHARES RUSSELL 1000 GRW ETF",
@@ -842,7 +1036,9 @@
       "date": "2021-07-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "RPRX - ROYALTY PHARMA PLC SHS CLASS A",
@@ -850,7 +1046,9 @@
       "date": "2021-07-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "SNOW - SNOWFLAKE INC CL A",
@@ -858,7 +1056,9 @@
       "date": "2021-07-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "CHWY - CHEWY INC CL A",
@@ -866,7 +1066,9 @@
       "date": "2021-06-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "IWF - ISHARES RUSSELL 1000 GRW ETF",
@@ -874,7 +1076,9 @@
       "date": "2021-06-15",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "RPRX - ROYALTY PHARMA PLC SHS CLASS A",
@@ -882,7 +1086,9 @@
       "date": "2021-06-15",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "SNOW - SNOWFLAKE INC CL A",
@@ -890,7 +1096,9 @@
       "date": "2021-06-15",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "UBER - UBER TECHNOLOGIES INC",
@@ -898,7 +1106,9 @@
       "date": "2021-05-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "NFLX - NETFLIX INC",
@@ -906,7 +1116,9 @@
       "date": "2021-05-10",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "NET - CLOUDFLARE INC CL A",
@@ -914,7 +1126,9 @@
       "date": "2021-04-27",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 2
     },
     {
       "description": "FB - FACEBOOK INC CL-A",
@@ -922,7 +1136,9 @@
       "date": "2021-04-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 3
     },
     {
       "description": "NET - CLOUDFLARE INC CL A",
@@ -930,7 +1146,9 @@
       "date": "2021-04-23",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 3
     },
     {
       "description": "DASH - DOORDASH INC CL A",
@@ -938,7 +1156,9 @@
       "date": "2021-04-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 3
     },
     {
       "description": "IWF - ISHARES RUSSELL 1000 GRW ETF",
@@ -946,7 +1166,9 @@
       "date": "2021-04-16",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AE01276632D6DB948525873F002E548E/$FILE/Stacy-Dixon-08.12.2021-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 3
     }
   ],
   "summary": "53 sales and 59 purchases across 112 transactions. None of the transactions were flagged as filed late.",

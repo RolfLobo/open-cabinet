@@ -14,7 +14,9 @@
       "date": "2025-08-06",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 3
     },
     {
       "description": "Fidelity 500 Index Fund (FXAIX)",
@@ -23,7 +25,9 @@
       "date": "2025-08-06",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 20,
+      "sourcePage": 3
     },
     {
       "description": "Netflix, Inc. (NFLX)",
@@ -32,7 +36,9 @@
       "date": "2025-08-06",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 3
     },
     {
       "description": "Fidelity 500 Index Fund (FXAIX)",
@@ -41,7 +47,9 @@
       "date": "2025-08-01",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 3
     },
     {
       "description": "Amazon.com, Inc. (AMZN)",
@@ -50,7 +58,9 @@
       "date": "2025-07-31",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 3
     },
     {
       "description": "NextEra Energy Stock ESOP Units; Vested balance",
@@ -59,7 +69,9 @@
       "date": "2025-07-22",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 3
     },
     {
       "description": "NextEra Energy, Inc. (NEE)",
@@ -68,7 +80,9 @@
       "date": "2025-07-22",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "NextEra Energy, Inc. (NEE)",
@@ -77,7 +91,9 @@
       "date": "2025-07-22",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "NextEra Energy, Inc. (NEE) (option strike price $75.38)",
@@ -86,7 +102,9 @@
       "date": "2025-07-22",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "NextEra Energy, Inc. (NEE) (option strike price $75.69)",
@@ -95,7 +113,9 @@
       "date": "2025-07-22",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard 500 Index Fund Admiral Shares (VFIAX)",
@@ -104,7 +124,9 @@
       "date": "2025-07-22",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Target Retirement 2045 Fund Investor Class Shares (VTIVX)",
@@ -113,7 +135,9 @@
       "date": "2025-07-22",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 3
     },
     {
       "description": "Fidelity 500 Index Fund (FXAIX)",
@@ -122,7 +146,9 @@
       "date": "2025-07-18",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 3
     },
     {
       "description": "NextEra Energy, Inc. (NEE)",
@@ -131,7 +157,9 @@
       "date": "2025-07-18",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "NextEra Energy, Inc. (NEE) (option strike price $73.12)",
@@ -140,7 +168,9 @@
       "date": "2025-07-18",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard 500 Index Fund Admiral Shares (VFIAX)",
@@ -149,7 +179,9 @@
       "date": "2025-07-18",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 3
     },
     {
       "description": "NextEra Energy, Inc. (NEE)",
@@ -158,7 +190,9 @@
       "date": "2025-07-14",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "XPLR Infrastructure LP (XIFR - Formerly NextEra Energy Partners - NEP)",
@@ -167,7 +201,9 @@
       "date": "2025-07-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 3
     },
     {
       "description": "NextEra Energy, Inc. (NEE)",
@@ -176,7 +212,9 @@
       "date": "2025-07-10",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "NextEra Energy, Inc. (NEE) (option strike price $57.27)",
@@ -185,7 +223,9 @@
       "date": "2025-07-10",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Amazon.com, Inc. (AMZN)",
@@ -195,7 +235,9 @@
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/294765D0509B1112852585E10027E9D3/$FILE/Katharine-MacGregor-08.13.2020-278T.pdf",
-      "historical": true
+      "historical": true,
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Amazon.com, Inc. (AMZN)",
@@ -205,7 +247,9 @@
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/D3AD148822D68054852585B30027DBDA/$FILE/Katharine-MacGregor-07.01.2020-278T.pdf",
-      "historical": true
+      "historical": true,
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Amazon Stock",
@@ -215,7 +259,9 @@
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/B1B753542BDDB222852585840027DBCE/$FILE/Katharine-MacGregor-04.21.2020-278T.pdf",
-      "historical": true
+      "historical": true,
+      "sourceRow": 1,
+      "sourcePage": 2
     }
   ],
   "summary": "MacGregor reported 10 sales (est. $1.2M) and 10 purchases (est. $1.3M). These totals cover second-term reports. Three transactions from 2020 reports remain available as history and are excluded.",

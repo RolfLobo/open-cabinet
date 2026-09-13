@@ -14,7 +14,9 @@
       "date": "2026-05-14",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Akamai Technologies, Inc. (AKAM)",
@@ -23,7 +25,9 @@
       "date": "2026-05-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Corning, Inc. (GLW)",
@@ -32,7 +36,9 @@
       "date": "2026-05-13",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Fluence Energy Inc. Class A Common Stock (FLNC)",
@@ -41,7 +47,9 @@
       "date": "2026-05-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "QUALCOMM, Inc. (QCOM)",
@@ -50,7 +58,9 @@
       "date": "2026-05-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Grab Holdings Limited Class A Ordinary Shares",
@@ -59,7 +69,9 @@
       "date": "2026-01-21",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/6669428412F0329885258DCC002DC6FF/$FILE/Sean-McMaster-02.27.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/6669428412F0329885258DCC002DC6FF/$FILE/Sean-McMaster-02.27.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "One Stop Systems Inc. Common Stock (OSS)",
@@ -68,7 +80,9 @@
       "date": "2026-01-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Grab Holdings Limited Class A Ordinary Shares (GRAB)",
@@ -77,7 +91,9 @@
       "date": "2026-01-09",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Robinhood Markets Inc. Class A Common Stock (HOOD)",
@@ -86,7 +102,9 @@
       "date": "2026-01-09",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Grab Holdings Limited Class A Ordinary Shares (GRAB)",
@@ -95,7 +113,9 @@
       "date": "2025-12-18",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Tesla, Inc. (TSLA)",
@@ -104,7 +124,9 @@
       "date": "2025-12-10",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/14687F0C20F84C2385258D8C00346652/$FILE/Sean-McMaster-12.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/14687F0C20F84C2385258D8C00346652/$FILE/Sean-McMaster-12.11.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Grab Holdings Limited Class A Ordinary Shares (GRAB)",
@@ -113,7 +135,9 @@
       "date": "2025-11-03",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Amkor Technology, Inc. (AMKR)",
@@ -122,7 +146,9 @@
       "date": "2025-10-14",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Amcor plc (AMCR)",
@@ -131,7 +157,9 @@
       "date": "2025-10-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Amkor Technology, Inc. (AMKR)",
@@ -140,7 +168,9 @@
       "date": "2025-10-13",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Amcor plc (AMCR)",
@@ -149,7 +179,9 @@
       "date": "2025-10-09",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "MicroStrategy, Inc. (MSTR)",
@@ -158,7 +190,9 @@
       "date": "2025-10-09",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "ETHZilla Corp (ETHZ)",
@@ -167,7 +201,9 @@
       "date": "2025-10-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/11B539874B68444985258D8C00346658/$FILE/Sean-McMaster-12.01.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "ASGN, Inc. (ASGN)",
@@ -176,7 +212,9 @@
       "date": "2025-08-22",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "ASGN, Inc. (ASGN)",
@@ -185,7 +223,9 @@
       "date": "2025-08-22",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "ASGN, Inc. (ASGN)",
@@ -194,7 +234,9 @@
       "date": "2025-08-22",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "180 Life Sciences Corp. Common Stock",
@@ -203,7 +245,9 @@
       "date": "2025-08-13",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Coinbase Global Inc. Class A Common Stock",
@@ -212,7 +256,9 @@
       "date": "2025-08-13",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "ASGN, Inc. (ASGN)",
@@ -221,7 +267,9 @@
       "date": "2025-08-11",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "bitmine immersion technology",
@@ -230,7 +278,9 @@
       "date": "2025-08-08",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "bitmine immersion technology",
@@ -239,7 +289,9 @@
       "date": "2025-08-07",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Global X MSCI Argentina ETF",
@@ -248,7 +300,9 @@
       "date": "2025-08-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Microsoft Corp.",
@@ -257,7 +311,9 @@
       "date": "2025-08-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Semler Scientific Inc. Common Stock",
@@ -266,7 +322,9 @@
       "date": "2025-08-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B716301C2D9B9D585258D7700345AA8/$FILE/Sean-McMaster-09.29.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     }
   ],
   "summary": "McMaster disclosed 29 transactions dated Aug. 7, 2025, to May 14, 2026, consisting of 18 purchases (estimated $548K) and 11 sales (estimated $638K). Four sales of ASGN, Inc. (ASGN) dated August 2025 appeared in a report OGE posted Sept. 9, 2026, more than a year after the trades; the filing itself marks them as received more than 30 days late. His five most recent purchases, dated May 13 and May 14, 2026, were Akamai (AKAM), Corning (GLW), Fluence Energy (FLNC), Qualcomm (QCOM) and Forgent Power (FPS). 19 of the 29 transactions, or 66 percent, were flagged as filed late.",

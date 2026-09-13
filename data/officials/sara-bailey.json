@@ -14,7 +14,9 @@
       "date": "2026-03-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Fidelity Advisor Biotechnology Fund Class C Shares",
@@ -23,7 +25,9 @@
       "date": "2026-03-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "GE Verona",
@@ -32,7 +36,9 @@
       "date": "2026-03-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "TMC the metals company Inc. Common Stock",
@@ -41,7 +47,9 @@
       "date": "2026-03-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "TMC the metals company Inc. Common Stock",
@@ -50,7 +58,9 @@
       "date": "2026-02-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7F5276881004F82A85258E13002D93A3/$FILE/Sara-Bailey-04.01.2026-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     }
   ],
   "sourceFilings": [
