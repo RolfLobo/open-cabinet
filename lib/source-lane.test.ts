@@ -77,7 +77,16 @@ describe("periodic status rules", () => {
   it("lets a person's verdict win over every rule", () => {
     expect(periodicStatusFor({ date: "2025-01-29", coveredFrom: "2025-01-28", decided: "unposted-278t" })).toBe("unposted-278t");
     expect(periodicStatusFor({ date: "2025-10-10", coveredFrom: "2025-05-06", decided: "unresolved" })).toBe("unresolved");
-    expect(periodicStatusFor({ date: "2024-12-01", coveredFrom: "2025-01-20", assetClass: "fund_eif", decided: "exempt" })).toBe("exempt");
+    // "unresolved" and "unposted-278t" are never overridden by the date rule.
+    expect(periodicStatusFor({ date: "2024-12-01", coveredFrom: "2025-01-20", decided: "unresolved" })).toBe("unresolved");
+  });
+
+  it("lets the date rule win over an exempt verdict, never the reverse", () => {
+    // Ueland's fund trades of Feb.-March 2025 predate his May 14, 2025 confirmation.
+    expect(periodicStatusFor({ date: "2025-02-26", coveredFrom: "2025-05-14", decided: "exempt" })).toBe("pre-service");
+    expect(periodicStatusFor({ date: "2025-12-15", coveredFrom: "2025-05-14", decided: "exempt" })).toBe("exempt");
+    // A former official with no covered-service date keeps the verdict.
+    expect(periodicStatusFor({ date: "2024-05-23", coveredFrom: null, decided: "exempt" })).toBe("exempt");
   });
 
   it("labels a trade before covered service pre-service, fund or not", () => {

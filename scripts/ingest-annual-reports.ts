@@ -28,7 +28,11 @@
  *      person recorded in the adjudication notes (DECISIONS below); a row
  *      with no verdict stops the run. Trump rows are classified by rule:
  *      before Jan. 20, 2025 is pre-service; the reconciliation's fund
- *      class is exempt; everything else is on no posted 278-T.
+ *      class is exempt; everything else is on no posted 278-T. For every
+ *      official, a row dated before covered service (tookOfficeDate, else
+ *      confirmedDate) is pre-service even when the verdict was "exempt":
+ *      the date is the stronger reason no 278-T was due
+ *      (lib/source-lane.ts periodicStatusFor).
  *   3. The row is written with the values the audit read, an ISO date,
  *      the site's amount key, a null late flag (the form has no such
  *      column), the report's URL, its printed row number, its physical

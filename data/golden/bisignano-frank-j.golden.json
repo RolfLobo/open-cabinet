@@ -14,7 +14,9 @@
       "date": "2026-06-16",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "SPDR S&P 500 ETF Trust (SPY)",
@@ -23,7 +25,9 @@
       "date": "2026-06-16",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2DC3DD386173222E85258E4D002D8CD0/$FILE/Frank-J-Bisignano-07.07.2026-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Humana, Inc. (HUM)",
@@ -32,7 +36,9 @@
       "date": "2025-12-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -41,7 +47,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -50,7 +58,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -59,7 +69,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares (VIG)",
@@ -68,7 +80,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -77,7 +91,9 @@
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -86,7 +102,9 @@
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -95,7 +113,9 @@
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares (VYM)",
@@ -104,7 +124,9 @@
       "date": "2025-12-09",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -113,7 +135,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -122,7 +146,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -131,7 +157,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares (VONG)",
@@ -140,7 +168,9 @@
       "date": "2025-12-09",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "SPDR S&P 500 ETF Trust (SPY)",
@@ -149,7 +179,9 @@
       "date": "2025-12-04",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCD5083EB618F35085258DB200344824/$FILE/Frank-J-Bisignano-02.10.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "NJ State EDL Facs Auth Rev (Princeton Univ.)",
@@ -353,7 +385,9 @@
       "date": "2025-08-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 3
     },
     {
       "description": "Willingboro Township NJ School District",
@@ -375,7 +409,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 66,
+      "sourcePage": 6
     },
     {
       "description": "Allspring Short-Term Hi Inc A (SSTHX)",
@@ -384,7 +420,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "anguard Tax-Exempt Bond Index Fund ETF Shares (VTEB)",
@@ -393,7 +431,9 @@
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "BrandywineGLOBAL - HIGH YIELD FUND Class A",
@@ -402,7 +442,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 71,
+      "sourcePage": 7
     },
     {
       "description": "BrandywineGLOBAL - HIGH YIELD FUND Class A (BGHAX)",
@@ -411,7 +453,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -420,7 +464,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 70,
+      "sourcePage": 6
     },
     {
       "description": "Franklin NJ Tax Free Income A (FNJQX)",
@@ -429,7 +475,9 @@
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -438,7 +486,9 @@
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 67,
+      "sourcePage": 6
     },
     {
       "description": "Invesco New Jersey Municipal A (ONJAX)",
@@ -447,7 +497,9 @@
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -456,7 +508,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 74,
+      "sourcePage": 7
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF (SHYG)",
@@ -465,7 +519,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -474,7 +530,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 72,
+      "sourcePage": 7
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF (FALN)",
@@ -483,7 +541,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "Janus Henderson AAA CLO ETF (JAAA)",
@@ -492,7 +552,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -501,7 +563,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 75,
+      "sourcePage": 7
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -510,7 +574,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 69,
+      "sourcePage": 6
     },
     {
       "description": "Nuveen NJ Municipal Bond A (NNJAX)",
@@ -519,7 +585,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -528,7 +596,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 76,
+      "sourcePage": 7
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A (NVHAX)",
@@ -537,7 +607,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 3
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -546,7 +618,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 77,
+      "sourcePage": 7
     },
     {
       "description": "PGIM Ultra Short Bond ETF (PULS)",
@@ -555,7 +629,9 @@
       "date": "2025-08-04",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 3
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -564,7 +640,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 68,
+      "sourcePage": 6
     },
     {
       "description": "PIMCO Income Fund Class A Shares (PONAX)",
@@ -573,7 +651,9 @@
       "date": "2025-08-04",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -582,7 +662,9 @@
       "date": "2025-08-04",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 73,
+      "sourcePage": 7
     },
     {
       "description": "Fiserv, Inc. (FISV)",
@@ -591,7 +673,9 @@
       "date": "2025-08-01",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA16C26F767256C285258D5F00343F7B/$FILE/Frank-J-Bisignano-09.09.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "NJ State Turnpike Authority Government Bond",
@@ -626,7 +710,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 54,
+      "sourcePage": 5
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -635,7 +721,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 59,
+      "sourcePage": 6
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -644,7 +732,9 @@
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 58,
+      "sourcePage": 6
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -653,7 +743,9 @@
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 55,
+      "sourcePage": 5
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -662,7 +754,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 62,
+      "sourcePage": 6
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -671,7 +765,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 60,
+      "sourcePage": 6
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -680,7 +776,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 63,
+      "sourcePage": 6
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -689,7 +787,9 @@
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 57,
+      "sourcePage": 6
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -698,7 +798,9 @@
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 64,
+      "sourcePage": 6
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -707,7 +809,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 65,
+      "sourcePage": 6
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -716,7 +820,9 @@
       "date": "2025-07-25",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 56,
+      "sourcePage": 5
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -725,7 +831,9 @@
       "date": "2025-07-25",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 61,
+      "sourcePage": 6
     },
     {
       "description": "Freehold Township NJ Board of Education Government Bond",
@@ -929,7 +1037,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 42,
+      "sourcePage": 4
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -938,7 +1048,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 47,
+      "sourcePage": 5
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -947,7 +1059,9 @@
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 46,
+      "sourcePage": 5
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -956,7 +1070,9 @@
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 43,
+      "sourcePage": 5
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -965,7 +1081,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 50,
+      "sourcePage": 5
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -974,7 +1092,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 48,
+      "sourcePage": 5
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -983,7 +1103,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 51,
+      "sourcePage": 5
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -992,7 +1114,9 @@
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 45,
+      "sourcePage": 5
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -1001,7 +1125,9 @@
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 52,
+      "sourcePage": 5
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -1010,7 +1136,9 @@
       "date": "2025-07-07",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 53,
+      "sourcePage": 5
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -1019,7 +1147,9 @@
       "date": "2025-07-07",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 44,
+      "sourcePage": 5
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1028,7 +1158,9 @@
       "date": "2025-07-07",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 49,
+      "sourcePage": 5
     },
     {
       "description": "Fiserv",
@@ -1037,7 +1169,9 @@
       "date": "2025-07-01",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "KKR Global Impact Fund SBS (Unlev) L.P.",
@@ -1085,7 +1219,9 @@
       "date": "2025-06-30",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1094,7 +1230,9 @@
       "date": "2025-06-27",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1103,7 +1241,9 @@
       "date": "2025-06-26",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1112,7 +1252,9 @@
       "date": "2025-06-24",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Allspring Short-Term Hi Inc A",
@@ -1121,7 +1263,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 30,
+      "sourcePage": 4
     },
     {
       "description": "BrandywineGLOBAL High Yield A",
@@ -1130,7 +1274,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 35,
+      "sourcePage": 4
     },
     {
       "description": "Fiserv",
@@ -1139,7 +1285,9 @@
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Franklin NJ Tax Free Income A",
@@ -1148,7 +1296,9 @@
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 34,
+      "sourcePage": 4
     },
     {
       "description": "Invesco New Jersey Municipal A",
@@ -1157,7 +1307,9 @@
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 31,
+      "sourcePage": 4
     },
     {
       "description": "iShares 0-5 Year High Yield Corporate Bond ETF",
@@ -1166,7 +1318,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 38,
+      "sourcePage": 4
     },
     {
       "description": "iShares Fallen Angels USD Bond ETF",
@@ -1175,7 +1329,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 36,
+      "sourcePage": 4
     },
     {
       "description": "Janus Henderson AAA CLO ETF Janus Henderson AAA CLO ETF",
@@ -1184,7 +1340,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 39,
+      "sourcePage": 4
     },
     {
       "description": "Nuveen NJ Municipal Bond A",
@@ -1193,7 +1351,9 @@
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 33,
+      "sourcePage": 4
     },
     {
       "description": "Nuveen Short Duration Hi Yld Muni Bd A",
@@ -1202,7 +1362,9 @@
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 40,
+      "sourcePage": 4
     },
     {
       "description": "PGIM Ultra Short Bond ETF",
@@ -1211,7 +1373,9 @@
       "date": "2025-06-23",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 41,
+      "sourcePage": 4
     },
     {
       "description": "PIMCO Income Fund Class A Shares",
@@ -1220,7 +1384,9 @@
       "date": "2025-06-23",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 32,
+      "sourcePage": 4
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1229,7 +1395,9 @@
       "date": "2025-06-23",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 37,
+      "sourcePage": 4
     },
     {
       "description": "Fiserv",
@@ -1238,7 +1406,9 @@
       "date": "2025-06-20",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FB264D7E3496773E85258CCC002C7F4A/$FILE/Frank-J-Bisignano-07.03.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -1247,7 +1417,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -1256,7 +1428,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -1265,7 +1439,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "iShares 1-3 Year Treasury Bond ETF",
@@ -1274,7 +1450,9 @@
       "date": "2025-06-18",
       "amount": "$100,001-$250,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 29,
+      "sourcePage": 4
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -1283,7 +1461,9 @@
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -1292,7 +1472,9 @@
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -1301,7 +1483,9 @@
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 3
     },
     {
       "description": "iShares Broad USD High Yield Corporate Bond ETF",
@@ -1310,7 +1494,9 @@
       "date": "2025-06-18",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 28,
+      "sourcePage": 3
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -1319,7 +1505,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -1328,7 +1516,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -1337,7 +1527,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "iShares National Muni Bond ETF",
@@ -1346,7 +1538,9 @@
       "date": "2025-06-18",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 26,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -1355,7 +1549,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -1364,7 +1560,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -1373,7 +1571,9 @@
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 20,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Dividend Appreciation Index Fund ETF Class Shares",
@@ -1382,7 +1582,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 25,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -1391,7 +1593,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -1400,7 +1604,9 @@
       "date": "2025-06-18",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -1409,7 +1615,9 @@
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -1418,7 +1626,9 @@
       "date": "2025-06-18",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 22,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard High Dividend Yield Index Fund ETF Shares",
@@ -1427,7 +1637,9 @@
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 23,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -1436,7 +1648,9 @@
       "date": "2025-06-18",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -1445,7 +1659,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -1454,7 +1670,9 @@
       "date": "2025-06-18",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 21,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Russell 1000 Growth Index Fund ETF Shares",
@@ -1463,7 +1681,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 24,
+      "sourcePage": 3
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1472,7 +1692,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1481,7 +1703,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1490,7 +1714,9 @@
       "date": "2025-06-18",
       "amount": "Over $1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "Vanguard Tax-Exempt Bond Index Fund ETF Shares",
@@ -1499,7 +1725,9 @@
       "date": "2025-06-18",
       "amount": "$50,001-$100,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FCA8E4D588C234CD85258D5F00343F83/$FILE/Frank-J-Bisignano-08.08.2025-278T.pdf",
+      "sourceRow": 27,
+      "sourcePage": 3
     },
     {
       "description": "Fiserv",
@@ -1508,7 +1736,9 @@
       "date": "2025-06-17",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 3
     },
     {
       "description": "Fiserv",
@@ -1517,7 +1747,9 @@
       "date": "2025-06-16",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 3
     },
     {
       "description": "Fiserv",
@@ -1526,7 +1758,9 @@
       "date": "2025-06-10",
       "amount": "$250,001-$500,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1535,7 +1769,9 @@
       "date": "2025-06-09",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1544,7 +1780,9 @@
       "date": "2025-06-06",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv Option contract sale",
@@ -1553,7 +1791,9 @@
       "date": "2025-06-06",
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1562,7 +1802,9 @@
       "date": "2025-06-05",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1571,7 +1813,9 @@
       "date": "2025-06-04",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1580,7 +1824,9 @@
       "date": "2025-05-30",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1589,7 +1835,9 @@
       "date": "2025-05-29",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1598,7 +1846,9 @@
       "date": "2025-05-27",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1607,7 +1857,9 @@
       "date": "2025-05-20",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1616,7 +1868,9 @@
       "date": "2025-05-19",
       "amount": "$25,000,001-$50,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv Option contract sale",
@@ -1625,7 +1879,9 @@
       "date": "2025-05-19",
       "amount": "$1,000,001-$5,000,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "Fiserv",
@@ -1634,7 +1890,9 @@
       "date": "2025-05-16",
       "amount": "$5,000,001-$25,000,000",
       "lateFilingFlag": true,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9A2C2ECDD1FAECA185258CC8002C7D03/$FILE/Frank-J-Bisignano-06.26.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Real Estate - 6H (NYC)",
@@ -1644,7 +1902,7 @@
       "amount": "$500,001-$1,000,000",
       "lateFilingFlag": null,
       "sourceKind": "annual-278e",
-      "periodicStatus": "exempt",
+      "periodicStatus": "pre-service",
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
       "sourcePage": 28,
       "sourceRow": 128

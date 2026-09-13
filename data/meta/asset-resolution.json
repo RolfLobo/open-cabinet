@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T00:58:46.614Z",
+  "generatedAt": "2026-09-13T01:15:46.094Z",
   "generatedBy": "scripts/build-asset-resolution.ts",
   "sources": {
     "nasdaqlisted.txt": {

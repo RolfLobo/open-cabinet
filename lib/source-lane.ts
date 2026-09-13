@@ -133,8 +133,11 @@ export function periodicFilings<T extends { kind?: SourceKind }>(filings: T[]): 
  * the audit established about it. The order matters and is the order the
  * reconciliation subtracted rows in (scratchpad audit, Sep 11, 2026):
  *
- *   1. a person's verdict on the row wins outright (Bisignano's row 132
- *      "unresolved", Duffy's row 1 "on an unposted 278-T");
+ *   1. a person's verdict on the row wins (Bisignano's row 132
+ *      "unresolved", Duffy's row 1 "on an unposted 278-T"), except that
+ *      a verdict of "exempt" yields to the date rule below: a fund trade
+ *      made before covered service is labeled for the stronger reason
+ *      (Ueland's 54 rows of Feb.-March 2025, confirmed May 14, 2025);
  *   2. a trade dated before covered service needed no 278-T, whatever
  *      the asset class (Trump's 83 rows before Jan. 20, 2025);
  *   3. an excepted-fund row is exempt;
@@ -153,8 +156,9 @@ export function periodicStatusFor(input: {
   /** A person's verdict for this row, when one was recorded. */
   decided?: Exclude<PeriodicStatus, "reported"> | null;
 }): Exclude<PeriodicStatus, "reported"> {
-  if (input.decided) return input.decided;
-  if (input.coveredFrom && input.date < input.coveredFrom) return "pre-service";
+  const preService = Boolean(input.coveredFrom && input.date < input.coveredFrom);
+  if (input.decided && !(input.decided === "exempt" && preService)) return input.decided;
+  if (preService) return "pre-service";
   if (input.assetClass === "fund_eif") return "exempt";
   return "not-on-posted-278t";
 }
