@@ -10,9 +10,12 @@
  *   then pnpm rebuild-index && pnpm row-verification && pnpm generate-exports
  *
  * Sets sourceKind "termination-278e", lateFilingFlag null and the report
- * kind; the status is "unresolved" because no person has adjudicated
- * whether a 278-T was due for these trades (two predate his Aug. 2, 2025
- * confirmation; nobody has decided the third). With --inputs pointing at
+ * kind. The status starts as "unresolved" and is then set from the
+ * decisions ledger (data/review/decisions.json): Trevor's Sep 14, 2026
+ * verdicts make the two trades before his Aug. 2, 2025 confirmation
+ * "pre-service" and the Nov. 25, 2025 Treasury-ETF sale "exempt". Because
+ * the ledger is read on every run, a re-run cannot revert them. With
+ * --inputs pointing at
  * the audit scratchpad, each row is paired with the audit's read of the
  * same report by date, type and amount and given its physical page and
  * printed row number from the page map. Values of the rows themselves
@@ -20,6 +23,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { readReviewDecisions, recordIdsFor } from "../lib/row-verification";
 import type { OfficialData } from "../lib/types";
 
 const SLUG = "molinaro-marcus";
@@ -63,5 +67,19 @@ for (const tx of official.transactions) {
   migrated += 1;
 }
 termination.kind = "termination-278e";
+// Recorded human verdicts win over the migration's default. Record ids
+// are computed after the migration fields are set, which is how the
+// ledger keyed them.
+const decisions = readReviewDecisions();
+const ids = recordIdsFor(official.transactions);
+let decided = 0;
+official.transactions.forEach((tx, i) => {
+  const d = decisions.get(ids[i]);
+  if (d && d.decision !== "rejected" && d.correction?.periodicStatus) {
+    tx.periodicStatus = d.correction.periodicStatus;
+    decided += 1;
+  }
+});
 writeFileSync(file, JSON.stringify(official, null, 2) + "\n");
+console.log(`${decided} row(s) took a recorded verdict from data/review/decisions.json`);
 console.log(`${SLUG}: ${migrated} rows now termination-278e (late flag null, status unresolved); filing kind set${pageMap ? "; pages from the audit's page map" : ""}`);

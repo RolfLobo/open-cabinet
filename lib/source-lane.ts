@@ -48,27 +48,31 @@ export const SOURCE_KIND_TITLE: Record<SourceKind, string> = {
   "termination-278e": "Termination Financial Disclosure (OGE Form 278e)",
 };
 
-/** Reader-facing sub-label under the description of an annual-lane row.
- * Muted wording on purpose: each says where the row stands with the
- * periodic-report rule, not what a reader should think of the filer. */
-export const PERIODIC_STATUS_LABEL: Record<Exclude<PeriodicStatus, "reported">, string> = {
-  "not-on-posted-278t": "not found on posted 278-Ts",
-  exempt: "278-T exempt",
-  "pre-service": "before covered service",
-  "unposted-278t": "on an unposted 278-T",
-  unresolved: "unresolved",
+/**
+ * Reader-facing sub-label under the description of an annual-lane row.
+ * Labels state document facts only, never what was required (Trevor's
+ * policy, Sep 14, 2026): the data keeps the finer periodicStatus for
+ * filtering and analysis, and three of its values collapse to one label.
+ * The methodology page explains, once, which trades OGE's rules leave
+ * off the 278-T and that the site does not decide which rows those are.
+ */
+export const PERIODIC_STATUS_LABEL: Record<PeriodicStatus, string> = {
+  reported: "Also on a 278-T",
+  "not-on-posted-278t": "Not found on any posted 278-T",
+  exempt: "Not found on any posted 278-T",
+  unresolved: "Not found on any posted 278-T",
+  "pre-service": "Dated before taking office",
+  "unposted-278t": "On a 278-T OGE did not post",
 };
 
-/** Longer wording for a title attribute or a methodology sentence. */
-export const PERIODIC_STATUS_EXPLANATION: Record<Exclude<PeriodicStatus, "reported">, string> = {
-  "not-on-posted-278t":
-    "Listed in the report's Part 7 transaction table; no 278-T that OGE had posted discloses it",
-  exempt:
-    "No 278-T was required: an excepted investment fund, real property or another exempt asset class",
-  "pre-service": "Traded before the official's covered service began, so no 278-T was due",
-  "unposted-278t":
-    "A 278-T disclosing this trade exists but OGE never posted it to the public index",
-  unresolved: "A person could not decide from the filing whether a 278-T was required",
+/** Longer wording for a title attribute: the same fact, spelled out. */
+export const PERIODIC_STATUS_EXPLANATION: Record<PeriodicStatus, string> = {
+  reported: "This trade also appears on a 278-T periodic transaction report",
+  "not-on-posted-278t": "Listed in this report's Part 7 transaction table; no 278-T that OGE had posted lists it",
+  exempt: "Listed in this report's Part 7 transaction table; no 278-T that OGE had posted lists it",
+  unresolved: "Listed in this report's Part 7 transaction table; no 278-T that OGE had posted lists it",
+  "pre-service": "The trade date is before the official took office",
+  "unposted-278t": "A 278-T listing this trade exists but OGE did not post it to its public index",
 };
 
 export function periodicStatusOf(tx: Pick<Transaction, "periodicStatus">): PeriodicStatus {

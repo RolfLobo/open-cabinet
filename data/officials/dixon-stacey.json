@@ -1174,6 +1174,8 @@
   "summary": "53 sales and 59 purchases across 112 transactions. None of the transactions were flagged as filed late.",
   "party": "D",
   "departedDate": "2025-01-25",
+  "tookOfficeDate": "2021-08-01",
+  "tookOfficeDatePrecision": "month",
   "sourceFilings": [
     {
       "date": "2025-03-25",

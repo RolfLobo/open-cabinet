@@ -133,14 +133,18 @@ export default async function MethodologyPage() {
             annual and termination report OGE has posted for a tracked
             official. A row already on the site from a 278-T is not added
             again. Every other row is added with a label under its
-            description: &ldquo;not found on posted 278-Ts&rdquo; when no 278-T
-            OGE had posted discloses it; &ldquo;278-T exempt&rdquo; for excepted
-            investment funds, real property and other classes the form does
-            not require; &ldquo;before covered service&rdquo; for trades made
-            before the official took office; &ldquo;on an unposted
-            278-T&rdquo; when a periodic report exists but OGE never posted
-            it; and &ldquo;unresolved&rdquo; when a person could not decide
-            from the filing. These rows count in trade totals and dollar
+            description stating a document fact: &ldquo;Not found on any
+            posted 278-T&rdquo; when no 278-T OGE had posted lists it;
+            &ldquo;Dated before taking office&rdquo; when the trade date
+            precedes the official&rsquo;s start; &ldquo;On a 278-T OGE did
+            not post&rdquo; when a periodic report listing it exists but OGE
+            did not post it. Under OGE&rsquo;s rules, trades in most mutual
+            funds and ETFs, in real property, and trades made before taking
+            office are not reported on a 278-T at all; the labels do not
+            decide which rows those are, and the site draws no conclusion
+            from a row&rsquo;s absence. The download carries the finer
+            classification the audit recorded (periodic_status) for anyone
+            who wants it. These rows count in trade totals and dollar
             volume. They are outside every late-filing count and rate, which
             describe 278-T rows only: the annual form has no
             late-notification column. Each row links to its page of the
@@ -241,8 +245,9 @@ export default async function MethodologyPage() {
               reported. A trade an official did not report on a 278-T
               therefore appears only in an annual or termination report.
               Open Cabinet reads those reports for tracked officials and
-              labels each such row; &ldquo;not found on posted 278-Ts&rdquo;
-              means no 278-T OGE had posted as of the read, not that none was filed,
+              labels each such row; &ldquo;Not found on any posted
+              278-T&rdquo; means no 278-T OGE had posted as of the read,
+              not that none was filed,
               since OGE&rsquo;s public index omits some reports. Late-filing
               counts and rates describe
               278-T rows only, and the annual rows were read once by the
@@ -308,6 +313,12 @@ export default async function MethodologyPage() {
               update before publication. Older rows have been checked through
               separate review runs; the recorded row statuses below describe
               their evidence. Source PDFs are linked from each official&rsquo;s page.
+              A separate row trace (<code>pnpm validate:trace</code>) confirms,
+              for every row that names a page, that the printed row number, the
+              trade date and the amount appear on that page of the PDF, searches
+              the document for rows without a page, and mutates a seeded sample
+              of rows to prove the check rejects a wrong date, row number or
+              description; its runs are logged in the public repository.
             </li>
             <li>
               <strong className="text-neutral-900">
@@ -539,10 +550,12 @@ export default async function MethodologyPage() {
           </p>
         </section>
 
-        <VerificationSummary
-          summary={rowVerification?.summary ?? null}
-          generatedAt={rowVerification?.generatedAt}
-        />
+        <div id="verification" className="scroll-mt-24">
+          <VerificationSummary
+            summary={rowVerification?.summary ?? null}
+            generatedAt={rowVerification?.generatedAt}
+          />
+        </div>
 
         {/* How names become tickers */}
         <section id="assets" className="border-t border-neutral-200 pt-8 scroll-mt-24">

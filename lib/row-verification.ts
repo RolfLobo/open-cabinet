@@ -113,7 +113,7 @@ export interface ReviewDecision {
   slug: string;
   decision: "confirmed" | "corrected" | "rejected";
   /** For "corrected": the row as it should read, applied by an approved patch. */
-  correction?: Partial<Pick<Transaction, "type" | "date" | "amount" | "lateFilingFlag" | "ticker" | "description">>;
+  correction?: Partial<Pick<Transaction, "type" | "date" | "amount" | "lateFilingFlag" | "ticker" | "description" | "periodicStatus">>;
   evidence: string;
   decidedBy: string;
   decidedAt: string;

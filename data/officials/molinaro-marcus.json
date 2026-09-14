@@ -16,7 +16,7 @@
       "lateFilingFlag": null,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FE0053885B75FD0E85258DD5002DC5B4/$FILE/Marcus-Molinaro-2026-278TERM.pdf",
       "sourceKind": "termination-278e",
-      "periodicStatus": "unresolved",
+      "periodicStatus": "exempt",
       "sourcePage": 5,
       "sourceRow": 3
     },
@@ -29,7 +29,7 @@
       "lateFilingFlag": null,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FE0053885B75FD0E85258DD5002DC5B4/$FILE/Marcus-Molinaro-2026-278TERM.pdf",
       "sourceKind": "termination-278e",
-      "periodicStatus": "unresolved",
+      "periodicStatus": "pre-service",
       "sourcePage": 5,
       "sourceRow": 1
     },
@@ -42,7 +42,7 @@
       "lateFilingFlag": null,
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FE0053885B75FD0E85258DD5002DC5B4/$FILE/Marcus-Molinaro-2026-278TERM.pdf",
       "sourceKind": "termination-278e",
-      "periodicStatus": "unresolved",
+      "periodicStatus": "pre-service",
       "sourcePage": 5,
       "sourceRow": 2
     }

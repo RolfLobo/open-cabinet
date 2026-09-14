@@ -141,7 +141,12 @@ export interface OfficialData {
    * summary. The prose is behind the data until a new candidate is approved. */
   summaryStaleSince?: string;
   confirmedDate?: string;
-  tookOfficeDate?: string; // For President (inaugurated, not confirmed)
+  /** Start of covered service for an official who was not Senate-confirmed
+   * into this post (the President, inaugurated; a career appointee). */
+  tookOfficeDate?: string;
+  /** "month" when the source gives only a month (an OGE report's "Date of
+   * Appointment 08/2021"); the stored day is the first of that month. */
+  tookOfficeDatePrecision?: "month";
   ethicsAgreementDate?: string;
   departedDate?: string | null;
   // True for prior-administration holdovers whose disclosure records are
