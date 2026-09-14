@@ -52,6 +52,7 @@ import AlertSignupForm from "@/app/components/alert-signup-form";
 import DivestitureLedger from "@/app/components/divestiture-ledger";
 import SourceDocuments from "@/app/components/source-documents";
 import SourceAvailabilityNote from "@/app/components/source-availability-note";
+import AiUseNote from "@/app/components/ai-use-note";
 import {
   getDivestitureData,
   buildPromiseEvidence,
@@ -879,6 +880,7 @@ export default async function OfficialPage({
         )}
       </section>
 
+      <AiUseNote className="mb-3" />
       <TransactionFilters
         type={typeFilter}
         monthKey={monthFilter}
@@ -950,7 +952,7 @@ export default async function OfficialPage({
               const status = periodicStatusOf(tx);
               const evidence = evidenceStripPath(slug, tx);
               // The "before second term" scope label and the lane's
-              // "before covered service" label say the same thing; the
+              // "Dated before taking office" label say the same thing; the
               // lane's own label wins on its rows.
               const scopeLabel =
                 !official.formerOfficial && !(status === "pre-service") ? transactionScopeLabel(tx) : null;
@@ -1004,9 +1006,9 @@ export default async function OfficialPage({
                     // rule, not what to think of the filer.
                     <span
                       className="block mt-0.5 text-[11px] text-neutral-500"
-                      title={status === "reported" ? undefined : PERIODIC_STATUS_EXPLANATION[status]}
+                      title={PERIODIC_STATUS_EXPLANATION[status]}
                     >
-                      {status !== "reported" ? PERIODIC_STATUS_LABEL[status] : SOURCE_KIND_SHORT[kind]}
+                      {PERIODIC_STATUS_LABEL[status]}
                       {tx.accountLabel && (
                         <span className="text-neutral-400"> · {tx.accountLabel}</span>
                       )}

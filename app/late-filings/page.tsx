@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllOfficials, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
+import AiUseNote from "../components/ai-use-note";
 import { getFeePayments } from "@/lib/fee-payments";
 import { displayName, formatDate } from "@/lib/format";
 import { lateStats, periodicFilings, periodicRows } from "@/lib/source-lane";
@@ -238,6 +239,7 @@ export default async function LateFilingsPage() {
       </div>
 
       <UnderReviewNote count={underReviewCount} />
+      <AiUseNote className="mb-8" />
       {/* Key findings */}
       <section className="mb-12 space-y-6">
         <h2 className="font-[family-name:var(--font-source-serif)] text-2xl text-neutral-900">

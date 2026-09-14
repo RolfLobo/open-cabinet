@@ -14,6 +14,7 @@ import {
 import type { Transaction } from "../lib/types";
 import { rowsForTotals, transactionScopeLabel } from "../lib/format";
 import { lateStats } from "../lib/source-lane";
+import { aiUseNoteText } from "../lib/ai-use-note";
 import { verificationForOfficial, recordIdsFor } from "../lib/row-verification";
 import { readAssetResolution, publicTicker } from "../lib/asset-resolution";
 
@@ -166,7 +167,10 @@ async function main() {
       ].join(",")
     )
   );
-  const txCsv = [txHeaders.join(","), ...txRows].join("\n") + "\n";
+  // One comment line above the header, the same disclosure the pages
+  // carry. Readers that take a comment character (pandas comment="#",
+  // R comment.char) skip it; others see it as a one-column first row.
+  const txCsv = [`# ${aiUseNoteText()}`, txHeaders.join(","), ...txRows].join("\n") + "\n";
   await writeFile(path.join(outDir, "all-transactions.csv"), txCsv);
   console.log(`  all-transactions.csv: ${txRows.length} rows`);
 
@@ -240,6 +244,7 @@ async function main() {
 
   const fullJson = {
     exportedAt,
+    extractionNote: aiUseNoteText(),
     officialCount: allOfficials.length,
     transactionCount: exportOfficials.reduce(
       (sum, o) => sum + o.transactionCount,

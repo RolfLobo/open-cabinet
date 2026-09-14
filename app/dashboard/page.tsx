@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllOfficials, getTradesByTicker, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
+import AiUseNote from "../components/ai-use-note";
 import { readAssetResolution } from "@/lib/asset-resolution";
 import { recordIdsFor } from "@/lib/row-verification";
 import { INSTRUMENT_LABEL, type InstrumentType } from "@/lib/instrument-type";
@@ -150,6 +151,7 @@ export default async function DashboardPage() {
       </div>
 
       <UnderReviewNote count={underReviewCount} />
+      <AiUseNote className="mb-8" />
       <div className="space-y-16">
         <BuySellRatio
           salesCount={salesCount}

@@ -75,7 +75,10 @@ describe("published verification exports", () => {
   });
 
   it("keeps CSV columns in place and matches every JSON row, including score zero", () => {
-    const [headers, ...rows] = parseCsv(read("public/data/all-transactions.csv"));
+    const csv = read("public/data/all-transactions.csv");
+    // The first line is the AI-use disclosure comment; the header follows.
+    expect(csv.startsWith("# Rows are extracted from OGE filings")).toBe(true);
+    const [headers, ...rows] = parseCsv(csv.slice(csv.indexOf("\n") + 1));
     expect(headers).toEqual([
       "official_name", "official_title", "agency", "departed_date", "description", "ticker", "type",
       "date", "amount_range", "amount_midpoint", "late_filing", "source_filing_url", "amount_note",
@@ -147,7 +150,9 @@ it("generates counted JSON and summary totals while preserving a disputed duplic
       estimated_total_value: String(sumAmountEstimates(source.transactions.slice(1)).estimate),
       under_review_count: "1",
     });
-    const [txHeaders, ...csvRows] = parseCsv(readExport("all-transactions.csv"));
+    const txCsv = readExport("all-transactions.csv");
+    expect(txCsv.startsWith("# Rows are extracted")).toBe(true);
+    const [txHeaders, ...csvRows] = parseCsv(txCsv.slice(txCsv.indexOf("\n") + 1));
     expect(csvRows).toHaveLength(3);
     expect(csvRows[0][txHeaders.indexOf("verificationState")]).toBe("disputed");
     expect(csvRows[0][txHeaders.indexOf("recordId")]).not.toBe(csvRows[1][txHeaders.indexOf("recordId")]);

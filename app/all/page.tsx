@@ -7,6 +7,7 @@ import { formatCompactCurrency, sumAmountEstimates } from "@/lib/format";
 import { annualLaneRows, lateStats, periodicRows } from "@/lib/source-lane";
 import SwimLaneChart from "../components/swim-lane-chart";
 import Link from "next/link";
+import AiUseNote from "../components/ai-use-note";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/all" },
@@ -117,6 +118,7 @@ export default async function AllTradesPage() {
       )}
       {/* Suspense: the chart reads its group/sort/period from the URL via
           useSearchParams, which requires a boundary on a static route. */}
+      <AiUseNote className="mb-4" />
       <Suspense fallback={<div className="min-h-96" />}>
         <SwimLaneChart officials={ranked} />
       </Suspense>

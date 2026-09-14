@@ -22,7 +22,10 @@ describe("row verification display", () => {
     const html = renderToStaticMarkup(createElement(VerificationMarker, { verification }));
     expect(html).toMatch(new RegExp(`<summary[^>]*>${label}</summary>`));
     expect(html).toContain("<details");
-    expect(html).toContain("The full recorded reason &lt;with filing text&gt;</p>");
+    expect(html).toContain("The full recorded reason &lt;with filing text&gt;");
+    // The plain-words explainer accompanies only the unchecked state.
+    if (state === "single_read") expect(html).toContain("extracted by software, not yet confirmed by a person");
+    else expect(html).not.toContain("extracted by software");
     if (score === 0) expect(html).toContain("font-semibold text-amber-900");
   });
 
