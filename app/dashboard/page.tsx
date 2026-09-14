@@ -115,7 +115,7 @@ export default async function DashboardPage() {
           {annualLaneCount > 0 && (
             <>
               {" "}These totals cover 278-T periodic reports; a further{" "}
-              {annualLaneCount.toLocaleString()} trades read from annual and
+              {annualLaneCount.toLocaleString()}{" "}trades read from annual and
               termination reports are counted on the officials&apos; own pages.
             </>
           )}

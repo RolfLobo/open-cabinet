@@ -1347,6 +1347,166 @@
       "evidence": "Sep 6, 8:32 PM, Claude Code on Trevor's standing instruction: Aug 12, 2025 AMENDED filing, Exhibit A: \"In place of line item #123, substitute the following\" with $15,001 - $50,000, late Yes. This row is the superseded original ($1,001-$15,000, late Yes) that the ingest kept beside the substitute because the merge keys on amount. Removed as superseded; the substitute row stays. Removed row: {\"description\":\"BASTROP TX INDPT SCH DIST BLDG PSF GTD B/E 4.00 % Due Feb 15, 2034\",\"ticker\":null,\"type\":\"Purchase\",\"date\":\"2025-07-07\",\"amount\":\"$1,001-$15,000\",\"lateFilingFlag\":true,\"sourceUrl\":\"https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/024D876AAE518C5085258CEB006E7E2E/$FILE/Donald-J-Trump-08.12.2025-278T(2)%20AMENDED.pdf\"}",
       "decidedBy": "claude-code",
       "decidedAt": "2026-09-07T00:31:56.742Z"
+    },
+    {
+      "recordId": "3a7f3b8715274dafb0b07f5e",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 28, printed row 136, Sea Isle City NJ Government Bond 5% | Purchase | 2025-08-25 | $500,001-$1,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "43ed51d0c3b676fe20a973d3",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 28, printed row 134, Sea Isle City NJ Government Bond 4% | Purchase | 2025-08-17 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "6a4e9feb933b522620a34822",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 30, printed row 161, NJ State EDL FACS Auth. Rev (Princeton University) | Purchase | 2025-08-14 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "c6f5f7f1e5fd5ac5b48316c1",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 30, printed row 159, North Wildwood NJ Government Bond | Purchase | 2025-08-13 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "a7033aba73586250484209ac",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 29, printed row 151, Gloucester Country NJ Import Authority Rev Government Bond | Purchase | 2025-08-07 | $500,001-$1,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "928fce985564dbc2310d6ec2",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 29, printed row 143, Wildwood Crest NJ Government Bond | Purchase | 2025-07-29 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "8151d2ed8bb16e5e7994723d",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 29, printed row 148, Freehold Township NJ Board of Education Government Bond | Purchase | 2025-07-24 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "09292d178f58f928563ac11e",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 28, printed row 138, Secaucus NJ Government Bond | Purchase | 2025-07-23 | $1,000,001-$5,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "b70322ee18bb4c77a6faf4db",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 28, printed row 139, Monmouth County NJ Import Authority Rev Government Bond | Purchase | 2025-07-21 | $500,001-$1,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "c3853a80a588bdf8ed703fd1",
+      "slug": "bisignano-frank-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 28, printed row 128, Real Estate - 6H (NYC) | Sale | 2025-03-04 | $500,001-$1,000,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "ef851702b85867d83137af6c",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 212, printed row 1673, CAPITAL ONE FINANCIAL CORP | Sale | 2025-11-18 | $50,001-$100,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "e872a4f6897bdbcef2b37ab0",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 374, printed row 1784, DEERE & CO | Purchase | 2025-10-28 | $15,001-$50,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "9f6c64c1d5e751df194c92d9",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 230, printed row 93, J P MORGAN CHASE AND CO | Purchase | 2025-09-26 | $100,001-$250,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "dc874feaba62e50918166b81",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 763, printed row 1417, KEURIG DR PEPPER INC | Sale | 2025-09-08 | $1,001-$15,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "c02b633876afc7efd74a1bfb",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 549, printed row 5106, MARA HLDGS INC | Sale | 2025-06-30 | $1,001-$15,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "1038dfde3283a04c3e0d710c",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 337, printed row 643, CROWDSTRIKE HOLDINGS INC | Purchase | 2025-06-02 | $15,001-$50,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "c65c59fc67c3f16e7a1275cb",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 817, printed row 3087, FABRINET F | Purchase | 2025-04-11 | $1,001-$15,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "8cc1a054b48e572ca1aac698",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 678, printed row 9099, ANALOG DEVICES INC | Sale | 2025-04-04 | $1,001-$15,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "ff9332ce3012d6a21f4c641a",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 647, printed row 8127, COMMVAULT SYS INC | Purchase | 2025-04-04 | $15,001-$50,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "c085db2364897e82f290be4d",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 664, printed row 8644, MONGODB INC | Purchase | 2025-01-29 | $15,001-$50,000 match the page",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-14T17:34:00.000Z"
     }
   ]
 }

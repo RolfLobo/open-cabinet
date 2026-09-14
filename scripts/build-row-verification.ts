@@ -18,6 +18,7 @@ import { promptHash } from "../lib/parse-cache";
 import {
   ROW_VERIFICATION_PATH,
   deriveRowVerification,
+  readAnnualVerificationLog,
   readReviewDecisions,
   type RowVerification,
   type RowVerificationFile,
@@ -49,6 +50,10 @@ function main() {
   const sessionRead: { filings: Record<string, { candidateSha256: string; agreedIndexes: number[]; disputedIndexes: number[] }> } | null =
     existsSync(sessionPath) ? JSON.parse(readFileSync(sessionPath, "utf-8")) : null;
   const audit = readGrokAuditLog();
+  // Annual-lane rows: the recorded evidence from the Sep 2026 audit's
+  // artifacts (scripts/record-annual-verification.ts), keyed by record ID.
+  const annualLog = readAnnualVerificationLog();
+  const annualEvidenceById = new Map(Object.entries(annualLog?.rows ?? {}));
   const rows: Record<string, RowVerification> = {};
 
   for (const file of readdirSync(OFFICIALS_DIR).filter((f) => f.endsWith(".json")).sort()) {
@@ -123,6 +128,7 @@ function main() {
       nameReadsByUrl,
       decisionsById: decisions,
       filingDateByUrl: new Map((official.sourceFilings ?? []).flatMap((f) => (f.url ? [[f.url, f.date] as [string, string]] : []))),
+      annualEvidenceById,
     })) {
       rows[v.id] = v;
     }
@@ -150,6 +156,7 @@ ${orphans.length} decision(s) match no published row (superseded or removed):`);
     generatedAt: new Date().toISOString(),
     generatedBy: "scripts/build-row-verification.ts",
     checkerVersion: CHECKER_VERSION,
+    ...(annualLog ? { annualLane: { recordedAt: annualLog.generatedAt, rows: annualLog.summary.recorded } } : {}),
     summary: { rows: Object.keys(rows).length, byState, byScore },
     rows,
   };

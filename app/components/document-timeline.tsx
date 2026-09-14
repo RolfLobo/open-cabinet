@@ -13,6 +13,7 @@ const KIND_COLOR: Record<SourceDocumentEntry["kind"], string> = {
   transaction_278t: "#dc2626",       // red-600, sales (matches site convention)
   certificate_of_divestiture: "#a16207", // amber-700, Form 201 only
   conflict_waiver: "#a16207",        // amber-700, Form 201 only
+  annual: "#57534e",                 // stone-600, the yearly report
   termination: "#78716c",            // stone-500, departure filing
   other: "#a8a29e",                  // stone-400
 };
@@ -24,6 +25,7 @@ const KIND_LABEL: Record<SourceDocumentEntry["kind"], string> = {
   transaction_278t: "278-T",
   certificate_of_divestiture: "Cert. of Divestiture",
   conflict_waiver: "Conflict Waiver",
+  annual: "Annual",
   termination: "Termination",
   other: "Other",
 };
@@ -36,6 +38,7 @@ const ROW_FOR_KIND: Record<string, number> = {
   transaction_278t: 2,
   certificate_of_divestiture: 3,
   conflict_waiver: 3,
+  annual: 3,
   termination: 3,
   other: 3,
 };

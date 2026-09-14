@@ -16,6 +16,7 @@ import {
   type MonthBucket,
 } from "@/lib/monthly-activity";
 import AlertSignupForm from "./components/alert-signup-form";
+import AiUseNote from "./components/ai-use-note";
 import OfficialAvatar from "./components/official-avatar";
 import ProjectCrossPromo from "./components/project-cross-promo";
 import Link from "next/link";
@@ -294,6 +295,7 @@ export default async function Home() {
             .
           </p>
         )}
+        <AiUseNote className="mt-3" />
         <p className="text-xs text-neutral-400 mt-2 pb-4 border-b border-neutral-200">
           Transactions filed January 2025 to present. Trade volume is the
           midpoint of the reporting ranges, summed across counted

@@ -18,7 +18,8 @@ const KIND_LABEL: Record<DocumentKind, string> = {
   transaction_278t: "278-T Periodic Transaction Report",
   certificate_of_divestiture: "Certificate of Divestiture",
   conflict_waiver: "Conflict of Interest Waiver",
-  termination: "Termination Report",
+  annual: "Annual Report (278e)",
+  termination: "Termination Report (278e)",
   other: "Other",
 };
 
