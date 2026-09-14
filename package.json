@@ -16,6 +16,7 @@
     "generate-exports": "tsx scripts/generate-exports.ts",
     "seed-assets": "tsx scripts/seed-asset-registry.ts",
     "validate": "tsx scripts/validate.ts",
+    "validate:trace": "tsx scripts/validate-row-trace.ts",
     "test:data": "tsx scripts/check-data-regressions.ts",
     "parse-pdf": "tsx scripts/parse-pdf.ts",
     "ingest-filings": "tsx scripts/ingest-new-filings.ts",

@@ -72,6 +72,15 @@ data/meta/ask-log.jsonl
 /data/meta/reverify-reports/
 /data/meta/reverify-history/
 
+# Annual and termination reports the row-trace validator fetches into the
+# PDF cache on demand (scripts/validate-row-trace.ts). 278-T filings are
+# committed; these are re-fetched from OGE when a run needs them.
+data/pdfs/*278ANNU*.pdf
+data/pdfs/*278ANNUAL*.pdf
+data/pdfs/*278ANNTERM*.pdf
+data/pdfs/*-2025-278TERM.pdf
+data/pdfs/* Annual 278.pdf
+
 # Python bytecode from the Part 7 locator scripts (scripts/part7_pdf.py).
 scripts/__pycache__/
 

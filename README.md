@@ -206,9 +206,11 @@ GitHub Actions runs all three for pull requests and pushes to `main` (`.github/w
 ```bash
 pnpm validate         # Published-data rules and reference fixtures; no model or DB calls
 pnpm test:data        # Current export/data regression checks
+pnpm validate:trace -- --all                       # Row trace: every row's page in its PDF (Trump sampled)
+pnpm validate:trace -- --official bisignano-frank-j  # One official
 ```
 
-Validation checks consistency and known examples. It does not prove every value matches its PDF. The [maintenance guide](docs/maintenance.md) explains the checks and their limits.
+Validation checks consistency and known examples. It does not prove every value matches its PDF. The row trace comes closest: for every row that names a page, it confirms the printed row number, the date and the amount appear on that page of the PDF (pdftotext, no model), searches the document for rows without a page, and then mutates a seeded sample of rows to prove the checks reject a wrong date, row number or description. It needs poppler (`pdftotext`, `pdfinfo`) and fetches annual and termination reports into `data/pdfs` on first use, two seconds apart. Each run is appended to `data/meta/row-trace-log.json`, which the admin panel shows. The [maintenance guide](docs/maintenance.md) explains the checks and their limits.
 
 ## Legal
 
