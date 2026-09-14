@@ -1,8 +1,8 @@
 # Open Cabinet
 
-An interactive financial disclosure and conflict-of-interest tracker for the executive branch.
+An interactive stock trade tracker for the executive branch, built from OGE Form 278-T periodic transaction reports.
 
-Congress has well-known stock trackers like Capitol Trades and Quiver Quantitative. Executive branch officials file under the same STOCK Act rules — 30 to 45 days per trade — but their filings get far less scrutiny. Open Cabinet turns those filings into searchable timelines, compliance flags and company-level lookups.
+Congress has well-known stock trackers like Capitol Trades and Quiver Quantitative. Executive branch officials file under the same STOCK Act rules — 30 to 45 days per trade — but their filings get far less scrutiny. Open Cabinet turns those filings into searchable timelines, late-filing flags as self-certified on the 278-T, and company-level lookups.
 
 **Live:** [open-cabinet.org](https://open-cabinet.org)
 
@@ -12,7 +12,7 @@ Congress has well-known stock trackers like Capitol Trades and Quiver Quantitati
 
 - Tracks financial transactions filed by cabinet secretaries, agency heads and senior government officials
 - Parses OGE filing PDFs into searchable, sortable data with D3 visualizations
-- Flags late filings, tracks compliance and surfaces potential conflicts of interest
+- Shows late-filing flags as self-certified on the 278-T and links published news coverage of potential conflicts
 
 ## Current data
 
@@ -48,8 +48,8 @@ Rows by verification state: 11,410 checked; 145 human_verified; 0 deterministic_
 | Overview | `/dashboard` | Aggregate buy/sell ratio, asset treemap, official rankings |
 | Official Detail | `/officials/[slug]` | Transaction timeline, trade table, news coverage |
 | Company Detail | `/companies/[ticker]` | Who in government trades this stock |
-| About | `/about` | Methodology, legal basis, AI transparency, feedback form |
-| Download | `/download` | CSV and JSON exports of the full dataset |
+| About | `/about` | Coverage, legal basis, feedback form (methodology and AI transparency live at `/methodology`) |
+| Download | `/download` | CSV and JSON exports of the full 278-T dataset |
 | Admin | `/admin` | Email management, filing monitor history, source checks and Ask activity (auth-gated) |
 
 ## Data source

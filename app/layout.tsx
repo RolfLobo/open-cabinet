@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Open Cabinet — Executive Branch Stock Tracker",
     description:
-      "An interactive financial disclosure and conflict-of-interest tracker for the executive branch, sourced from U.S. Office of Government Ethics filings.",
+      "An interactive stock trade tracker for the executive branch, built from 278-T periodic transaction reports filed with the U.S. Office of Government Ethics.",
     type: "website",
     siteName: "Open Cabinet",
   },
@@ -53,7 +53,7 @@ const websiteJsonLd = {
   name: "Open Cabinet",
   url: SITE_URL,
   description:
-    "Financial disclosure tracker for U.S. executive branch officials. Stock transactions, asset holdings, and late filings sourced from the U.S. Office of Government Ethics.",
+    "Stock transaction tracker for U.S. executive branch officials. Trades and late-filing flags from 278-T periodic transaction reports published by the U.S. Office of Government Ethics.",
   publisher: {
     "@type": "Person",
     name: "Trevor Brown",

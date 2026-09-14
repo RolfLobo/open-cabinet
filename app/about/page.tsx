@@ -85,13 +85,17 @@ export default function AboutPage() {
             Open Cabinet shows individual-security trades disclosed via OGE
             Form 278-T &mdash; the periodic transaction reports senior
             officials must file within 30 to 45 days of a trade. It does not
-            show every financial move an official makes. It does not show
-            holdings inside diversified mutual funds, exempt trust assets,
-            real estate, private equity not actively traded, or anything that
-            falls below the statutory $1,000 reporting threshold.
-            Entry-disclosure holdings (Nominee 278) are being added next;
-            annual reports (278e) will be added as they become available
-            each year. See the{" "}
+            show every financial move an official makes. Fund and ETF trades,
+            real-property sales and pre-service trades are exempt from 278-T
+            reporting, and any trade an official did not report on a 278-T
+            appears only in an annual or termination report, which Open
+            Cabinet does not yet ingest. It also does not show holdings,
+            exempt trust assets, private equity not actively traded, or
+            anything below the statutory $1,000 reporting threshold.
+            Entry-disclosure holdings (Nominee 278) exist today only as a
+            single pilot ledger; annual reports (278e) are not ingested, and
+            as of September 11, 2026, 14 tracked officials have a 2026 annual
+            posted on OGE. See the{" "}
             <Link href="/methodology#what-we-add" className="underline hover:text-neutral-900">
               methodology
             </Link>{" "}
@@ -268,7 +272,8 @@ export default function AboutPage() {
             This tool is for informational and journalism purposes only. Nothing
             here constitutes investment advice. Asset values and transaction
             amounts are reported in ranges as required by federal law. This
-            database may not include all executive branch filers. Data sourced
+            database may not include all executive branch filers, and covers
+            only trades reported on 278-T periodic transaction reports. Data sourced
             from the U.S. Office of Government Ethics under the Ethics in
             Government Act (5 U.S.C. Section 13107). Federal government
             documents carry no copyright (17 U.S.C. Section 105).

@@ -67,7 +67,7 @@ function layout(opts: {
         </td></tr>
         <tr><td style="padding-top:32px;margin-top:32px;border-top:1px solid ${COLORS.border};">
           <p style="font-family:${SANS};font-size:12px;line-height:1.6;color:${COLORS.muted};margin:24px 0 0;">
-            Open Cabinet tracks executive-branch financial disclosures filed with the U.S. Office of Government Ethics.<br>
+            Open Cabinet tracks 278-T periodic transaction reports filed with the U.S. Office of Government Ethics.<br>
             ${escapeHtml(POSTAL_ADDRESS)}
             ${opts.footerExtra ? `<br>${opts.footerExtra}` : ""}
           </p>
@@ -92,7 +92,7 @@ export function buildConfirmationEmail(confirmLink: string): BuiltEmail {
     heading: "Confirm your filing alerts",
     bodyHtml: `
       <p style="font-family:${SANS};font-size:15px;line-height:1.6;color:${COLORS.text};margin:0 0 20px;">
-        You asked to get an email when executive-branch officials report new stock trades. Confirm your address to start receiving alerts.
+        You asked to get an email when a tracked official's new 278-T stock trade report is added. Confirm your address to start receiving alerts.
       </p>
       ${button(confirmLink, "Confirm my email")}
       <p style="font-family:${SANS};font-size:13px;line-height:1.6;color:${COLORS.muted};margin:0;">
@@ -104,7 +104,7 @@ export function buildConfirmationEmail(confirmLink: string): BuiltEmail {
   });
   const text = `Confirm your Open Cabinet filing alerts
 
-You asked to get an email when executive-branch officials report new stock trades. Confirm your address to start receiving alerts:
+You asked to get an email when a tracked official's new 278-T stock trade report is added. Confirm your address to start receiving alerts:
 
 ${confirmLink}
 
@@ -132,7 +132,7 @@ export function buildRepermissionEmail(
         You signed up for Open Cabinet email alerts about executive-branch stock trades, and it took a minute to get the first one ready. Sorry about that, and thanks for your patience.
       </p>
       <p style="font-family:${SANS};font-size:15px;line-height:1.6;color:${COLORS.text};margin:0 0 20px;">
-        Alerts are ready to go now. Confirm your address and you'll start getting an email when officials report new trades.
+        Alerts are ready to go now. Confirm your address and you'll start getting an email when a tracked official's new 278-T is added.
       </p>
       <p style="font-family:${SANS};font-size:13px;line-height:1.6;color:${COLORS.muted};margin:0 0 20px;">
         (Some of the latest: President Trump's two newest filings added 2,514 trades, and the head of the Federal Highway Administration reported new stock purchases. Browse it all at <a href="${siteUrl()}" style="color:${COLORS.muted};">open-cabinet.org</a>.)
@@ -150,7 +150,7 @@ export function buildRepermissionEmail(
 
 You signed up for email alerts about executive-branch stock trades, and it took a minute to get the first one ready. Sorry about that, and thanks for your patience.
 
-Alerts are ready to go now. Confirm your address to start getting an email when officials report new trades:
+Alerts are ready to go now. Confirm your address to start getting an email when a tracked official's new 278-T is added:
 
 ${confirmLink}
 
@@ -360,7 +360,7 @@ export function buildWelcomeEmail(unsubscribeLink: string): BuiltEmail {
     heading: "You're confirmed",
     bodyHtml: `
       <p style="font-family:${SANS};font-size:15px;line-height:1.6;color:${COLORS.text};margin:0 0 20px;">
-        You'll get an email whenever a tracked official reports a new stock trade. No filings, no email — so expect a quiet inbox most of the time.
+        You'll get an email when a tracked official's new 278-T is added. No filings, no email — so expect a quiet inbox most of the time.
       </p>
       <p style="font-family:${SANS};font-size:15px;line-height:1.6;color:${COLORS.text};margin:0 0 20px;">
         Browse the data anytime at <a href="https://open-cabinet.org" style="color:${COLORS.text};">open-cabinet.org</a>.
@@ -370,7 +370,7 @@ export function buildWelcomeEmail(unsubscribeLink: string): BuiltEmail {
   });
   const text = `You're confirmed
 
-You'll get an email whenever a tracked official reports a new stock trade. No filings, no email.
+You'll get an email when a tracked official's new 278-T is added. No filings, no email.
 
 Browse the data anytime: https://open-cabinet.org
 

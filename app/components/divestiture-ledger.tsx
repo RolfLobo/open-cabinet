@@ -51,10 +51,10 @@ export default function DivestitureLedger({ data, evidence }: Props) {
         OGE compliance certifications are issued by the Office of Government
         Ethics, not by Open Cabinet. The presence of a 278-T sale is
         documentary evidence that a transaction was reported; it is not a
-        finding that the official complied. Absence of a 278-T sale may mean
-        the holding was sold via a Form 201 Certificate of Divestiture (which
-        we do not yet ingest), sold below the $1,000 reporting threshold, or
-        not sold.
+        finding that the official complied. Where no 278-T sale is on file,
+        the sale may have been of an exempt fund or property, or reported only
+        on an annual report, which this site does not ingest; the position may
+        also have been sold below the $1,000 reporting threshold, or not sold.
       </p>
 
       {/* SOURCE DOCUMENTS */}

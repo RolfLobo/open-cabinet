@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const MESSAGES: Record<string, { heading: string; body: string }> = {
   ok: {
     heading: "You're confirmed",
-    body: "You'll get an email whenever a tracked official reports a new stock trade. Most weeks that's nothing, so expect a quiet inbox.",
+    body: "You'll get an email when a tracked official's new 278-T is added. Most weeks that's nothing, so expect a quiet inbox.",
   },
   already: {
     heading: "Already confirmed",

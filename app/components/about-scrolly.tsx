@@ -14,7 +14,7 @@ const LAW_STEPS = [
   {
     id: "30-day",
     label: "30-day window",
-    title: "Report every trade within 30 days",
+    title: "Report covered trades within 30 to 45 days",
     body: "Officials must file a 278-T Periodic Transaction Report within 30 days of being notified of a trade or 45 days after the transaction itself, whichever comes first (5 U.S.C. \u00A713105(l)). The 45-day mark is the hard backstop. Whichever deadline comes first governs; past it, the filing is late.",
   },
   {

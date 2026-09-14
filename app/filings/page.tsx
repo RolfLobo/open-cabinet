@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/filings" },
   title: "New Executive Branch Stock Filings, Logged as They Post",
   description:
-    "A dated log of every new financial disclosure Open Cabinet has picked up from the U.S. Office of Government Ethics — who filed, what they traded and when.",
+    "A dated log of every new 278-T periodic transaction report Open Cabinet has picked up from the U.S. Office of Government Ethics — who filed, what they traded and when.",
 };
 
 // Entries are committed files, so the log renders statically.
@@ -20,9 +20,9 @@ export default async function FilingsIndexPage() {
         New filings
       </h1>
       <p className="text-neutral-500 leading-relaxed max-w-xl">
-        Every batch of new disclosures Open Cabinet picks up from the Office of
-        Government Ethics is logged here in full, and goes out to subscribers
-        by email.
+        Every batch of new 278-T periodic transaction reports Open Cabinet
+        picks up from the Office of Government Ethics is logged here in full,
+        and goes out to subscribers by email. Annual reports are not tracked.
       </p>
 
       {updates.length === 0 ? (

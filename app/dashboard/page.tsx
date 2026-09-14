@@ -102,7 +102,7 @@ export default async function DashboardPage() {
           Overview
         </h1>
         <p className="text-neutral-500 max-w-xl leading-relaxed">
-          Aggregate view of all executive branch financial transactions tracked
+          Aggregate view of the 278-T periodic transaction report trades tracked
           by Open Cabinet.
         </p>
       </header>
