@@ -44,6 +44,10 @@ export interface LastCheckFile {
   knownFilingsByOfficial?: Record<string, number>;
   knownFilingUrls?: string[];
   newFilings?: Array<TargetFiling & { status: string }>;
+  /** Annual and termination reports of tracked officials seen by the
+   * monitor. Reported, never auto-ingested. */
+  knownReportUrls?: string[];
+  newReports?: Array<TargetFiling & { kind: string; status: string }>;
 }
 
 export function canonicalName(name: string): string {
@@ -66,9 +70,60 @@ export function is278T(typeField: string): boolean {
   );
 }
 
+/** The President and Vice President carry level "n/a" in OGE's index
+ * (they sit outside the Executive Schedule), so they are named here. */
+const NAMED_FILERS = new Set(["Trump, Donald J", "Trump, Donald J.", "Vance, JD", "Vance, J.D."]);
+
 export function isTargetLevel(record: OGERecord): boolean {
   if (record.level === "Level I" || record.level === "Level II") return true;
-  return record.name === "Trump, Donald J" || record.name === "Trump, Donald J.";
+  return NAMED_FILERS.has(record.name);
+}
+
+/**
+ * An annual or termination 278e with a downloadable PDF. The index labels
+ * them "Annual (2026)", "Termination" and "Annual Term"; request-only
+ * entries carry "(Request this Document)" and no PDF, and are excluded by
+ * the PDF check in getTargetReports.
+ */
+export function isAnnualOrTermination(typeField: string): "annual-278e" | "termination-278e" | null {
+  const label = typeField.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (/^Termination\b/i.test(label) || /^Annual Term\b/i.test(label)) return "termination-278e";
+  if (/^Annual \(\d{4}\)/i.test(label)) return "annual-278e";
+  return null;
+}
+
+export interface TargetReport extends TargetFiling {
+  kind: "annual-278e" | "termination-278e";
+}
+
+/**
+ * Posted annual and termination reports of tracked officials, for the
+ * monitor to report separately from 278-Ts. Nothing here is ingested by
+ * the weekly job: the annual-report lane (scripts/ingest-annual-reports.ts)
+ * runs on a person's decision, after the audit steps that lane documents.
+ */
+export function getTargetReports(records: OGERecord[], trackedNames: Set<string>): TargetReport[] {
+  const byUrl = new Map<string, TargetReport>();
+  for (const record of records) {
+    const name = canonicalName(record.name);
+    if (!trackedNames.has(name)) continue;
+    const kind = isAnnualOrTermination(record.type);
+    if (!kind) continue;
+    if (!isInScope(record.docDate)) continue;
+    const pdfUrl = extractPdfUrl(record.type);
+    if (!pdfUrl) continue;
+    byUrl.set(pdfUrl, {
+      name,
+      pdfUrl,
+      docDate: record.docDate,
+      agency: record.agency,
+      title: record.title,
+      level: record.level,
+      amended: amendedFlag(record, pdfUrl),
+      kind,
+    });
+  }
+  return Array.from(byUrl.values()).sort((a, b) => b.docDate.localeCompare(a.docDate) || a.name.localeCompare(b.name));
 }
 
 function isInScope(docDate: string): boolean {
@@ -228,10 +283,10 @@ export function countByOfficial(filings: TargetFiling[]): Record<string, number>
   return counts;
 }
 
-export function diffNewFilings(
-  filings: TargetFiling[],
+export function diffNewFilings<T extends TargetFiling>(
+  filings: T[],
   knownUrls: Set<string>
-): TargetFiling[] {
+): T[] {
   // URL serialization encodes literal spaces. OGE and saved source entries
   // sometimes spell the same PDF URL differently (" " versus "%20").
   const known = new Set(Array.from(knownUrls, (url) => new URL(url).href));
@@ -286,6 +341,10 @@ export async function loadDiscoveredFilingUrls(
     for (const filing of lastCheck.newFilings || []) {
       if (filing.pdfUrl) urls.add(filing.pdfUrl);
     }
+    for (const url of lastCheck.knownReportUrls || []) urls.add(url);
+    for (const report of lastCheck.newReports || []) {
+      if (report.pdfUrl) urls.add(report.pdfUrl);
+    }
   } catch {
     // First run or missing local state.
   }
@@ -297,18 +356,38 @@ export async function writeLastCheckState({
   root = process.cwd(),
   filings,
   newFilings,
+  reports,
+  newReports,
 }: {
   root?: string;
   filings: TargetFiling[];
   newFilings: Array<TargetFiling & { status: string }>;
+  /** Annual and termination reports of tracked officials (the monitor's
+   * separate list). Omitted by callers that do not look for them. */
+  reports?: TargetReport[];
+  newReports?: Array<TargetFiling & { kind: string; status: string }>;
 }) {
   const lastCheckPath = path.join(root, "data", "meta", "last-check.json");
   await mkdir(path.dirname(lastCheckPath), { recursive: true });
+  // A caller that did not look for reports keeps the previous list, so a
+  // cron run cannot make every annual report look new to the next weekly check.
+  let previousReports: Pick<LastCheckFile, "knownReportUrls" | "newReports"> = {};
+  if (!reports) {
+    try {
+      const prev = JSON.parse(await readFile(lastCheckPath, "utf-8")) as LastCheckFile;
+      previousReports = { knownReportUrls: prev.knownReportUrls, newReports: prev.newReports };
+    } catch {
+      // First run.
+    }
+  }
   const state: LastCheckFile = {
     lastChecked: new Date().toISOString(),
     knownFilingUrls: filings.map((filing) => filing.pdfUrl).sort(),
     knownFilingsByOfficial: countByOfficial(filings),
     newFilings,
+    ...(reports
+      ? { knownReportUrls: reports.map((r) => r.pdfUrl).sort(), newReports: newReports ?? [] }
+      : previousReports),
   };
 
   await writeFile(lastCheckPath, JSON.stringify(state, null, 2) + "\n");

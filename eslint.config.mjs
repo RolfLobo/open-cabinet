@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Agent worktrees checked out under the repo are separate git checkouts, not source.
+    ".claude/**",
     // CLI scripts — not production code; tolerate `any` and require() imports
     "scripts/**",
   ]),

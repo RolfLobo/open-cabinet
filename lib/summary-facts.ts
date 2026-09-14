@@ -21,7 +21,10 @@ export interface SummaryInput {
     type: string;
     date: string;
     amount: AmountRange | null;
-    lateFilingFlag?: boolean;
+    lateFilingFlag?: boolean | null;
+    /** Absent means "278-T" (lib/source-lane.ts). */
+    sourceKind?: string;
+    periodicStatus?: string;
   }>;
 }
 import { createHash } from "crypto";
@@ -58,7 +61,14 @@ export interface Stats {
   purchases: number;
   exchanges: number;
   late: number;
+  /** Share of 278-T rows the filer certified late (numerator and denominator). */
   latePct: number;
+  /** 278-T rows, the late share's denominator. */
+  periodic: number;
+  /** Rows read from an annual or termination report. */
+  annualLane: number;
+  /** Of those, rows on no 278-T OGE had posted. */
+  annualNotOnPosted278t: number;
   estTotal: string;
   estSales: string;
   estPurchases: string;
@@ -73,7 +83,12 @@ export function computeStats(d: SummaryInput): Stats {
   const sales = txs.filter((t) => t.type?.startsWith("Sale"));
   const purchases = txs.filter((t) => t.type === "Purchase");
   const exchanges = txs.filter((t) => t.type === "Exchange");
-  const late = txs.filter((t) => t.lateFilingFlag).length;
+  // Late arithmetic is over 278-T rows only. An annual-lane row has no
+  // late column, so it is in the total but not in either side of the share.
+  const isPeriodic = (t: { sourceKind?: string }) => (t.sourceKind ?? "278-T") === "278-T";
+  const periodicRows = txs.filter(isPeriodic);
+  const late = periodicRows.filter((t) => t.lateFilingFlag).length;
+  const annualLaneRows = txs.filter((t) => !isPeriodic(t));
   const sum = (arr: typeof txs) => sumAmountEstimates(arr).estimate;
 
   const dates = txs.map((t) => t.date).filter(Boolean).sort();
@@ -105,7 +120,10 @@ export function computeStats(d: SummaryInput): Stats {
     purchases: purchases.length,
     exchanges: exchanges.length,
     late,
-    latePct: txs.length ? Math.round((late / txs.length) * 100) : 0,
+    latePct: periodicRows.length ? Math.round((late / periodicRows.length) * 100) : 0,
+    periodic: periodicRows.length,
+    annualLane: annualLaneRows.length,
+    annualNotOnPosted278t: annualLaneRows.filter((t) => t.periodicStatus === "not-on-posted-278t").length,
     estTotal: fmtMoney(sum(txs)),
     estSales: fmtMoney(sum(sales)),
     estPurchases: fmtMoney(sum(purchases)),
@@ -133,7 +151,15 @@ export function buildDeterministic(s: Stats): string {
   parts.push(`${s.last} reported ${segments.join(" and ")}.`);
   if (s.late > 0) {
     parts.push(
-      `${withCommas(s.late)} of ${withCommas(s.total)} transactions were filed late.`
+      `${withCommas(s.late)} of ${withCommas(s.periodic)} transactions on periodic reports were filed late.`
+    );
+  }
+  if (s.annualLane > 0) {
+    parts.push(
+      `${withCommas(s.annualLane)} of the ${withCommas(s.total)} transactions were read from an annual or termination report` +
+        (s.annualNotOnPosted278t > 0
+          ? `, ${withCommas(s.annualNotOnPosted278t)} of them on no 278-T OGE had posted.`
+          : ".")
     );
   }
   return parts.join(" ");
@@ -148,9 +174,19 @@ export function buildFactBlock(s: Stats, d: SummaryInput, extra?: string): strin
   lines.push(`Purchases: ${withCommas(s.purchases)} (estimated ${s.estPurchases})`);
   if (s.exchanges) lines.push(`Exchanges: ${withCommas(s.exchanges)}`);
   lines.push(`Estimated total value (all transactions, cumulative): ${s.estTotal}`);
+  // The 278-T denominator is named only when it differs from the total,
+  // so the fact block (and its hash) of an official with 278-T rows only
+  // is unchanged by the annual-report lane.
   lines.push(
-    `Late-filed transactions: ${withCommas(s.late)} of ${withCommas(s.total)} (${s.latePct} percent)`
+    s.annualLane > 0
+      ? `Late-filed transactions: ${withCommas(s.late)} of ${withCommas(s.periodic)} on periodic reports (${s.latePct} percent); the annual-report rows have no late column`
+      : `Late-filed transactions: ${withCommas(s.late)} of ${withCommas(s.total)} (${s.latePct} percent)`
   );
+  if (s.annualLane > 0) {
+    lines.push(
+      `Transactions read from annual or termination reports (Part 7): ${withCommas(s.annualLane)}, of which ${withCommas(s.annualNotOnPosted278t)} appear on no 278-T OGE had posted`
+    );
+  }
   if (s.firstDate && s.lastDate) {
     lines.push(
       `Transaction date range: ${apDate(s.firstDate)} to ${apDate(s.lastDate)}`

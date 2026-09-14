@@ -14,7 +14,9 @@
       "date": "2025-06-25",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AF83B6CFCFDD7C7985258D00002BFE32/$FILE/Michael-W-Faulkender-06.26.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AF83B6CFCFDD7C7985258D00002BFE32/$FILE/Michael-W-Faulkender-06.26.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     }
   ],
   "summary": "Faulkender reported a single sale, dated June 25, 2025, of a stake in Global Accountability Corporation estimated at $8K. The transaction was not flagged as filed late.",
@@ -22,6 +24,13 @@
   "departedDate": "2025-08-22",
   "party": "R",
   "sourceFilings": [
+    {
+      "date": "2025-10-01",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/00B0A050F80312EE85258D16002C0536/$FILE/Michael-W-Faulkender-2025-278TERM.pdf",
+      "label": "Michael-W-Faulkender-2025-278TERM",
+      "kind": "termination-278e",
+      "pageCount": 11
+    },
     {
       "date": "2025-09-09",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AF83B6CFCFDD7C7985258D00002BFE32/$FILE/Michael-W-Faulkender-06.26.2025-278T.pdf",

@@ -53,7 +53,7 @@ export default function DivestitureLedger({ data, evidence }: Props) {
         documentary evidence that a transaction was reported; it is not a
         finding that the official complied. Where no 278-T sale is on file,
         the sale may have been of an exempt fund or property, or reported only
-        on an annual report, which this site does not ingest; the position may
+        on an annual report (labeled on this page); the position may
         also have been sold below the $1,000 reporting threshold, or not sold.
       </p>
 

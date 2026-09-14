@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
+import { existsSync } from "fs";
+import path from "path";
 import { datedRows } from "@/lib/types";
+import {
+  annualLaneRows,
+  isPeriodicRow,
+  lateStats,
+  periodicStatusOf,
+  sourceKindOf,
+  PERIODIC_STATUS_EXPLANATION,
+  PERIODIC_STATUS_LABEL,
+  SOURCE_KIND_SHORT,
+  SOURCE_KIND_TITLE,
+} from "@/lib/source-lane";
+import { summarizeByMonth } from "@/lib/monthly-summary";
 import { numberNotes, marksFor } from "@/lib/row-notes";
 import RowNotesList, { NoteMark } from "@/app/components/row-notes";
 import { notFound, redirect } from "next/navigation";
@@ -28,7 +43,7 @@ import TransactionTimeline from "@/app/components/transaction-timeline";
 import MonthlyBars from "@/app/components/monthly-bars";
 import RangeFilter from "@/app/components/range-filter";
 import TransactionFilters from "@/app/components/transaction-filters";
-import type { TxTypeFilter } from "@/app/components/transaction-filters";
+import type { TxSourceFilter, TxTypeFilter } from "@/app/components/transaction-filters";
 import Pagination from "@/app/components/pagination";
 import ViewToggle from "@/app/components/view-toggle";
 import type { ChartView } from "@/app/components/view-toggle";
@@ -37,6 +52,7 @@ import AlertSignupForm from "@/app/components/alert-signup-form";
 import DivestitureLedger from "@/app/components/divestiture-ledger";
 import SourceDocuments from "@/app/components/source-documents";
 import SourceAvailabilityNote from "@/app/components/source-availability-note";
+import AiUseNote from "@/app/components/ai-use-note";
 import {
   getDivestitureData,
   buildPromiseEvidence,
@@ -67,17 +83,35 @@ function sourceDocumentsWithCurrentFilings(
   const knownUrls = new Set(base.documents.map((doc) => doc.ogeUrl).filter(Boolean));
   const sourceDocsFromFilings = sourceFilings
     .filter((filing) => filing.url && !knownUrls.has(filing.url))
-    .map((filing) => ({
-      kind: "transaction_278t" as const,
-      title: "278-T Periodic Transaction Report",
-      label: filing.label,
-      filedDate: filing.date,
-      publiclyDownloadable: true,
-      pdfPath: filing.url,
-      ogeUrl: filing.url,
-      summary:
-        "Periodic transaction report (Form 278-T) disclosing individual securities transactions over $1,000 during the reporting window. See PDF for the itemized transaction list.",
-    }));
+    .map((filing) => {
+      const kind = filing.kind ?? "278-T";
+      // The annual-report lane lists the 278e as its own document kind so
+      // a reader does not take it for a periodic report.
+      if (kind !== "278-T") {
+        return {
+          kind: kind === "termination-278e" ? ("termination" as const) : ("other" as const),
+          title: SOURCE_KIND_TITLE[kind],
+          label: filing.label,
+          filedDate: filing.date,
+          publiclyDownloadable: true,
+          pdfPath: filing.url,
+          ogeUrl: filing.url,
+          summary:
+            "Part 7 of this report lists transactions over $1,000 for the reporting period. Rows found there and on no 278-T OGE had posted are tagged in the trade table above.",
+        };
+      }
+      return {
+        kind: "transaction_278t" as const,
+        title: "278-T Periodic Transaction Report",
+        label: filing.label,
+        filedDate: filing.date,
+        publiclyDownloadable: true,
+        pdfPath: filing.url,
+        ogeUrl: filing.url,
+        summary:
+          "Periodic transaction report (Form 278-T) disclosing individual securities transactions over $1,000 during the reporting window. See PDF for the itemized transaction list.",
+      };
+    });
 
   return {
     ...base,
@@ -170,6 +204,27 @@ function getCareerEvents(official: {
 /** Absolute origin for JSON-LD URLs, which must not be relative. */
 const SITE_ORIGIN = "https://open-cabinet.org";
 
+/**
+ * The evidence strip for an annual-lane row, when one was rendered
+ * (scripts/render-evidence-strips.py writes public/evidence/<slug>/
+ * <sourceKind>-<page>-<row>.png for every non-Trump annual-lane row).
+ * Checked on disk at render time so a row never links to a missing image;
+ * the check runs only for the rows on the current table page.
+ */
+function evidenceStripPath(slug: string, tx: Transaction): string | null {
+  const kind = sourceKindOf(tx);
+  if (kind === "278-T" || tx.sourcePage == null || tx.sourceRow == null) return null;
+  const rel = `/evidence/${slug}/${kind}-${tx.sourcePage}-${tx.sourceRow}.png`;
+  return existsSync(path.join(process.cwd(), "public", rel)) ? rel : null;
+}
+
+/**
+ * Above this many rows the dot timeline is a solid band and the page
+ * would ship every row to the browser twice. The reader gets the monthly
+ * bars and a note to narrow the view (a month, a source) instead.
+ */
+const DOT_ROW_CAP = 1500;
+
 export default async function OfficialPage({
   params,
   searchParams,
@@ -182,6 +237,7 @@ export default async function OfficialPage({
     late?: string;
     page?: string;
     view?: string;
+    source?: string;
   }>;
 }) {
   const { slug } = await params;
@@ -240,7 +296,19 @@ export default async function OfficialPage({
   const totalTrades = countedTransactions.length;
   const buys = countedTransactions.filter((t) => t.type === "Purchase").length;
   const sells = countedTransactions.filter((t) => isSale(t.type)).length;
-  const lateFilings = countedTransactions.filter((t) => t.lateFilingFlag).length;
+  // Late counts and the late share are taken over 278-T rows only. A row
+  // read from an annual or termination report (the annual-report lane)
+  // has no "over 30 days" column, so it can be neither late nor on time.
+  const lateScope = lateStats(countedTransactions);
+  const lateFilings = lateScope.late;
+  const annualLaneCount = lateScope.annualLane;
+  const laneKinds = new Set(annualLaneRows(countedTransactions).map(sourceKindOf));
+  const laneNoun =
+    laneKinds.size > 1
+      ? "annual and termination reports"
+      : laneKinds.has("termination-278e")
+        ? "the termination report"
+        : "the annual report";
 
   const dates = datedRows(transactions.filter((tx) => !tx.historical)).map((t) => new Date(t.date).getTime());
   const earliest = new Date(Math.min(...dates));
@@ -315,6 +383,15 @@ export default async function OfficialPage({
     typeof search.month === "string" && /^\d{4}-\d{2}$/.test(search.month)
       ? search.month
       : null;
+  // Which form the rows came from. Offered only when the official has
+  // rows from the annual-report lane; otherwise every row is a 278-T row.
+  const rawSource = (search.source ?? "all").toLowerCase();
+  const sourceFilter: TxSourceFilter =
+    annualLaneCount > 0 && (rawSource === "278t" || rawSource === "annual") ? rawSource : "all";
+  const passesSource = (t: Transaction) => {
+    if (sourceFilter === "all") return true;
+    return sourceFilter === "278t" ? isPeriodicRow(t) : !isPeriodicRow(t);
+  };
 
   const passesType = (t: Transaction) => {
     if (typeFilter === "all") return true;
@@ -335,7 +412,7 @@ export default async function OfficialPage({
   // the user's selection.
   const visibleTransactions = [];
   for (const transaction of rangedTransactions) {
-    if (passesType(transaction) && passesMonth(transaction)) {
+    if (passesType(transaction) && passesMonth(transaction) && passesSource(transaction)) {
       visibleTransactions.push(transaction);
     }
   }
@@ -344,10 +421,26 @@ export default async function OfficialPage({
   const visibleSorted = visibleTransactions.toSorted(
     (a, b) => (b.date ? new Date(b.date).getTime() : -Infinity) - (a.date ? new Date(a.date).getTime() : -Infinity)
   );
-  // The client chart components never use per-row source attribution, and
-  // sourceUrl is ~90 bytes per row — on an 8,900-row official that is real
-  // serialized-payload weight. Strip it before the props cross to the client.
-  const stripSourceUrl = <T extends Transaction>(tx: T) => { const copy = { ...tx }; delete copy.sourceUrl; return copy; };
+  // The dot timeline needs only what it draws. Everything else on a row
+  // (source URL, page, row number, notes) is serialized-payload weight the
+  // browser never reads, so the projection is explicit.
+  const chartRow = (tx: Transaction & { date: string }) => ({
+    description: tx.description,
+    ticker: tx.ticker,
+    type: tx.type,
+    date: tx.date,
+    amount: tx.amount,
+    lateFilingFlag: tx.lateFilingFlag,
+  });
+  // Bars read a server-computed monthly summary; the rows stay here. The
+  // summary respects the source filter (a month filter is the chart's own
+  // click, so the chart keeps every month) so the bars under "Annual"
+  // are the annual rows, not the whole record.
+  const monthlySummary = summarizeByMonth(chartTransactions.filter(passesSource));
+  const dotRows = datedRows(
+    visibleTransactions.filter((tx) => !tx.historical && verificationByTransaction.get(tx)?.score !== 0)
+  );
+  const dotsOverCap = dotRows.length > DOT_ROW_CAP;
 
   const monthLabel = monthFilter
     ? new Date(monthFilter + "-01T00:00:00").toLocaleDateString("en-US", {
@@ -400,6 +493,12 @@ export default async function OfficialPage({
   // the banner can say "+3,627 trades added" instead of conflating it with
   // the cumulative total.
   const ogeFilingDate = official.mostRecentFilingDate;
+  // "Last filing" on the page counts annual and termination reports too;
+  // mostRecentFilingDate stays the 278-T date the banner and digest use.
+  const lastPostedDate = (official.sourceFilings ?? []).reduce(
+    (latest, f) => (f.date > latest ? f.date : latest),
+    ogeFilingDate
+  );
   const ingestedDate = official.lastIngestedDate;
   const newCount = official.lastIngestedNewCount ?? 0;
   const indexDate = new Date(index.lastUpdated + "T00:00:00");
@@ -440,7 +539,9 @@ export default async function OfficialPage({
     about: {
       "@type": "Dataset",
       name: `${displayName(official.name)} financial disclosure transactions`,
-      description: `Stock and asset transactions reported by ${displayName(official.name)}, ${official.title}, in periodic transaction reports filed with the U.S. Office of Government Ethics.`,
+      description: `Stock and asset transactions reported by ${displayName(official.name)}, ${official.title}, in periodic transaction reports${
+        annualLaneCount > 0 ? " and annual or termination reports" : ""
+      } filed with the U.S. Office of Government Ethics.`,
       // Google's Dataset validator only accepts plain Organization/Person for
       // creator — GovernmentOrganization (a valid schema.org subtype) gets
       // flagged as "invalid object type" in Search Console.
@@ -564,19 +665,24 @@ export default async function OfficialPage({
       <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-neutral-500 border-b border-neutral-200 pb-6 mb-10">
         <div>
           <span className="text-lg font-semibold text-neutral-900 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1">
-            {totalTrades}
+            {totalTrades.toLocaleString()}
           </span>
           trades
+          {annualLaneCount > 0 && (
+            <span className="text-xs text-neutral-400 ml-1">
+              (of which {annualLaneCount.toLocaleString()} from {laneNoun})
+            </span>
+          )}
         </div>
         <div>
           <span className="text-lg font-semibold text-red-700 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1">
-            {sells}
+            {sells.toLocaleString()}
           </span>
           {sells === 1 ? "sale" : "sales"}
         </div>
         <div>
           <span className="text-lg font-semibold text-emerald-700 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1">
-            {buys}
+            {buys.toLocaleString()}
           </span>
           {buys === 1 ? "purchase" : "purchases"}
         </div>
@@ -589,12 +695,12 @@ export default async function OfficialPage({
         {lateFilings > 0 && (
           <div>
             <span className="text-lg font-semibold text-amber-700 font-[family-name:var(--font-dm-mono)] tabular-nums mr-1">
-              {lateFilings}
+              {lateFilings.toLocaleString()}
             </span>
             late {lateFilings === 1 ? "filing" : "filings"}
-            {HIGH_VOLUME && totalTrades > 0 && (
+            {(HIGH_VOLUME || annualLaneCount > 0) && lateScope.periodic > 0 && (
               <span className="text-xs text-neutral-400 ml-1">
-                ({Math.round((100 * lateFilings) / totalTrades)}%)
+                ({lateScope.latePct}% of 278-T trades)
               </span>
             )}
           </div>
@@ -644,7 +750,7 @@ export default async function OfficialPage({
         </p>
       )}
       <p className="text-xs text-neutral-400 mb-2">
-        Last filing: {formatDate(ogeFilingDate)}
+        Last filing: {formatDate(lastPostedDate)}
         <span className="text-neutral-300 mx-1.5">|</span>
         Transactions: {formatDate(earliest.toISOString().split("T")[0])} – {formatDate(latest.toISOString().split("T")[0])}
       </p>
@@ -751,26 +857,38 @@ export default async function OfficialPage({
             <RangeFilter selected={range} />
           </div>
         </div>
-        {chartView === "bars" ? (
-          <MonthlyBars
-            transactions={datedRows(chartTransactions).map(stripSourceUrl)}
-            selectedMonth={monthFilter}
-            clickToZoom
-          />
+        {chartView === "bars" || dotsOverCap ? (
+          <>
+            {dotsOverCap && (
+              <p className="text-xs text-neutral-500 mb-2">
+                {dotRows.length.toLocaleString()} trades match; the every-trade view
+                draws up to {DOT_ROW_CAP.toLocaleString()}. Showing trades by month
+                instead. Click a month, or filter by source, to see individual trades.
+              </p>
+            )}
+            <MonthlyBars
+              summary={monthlySummary}
+              selectedMonth={monthFilter}
+              clickToZoom
+            />
+          </>
         ) : (
           <TransactionTimeline
-            transactions={datedRows(visibleTransactions.filter((tx) => !tx.historical && verificationByTransaction.get(tx)?.score !== 0)).map(stripSourceUrl)}
+            transactions={dotRows.map(chartRow)}
             careerEvents={getCareerEvents(official)}
           />
         )}
       </section>
 
+      <AiUseNote className="mb-3" />
       <TransactionFilters
         type={typeFilter}
         monthKey={monthFilter}
         monthLabel={monthLabel}
         totalCount={transactions.length}
         filteredCount={visibleTransactions.length}
+        source={sourceFilter}
+        showSource={annualLaneCount > 0}
       />
 
       <div id="trades" className="scroll-mt-4">
@@ -785,6 +903,7 @@ export default async function OfficialPage({
               range,
               type: typeFilter === "all" ? undefined : typeFilter,
               month: monthFilter ?? undefined,
+              source: sourceFilter === "all" ? undefined : sourceFilter,
             }}
           />
         )}
@@ -801,12 +920,23 @@ export default async function OfficialPage({
               <th className="pb-2 pr-4 font-medium">Type</th>
               <th className="pb-2 pr-4 font-medium text-right">Amount</th>
               <th
+                className="pb-2 pr-4 font-medium hidden md:table-cell"
+                title="The 278-T's own column: was notification of the trade received more than 30 days before filing. An annual report has no such column."
+              >
+                Late
+              </th>
+              <th
                 className="pb-2 pr-4 font-medium text-right hidden md:table-cell"
                 title="When OGE posted the filing that disclosed this trade, and how many days after the trade that was"
               >
                 Disclosed
               </th>
-              <th className="pb-2 font-medium text-right">Source</th>
+              <th
+                className="pb-2 font-medium text-right hidden md:table-cell"
+                title="The form that disclosed the row, its physical PDF page and printed row number where known"
+              >
+                Source
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -817,9 +947,29 @@ export default async function OfficialPage({
                 tx,
                 official.sourceFilings
               );
+              const kind = sourceKindOf(tx);
+              const periodic = kind === "278-T";
+              const status = periodicStatusOf(tx);
+              const evidence = evidenceStripPath(slug, tx);
+              // The "before second term" scope label and the lane's
+              // "Dated before taking office" label say the same thing; the
+              // lane's own label wins on its rows.
+              const scopeLabel =
+                !official.formerOfficial && !(status === "pre-service") ? transactionScopeLabel(tx) : null;
+              const sourceText = [
+                SOURCE_KIND_SHORT[kind],
+                tx.sourcePage != null ? `p.${tx.sourcePage}` : null,
+                tx.sourceRow != null ? `#${tx.sourceRow}` : null,
+              ]
+                .filter(Boolean)
+                .join(" · ");
+              const sourceHref =
+                sourceFiling?.url && tx.sourcePage != null
+                  ? `${sourceFiling.url}#page=${tx.sourcePage}`
+                  : sourceFiling?.url ?? null;
               return (
+              <Fragment key={`${tx.date}-${tx.description}-${i}`}>
               <tr
-                key={`${tx.date}-${tx.description}-${i}`}
                 className={`border-b border-neutral-100 ${
                   rowVerification?.score === 0
                     ? "bg-amber-50"
@@ -828,9 +978,9 @@ export default async function OfficialPage({
               >
                 <td className="py-2.5 pr-4 tabular-nums text-neutral-500 whitespace-nowrap">
                   {tx.date ? formatDate(tx.date) : "N/A"}
-                  {!official.formerOfficial && transactionScopeLabel(tx) && (
+                  {scopeLabel && (
                     <span className="block text-xs text-neutral-500 whitespace-normal">
-                      {transactionScopeLabel(tx)}
+                      {scopeLabel}
                     </span>
                   )}
                   <NoteMark numbers={marksFor(notes, "date")} />
@@ -846,12 +996,50 @@ export default async function OfficialPage({
                     ) : null;
                   })()}
                   {tx.lateFilingFlag && (
-                    <span className="ml-2 text-xs text-amber-700 font-medium uppercase">
+                    <span className="ml-2 text-xs text-amber-700 font-medium uppercase md:hidden">
                       Late
+                    </span>
+                  )}
+                  {!periodic && (
+                    // Annual-report lane. Muted, no colour: the sub-label
+                    // says where the row stands with the periodic-report
+                    // rule, not what to think of the filer.
+                    <span
+                      className="block mt-0.5 text-[11px] text-neutral-500"
+                      title={PERIODIC_STATUS_EXPLANATION[status]}
+                    >
+                      {PERIODIC_STATUS_LABEL[status]}
+                      {tx.accountLabel && (
+                        <span className="text-neutral-400"> · {tx.accountLabel}</span>
+                      )}
                     </span>
                   )}
                   <NoteMark numbers={marksFor(notes, "row")} />
                   <VerificationMarker verification={rowVerification} />
+                  {evidence && (
+                    // The toggle only. The strip itself is the next table
+                    // row (full table width), shown by the :has() rule in
+                    // globals.css while this <details> is open: no script,
+                    // and closed by default so the table stays a table.
+                    <details data-evidence className="mt-1 text-xs text-neutral-500">
+                      <summary className="cursor-pointer inline-block underline decoration-dotted underline-offset-2 hover:text-neutral-900">
+                        Evidence
+                      </summary>
+                    </details>
+                  )}
+                  {/* Below md the Source column is off-screen inside the
+                      scroll wrapper; the same string sits under the
+                      description instead. */}
+                  {sourceHref && (
+                    <a
+                      href={sourceHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="md:hidden block mt-0.5 text-[11px] font-[family-name:var(--font-dm-mono)] tabular-nums text-neutral-500 underline underline-offset-2 decoration-neutral-200"
+                    >
+                      {sourceText}
+                    </a>
+                  )}
                 </td>
                 <td className="py-2.5 pr-4 font-[family-name:var(--font-dm-mono)] text-neutral-500 hidden sm:table-cell">
                   {(() => {
@@ -883,6 +1071,17 @@ export default async function OfficialPage({
                   {tx.amount ? amountRangeLabel(tx.amount) : "Not ascertainable"}
                   <NoteMark numbers={marksFor(notes, "amount")} />
                 </td>
+                <td className="py-2.5 pr-4 text-xs hidden md:table-cell">
+                  {periodic ? (
+                    tx.lateFilingFlag ? (
+                      <span className="text-amber-700 font-medium uppercase">Late</span>
+                    ) : null
+                  ) : (
+                    <span className="text-neutral-300" title="The annual report has no late-notification column">
+                      —
+                    </span>
+                  )}
+                </td>
                 <td className="py-2.5 pr-4 text-right tabular-nums text-neutral-500 whitespace-nowrap hidden md:table-cell">
                   {(() => {
                     if (!sourceFiling) return <span className="text-neutral-300">—</span>;
@@ -891,13 +1090,16 @@ export default async function OfficialPage({
                       <span
                         title={`Posted to OGE ${formatDate(sourceFiling.date)}${
                           lag !== null ? `, ${lag} days after the trade` : ""
-                        }`}
+                        }${periodic ? "" : ". An annual report is filed once a year, so this lag is expected"}`}
                       >
                         {formatDate(sourceFiling.date)}
                         {lag !== null && (
                           <span
                             className={`ml-1.5 text-xs ${
-                              lag > 45 ? "text-amber-700" : "text-neutral-400"
+                              // The 45-day amber applies to rows a 278-T
+                              // should have covered; an annual report is
+                              // filed once a year, so its lag is expected.
+                              lag > 45 && periodic ? "text-amber-700" : "text-neutral-400"
                             }`}
                           >
                             {lag}d
@@ -907,17 +1109,21 @@ export default async function OfficialPage({
                     );
                   })()}
                 </td>
-                <td className="py-2.5 text-right whitespace-nowrap">
+                <td className="py-2.5 text-right whitespace-nowrap hidden md:table-cell">
                   <SourceAvailabilityNote url={sourceFiling?.url} />
-                  {sourceFiling?.url ? (
+                  {sourceHref ? (
+                    // Form, physical page and printed row number, the whole
+                    // cell a link into the PDF at that page.
                     <a
-                      href={sourceFiling.url}
+                      href={sourceHref}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title={`${sourceFiling.label} filed ${formatDate(sourceFiling.date)}`}
-                      className="text-xs text-neutral-400 hover:text-neutral-900 underline underline-offset-2 decoration-neutral-200 hover:decoration-neutral-900"
+                      title={`${sourceFiling?.label} posted ${formatDate(sourceFiling!.date)}${
+                        tx.sourcePage != null ? `, page ${tx.sourcePage}` : ""
+                      }${tx.sourceRow != null ? `, printed row ${tx.sourceRow}` : ""}`}
+                      className="text-xs font-[family-name:var(--font-dm-mono)] tabular-nums text-neutral-500 hover:text-neutral-900 underline underline-offset-2 decoration-neutral-200 hover:decoration-neutral-900"
                     >
-                      PDF
+                      {sourceText}
                     </a>
                   ) : sourceFiling ? (
                     <span
@@ -931,6 +1137,38 @@ export default async function OfficialPage({
                   )}
                 </td>
               </tr>
+              {evidence && (
+                // The strip: a full-page-width band cropped at 2x. It spans
+                // the table; below md the box is pinned to the wrapper's
+                // visible width and the image keeps a readable height and
+                // scrolls sideways inside it. Tapping opens the PDF page.
+                <tr data-evidence-panel className="hidden border-b border-neutral-100 bg-stone-50">
+                  <td colSpan={8} className="py-2 pr-4">
+                    <div className="sticky left-0 w-[calc(100vw-2rem)] md:w-auto max-w-full">
+                      <a
+                        href={sourceHref ?? undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Open the report at this page"
+                        className="block overflow-x-auto"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element -- a static PNG rendered at 2x; next/image would re-encode it */}
+                        <img
+                          src={evidence}
+                          alt={`Row ${tx.sourceRow} of page ${tx.sourcePage} of the report, as printed`}
+                          className="block h-12 w-auto max-w-none md:h-auto md:w-full md:max-w-full border border-neutral-200 bg-white"
+                          loading="lazy"
+                        />
+                      </a>
+                      <span className="block mt-1 text-xs text-neutral-400">
+                        Page {tx.sourcePage}, row {tx.sourceRow}, cropped from the OGE PDF at 2x.
+                        Tap the image to open the report at that page.
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              )}
+              </Fragment>
               );
             })}
           </tbody>
@@ -948,6 +1186,7 @@ export default async function OfficialPage({
             range,
             type: typeFilter === "all" ? undefined : typeFilter,
             month: monthFilter ?? undefined,
+            source: sourceFilter === "all" ? undefined : sourceFilter,
           }}
         />
       )}
@@ -1010,7 +1249,7 @@ export default async function OfficialPage({
             {official.sourceFilings.map((filing) =>
               filing.url ? (
                 <a
-                  key={`${filing.date}-${filing.label}`}
+                  key={filing.url ?? `${filing.date}-${filing.label}`}
                   href={filing.url}
                   className="border border-neutral-200 px-3 py-2 text-sm hover:bg-neutral-50 transition-colors flex items-center justify-between"
                   target="_blank"
@@ -1026,7 +1265,7 @@ export default async function OfficialPage({
                 </a>
               ) : (
                 <div
-                  key={`${filing.date}-${filing.label}`}
+                  key={filing.url ?? `${filing.date}-${filing.label}`}
                   className="border border-neutral-200 px-3 py-2 text-sm flex items-center justify-between text-neutral-500"
                 >
                   <span>
@@ -1044,7 +1283,8 @@ export default async function OfficialPage({
       )}
 
       <p className="text-xs text-neutral-400 mt-8">
-        Source: U.S. Office of Government Ethics, {official.filingType}. Asset
+        Source: U.S. Office of Government Ethics, {official.filingType}
+        {annualLaneCount > 0 ? ` and ${laneNoun.replace(/^the /, "")} (OGE Form 278e, Part 7)` : ""}. Asset
         values and transaction amounts are reported in ranges as required by
         federal law.{" "}
         <a

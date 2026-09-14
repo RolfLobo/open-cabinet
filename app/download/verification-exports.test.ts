@@ -75,7 +75,10 @@ describe("published verification exports", () => {
   });
 
   it("keeps CSV columns in place and matches every JSON row, including score zero", () => {
-    const [headers, ...rows] = parseCsv(read("public/data/all-transactions.csv"));
+    const csv = read("public/data/all-transactions.csv");
+    // The first line is the AI-use disclosure comment; the header follows.
+    expect(csv.startsWith("# Rows are extracted from OGE filings")).toBe(true);
+    const [headers, ...rows] = parseCsv(csv.slice(csv.indexOf("\n") + 1));
     expect(headers).toEqual([
       "official_name", "official_title", "agency", "departed_date", "description", "ticker", "type",
       "date", "amount_range", "amount_midpoint", "late_filing", "source_filing_url", "amount_note",
@@ -83,6 +86,8 @@ describe("published verification exports", () => {
       "type_note", "date_note", "row_note",
       "instrument_type", "issuer_label", "resolved_ticker", "resolution_tier",
       "historical_report", "date_scope", "former_official",
+      // Annual-report lane (Sep 2026), trailing so positional parsers are unaffected.
+      "source_kind", "periodic_status", "source_page", "source_row", "account_label",
     ]);
     const transactions = dataset.officials.flatMap((official) => official.transactions);
     expect(rows).toHaveLength(transactions.length);
@@ -94,6 +99,11 @@ describe("published verification exports", () => {
       expect(row.slice(13, 16)).toEqual([tx.recordId, String(tx.verificationScore), tx.verificationState]);
       expect(row[7]).toBe(tx.date ?? "");
       expect(row[23]).toBe(tx.historical ? "yes" : "no");
+      // An annual-lane row has no late column: blank, and null in the JSON.
+      expect(row[10]).toBe(tx.lateFilingFlag === null ? "" : tx.lateFilingFlag ? "yes" : "no");
+      expect(row[26]).toBe(tx.sourceKind ?? "278-T");
+      expect(row[27]).toBe(tx.periodicStatus ?? "reported");
+      if (tx.sourceKind) expect(tx.lateFilingFlag).toBeNull();
     });
   });
 });
@@ -140,7 +150,9 @@ it("generates counted JSON and summary totals while preserving a disputed duplic
       estimated_total_value: String(sumAmountEstimates(source.transactions.slice(1)).estimate),
       under_review_count: "1",
     });
-    const [txHeaders, ...csvRows] = parseCsv(readExport("all-transactions.csv"));
+    const txCsv = readExport("all-transactions.csv");
+    expect(txCsv.startsWith("# Rows are extracted")).toBe(true);
+    const [txHeaders, ...csvRows] = parseCsv(txCsv.slice(txCsv.indexOf("\n") + 1));
     expect(csvRows).toHaveLength(3);
     expect(csvRows[0][txHeaders.indexOf("verificationState")]).toBe("disputed");
     expect(csvRows[0][txHeaders.indexOf("recordId")]).not.toBe(csvRows[1][txHeaders.indexOf("recordId")]);

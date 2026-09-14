@@ -14,7 +14,96 @@
       "date": "2025-11-19",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/3A9FB168C78ABC2885258DCC002DDC8D/$FILE/Eric-Scott-Turner-01.16.2026-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/3A9FB168C78ABC2885258DCC002DDC8D/$FILE/Eric-Scott-Turner-01.16.2026-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
+    },
+    {
+      "description": "Fundstrat Granny Shots US Large Cap ETF (GRNY)",
+      "ticker": "GRNY",
+      "type": "Purchase",
+      "date": "2025-11-11",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 11
+    },
+    {
+      "description": "Schwab S&P 500 Index Fund (SWPPX)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-11-07",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 10
+    },
+    {
+      "description": "Baron Partners Fund Institutional Class Shares (BPTIX)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-04-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 13
+    },
+    {
+      "description": "Eventide Large Cap Focus Fund Eventide Large Cap Focus Fund Class I (ETLIX)",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2025-03-03",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 14
+    },
+    {
+      "description": "Schwab S&P 500 Index Fund (SWPPX)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-03-03",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 8,
+      "sourceRow": 9
+    },
+    {
+      "description": "Alphabet, Inc. (GOOGL)",
+      "ticker": "GOOGL",
+      "type": "Sale",
+      "date": "2025-02-12",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
+    },
+    {
+      "description": "Berkshire Hathaway Inc. (BRKB)",
+      "ticker": "BRKB",
+      "type": "Sale",
+      "date": "2025-02-12",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Alphabet, Inc. (GOOGL)",
@@ -23,34 +112,9 @@
       "date": "2025-02-11",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
-    },
-    {
-      "description": "Zillow Group, Inc. (Z)",
-      "ticker": "Z",
-      "type": "Sale",
-      "date": "2025-02-11",
-      "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
-    },
-    {
-      "description": "Berkshire Hathaway Inc. (BRKB)",
-      "ticker": "BRKB",
-      "type": "Sale",
-      "date": "2025-02-11",
-      "amount": "$15,001-$50,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
-    },
-    {
-      "description": "Microsoft Corp. (MSFT)",
-      "ticker": "MSFT",
-      "type": "Sale",
-      "date": "2025-02-11",
-      "amount": "$15,001-$50,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Amazon.com, Inc. (AMZN)",
@@ -59,31 +123,81 @@
       "date": "2025-02-11",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
-      "description": "Alphabet, Inc. (GOOGL)",
-      "ticker": "GOOGL",
-      "type": "Sale",
-      "date": "2025-02-12",
-      "amount": "$1,001-$15,000",
-      "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
+      "description": "Baron Partners Fund Institutional Class Shares (BPTIX)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2025-02-11",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 12
     },
     {
       "description": "Berkshire Hathaway Inc. (BRKB)",
       "ticker": "BRKB",
       "type": "Sale",
-      "date": "2025-02-12",
+      "date": "2025-02-11",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
+    },
+    {
+      "description": "Invesco QQQ Trust, Series 1 (QQQ)",
+      "ticker": "QQQ",
+      "type": "Purchase",
+      "date": "2025-02-11",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": null,
+      "sourceKind": "annual-278e",
+      "periodicStatus": "exempt",
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "sourcePage": 9,
+      "sourceRow": 15
+    },
+    {
+      "description": "Microsoft Corp. (MSFT)",
+      "ticker": "MSFT",
+      "type": "Sale",
+      "date": "2025-02-11",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
+    },
+    {
+      "description": "Zillow Group, Inc. (Z)",
+      "ticker": "Z",
+      "type": "Sale",
+      "date": "2025-02-11",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     }
   ],
   "summary": "Turner reported 7 sales (est. $178K) and 1 purchase (est. $32K). Traded assets included BMNR, GOOGL, Z, BRKB, MSFT, among others.",
   "confirmedDate": "2025-02-05",
   "party": "R",
   "sourceFilings": [
+    {
+      "date": "2026-08-06",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+      "label": "Eric-Scott-Turner-2026-278ANNU",
+      "kind": "annual-278e",
+      "pageCount": 14
+    },
     {
       "date": "2026-04-01",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/3A9FB168C78ABC2885258DCC002DDC8D/$FILE/Eric-Scott-Turner-01.16.2026-278T.pdf",
@@ -94,5 +208,6 @@
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BF782DF3A2A5684F85258C58002C87DB/$FILE/Eric-Scott-Turner-03.04.2025-278T.pdf",
       "label": "278-T"
     }
-  ]
+  ],
+  "summaryStaleSince": "2026-09-13"
 }

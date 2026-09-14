@@ -1,4 +1,5 @@
 import { SHORT_LABEL, type RowVerification } from "@/lib/row-verification";
+import { NOT_YET_CHECKED_EXPLAINER } from "@/lib/ai-use-note";
 
 export default function VerificationMarker({
   verification,
@@ -15,6 +16,9 @@ export default function VerificationMarker({
       </summary>
       <p className="mt-1 max-w-sm leading-relaxed">
         {verification?.note ?? "No verification record is available for this row"}
+        {(!verification || verification.state === "single_read") && (
+          <span className="block text-neutral-400">({NOT_YET_CHECKED_EXPLAINER})</span>
+        )}
       </p>
     </details>
   );

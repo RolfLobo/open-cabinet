@@ -13,6 +13,7 @@
  * system sans body. Email needs inline styles + table layout to render in Gmail.
  */
 import { POSTAL_ADDRESS, siteUrl } from "@/lib/email-config";
+import { AI_USE_FEEDBACK_PATH, AI_USE_METHODOLOGY_PATH, AI_USE_NOTE, aiUseNoteText } from "@/lib/ai-use-note";
 import { formatDate, displayName } from "@/lib/format";
 import { officeLine } from "@/lib/office-line";
 import type { AlsoNewOfficial, DigestItem } from "@/lib/digest";
@@ -297,7 +298,7 @@ export function buildDigestEmail(
       </div>`
       : "";
 
-  const unsubHtml = `You're getting this because you subscribed. <a href="${unsubscribeLink}" style="color:${COLORS.muted};">Unsubscribe</a>.`;
+  const unsubHtml = `You're getting this because you subscribed. <a href="${unsubscribeLink}" style="color:${COLORS.muted};">Unsubscribe</a>.<br>${escapeHtml(AI_USE_NOTE)} <a href="${base}${AI_USE_METHODOLOGY_PATH}" style="color:${COLORS.muted};">How rows are checked</a> · <a href="${base}${AI_USE_FEEDBACK_PATH}" style="color:${COLORS.muted};">Report an error</a>.`;
   const html = layout({
     heading: items.length === 1 ? "A new filing" : "New filings",
     bodyHtml: `
@@ -343,6 +344,8 @@ ${lines}${sampleNote}
 ${postedLine} Officials have up to 45 days to report a trade, and OGE reviews filings before posting them, so trade dates run earlier than today.
 ${lede ? `\n${lede}\n` : ""}
 ${textSections}${alsoNewText}
+
+${aiUseNoteText(base)}
 
 Unsubscribe: ${unsubscribeLink}
 

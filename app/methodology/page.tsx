@@ -8,6 +8,7 @@ import { readCrosscheckLog, summarizeCrosscheckLog } from "@/lib/crosscheck-log"
 import { sumAmountEstimates } from "@/lib/amounts";
 import { readRowVerification } from "@/lib/row-verification";
 import { readAssetResolution } from "@/lib/asset-resolution";
+import { lateStats } from "@/lib/source-lane";
 import { getTradesByTicker } from "@/lib/data";
 import VerificationSummary from "../components/verification-summary";
 
@@ -35,9 +36,9 @@ export default async function MethodologyPage() {
     (sum, official) => sum + official.transactions.length,
     0
   );
+  // Late counts are over 278-T rows only (lib/source-lane.ts).
   const currentLateTransactions = countedOfficials.reduce(
-    (sum, official) =>
-      sum + official.transactions.filter((tx) => tx.lateFilingFlag).length,
+    (sum, official) => sum + lateStats(official.transactions).late,
     0
   );
   const countedTrumpRows = trump ? officialForTotals(trump).transactions : [];
@@ -72,8 +73,7 @@ export default async function MethodologyPage() {
   const openEnded = sumAmountEstimates(
     allRows.filter((t) => t.amount === "Over $50,000,000" || t.amount === "Over $1,000,000")
   );
-  const trumpLateTransactions =
-    countedTrumpRows.filter((tx) => tx.lateFilingFlag).length;
+  const trumpLateTransactions = lateStats(countedTrumpRows).late;
   const nonTrumpLateTransactions =
     currentLateTransactions - trumpLateTransactions;
 
@@ -99,7 +99,9 @@ export default async function MethodologyPage() {
           Executive branch public financial disclosures include periodic
           transaction reports and reports of holdings, income and other
           financial interests. Open Cabinet&rsquo;s trade dataset comes from
-          278-T reports.
+          278-T reports, plus the Part 7 transaction tables of the annual
+          and termination reports OGE has posted for tracked officials
+          (the annual-report lane, below).
         </p>
         <ul className="space-y-3 text-neutral-600 leading-relaxed mb-4">
           <li>
@@ -123,22 +125,35 @@ export default async function MethodologyPage() {
             <strong className="text-neutral-900">OGE Form 278e (Annual Report).</strong>{" "}
             Generally due May 15, subject to eligibility rules and extensions,
             reporting holdings and other financial activity for the prior year.
-            OGE&rsquo;s guide lets filers omit from the annual any trade already
-            reported on a 278-T unless their agency requires repetition, and
-            requires the annual to list trades not previously reported. Open
-            Cabinet does not yet ingest annual reports, so a trade that was
-            not on any 278-T OGE had posted appears only on the annual and is
-            missing from this site. As of September 11, 2026, 14 tracked
-            officials have a 2026 annual report posted on OGE.
+            Its Part 7 lists the year&rsquo;s transactions. OGE&rsquo;s guide lets
+            filers omit from the annual any trade already reported on a 278-T
+            unless their agency requires repetition, and requires the annual to
+            list trades not previously reported.
           </li>
-          <li>
-            <strong className="text-neutral-900">Trades never filed on a 278-T are not on this site.</strong>{" "}
-            Fund and ETF trades, real-property sales and pre-service trades are
-            exempt from 278-T reporting, and any other trade an official did
-            not report on a 278-T appears only in an annual or termination
-            report, which Open Cabinet does not yet ingest. The trade counts,
-            dollar totals and late-filing rates here describe 278-T rows only,
-            not everything an official traded.
+          <li id="annual-reports" className="scroll-mt-24">
+            <strong className="text-neutral-900">The annual-report lane.</strong>{" "}
+            Since September 2026 Open Cabinet also reads Part 7 of every
+            annual and termination report OGE has posted for a tracked
+            official. A row already on the site from a 278-T is not added
+            again. Every other row is added with a label under its
+            description stating a document fact: &ldquo;Not found on any
+            posted 278-T&rdquo; when no 278-T OGE had posted lists it;
+            &ldquo;Dated before taking office&rdquo; when the trade date
+            precedes the official&rsquo;s start; &ldquo;On a 278-T OGE did
+            not post&rdquo; when a periodic report listing it exists but OGE
+            did not post it. Under OGE&rsquo;s rules, trades in most mutual
+            funds and ETFs, in real property, and trades made before taking
+            office are not reported on a 278-T at all; the labels do not
+            decide which rows those are, and the site draws no conclusion
+            from a row&rsquo;s absence. The download carries the finer
+            classification the audit recorded (periodic_status) for anyone
+            who wants it. These rows count in trade totals and dollar
+            volume. They are outside every late-filing count and rate, which
+            describe 278-T rows only: the annual form has no
+            late-notification column. Each row links to its page of the
+            PDF, and on every report except the largest, whose Part 7 runs
+            687 pages, a cropped image of the printed row can be opened
+            under it.
           </li>
         </ul>
         <p className="text-sm text-neutral-500 mb-4">
@@ -224,17 +239,23 @@ export default async function MethodologyPage() {
             </li>
             <li>
               <strong className="text-neutral-900">
-                Trades never filed on a 278-T are not on this site.
+                Annual-report rows are a different kind of evidence from 278-T rows.
               </strong>{" "}
-              The trade dataset comes from 278-T periodic transaction reports
-              only. Fund and ETF trades, real-property sales and pre-service
-              trades are exempt from 278-Ts, and OGE&rsquo;s guide lets filers
-              omit from the annual 278e any trade already reported on a 278-T
+              Fund and ETF trades, real-property sales and pre-service trades
+              are exempt from 278-Ts, and OGE&rsquo;s guide lets filers omit
+              from the annual 278e any trade already reported on a 278-T
               while requiring the annual to list trades not previously
-              reported. A trade an official did not report on a 278-T therefore
-              appears only in an annual or termination report, which Open
-              Cabinet does not yet ingest. Counts, totals and late-filing
-              rates here describe 278-T rows, not every trade an official made.
+              reported. A trade an official did not report on a 278-T
+              therefore appears only in an annual or termination report.
+              Open Cabinet reads those reports for tracked officials and
+              labels each such row; &ldquo;Not found on any posted
+              278-T&rdquo; means no 278-T OGE had posted as of the read,
+              not that none was filed,
+              since OGE&rsquo;s public index omits some reports. Late-filing
+              counts and rates describe
+              278-T rows only, and the annual rows were read once by the
+              audit rather than by the 278-T pipeline&rsquo;s checking
+              lanes, so they carry the &ldquo;not yet checked&rdquo; mark.
             </li>
             <li>
               <strong className="text-neutral-900">
@@ -295,6 +316,12 @@ export default async function MethodologyPage() {
               update before publication. Older rows have been checked through
               separate review runs; the recorded row statuses below describe
               their evidence. Source PDFs are linked from each official&rsquo;s page.
+              A separate row trace (<code>pnpm validate:trace</code>) confirms,
+              for every row that names a page, that the printed row number, the
+              trade date and the amount appear on that page of the PDF, searches
+              the document for rows without a page, and mutates a seeded sample
+              of rows to prove the check rejects a wrong date, row number or
+              description; its runs are logged in the public repository.
             </li>
             <li>
               <strong className="text-neutral-900">
@@ -526,10 +553,12 @@ export default async function MethodologyPage() {
           </p>
         </section>
 
-        <VerificationSummary
-          summary={rowVerification?.summary ?? null}
-          generatedAt={rowVerification?.generatedAt}
-        />
+        <div id="verification" className="scroll-mt-24">
+          <VerificationSummary
+            summary={rowVerification?.summary ?? null}
+            generatedAt={rowVerification?.generatedAt}
+          />
+        </div>
 
         {/* How names become tickers */}
         <section id="assets" className="border-t border-neutral-200 pt-8 scroll-mt-24">

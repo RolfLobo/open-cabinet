@@ -127,6 +127,17 @@ describe("selectDigestItems", () => {
     expect(result.items[0].trades.length).toBeLessThanOrEqual(6);
   });
 
+  it("never previews a row read from an annual report, on either trade path", () => {
+    const annual = trade({ date: "2026-06-25", description: "Annual only", sourceKind: "annual-278e", lateFilingFlag: null });
+    const periodic = trade({ date: "2026-06-20", description: "Periodic" });
+    // Proxy path: the annual row is the newest-dated row on file.
+    const proxy = official({ lastIngestedNewCount: 2, transactions: [annual, periodic] });
+    expect(selectDigestItems([proxy], { notifiedUrls: new Set() }).items[0].trades.map((t) => t.description)).toEqual(["Periodic"]);
+    // Exact path: an ingest that recorded the annual row among its additions.
+    const exact = official({ lastIngestedNewCount: 2, transactions: [annual, periodic], lastIngestedTrades: [annual, periodic] });
+    expect(selectDigestItems([exact], { notifiedUrls: new Set() }).items[0].trades.map((t) => t.description)).toEqual(["Periodic"]);
+  });
+
   it("flags an official whose every filing is un-notified as new to the site", () => {
     const first = official({
       slug: "first-timer",

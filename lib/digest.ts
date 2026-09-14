@@ -23,6 +23,7 @@
  */
 import { createHash } from "crypto";
 import type { AmountRange, OfficialData, Transaction } from "@/lib/types";
+import { periodicFilings, periodicRows } from "@/lib/source-lane";
 
 export interface DigestTrade {
   description: string;
@@ -108,7 +109,9 @@ function toTrade(t: Transaction): DigestTrade {
     type: t.type,
     amount: t.amount,
     date: t.date ?? "",
-    lateFilingFlag: t.lateFilingFlag,
+    // The digest previews 278-T rows; a null flag (annual lane) reads as
+    // not late, which is the only honest rendering of "no such column".
+    lateFilingFlag: t.lateFilingFlag ?? false,
   };
 }
 
@@ -220,8 +223,12 @@ export function selectDigestItems(
       continue;
     }
 
-    // Un-notified source filings, newest first.
-    const newFilings = (o.sourceFilings ?? [])
+    // Un-notified 278-T source filings, newest first. An annual or
+    // termination report (the annual-report lane) is listed on the
+    // official's page but is not a "new filing" the digest announces: its
+    // rows are a year of trades, most of them already known, and the
+    // alerts promised subscribers periodic transaction reports.
+    const newFilings = periodicFilings(o.sourceFilings ?? [])
       .filter((f): f is { date: string; url: string; label: string } =>
         Boolean(f.url) && !notifiedUrls.has(f.url as string)
       )
@@ -243,11 +250,13 @@ export function selectDigestItems(
     // proxy for officials ingested before lastIngestedTrades existed. The
     // proxy is wrong whenever a filing discloses old-dated trades (late
     // filings), which is why the exact list wins when present.
-    const trades = (
+    // Either way only 278-T rows are previewed: a digest announces
+    // periodic reports, and a row read from an annual report (the
+    // annual-report lane) is never a "new trade" here even when it is the
+    // newest-dated row on file.
+    const trades = periodicRows(
       o.lastIngestedTrades ??
-      [...o.transactions]
-        .sort((a, b) => ((a.date ?? "") < (b.date ?? "") ? 1 : -1))
-        .slice(0, Math.min(newCount, MAX_TRADES_SHOWN))
+        [...o.transactions].sort((a, b) => ((a.date ?? "") < (b.date ?? "") ? 1 : -1))
     )
       .slice(0, MAX_TRADES_SHOWN)
       .map(toTrade);
@@ -262,7 +271,7 @@ export function selectDigestItems(
       postedDate: newFilings[0].date,
       filingUrls: urls,
       trades,
-      ...(newFilings.length === (o.sourceFilings ?? []).filter((f) => Boolean(f.url)).length
+      ...(newFilings.length === periodicFilings(o.sourceFilings ?? []).filter((f) => Boolean(f.url)).length
         ? { newOfficial: true }
         : {}),
     });
@@ -409,7 +418,7 @@ export async function buildDigest(
   const candidateUrls = [
     ...new Set(
       officials.flatMap((o) =>
-        (o.sourceFilings ?? [])
+        periodicFilings(o.sourceFilings ?? [])
           .map((f) => f.url)
           .filter((u): u is string => Boolean(u))
       )

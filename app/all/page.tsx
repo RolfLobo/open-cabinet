@@ -4,8 +4,10 @@ import { getAllOfficials, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
 import { datedRows } from "@/lib/types";
 import { formatCompactCurrency, sumAmountEstimates } from "@/lib/format";
+import { annualLaneRows, lateStats, periodicRows } from "@/lib/source-lane";
 import SwimLaneChart from "../components/swim-lane-chart";
 import Link from "next/link";
+import AiUseNote from "../components/ai-use-note";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/all" },
@@ -24,8 +26,15 @@ function isSale(type: string): boolean {
 }
 
 export default async function AllTradesPage() {
-  const officials = (await getAllOfficials()).map(officialForTotals);
-  const underReviewCount = officials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  const countedOfficials = (await getAllOfficials()).map(officialForTotals);
+  const underReviewCount = countedOfficials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  // Rows read from annual and termination reports (the annual-report lane)
+  // stay off this canvas. The chart ships every plotted row to the browser,
+  // and the largest annual report alone adds more rows than the whole
+  // 278-T record; they are on the officials' pages, where the table is
+  // paginated and the charts read a monthly rollup.
+  const annualLaneCount = countedOfficials.reduce((sum, o) => sum + annualLaneRows(o.transactions).length, 0);
+  const officials = countedOfficials.map((o) => ({ ...o, transactions: periodicRows(o.transactions) }));
 
   // Sort officials by total transaction volume (most active at top)
   const ranked = officials
@@ -43,7 +52,7 @@ export default async function AllTradesPage() {
         type: tx.type as string,
         date: tx.date,
         amount: tx.amount,
-        lateFilingFlag: tx.lateFilingFlag,
+        lateFilingFlag: tx.lateFilingFlag ?? false,
         isSale: isSale(tx.type),
       })),
     }))
@@ -55,7 +64,7 @@ export default async function AllTradesPage() {
   const totalTx = allTx.length;
   const salesCount = allTx.filter((tx) => isSale(tx.type)).length;
   const purchasesCount = allTx.filter((tx) => tx.type === "Purchase").length;
-  const lateCount = allTx.filter((tx) => tx.lateFilingFlag).length;
+  const lateCount = lateStats(allTx).late;
   const salesValue = sumAmountEstimates(allTx.filter((tx) => isSale(tx.type))).estimate;
   const purchasesValue = sumAmountEstimates(
     allTx.filter((tx) => tx.type === "Purchase")
@@ -68,10 +77,17 @@ export default async function AllTradesPage() {
           All Trades
         </h1>
         <p className="text-neutral-500 max-w-xl leading-relaxed">
-          Counted transactions across {ranked.length} executive branch
+          Counted 278-T transactions across {ranked.length} executive branch
           officials. {totalTx.toLocaleString()} trades disclosed in second-term
-          reports, including earlier trades reported later. Historical reports
+          periodic reports, including earlier trades reported later. Historical reports
           and rows under review are excluded from these totals and the chart.
+          {annualLaneCount > 0 && (
+            <>
+              {" "}A further {annualLaneCount.toLocaleString()}{" "}
+              trades read from annual and termination reports appear on the
+              officials&apos; own pages, not here.
+            </>
+          )}
         </p>
         <div className="flex flex-wrap gap-x-6 gap-y-1 text-xs text-neutral-500 mt-4">
           <span>
@@ -102,6 +118,7 @@ export default async function AllTradesPage() {
       )}
       {/* Suspense: the chart reads its group/sort/period from the URL via
           useSearchParams, which requires a boundary on a static route. */}
+      <AiUseNote className="mb-4" />
       <Suspense fallback={<div className="min-h-96" />}>
         <SwimLaneChart officials={ranked} />
       </Suspense>

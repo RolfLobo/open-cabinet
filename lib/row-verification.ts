@@ -113,7 +113,7 @@ export interface ReviewDecision {
   slug: string;
   decision: "confirmed" | "corrected" | "rejected";
   /** For "corrected": the row as it should read, applied by an approved patch. */
-  correction?: Partial<Pick<Transaction, "type" | "date" | "amount" | "lateFilingFlag" | "ticker" | "description">>;
+  correction?: Partial<Pick<Transaction, "type" | "date" | "amount" | "lateFilingFlag" | "ticker" | "description" | "periodicStatus">>;
   evidence: string;
   decidedBy: string;
   decidedAt: string;
@@ -184,7 +184,7 @@ export function recordIdsFor(transactions: Transaction[]): string[] {
 }
 
 /** The tuple the deterministic lanes compare. */
-export function comparedTuple(tx: { type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean }): string {
+export function comparedTuple(tx: { type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean | null }): string {
   const t = /^sale/i.test(tx.type) ? "Sale" : /^purchase/i.test(tx.type) ? "Purchase" : /^exchange/i.test(tx.type) ? "Exchange" : tx.type;
   return `${t}|${tx.date ?? "undated"}|${tx.amount ?? "unknown"}|${tx.lateFilingFlag ? "late" : "ontime"}`;
 }
@@ -196,7 +196,7 @@ export interface DeriveInput {
   entriesByUrl: Map<string, CrosscheckEntry>;
   /** For OCR-mismatch filings: the parse record rows in document order,
    * so a published row can be located at a printed position. */
-  parseRecordByUrl: Map<string, Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean }>>;
+  parseRecordByUrl: Map<string, Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean | null }>>;
   /** Second-model lane verdicts per filing: the parsed indexes it agreed
    * on and disagreed on. Absent until that lane runs. */
   model2ByUrl?: Map<string, { agreedIndexes: Set<number>; disputedIndexes: Set<number> }>;
@@ -251,9 +251,9 @@ export function sameAssetWording(a: string, b: string): boolean {
  */
 export function locateInParseRecord(
   rows: Transaction[],
-  record: Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean }>
+  record: Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean | null }>
 ): number[] {
-  type R = { description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean };
+  type R = { description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean | null };
   const exactKey = (r: R) => `${r.description.trim().toLowerCase()}|${comparedTuple(r)}`;
   // Wording-only differences (a ticker appended, a trailing symbol, a
   // spacing accident) do not make a different row. Second pass matches
@@ -489,7 +489,15 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
     const m2 = input.model2ByUrl?.get(tx.sourceUrl);
 
     if (!entry) {
-      emit({ ...base, score: 1, state: "single_read", lane: null, note: "No check has run on this filing" }, parsedIndex ?? -1);
+      // An annual-lane row was read from Part 7 of an annual or
+      // termination report in the Sep 2026 audit, outside the 278-T
+      // pipeline's lanes (no parse cache, no cross-check entry). It is a
+      // single read here, honestly, and the note says which read.
+      const note =
+        tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e"
+          ? "Read from the report's Part 7 transaction table in the Sep 2026 audit; the verification lanes run on 278-T filings only"
+          : "No check has run on this filing";
+      emit({ ...base, score: 1, state: "single_read", lane: null, note }, parsedIndex ?? -1);
       return;
     }
     // A filing-level agreement was between the lane and a candidate read.

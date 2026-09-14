@@ -41,7 +41,8 @@ export interface ResultRow {
   dateDisplay: string;
   amount: string | null;
   amountLabel: string | null;
-  lateFilingFlag: boolean;
+  lateFilingFlag: boolean | null;
+  sourceKind: string;
   sourceUrl: string | null;
   verificationState: string;
 }
@@ -247,6 +248,7 @@ function toResultRow(row: PublishedRow): ResultRow {
     amount: row.amount,
     amountLabel: row.amount ? amountRangeLabel(row.amount) : null,
     lateFilingFlag: row.lateFilingFlag,
+    sourceKind: row.sourceKind,
     sourceUrl: row.sourceUrl,
     verificationState: row.verificationState,
   };
@@ -471,8 +473,11 @@ export function execute(plan: QueryPlan, data: PublishedRowsData): ExecuteResult
       break;
     }
     case "late_share": {
-      const late = matched.filter((r) => r.lateFilingFlag).length;
-      const total = matched.length;
+      // Numerator and denominator over 278-T rows: a row read from an
+      // annual report has no late column and belongs in neither.
+      const periodic = matched.filter((r) => r.sourceKind === "278-T");
+      const late = periodic.filter((r) => r.lateFilingFlag).length;
+      const total = periodic.length;
       const percent = total === 0 ? 0 : Math.round((late / total) * 1000) / 10;
       // AP style: "percent" in running text. And the statistic describes the
       // rows in this query, which are checked rows, not the whole record.

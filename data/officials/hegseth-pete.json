@@ -14,7 +14,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 1,
+      "sourcePage": 2
     },
     {
       "description": "Thermo Fisher Scientific, Inc.",
@@ -23,7 +25,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 2,
+      "sourcePage": 2
     },
     {
       "description": "PepsiCo, Inc.",
@@ -32,7 +36,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 3,
+      "sourcePage": 2
     },
     {
       "description": "The PNC Financial Services Group, Inc.",
@@ -41,7 +47,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 4,
+      "sourcePage": 2
     },
     {
       "description": "Microsoft Corp.",
@@ -50,7 +58,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 5,
+      "sourcePage": 2
     },
     {
       "description": "Lowe's Cos., Inc.",
@@ -59,7 +69,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 6,
+      "sourcePage": 2
     },
     {
       "description": "International Business Machines Corp.",
@@ -68,7 +80,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 7,
+      "sourcePage": 2
     },
     {
       "description": "Danaher Corp.",
@@ -77,7 +91,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 8,
+      "sourcePage": 2
     },
     {
       "description": "Apple, Inc.",
@@ -86,7 +102,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 9,
+      "sourcePage": 2
     },
     {
       "description": "Advanced Micro Devices, Inc.",
@@ -95,7 +113,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 10,
+      "sourcePage": 2
     },
     {
       "description": "Trane Technologies plc",
@@ -104,7 +124,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 11,
+      "sourcePage": 2
     },
     {
       "description": "Laboratory Corp. of America Holdings",
@@ -113,7 +135,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 12,
+      "sourcePage": 2
     },
     {
       "description": "Chubb Ltd.",
@@ -122,7 +146,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 13,
+      "sourcePage": 2
     },
     {
       "description": "Alphabet, Inc.",
@@ -131,7 +157,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 14,
+      "sourcePage": 2
     },
     {
       "description": "Mastercard, Inc.",
@@ -140,7 +168,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 15,
+      "sourcePage": 2
     },
     {
       "description": "Mondelez International, Inc.",
@@ -149,7 +179,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 16,
+      "sourcePage": 2
     },
     {
       "description": "T-Mobile US, Inc.",
@@ -158,7 +190,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 17,
+      "sourcePage": 2
     },
     {
       "description": "JPMorgan Chase & Co.",
@@ -167,7 +201,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 18,
+      "sourcePage": 2
     },
     {
       "description": "Amazon.com, Inc.",
@@ -176,7 +212,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 19,
+      "sourcePage": 2
     },
     {
       "description": "Ares Capital Corporation Common Stock",
@@ -185,7 +223,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 20,
+      "sourcePage": 2
     },
     {
       "description": "Oracle Corp.",
@@ -194,7 +234,9 @@
       "date": "2025-03-24",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 21,
+      "sourcePage": 3
     },
     {
       "description": "Costco Wholesale Corp.",
@@ -203,7 +245,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 22,
+      "sourcePage": 3
     },
     {
       "description": "Visa, Inc.",
@@ -212,7 +256,9 @@
       "date": "2025-03-24",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 23,
+      "sourcePage": 3
     },
     {
       "description": "Northrop Grumman Corp.",
@@ -221,7 +267,9 @@
       "date": "2025-02-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 24,
+      "sourcePage": 3
     },
     {
       "description": "KKR & Co., Inc.",
@@ -230,7 +278,9 @@
       "date": "2025-02-07",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 25,
+      "sourcePage": 3
     },
     {
       "description": "Blackstone Inc. Common Stock",
@@ -239,7 +289,9 @@
       "date": "2025-02-07",
       "amount": "$15,001-$50,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 26,
+      "sourcePage": 3
     },
     {
       "description": "Honeywell International, Inc.",
@@ -248,7 +300,9 @@
       "date": "2025-02-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 27,
+      "sourcePage": 3
     },
     {
       "description": "Lockheed Martin Corp.",
@@ -257,7 +311,9 @@
       "date": "2025-02-07",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 28,
+      "sourcePage": 3
     },
     {
       "description": "Morgan Stanley",
@@ -266,7 +322,9 @@
       "date": "2025-04-01",
       "amount": "$1,001-$15,000",
       "lateFilingFlag": false,
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf"
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1D97817A20B559D085258CA2002C8C51/$FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+      "sourceRow": 29,
+      "sourcePage": 3
     }
   ],
   "summary": "Hegseth reported 29 sales estimated at $428K between February 7, 2025 and April 1, 2025, with no purchases on record. Assets sold included WMT, TMO, PEP, PNC and MSFT. None of the transactions were flagged as filed late.",

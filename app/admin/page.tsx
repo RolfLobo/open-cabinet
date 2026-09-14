@@ -6,6 +6,8 @@ import { DigestSection } from "./components/digest-section";
 import { AlertSignupsSection } from "./components/alert-signups-section";
 import { PipelineSection } from "./components/pipeline-section";
 import { SourceCheckSection } from "./components/source-check-section";
+import { RowTraceSection } from "./components/row-trace-section";
+import type { RowTraceRun } from "@/lib/row-trace-log";
 import { QuickLinksSection } from "./components/quick-links-section";
 import { ModelsSection } from "./components/models-section";
 import type {
@@ -33,6 +35,8 @@ interface AdminState {
   loading: boolean;
   ogeReport: OgeCheckReport | null;
   checkingOge: boolean;
+  rowTraceRuns: RowTraceRun[];
+  rowTraceCommands: { full: string; fullTrump: string; official: string } | null;
 }
 
 const INITIAL_ADMIN_STATE: AdminState = {
@@ -50,6 +54,8 @@ const INITIAL_ADMIN_STATE: AdminState = {
   loading: false,
   ogeReport: null,
   checkingOge: false,
+  rowTraceRuns: [],
+  rowTraceCommands: null,
 };
 
 function adminReducer(
@@ -70,15 +76,20 @@ export default function AdminPage() {
     if (!isAdmin) return;
     setAdminState({ loading: true });
     try {
-      const [pipelineRes, alertsRes, digestRes] =
+      const [pipelineRes, alertsRes, digestRes, rowTraceRes] =
         await Promise.all([
           fetch("/api/admin/pipeline"),
           fetch("/api/admin/alerts"),
           fetch("/api/admin/digest"),
+          fetch("/api/admin/row-trace"),
         ]);
       if (pipelineRes.ok) {
         const data = await pipelineRes.json();
         setAdminState({ runs: data.runs || [] });
+      }
+      if (rowTraceRes.ok) {
+        const data = await rowTraceRes.json();
+        setAdminState({ rowTraceRuns: data.runs || [], rowTraceCommands: data.commands ?? null });
       }
       if (alertsRes.ok) {
         const data = await alertsRes.json();
@@ -288,6 +299,7 @@ export default function AdminPage() {
 
       <PipelineSection runs={state.runs} />
 
+      <RowTraceSection runs={state.rowTraceRuns} commands={state.rowTraceCommands} />
       <SourceCheckSection
         ogeReport={state.ogeReport}
         checkingOge={state.checkingOge}

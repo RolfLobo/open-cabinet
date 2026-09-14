@@ -1,3 +1,4 @@
+import AiUseNote from "../components/ai-use-note";
 import UnderReviewNote from "../components/under-review-note";
 import type { Metadata } from "next";
 import { readFile } from "fs/promises";
@@ -93,11 +94,26 @@ export default async function DownloadPage() {
       </header>
 
       <UnderReviewNote count={fullDataset.underReviewCount} />
+      <AiUseNote className="mb-4" />
       <p className="mb-6 text-sm text-neutral-600">
         Downloads preserve historical records. The historical_report and
         former_official CSV columns (historical and formerOfficial in JSON)
         identify records excluded from current-roster totals. Date scope labels
         distinguish older trades disclosed in second-term reports; those remain included.
+      </p>
+      <p className="mb-6 text-sm text-neutral-600">
+        Rows read from annual and termination reports (the annual-report
+        lane) carry source_kind (278-T, annual-278e or termination-278e),
+        source_page and source_row (the PDF page and printed row number),
+        account_label where the report lists trades per account, and
+        periodic_status, the audit&rsquo;s classification: <code>reported</code>{" "}
+        (on a 278-T), <code>not-on-posted-278t</code> (not found on any
+        posted 278-T), <code>exempt</code> (not found on any posted 278-T;
+        the audit classed the asset as a fund or real property),{" "}
+        <code>unresolved</code> (not found on any posted 278-T; the audit
+        recorded no class), <code>pre-service</code> (dated before taking
+        office) or <code>unposted-278t</code> (on a 278-T OGE did not post).
+        late_filing is blank on those rows: the annual form has no late column.
       </p>
       <div className="space-y-6">
         {exports.map((item) => (

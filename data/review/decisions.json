@@ -1279,25 +1279,34 @@
       "recordId": "cf7143e82e0c949a948b04fa",
       "slug": "molinaro-marcus",
       "decision": "confirmed",
-      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 1, State Street SPDR S&P 500 ETF Trust, Purchase, 2025-06-20, $15,001-$50,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it.",
+      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 1, State Street SPDR S&P 500 ETF Trust, Purchase, 2025-06-20, $15,001-$50,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it. Trevor, Sep 14, 2026: termination report page 5, row 1: State Street SPDR S&P 500 ETF Trust, Purchase 2025-06-20, an ETF traded before his Aug. 2, 2025 confirmation (pre-service).",
       "decidedBy": "trevor",
-      "decidedAt": "2026-09-07T00:04:04.087Z"
+      "decidedAt": "2026-09-07T00:04:04.087Z",
+      "correction": {
+        "periodicStatus": "pre-service"
+      }
     },
     {
       "recordId": "8ea0a0f30a964aefd5e54986",
       "slug": "molinaro-marcus",
       "decision": "confirmed",
-      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 2, Genoa Benchmark US Treasury 20 Year Bond ETF, Purchase, 2025-06-02, $50,001-$100,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it.",
+      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 2, Genoa Benchmark US Treasury 20 Year Bond ETF, Purchase, 2025-06-02, $50,001-$100,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it. Trevor, Sep 14, 2026: termination report page 5, row 2: Genoa Benchmark US Treasury 20 Year Bond ETF, Purchase 2025-06-02, an ETF traded before his Aug. 2, 2025 confirmation (pre-service).",
       "decidedBy": "trevor",
-      "decidedAt": "2026-09-07T00:04:04.087Z"
+      "decidedAt": "2026-09-07T00:04:04.087Z",
+      "correction": {
+        "periodicStatus": "pre-service"
+      }
     },
     {
       "recordId": "a629c3996a2a6e1f2a9b12f5",
       "slug": "molinaro-marcus",
       "decision": "confirmed",
-      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 3, Genoa Benchmark US Treasury 20 Year Bond ETF, Sale, 2025-11-25, $15,001-$50,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it.",
+      "evidence": "Trevor, Sep 6, 8:03 PM, read the page: 2026 termination form (278TERM) page 5 printed row 3, Genoa Benchmark US Treasury 20 Year Bond ETF, Sale, 2025-11-25, $15,001-$50,000, as the site has it (row 1 also prints the symbol FBVVNX). This form has no \"over 30 days\" column, so no late flag can be read from it. Trevor, Sep 14, 2026: termination report page 5, row 3: Genoa Benchmark US Treasury 20 Year Bond ETF, Sale 2025-11-25, a Treasury ETF, a fund (exempt).",
       "decidedBy": "trevor",
-      "decidedAt": "2026-09-07T00:04:04.087Z"
+      "decidedAt": "2026-09-07T00:04:04.087Z",
+      "correction": {
+        "periodicStatus": "exempt"
+      }
     },
     {
       "recordId": "13a3f7e1383385cf4e025f13",

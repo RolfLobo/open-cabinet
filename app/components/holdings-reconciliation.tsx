@@ -118,7 +118,7 @@ export default function HoldingsReconciliation({
         row interpretation. The reconciliation does not show full divestiture
         compliance &mdash; where no 278-T sale is on file, the sale may have
         been of an exempt fund or property, or reported only on an annual
-        report, which this site does not ingest.
+        report (those rows are labeled on the official&rsquo;s page).
       </p>
     </section>
   );

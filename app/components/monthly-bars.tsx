@@ -3,10 +3,9 @@
 import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { scaleTime, scaleSqrt } from "d3-scale";
-import { isChartableDate } from "@/lib/chart-dates";
 import { timeMonth } from "d3-time";
 import { timeFormat } from "d3-time-format";
-import type { DatedTransaction as Transaction } from "@/lib/types";
+import { monthTotals, type MonthlySummary } from "@/lib/monthly-summary";
 
 /**
  * MONTHLY BARS, high-density visualization for officials with so many
@@ -15,15 +14,20 @@ import type { DatedTransaction as Transaction } from "@/lib/types";
  * tick at the top of any month that contains a late-filed trade preserves
  * the accountability signal that the dot view carries via stroke color.
  *
+ * The chart takes a server-computed monthly summary (lib/monthly-summary.ts)
+ * rather than the rows themselves. It used to bucket every row in the
+ * browser, which meant the page serialised every row into the HTML as
+ * props; at tens of thousands of rows on the largest page that was
+ * several megabytes for twelve numbers a month. The summary carries counts, late flags and
+ * dollar estimates per month and source kind, so the hover label can say
+ * how many of a month's trades came from an annual report.
+ *
  * Same x-axis (scaleTime) as TransactionTimeline so this can sit directly
  * above the dot view as a "density overview" + drill-down pair.
  */
 
 interface Props {
-  transactions: Transaction[];
-  // Restrict the chart to a sub-range. Defaults to the full range.
-  rangeStart?: Date;
-  rangeEnd?: Date;
+  summary: MonthlySummary;
   // If set, the parent is rendering a filtered subset and this month
   // should be drawn with a highlighted outline.
   selectedMonth?: string | null; // "YYYY-MM"
@@ -32,16 +36,14 @@ interface Props {
   clickToZoom?: boolean;
 }
 
-function isSale(type: Transaction["type"]): boolean {
-  return type === "Sale" || type === "Sale (Partial)" || type === "Sale (Full)";
-}
-
 interface MonthBucket {
   month: Date;
+  monthKey: string;
   sales: number;
   purchases: number;
   late: number;
   total: number;
+  annualLane: number;
 }
 
 const CHART_MARGIN = { top: 28, right: 16, bottom: 28, left: 16 };
@@ -54,13 +56,11 @@ export default function MonthlyBars(props: Props) {
   );
 }
 
-function MonthlyBarsContent({
-  transactions,
-  rangeStart,
-  rangeEnd,
-  selectedMonth,
-  clickToZoom,
-}: Props) {
+function monthDate(monthKey: string): Date {
+  return new Date(`${monthKey}-01T00:00:00`);
+}
+
+function MonthlyBarsContent({ summary, selectedMonth, clickToZoom }: Props) {
   const router = useRouter();
   const search = useSearchParams();
 
@@ -70,46 +70,37 @@ function MonthlyBarsContent({
     // Toggle: clicking the same month again clears the filter.
     if (params.get("month") === monthKey) params.delete("month");
     else params.set("month", monthKey);
+    // A month filter starts the table at page 1.
+    params.delete("page");
     const qs = params.toString();
     router.replace(qs ? `?${qs}` : "?", { scroll: false });
   }
 
   const data = useMemo(() => {
-    if (transactions.length === 0) return { buckets: [] as MonthBucket[], maxStack: 0 };
-    const parsed = [];
-    const times = [];
-    for (const t of transactions) {
-      // A printed date that cannot be real stays in the table, not here.
-      if (!isChartableDate(t.date)) continue;
-      const dt = new Date(t.date + "T00:00:00");
-      if (isNaN(dt.getTime())) continue;
-      parsed.push({ ...t, dt });
-      times.push(dt.getTime());
-    }
-    const start = rangeStart ?? new Date(Math.min(...times));
-    const end = rangeEnd ?? new Date(Math.max(...times));
-    const months = timeMonth.range(timeMonth.floor(start), timeMonth.ceil(end));
-    const byMonth = new Map<string, MonthBucket>();
-    for (const m of months) {
-      const key = m.toISOString().slice(0, 7);
-      byMonth.set(key, { month: m, sales: 0, purchases: 0, late: 0, total: 0 });
-    }
-    for (const t of parsed) {
-      if (t.dt < start || t.dt > end) continue;
-      const key = t.date.slice(0, 7);
-      const b = byMonth.get(key);
-      if (!b) continue;
-      if (isSale(t.type)) b.sales++;
-      else if (t.type === "Purchase") b.purchases++;
-      if (t.lateFilingFlag) b.late++;
-      b.total++;
-    }
-    const buckets = Array.from(byMonth.values()).toSorted(
-      (a, b) => a.month.getTime() - b.month.getTime()
-    );
+    const totals = monthTotals(summary);
+    if (totals.length === 0) return { buckets: [] as MonthBucket[], maxStack: 0 };
+    // Fill the months between the first and last with empty bars so the
+    // time axis is continuous, as timeMonth.range did for the raw rows.
+    const start = monthDate(totals[0].monthKey);
+    const end = monthDate(totals[totals.length - 1].monthKey);
+    const months = timeMonth.range(timeMonth.floor(start), timeMonth.offset(timeMonth.floor(end), 1));
+    const byKey = new Map(totals.map((t) => [t.monthKey, t]));
+    const buckets: MonthBucket[] = months.map((m) => {
+      const key = `${m.getFullYear()}-${String(m.getMonth() + 1).padStart(2, "0")}`;
+      const t = byKey.get(key);
+      return {
+        month: m,
+        monthKey: key,
+        sales: t?.sales ?? 0,
+        purchases: t?.purchases ?? 0,
+        late: t?.late ?? 0,
+        total: t?.total ?? 0,
+        annualLane: t?.annualLane ?? 0,
+      };
+    });
     const maxStack = buckets.reduce((m, b) => Math.max(m, b.sales, b.purchases), 0);
     return { buckets, maxStack };
-  }, [transactions, rangeStart, rangeEnd]);
+  }, [summary]);
 
   const [hover, setHover] = useState<{ b: MonthBucket; x: number } | null>(null);
 
@@ -143,15 +134,15 @@ function MonthlyBarsContent({
 
   // Because bar HEIGHT is sqrt-compressed, the tallest months can't be read
   // off the axis by eye. Print the exact trade count above the 3 busiest
-  // months so the chart is honest and legible without hovering. We key by
-  // ISO month string for a cheap membership test in the bar loop below.
+  // months so the chart is honest and legible without hovering.
   const topMonthKeys = new Set(
     data.buckets
       .toSorted((a, b) => b.total - a.total)
       .slice(0, 3)
       .filter((b) => b.total > 0)
-      .map((b) => b.month.toISOString())
+      .map((b) => b.monthKey)
   );
+  const hasAnnualLane = data.buckets.some((b) => b.annualLane > 0);
 
   return (
     <div className="relative w-full">
@@ -172,17 +163,36 @@ function MonthlyBarsContent({
           const xPos = cx - barWidth / 2;
           const salesH = y(b.sales);
           const purchH = y(b.purchases);
-          const isHover = hover?.b.month.getTime() === b.month.getTime();
-          const monthKey = b.month.toISOString().slice(0, 7);
-          const isSelected = selectedMonth === monthKey;
+          const isHover = hover?.b.monthKey === b.monthKey;
+          const isSelected = selectedMonth === b.monthKey;
           const clickable = clickToZoom && b.total > 0;
           return (
             <g
-              key={b.month.toISOString()}
+              key={b.monthKey}
               onMouseEnter={() => setHover({ b, x: cx })}
               onMouseLeave={() => setHover(null)}
-              onClick={() => clickable && handleClick(monthKey)}
-              style={{ cursor: clickable ? "pointer" : "default" }}
+              onFocus={() => setHover({ b, x: cx })}
+              onBlur={() => setHover(null)}
+              onClick={() => clickable && handleClick(b.monthKey)}
+              // A clickable month is a button for the keyboard too: Tab to
+              // it, Enter or Space to zoom. SVG groups take focus with a
+              // tabIndex like any element.
+              role={clickable ? "button" : undefined}
+              tabIndex={clickable ? 0 : undefined}
+              aria-label={
+                clickable
+                  ? `${monthLabel(b.month)} ${yearLabel(b.month)}: ${b.total.toLocaleString()} trade${b.total === 1 ? "" : "s"}${b.late > 0 ? `, ${b.late.toLocaleString()} late` : ""}${isSelected ? " (selected)" : ""}`
+                  : undefined
+              }
+              aria-pressed={clickable ? isSelected : undefined}
+              onKeyDown={(e) => {
+                if (!clickable) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleClick(b.monthKey);
+                }
+              }}
+              style={{ cursor: clickable ? "pointer" : "default", outline: "none" }}
             >
               {/* Selected highlight, drawn behind the bars */}
               {isSelected && (
@@ -230,7 +240,9 @@ function MonthlyBarsContent({
               )}
               {/* Late-filing tick, amber bar at the very top of the
                   sales stack. We attach it to sales because lateness is
-                  the public-interest signal worth foregrounding. */}
+                  the public-interest signal worth foregrounding. Only a
+                  278-T row can be late (the summary never counts an
+                  annual row here). */}
               {b.late > 0 && b.sales > 0 && (
                 <rect
                   x={xPos}
@@ -252,7 +264,7 @@ function MonthlyBarsContent({
               {/* Exact count label on the busiest months so the sqrt-scaled
                   heights don't hide the true magnitudes. Sits just above the
                   sales stack (top of the bar). */}
-              {topMonthKeys.has(b.month.toISOString()) && (
+              {topMonthKeys.has(b.monthKey) && (
                 <text
                   x={cx}
                   y={midY - salesH - (b.late > 0 && b.sales > 0 ? 6 : 4)}
@@ -261,7 +273,7 @@ function MonthlyBarsContent({
                   fill="#525252"
                   className="font-[family-name:var(--font-dm-mono)] tabular-nums"
                 >
-                  {b.total}
+                  {b.total.toLocaleString()}
                 </text>
               )}
             </g>
@@ -281,7 +293,7 @@ function MonthlyBarsContent({
             if (!showLabel) return null;
             const label = i === 0 || isJan ? `${monthLabel(b.month)} ${yearLabel(b.month)}` : monthLabel(b.month);
             return (
-              <g key={`mo-${b.month.toISOString()}`}>
+              <g key={`mo-${b.monthKey}`}>
                 {(i === 0 || isJan) && (
                   <line
                     x1={x(b.month)}
@@ -309,9 +321,10 @@ function MonthlyBarsContent({
             fontSize={10}
             fill="#404040"
           >
-            {monthLabel(hover.b.month)} {yearLabel(hover.b.month)} · {hover.b.total} trade
+            {monthLabel(hover.b.month)} {yearLabel(hover.b.month)} · {hover.b.total.toLocaleString()} trade
             {hover.b.total === 1 ? "" : "s"}
-            {hover.b.late > 0 ? ` · ${hover.b.late} late` : ""}
+            {hover.b.late > 0 ? ` · ${hover.b.late.toLocaleString()} late` : ""}
+            {hover.b.annualLane > 0 ? ` · ${hover.b.annualLane.toLocaleString()} from annual report` : ""}
           </text>
         )}
       </svg>
@@ -326,8 +339,13 @@ function MonthlyBarsContent({
         </span>
         <span className="inline-flex items-center gap-1.5">
           <span className="inline-block w-3 h-[2px] bg-amber-500" /> Months
-          with late-filed trades
+          with late-filed 278-T trades
         </span>
+        {hasAnnualLane && (
+          <span className="text-neutral-400">
+            Bars include trades read from the annual report; hover a month for its share
+          </span>
+        )}
         <span className="text-neutral-400">
           Bar height scales with the square root of monthly trades, so busy
           months stay readable

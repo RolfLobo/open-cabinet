@@ -19,15 +19,15 @@ Congress has well-known stock trackers like Capitol Trades and Quiver Quantitati
 | Metric | Value |
 |--------|-------|
 | Officials tracked | 40 |
-| Transactions | 11,552 |
+| Transactions | 32,800 |
 | Rows under review (not counted in totals) | 0 |
-| Estimated value | ~$4.5B |
+| Estimated value | ~$5.9B |
 | Late filings | 7,749 |
 | Companies searchable | 1,188 |
 | News articles linked | 35 |
 | Source filing PDFs linked | 189 |
 
-Transaction counts, estimated value and late-filing totals exclude score-0 rows under review and three historical-report rows. The JSON and transaction CSV retain all 11,555 rows, including the 0 under review. JSON `transactionCount` is the counted total; `underReviewCount` and `historicalCount` are separate at both dataset and official level. The officials summary CSV uses the same exclusions and includes `under_review_count` and `historical_count`.
+Transaction counts, estimated value and late-filing totals exclude score-0 rows under review and three historical-report rows. The JSON and transaction CSV retain all 32,803 rows, including the 0 under review. JSON `transactionCount` is the counted total; `underReviewCount` and `historicalCount` are separate at both dataset and official level. The officials summary CSV uses the same exclusions and includes `under_review_count` and `historical_count`.
 
 Current-roster views exclude former-administration profiles and rows explicitly marked `historical`. MacGregor's three 2020 transactions remain on her profile as history. Older trade dates in second-term reports remain included and labeled. Full downloads retain historical profiles, identified by `formerOfficial` in JSON and `former_official` in CSV.
 
@@ -35,7 +35,7 @@ The daily OGE monitor compares published URLs with the full index and emails the
 
 Every number in this table is checked against `public/data/full-dataset.json` by an automated test (`lib/readme-stats.test.ts`). CI fails if the table drifts from the published dataset.
 
-Rows by verification state: 11,410 checked; 145 human_verified; 0 deterministic_agree; 0 two_models_agree; 0 audit_only; 0 single_read; 0 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
+Rows by verification state: 11,410 checked; 145 human_verified; 0 deterministic_agree; 0 two_models_agree; 0 audit_only; 21,242 single_read; 6 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
 
 ## Pages
 
@@ -206,9 +206,11 @@ GitHub Actions runs all three for pull requests and pushes to `main` (`.github/w
 ```bash
 pnpm validate         # Published-data rules and reference fixtures; no model or DB calls
 pnpm test:data        # Current export/data regression checks
+pnpm validate:trace -- --all                       # Row trace: every row's page in its PDF (Trump sampled)
+pnpm validate:trace -- --official bisignano-frank-j  # One official
 ```
 
-Validation checks consistency and known examples. It does not prove every value matches its PDF. The [maintenance guide](docs/maintenance.md) explains the checks and their limits.
+Validation checks consistency and known examples. It does not prove every value matches its PDF. The row trace comes closest: for every row that names a page, it confirms the printed row number, the date and the amount appear on that page of the PDF (pdftotext, no model), searches the document for rows without a page, and then mutates a seeded sample of rows to prove the checks reject a wrong date, row number or description. It needs poppler (`pdftotext`, `pdfinfo`) and fetches annual and termination reports into `data/pdfs` on first use, two seconds apart. Each run is appended to `data/meta/row-trace-log.json`, which the admin panel shows. The [maintenance guide](docs/maintenance.md) explains the checks and their limits.
 
 ## Legal
 

@@ -49,7 +49,7 @@ export default async function OfficialOGImage({
   const counted = officialForTotals(official).transactions;
   const buys = counted.filter((t) => t.type === "Purchase").length;
   const sells = counted.filter((t) => isSale(t.type)).length;
-  const lateFilings = counted.filter((t) => t.lateFilingFlag).length;
+  const lateFilings = counted.filter((t) => (t.sourceKind ?? "278-T") === "278-T" && t.lateFilingFlag).length;
   const total = counted.length;
   const fullName = displayName(official.name);
 

@@ -88,14 +88,14 @@ export default function AboutPage() {
             show every financial move an official makes. Fund and ETF trades,
             real-property sales and pre-service trades are exempt from 278-T
             reporting, and any trade an official did not report on a 278-T
-            appears only in an annual or termination report, which Open
-            Cabinet does not yet ingest. It also does not show holdings,
+            appears only in an annual or termination report; Open Cabinet reads
+            those reports too and labels each such row. It does not show holdings,
             exempt trust assets, private equity not actively traded, or
             anything below the statutory $1,000 reporting threshold.
             Entry-disclosure holdings (Nominee 278) exist today only as a
-            single pilot ledger; annual reports (278e) are not ingested, and
-            as of September 11, 2026, 14 tracked officials have a 2026 annual
-            posted on OGE. See the{" "}
+            single pilot ledger; the transactions section of every posted annual
+            and termination report (278e) is read into a labeled lane, and the
+            holdings sections are not yet parsed. See the{" "}
             <Link href="/methodology#what-we-add" className="underline hover:text-neutral-900">
               methodology
             </Link>{" "}

@@ -30,7 +30,7 @@ import { getOfficialBySlug, getOfficialsIndex } from "./data";
 import { displayName } from "./format";
 import { recordIdsFor, readRowVerification, type VerificationState } from "./row-verification";
 import { readAssetResolution, publicTicker } from "./asset-resolution";
-import type { AmountRange, TransactionType } from "./types";
+import type { AmountRange, SourceKind, TransactionType } from "./types";
 
 export interface PublishedRow {
   /** The row's record id, the same hash the verification file is keyed by. */
@@ -50,7 +50,11 @@ export interface PublishedRow {
   /** ISO date, or null when the filing prints no date for the row. */
   date: string | null;
   amount: AmountRange | null;
-  lateFilingFlag: boolean;
+  /** Null on a row from an annual or termination report (no late column). */
+  lateFilingFlag: boolean | null;
+  /** The form that disclosed the row; "278-T" unless the row came from
+   * the annual-report lane. Late shares count only 278-T rows. */
+  sourceKind: SourceKind;
   sourceUrl: string | null;
   verificationState: VerificationState;
 }
@@ -195,6 +199,7 @@ async function build(): Promise<PublishedRowsData> {
         date: tx.date,
         amount: tx.amount,
         lateFilingFlag: tx.lateFilingFlag,
+        sourceKind: tx.sourceKind ?? "278-T",
         sourceUrl: tx.sourceUrl ?? record?.sourceUrl ?? null,
         // No verification file, or no entry for this row, is the same
         // standing as a single read: nothing has compared it.

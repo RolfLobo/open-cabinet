@@ -1,0 +1,3311 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "ranAt": "2026-09-14T17:05:08.693Z",
+      "gitSha": "6be5dec",
+      "options": {
+        "all": true,
+        "officials": [],
+        "sampleTrump": 500,
+        "fullTrump": false,
+        "seed": 20260913,
+        "controls": 200
+      },
+      "result": "PASS",
+      "totals": {
+        "paged": 2678,
+        "passed": 2678,
+        "failed": 0,
+        "unpaged": 8,
+        "located": 8,
+        "unlocated": 0,
+        "skipped": 562,
+        "officials": 40,
+        "pdfsFetched": 0
+      },
+      "perOfficial": {
+        "bedford-bryan": {
+          "paged": 92,
+          "passed": 92,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 2
+        },
+        "bessent-scott": {
+          "paged": 26,
+          "passed": 26,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bisignano-frank-j": {
+          "paged": 166,
+          "passed": 166,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "blanche-todd": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bondi-pam": {
+          "paged": 2,
+          "passed": 2,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "burgum-douglas-j": {
+          "paged": 153,
+          "passed": 153,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "chavez-deremer-lori": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 97
+        },
+        "criswell-deanne": {
+          "paged": 80,
+          "passed": 80,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "dixon-stacey": {
+          "paged": 115,
+          "passed": 115,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "duffy-sean": {
+          "paged": 40,
+          "passed": 40,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "edgar-troy-d": {
+          "paged": 63,
+          "passed": 63,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "faulkender-michael-w": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "gabbard-tulsi": {
+          "paged": 13,
+          "passed": 13,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "hegseth-pete": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "isaacman-jared": {
+          "paged": 147,
+          "passed": 147,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kennedy-robert-f": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 9
+        },
+        "kratsios-michael-j": {
+          "paged": 66,
+          "passed": 66,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kupor-scott-a": {
+          "paged": 88,
+          "passed": 88,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "landau-christopher": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lawrence-paul": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lutnick-howard": {
+          "paged": 20,
+          "passed": 20,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "macgregor-katharine": {
+          "paged": 23,
+          "passed": 23,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "markwayne-mullin": {
+          "paged": 98,
+          "passed": 98,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmahon-linda": {
+          "paged": 162,
+          "passed": 162,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmaster-sean": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "miran-stephen": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mody-arjun": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 306
+        },
+        "molinaro-marcus": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "noem-kristi": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "phelan-john": {
+          "paged": 176,
+          "passed": 176,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sara-bailey": {
+          "paged": 5,
+          "passed": 5,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sonderling-keith": {
+          "paged": 41,
+          "passed": 41,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "trump-donald-j": {
+          "paged": 344,
+          "passed": 344,
+          "failed": 0,
+          "unpaged": 8,
+          "located": 8,
+          "unlocated": 0,
+          "skipped": 148
+        },
+        "turner-eric-scott": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "ueland-eric-m": {
+          "paged": 93,
+          "passed": 93,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "vaden-stephen-a": {
+          "paged": 6,
+          "passed": 6,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "warsh-kevin": {
+          "paged": 65,
+          "passed": 65,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "whitaker-michael": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "wright-christopher": {
+          "paged": 301,
+          "passed": 301,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "zeldin-lee": {
+          "paged": 4,
+          "passed": 4,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        }
+      },
+      "failures": [],
+      "controls": {
+        "sample": 200,
+        "dateShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "rowShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "descSwap": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        }
+      },
+      "problems": [
+        "Bryan-Bedford-11.03.2025-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Lori-Chavez-DeRemer-07.02.2025-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Robert-F-Kennedy-Jr-05.09.2025-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Arjun-Mody-02.27.2026-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump-06.25.2026-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Trump, Donald J.-05.08.2026-278T(2).pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump-06.25.2026-278T (2).pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump-08.12.2026-278T.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Donald-J-Trump-4.20.2026-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump-08.12.2025-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald J. Trump 2.26.2026 278-T (2).pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald-J-Trump 1.14.2026-278T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald J. Trump 2.26.2026 278-T (1).pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald J. Trump 10.20.2025 278-T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald J. Trump 12.18.2025 278-T.pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)",
+        "Donald J. Trump 10.20.2025 278-T (2).pdf: 278-T rows without a page are outside this check (text layer not lane-confirmed)"
+      ],
+      "durationSeconds": 5
+    },
+    {
+      "ranAt": "2026-09-14T17:03:17.093Z",
+      "gitSha": "6be5dec",
+      "options": {
+        "all": true,
+        "officials": [],
+        "sampleTrump": 500,
+        "fullTrump": false,
+        "seed": 20260913,
+        "controls": 200
+      },
+      "result": "FAIL",
+      "totals": {
+        "paged": 2667,
+        "passed": 2667,
+        "failed": 0,
+        "unpaged": 555,
+        "located": 507,
+        "unlocated": 48,
+        "skipped": 26,
+        "officials": 40,
+        "pdfsFetched": 0
+      },
+      "perOfficial": {
+        "bedford-bryan": {
+          "paged": 92,
+          "passed": 92,
+          "failed": 0,
+          "unpaged": 2,
+          "located": 2,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bessent-scott": {
+          "paged": 26,
+          "passed": 26,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bisignano-frank-j": {
+          "paged": 166,
+          "passed": 166,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "blanche-todd": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bondi-pam": {
+          "paged": 2,
+          "passed": 2,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "burgum-douglas-j": {
+          "paged": 153,
+          "passed": 153,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "chavez-deremer-lori": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 97,
+          "located": 95,
+          "unlocated": 2,
+          "skipped": 0
+        },
+        "criswell-deanne": {
+          "paged": 80,
+          "passed": 80,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "dixon-stacey": {
+          "paged": 115,
+          "passed": 115,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "duffy-sean": {
+          "paged": 39,
+          "passed": 39,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 1
+        },
+        "edgar-troy-d": {
+          "paged": 63,
+          "passed": 63,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "faulkender-michael-w": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "gabbard-tulsi": {
+          "paged": 13,
+          "passed": 13,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "hegseth-pete": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "isaacman-jared": {
+          "paged": 147,
+          "passed": 147,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kennedy-robert-f": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 9,
+          "located": 9,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kratsios-michael-j": {
+          "paged": 66,
+          "passed": 66,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kupor-scott-a": {
+          "paged": 88,
+          "passed": 88,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "landau-christopher": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lawrence-paul": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lutnick-howard": {
+          "paged": 20,
+          "passed": 20,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "macgregor-katharine": {
+          "paged": 23,
+          "passed": 23,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "markwayne-mullin": {
+          "paged": 98,
+          "passed": 98,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmahon-linda": {
+          "paged": 162,
+          "passed": 162,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmaster-sean": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "miran-stephen": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mody-arjun": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 306,
+          "located": 305,
+          "unlocated": 1,
+          "skipped": 0
+        },
+        "molinaro-marcus": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 3
+        },
+        "noem-kristi": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "phelan-john": {
+          "paged": 176,
+          "passed": 176,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sara-bailey": {
+          "paged": 5,
+          "passed": 5,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sonderling-keith": {
+          "paged": 41,
+          "passed": 41,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "trump-donald-j": {
+          "paged": 344,
+          "passed": 344,
+          "failed": 0,
+          "unpaged": 141,
+          "located": 96,
+          "unlocated": 45,
+          "skipped": 15
+        },
+        "turner-eric-scott": {
+          "paged": 8,
+          "passed": 8,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 7
+        },
+        "ueland-eric-m": {
+          "paged": 93,
+          "passed": 93,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "vaden-stephen-a": {
+          "paged": 6,
+          "passed": 6,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "warsh-kevin": {
+          "paged": 65,
+          "passed": 65,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "whitaker-michael": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "wright-christopher": {
+          "paged": 301,
+          "passed": 301,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "zeldin-lee": {
+          "paged": 4,
+          "passed": 4,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        }
+      },
+      "failures": [
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BROADRIDGE FINANCIAL SOLUTIONS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "WEST PHARMACEUTICAL SERVICES INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "mody-arjun",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-03",
+          "amount": "$1,001-$15,000",
+          "description": "Vanguard Emerging Markets Stock Index Fund ETF Shares (VWO)",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BERKSHIRE HATHAWAY CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-26",
+          "amount": "$1,001-$15,000",
+          "description": "RADIAN GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "Amazon Com Inc",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$500,001-$1,000,000",
+          "description": "FACTSET RESH SYS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-16",
+          "amount": "$250,001-$500,000",
+          "description": "HARRIS CNTY TX MUD 4332019A BAM B/E CR ENH 4.00 % Due Sep 1, 2026",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "ELEVANCE HEALTH INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "Arista Networks Inc Com New",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "FIDELITY NATL INFORMATIO",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-07",
+          "amount": "$1,001-$15,000",
+          "description": "DEXCOM INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$100,001-$250,000",
+          "description": "MICROCHIP TECHNOLOGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-06-05",
+          "amount": "$250,001-$500,000",
+          "description": "ALLEN CNTY KS PUB BLDG COMMN REV RFDG SER A B/E 5.00 % Due Dec 1, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-14",
+          "amount": "$500,001-$1,000,000",
+          "description": "JOHNSON & JOHNSON",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$1,001-$15,000",
+          "description": "STATE STRET ENRGY SLECT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "UNITEDHEALTH GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$100,001-$250,000",
+          "description": "MEDTRONIC PLC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-13",
+          "amount": "$15,001-$50,000",
+          "description": "ALBANY INTL CORP NEW CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-02",
+          "amount": "$15,001-$50,000",
+          "description": "OLD DOMINION FREIGHT LINES INC UNSOLICITED",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-26",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$15,001-$50,000",
+          "description": "UNION PAC CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-09-04",
+          "amount": "$100,001-$250,000",
+          "description": "SHELBY CNTY KY SCH DIST FIN CORP BLDG REV RFDG B/E ST INTRCPT 4.00 % Due Feb 1, ",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$100,001-$250,000",
+          "description": "STATE STRT HLTH CRE SLT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-11-04",
+          "amount": "$100,001-$250,000",
+          "description": "OCCIDENTAL PETE SR DEBS-REG SENIOR NOTES DUE 09/01/2030 06.625% MS 01 DISCRETION",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$50,001-$100,000",
+          "description": "COLORADO SPRINGS CO UTIL REV RFDG SYS SER A 2 B/E 5.00 % Due Nov 15, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-19",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "WASHINGTON ST HEALT 5% DUE 10/01/35",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-24",
+          "amount": "$250,001-$500,000",
+          "description": "ABBVIE INC NTS B/E 04.125% 031531 DTD030426 FC091526 CALL@MW+10BP YTM = 4.446 UN",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-12",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Modine Mfg Co",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$1,001-$15,000",
+          "description": "MCDONALDS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$15,001-$50,000",
+          "description": "ENPHASE ENERGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "ABBOTT LABS INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$100,001-$250,000",
+          "description": "NEWARK HIGH ED FIN CORP TX ED REV THE HUGHEN CTR INC 2021 A B/E PSF GTD 4.00 % D",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "MERCK & CO INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "NORWEGIAN CRUISE LINE F",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-11",
+          "amount": "$1,001-$15,000",
+          "description": "O REILLY AUTOMOTIVE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "PUBLIC STORAGE",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-12",
+          "amount": "$100,001-$250,000",
+          "description": "AON PLC F CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$50,001-$100,000",
+          "description": "WELLS FARGO & CO PERP NT 6.8500% 12/31/49",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-18",
+          "amount": "$50,001-$100,000",
+          "description": "PARKER-HANNIFIN CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "MOODYS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-20",
+          "amount": "$50,001-$100,000",
+          "description": "NIKE INC CLASS CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "CAPITAL ONE FINL CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-30",
+          "amount": "$50,001-$100,000",
+          "description": "SL GREEN RLTY CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-27",
+          "amount": "$1,001-$15,000",
+          "description": "Kkr & Co Inc Com Solicited Order Discretion Exercised",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Ishares Tr Msci Eafe Value",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$1,001-$15,000",
+          "description": "METLIFE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        }
+      ],
+      "controls": {
+        "sample": 200,
+        "dateShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "rowShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "descSwap": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        }
+      },
+      "problems": [
+        "Sean-Duffy-2026-278ANNU.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Marcus-Molinaro-2026-278TERM.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Donald-J-Trump-08.12.2026-278T.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Eric-Scott-Turner-2026-278ANNU.pdf: no usable text layer (scan); its rows are not traceable here"
+      ],
+      "durationSeconds": 6
+    },
+    {
+      "ranAt": "2026-09-14T17:01:34.501Z",
+      "gitSha": "6be5dec",
+      "options": {
+        "all": true,
+        "officials": [],
+        "sampleTrump": 500,
+        "fullTrump": false,
+        "seed": 20260913,
+        "controls": 200
+      },
+      "result": "FAIL",
+      "totals": {
+        "paged": 2678,
+        "passed": 2678,
+        "failed": 0,
+        "unpaged": 555,
+        "located": 507,
+        "unlocated": 48,
+        "skipped": 15,
+        "officials": 40,
+        "pdfsFetched": 0
+      },
+      "perOfficial": {
+        "bedford-bryan": {
+          "paged": 92,
+          "passed": 92,
+          "failed": 0,
+          "unpaged": 2,
+          "located": 2,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bessent-scott": {
+          "paged": 26,
+          "passed": 26,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bisignano-frank-j": {
+          "paged": 166,
+          "passed": 166,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "blanche-todd": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bondi-pam": {
+          "paged": 2,
+          "passed": 2,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "burgum-douglas-j": {
+          "paged": 153,
+          "passed": 153,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "chavez-deremer-lori": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 97,
+          "located": 95,
+          "unlocated": 2,
+          "skipped": 0
+        },
+        "criswell-deanne": {
+          "paged": 80,
+          "passed": 80,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "dixon-stacey": {
+          "paged": 115,
+          "passed": 115,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "duffy-sean": {
+          "paged": 40,
+          "passed": 40,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "edgar-troy-d": {
+          "paged": 63,
+          "passed": 63,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "faulkender-michael-w": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "gabbard-tulsi": {
+          "paged": 13,
+          "passed": 13,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "hegseth-pete": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "isaacman-jared": {
+          "paged": 147,
+          "passed": 147,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kennedy-robert-f": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 9,
+          "located": 9,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kratsios-michael-j": {
+          "paged": 66,
+          "passed": 66,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kupor-scott-a": {
+          "paged": 88,
+          "passed": 88,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "landau-christopher": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lawrence-paul": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lutnick-howard": {
+          "paged": 20,
+          "passed": 20,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "macgregor-katharine": {
+          "paged": 23,
+          "passed": 23,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "markwayne-mullin": {
+          "paged": 98,
+          "passed": 98,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmahon-linda": {
+          "paged": 162,
+          "passed": 162,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmaster-sean": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "miran-stephen": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mody-arjun": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 306,
+          "located": 305,
+          "unlocated": 1,
+          "skipped": 0
+        },
+        "molinaro-marcus": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "noem-kristi": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "phelan-john": {
+          "paged": 176,
+          "passed": 176,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sara-bailey": {
+          "paged": 5,
+          "passed": 5,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sonderling-keith": {
+          "paged": 41,
+          "passed": 41,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "trump-donald-j": {
+          "paged": 344,
+          "passed": 344,
+          "failed": 0,
+          "unpaged": 141,
+          "located": 96,
+          "unlocated": 45,
+          "skipped": 15
+        },
+        "turner-eric-scott": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "ueland-eric-m": {
+          "paged": 93,
+          "passed": 93,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "vaden-stephen-a": {
+          "paged": 6,
+          "passed": 6,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "warsh-kevin": {
+          "paged": 65,
+          "passed": 65,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "whitaker-michael": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "wright-christopher": {
+          "paged": 301,
+          "passed": 301,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "zeldin-lee": {
+          "paged": 4,
+          "passed": 4,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        }
+      },
+      "failures": [
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BROADRIDGE FINANCIAL SOLUTIONS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "WEST PHARMACEUTICAL SERVICES INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "mody-arjun",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-03",
+          "amount": "$1,001-$15,000",
+          "description": "Vanguard Emerging Markets Stock Index Fund ETF Shares (VWO)",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BERKSHIRE HATHAWAY CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-26",
+          "amount": "$1,001-$15,000",
+          "description": "RADIAN GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "Amazon Com Inc",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$500,001-$1,000,000",
+          "description": "FACTSET RESH SYS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-16",
+          "amount": "$250,001-$500,000",
+          "description": "HARRIS CNTY TX MUD 4332019A BAM B/E CR ENH 4.00 % Due Sep 1, 2026",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "ELEVANCE HEALTH INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "Arista Networks Inc Com New",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "FIDELITY NATL INFORMATIO",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-07",
+          "amount": "$1,001-$15,000",
+          "description": "DEXCOM INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$100,001-$250,000",
+          "description": "MICROCHIP TECHNOLOGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-06-05",
+          "amount": "$250,001-$500,000",
+          "description": "ALLEN CNTY KS PUB BLDG COMMN REV RFDG SER A B/E 5.00 % Due Dec 1, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-14",
+          "amount": "$500,001-$1,000,000",
+          "description": "JOHNSON & JOHNSON",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$1,001-$15,000",
+          "description": "STATE STRET ENRGY SLECT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "UNITEDHEALTH GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$100,001-$250,000",
+          "description": "MEDTRONIC PLC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-13",
+          "amount": "$15,001-$50,000",
+          "description": "ALBANY INTL CORP NEW CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-02",
+          "amount": "$15,001-$50,000",
+          "description": "OLD DOMINION FREIGHT LINES INC UNSOLICITED",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-26",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$15,001-$50,000",
+          "description": "UNION PAC CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-09-04",
+          "amount": "$100,001-$250,000",
+          "description": "SHELBY CNTY KY SCH DIST FIN CORP BLDG REV RFDG B/E ST INTRCPT 4.00 % Due Feb 1, ",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$100,001-$250,000",
+          "description": "STATE STRT HLTH CRE SLT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-11-04",
+          "amount": "$100,001-$250,000",
+          "description": "OCCIDENTAL PETE SR DEBS-REG SENIOR NOTES DUE 09/01/2030 06.625% MS 01 DISCRETION",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$50,001-$100,000",
+          "description": "COLORADO SPRINGS CO UTIL REV RFDG SYS SER A 2 B/E 5.00 % Due Nov 15, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-19",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "WASHINGTON ST HEALT 5% DUE 10/01/35",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-24",
+          "amount": "$250,001-$500,000",
+          "description": "ABBVIE INC NTS B/E 04.125% 031531 DTD030426 FC091526 CALL@MW+10BP YTM = 4.446 UN",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-12",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Modine Mfg Co",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$1,001-$15,000",
+          "description": "MCDONALDS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$15,001-$50,000",
+          "description": "ENPHASE ENERGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "ABBOTT LABS INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$100,001-$250,000",
+          "description": "NEWARK HIGH ED FIN CORP TX ED REV THE HUGHEN CTR INC 2021 A B/E PSF GTD 4.00 % D",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "MERCK & CO INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "NORWEGIAN CRUISE LINE F",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-11",
+          "amount": "$1,001-$15,000",
+          "description": "O REILLY AUTOMOTIVE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "PUBLIC STORAGE",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-12",
+          "amount": "$100,001-$250,000",
+          "description": "AON PLC F CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$50,001-$100,000",
+          "description": "WELLS FARGO & CO PERP NT 6.8500% 12/31/49",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-18",
+          "amount": "$50,001-$100,000",
+          "description": "PARKER-HANNIFIN CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "MOODYS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-20",
+          "amount": "$50,001-$100,000",
+          "description": "NIKE INC CLASS CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "CAPITAL ONE FINL CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-30",
+          "amount": "$50,001-$100,000",
+          "description": "SL GREEN RLTY CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-27",
+          "amount": "$1,001-$15,000",
+          "description": "Kkr & Co Inc Com Solicited Order Discretion Exercised",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Ishares Tr Msci Eafe Value",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$1,001-$15,000",
+          "description": "METLIFE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        }
+      ],
+      "controls": {
+        "sample": 200,
+        "dateShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "rowShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "descSwap": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        }
+      },
+      "problems": [
+        "Donald-J-Trump-08.12.2026-278T.pdf: no usable text layer (scan); its rows are not traceable here",
+        "Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: no usable text layer (scan); its rows are not traceable here"
+      ],
+      "durationSeconds": 5
+    },
+    {
+      "ranAt": "2026-09-14T16:59:18.897Z",
+      "gitSha": "6be5dec",
+      "options": {
+        "all": true,
+        "officials": [],
+        "sampleTrump": 500,
+        "fullTrump": false,
+        "seed": 20260913,
+        "controls": 200
+      },
+      "result": "FAIL",
+      "totals": {
+        "paged": 2678,
+        "passed": 2678,
+        "failed": 0,
+        "unpaged": 570,
+        "located": 507,
+        "unlocated": 63,
+        "skipped": 0,
+        "officials": 40,
+        "pdfsFetched": 0
+      },
+      "perOfficial": {
+        "bedford-bryan": {
+          "paged": 92,
+          "passed": 92,
+          "failed": 0,
+          "unpaged": 2,
+          "located": 2,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bessent-scott": {
+          "paged": 26,
+          "passed": 26,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bisignano-frank-j": {
+          "paged": 166,
+          "passed": 166,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "blanche-todd": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "bondi-pam": {
+          "paged": 2,
+          "passed": 2,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "burgum-douglas-j": {
+          "paged": 153,
+          "passed": 153,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "chavez-deremer-lori": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 97,
+          "located": 95,
+          "unlocated": 2,
+          "skipped": 0
+        },
+        "criswell-deanne": {
+          "paged": 80,
+          "passed": 80,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "dixon-stacey": {
+          "paged": 115,
+          "passed": 115,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "duffy-sean": {
+          "paged": 40,
+          "passed": 40,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "edgar-troy-d": {
+          "paged": 63,
+          "passed": 63,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "faulkender-michael-w": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "gabbard-tulsi": {
+          "paged": 13,
+          "passed": 13,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "hegseth-pete": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "isaacman-jared": {
+          "paged": 147,
+          "passed": 147,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kennedy-robert-f": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 9,
+          "located": 9,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kratsios-michael-j": {
+          "paged": 66,
+          "passed": 66,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "kupor-scott-a": {
+          "paged": 88,
+          "passed": 88,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "landau-christopher": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lawrence-paul": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "lutnick-howard": {
+          "paged": 20,
+          "passed": 20,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "macgregor-katharine": {
+          "paged": 23,
+          "passed": 23,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "markwayne-mullin": {
+          "paged": 98,
+          "passed": 98,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmahon-linda": {
+          "paged": 162,
+          "passed": 162,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mcmaster-sean": {
+          "paged": 29,
+          "passed": 29,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "miran-stephen": {
+          "paged": 89,
+          "passed": 89,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "mody-arjun": {
+          "paged": 0,
+          "passed": 0,
+          "failed": 0,
+          "unpaged": 306,
+          "located": 305,
+          "unlocated": 1,
+          "skipped": 0
+        },
+        "molinaro-marcus": {
+          "paged": 3,
+          "passed": 3,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "noem-kristi": {
+          "paged": 1,
+          "passed": 1,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "phelan-john": {
+          "paged": 176,
+          "passed": 176,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sara-bailey": {
+          "paged": 5,
+          "passed": 5,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "sonderling-keith": {
+          "paged": 41,
+          "passed": 41,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "trump-donald-j": {
+          "paged": 344,
+          "passed": 344,
+          "failed": 0,
+          "unpaged": 156,
+          "located": 96,
+          "unlocated": 60,
+          "skipped": 0
+        },
+        "turner-eric-scott": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "ueland-eric-m": {
+          "paged": 93,
+          "passed": 93,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "vaden-stephen-a": {
+          "paged": 6,
+          "passed": 6,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "warsh-kevin": {
+          "paged": 65,
+          "passed": 65,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "whitaker-michael": {
+          "paged": 15,
+          "passed": 15,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "wright-christopher": {
+          "paged": 301,
+          "passed": 301,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        },
+        "zeldin-lee": {
+          "paged": 4,
+          "passed": 4,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        }
+      },
+      "failures": [
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BROADRIDGE FINANCIAL SOLUTIONS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "chavez-deremer-lori",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "WEST PHARMACEUTICAL SERVICES INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "mody-arjun",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-03",
+          "amount": "$1,001-$15,000",
+          "description": "Vanguard Emerging Markets Stock Index Fund ETF Shares (VWO)",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "BERKSHIRE HATHAWAY CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-26",
+          "amount": "$1,001-$15,000",
+          "description": "RADIAN GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "Amazon Com Inc",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-18",
+          "amount": "$1,001-$15,000",
+          "description": "INTERNATIONAL PAPER",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$500,001-$1,000,000",
+          "description": "FACTSET RESH SYS INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-12",
+          "amount": "$50,001-$100,000",
+          "description": "BOSTON SCIENTIFIC CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-01-16",
+          "amount": "$250,001-$500,000",
+          "description": "HARRIS CNTY TX MUD 4332019A BAM B/E CR ENH 4.00 % Due Sep 1, 2026",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-07-10",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "AUSTIN BERGSTROM LANDHST ENTRPRS INC TX ARPT HOTL REV SR RFDG & IMPT B/E 5.00 % ",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "ELEVANCE HEALTH INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-07-15",
+          "amount": "$100,001-$250,000",
+          "description": "LAKELAND FL ENERGY SYS RFDG REV B/E 5.00 % Due Oct 1, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "Arista Networks Inc Com New",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-18",
+          "amount": "$100,001-$250,000",
+          "description": "SERVICENOW INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "FIDELITY NATL INFORMATIO",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-07",
+          "amount": "$1,001-$15,000",
+          "description": "DEXCOM INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$100,001-$250,000",
+          "description": "MICROCHIP TECHNOLOGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-15",
+          "amount": "$1,001-$15,000",
+          "description": "REVOLUTION MEDICINES INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-06-05",
+          "amount": "$250,001-$500,000",
+          "description": "ALLEN CNTY KS PUB BLDG COMMN REV RFDG SER A B/E 5.00 % Due Dec 1, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-14",
+          "amount": "$500,001-$1,000,000",
+          "description": "JOHNSON & JOHNSON",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$1,001-$15,000",
+          "description": "STATE STRET ENRGY SLECT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-12",
+          "amount": "$15,001-$50,000",
+          "description": "TRADE DESK INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "UNITEDHEALTH GROUP INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$100,001-$250,000",
+          "description": "MEDTRONIC PLC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-13",
+          "amount": "$15,001-$50,000",
+          "description": "ALBANY INTL CORP NEW CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-02",
+          "amount": "$15,001-$50,000",
+          "description": "OLD DOMINION FREIGHT LINES INC UNSOLICITED",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-26",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$15,001-$50,000",
+          "description": "UNION PAC CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-09-04",
+          "amount": "$100,001-$250,000",
+          "description": "SHELBY CNTY KY SCH DIST FIN CORP BLDG REV RFDG B/E ST INTRCPT 4.00 % Due Feb 1, ",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-03",
+          "amount": "$1,001-$15,000",
+          "description": "DOORDASH INC CLASS CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-24",
+          "amount": "$15,001-$50,000",
+          "description": "COREWEAVE INC CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-18",
+          "amount": "$50,001-$100,000",
+          "description": "KKR & CO INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-04",
+          "amount": "$100,001-$250,000",
+          "description": "STATE STRT HLTH CRE SLT SEC SPDR ETF",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-11-04",
+          "amount": "$100,001-$250,000",
+          "description": "OCCIDENTAL PETE SR DEBS-REG SENIOR NOTES DUE 09/01/2030 06.625% MS 01 DISCRETION",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$50,001-$100,000",
+          "description": "COLORADO SPRINGS CO UTIL REV RFDG SYS SER A 2 B/E 5.00 % Due Nov 15, 2025",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-19",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "WASHINGTON ST HEALT 5% DUE 10/01/35",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-24",
+          "amount": "$250,001-$500,000",
+          "description": "ABBVIE INC NTS B/E 04.125% 031531 DTD030426 FC091526 CALL@MW+10BP YTM = 4.446 UN",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-07-02",
+          "amount": "$100,001-$250,000",
+          "description": "BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-12",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Modine Mfg Co",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-23",
+          "amount": "$1,001-$15,000",
+          "description": "DANAHER CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-10",
+          "amount": "$1,001-$15,000",
+          "description": "MCDONALDS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$15,001-$50,000",
+          "description": "ENPHASE ENERGY INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-17",
+          "amount": "$250,001-$500,000",
+          "description": "ABBOTT LABS INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-15",
+          "amount": "$15,001-$50,000",
+          "description": "AMAZON.COM INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-05-06",
+          "amount": "$100,001-$250,000",
+          "description": "NEWARK HIGH ED FIN CORP TX ED REV THE HUGHEN CTR INC 2021 A B/E PSF GTD 4.00 % D",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "MERCK & CO INC COM",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-28",
+          "amount": "$1,001-$15,000",
+          "description": "NORWEGIAN CRUISE LINE F",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-30",
+          "amount": "$50,001-$100,000",
+          "description": "VERRA MOBILITY CORP CLASS CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2025-07-16",
+          "amount": "$15,001-$50,000",
+          "description": "KING CNTY WA SCH DIST 414 LK WA B/E SCH BD GTY 4.00 % Due Dec 1, 2034",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-11",
+          "amount": "$1,001-$15,000",
+          "description": "O REILLY AUTOMOTIVE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$15,001-$50,000",
+          "description": "PUBLIC STORAGE",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-02-12",
+          "amount": "$100,001-$250,000",
+          "description": "AON PLC F CLASS A",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$50,001-$100,000",
+          "description": "WELLS FARGO & CO PERP NT 6.8500% 12/31/49",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-18",
+          "amount": "$50,001-$100,000",
+          "description": "PARKER-HANNIFIN CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "MOODYS CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-20",
+          "amount": "$50,001-$100,000",
+          "description": "NIKE INC CLASS CLASS B",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-18",
+          "amount": "$100,001-$250,000",
+          "description": "CAPITAL ONE FINL CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-30",
+          "amount": "$50,001-$100,000",
+          "description": "SL GREEN RLTY CORP",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-03-27",
+          "amount": "$1,001-$15,000",
+          "description": "Kkr & Co Inc Com Solicited Order Discretion Exercised",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-05-21",
+          "amount": "$1,000,001-$5,000,000",
+          "description": "Ishares Tr Msci Eafe Value",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-04-27",
+          "amount": "$1,001-$15,000",
+          "description": "METLIFE INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        },
+        {
+          "official": "trump-donald-j",
+          "sourceKind": "278-T",
+          "page": null,
+          "row": null,
+          "date": "2026-06-18",
+          "amount": "$100,001-$250,000",
+          "description": "QUALM INC",
+          "reason": "not located anywhere in the document by date, amount and description"
+        }
+      ],
+      "controls": {
+        "sample": 200,
+        "dateShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "rowShift": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "descSwap": {
+          "caught": 200,
+          "uncaught": 0,
+          "notEvaluable": 0
+        }
+      },
+      "problems": [],
+      "durationSeconds": 6
+    },
+    {
+      "ranAt": "2026-09-14T16:58:59.347Z",
+      "gitSha": "6be5dec",
+      "options": {
+        "all": false,
+        "officials": [
+          "bisignano-frank-j"
+        ],
+        "sampleTrump": 500,
+        "fullTrump": false,
+        "seed": 20260913,
+        "controls": 200
+      },
+      "result": "PASS",
+      "totals": {
+        "paged": 166,
+        "passed": 166,
+        "failed": 0,
+        "unpaged": 0,
+        "located": 0,
+        "unlocated": 0,
+        "skipped": 0,
+        "officials": 1,
+        "pdfsFetched": 0
+      },
+      "perOfficial": {
+        "bisignano-frank-j": {
+          "paged": 166,
+          "passed": 166,
+          "failed": 0,
+          "unpaged": 0,
+          "located": 0,
+          "unlocated": 0,
+          "skipped": 0
+        }
+      },
+      "failures": [],
+      "controls": {
+        "sample": 166,
+        "dateShift": {
+          "caught": 166,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "rowShift": {
+          "caught": 166,
+          "uncaught": 0,
+          "notEvaluable": 0
+        },
+        "descSwap": {
+          "caught": 166,
+          "uncaught": 0,
+          "notEvaluable": 0
+        }
+      },
+      "problems": [],
+      "durationSeconds": 0
+    }
+  ]
+}

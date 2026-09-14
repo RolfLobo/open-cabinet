@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllOfficials, getTradesByTicker, officialForTotals } from "@/lib/data";
 import UnderReviewNote from "../components/under-review-note";
+import AiUseNote from "../components/ai-use-note";
 import { readAssetResolution } from "@/lib/asset-resolution";
 import { recordIdsFor } from "@/lib/row-verification";
 import { INSTRUMENT_LABEL, type InstrumentType } from "@/lib/instrument-type";
@@ -10,6 +11,7 @@ import {
 import OfficialRankings from "../components/official-rankings";
 import BuySellRatio from "../components/buy-sell-ratio";
 import SectorTreemap from "../components/sector-treemap";
+import { lateStats, periodicRows } from "@/lib/source-lane";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/dashboard" },
@@ -24,8 +26,13 @@ function isSale(type: string): boolean {
 
 export default async function DashboardPage() {
   const sourceOfficials = await getAllOfficials();
-  const officials = sourceOfficials.map(officialForTotals);
-  const underReviewCount = officials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  const countedOfficials = sourceOfficials.map(officialForTotals);
+  const underReviewCount = countedOfficials.reduce((sum, o) => sum + o.underReviewCount, 0);
+  // Aggregates here describe 278-T rows, the same population as /all, so
+  // the two overview pages agree; rows read from annual and termination
+  // reports are counted on the officials' own pages.
+  const annualLaneCount = countedOfficials.reduce((sum, o) => sum + lateStats(o.transactions).annualLane, 0);
+  const officials = countedOfficials.map((o) => ({ ...o, transactions: periodicRows(o.transactions) }));
 
   const allTx = officials.flatMap((o) =>
     o.transactions.map((tx) => ({ ...tx, officialName: o.name, officialSlug: o.slug }))
@@ -39,7 +46,8 @@ export default async function DashboardPage() {
 
   const salesCount = allTx.filter((tx) => isSale(tx.type)).length;
   const purchasesCount = allTx.filter((tx) => tx.type === "Purchase").length;
-  const lateCount = allTx.filter((tx) => tx.lateFilingFlag).length;
+  // Late counts describe 278-T rows only (lib/source-lane.ts).
+  const lateCount = lateStats(allTx).late;
 
   // Official rankings data
   const rankings = officials
@@ -104,6 +112,13 @@ export default async function DashboardPage() {
         <p className="text-neutral-500 max-w-xl leading-relaxed">
           Aggregate view of the 278-T periodic transaction report trades tracked
           by Open Cabinet.
+          {annualLaneCount > 0 && (
+            <>
+              {" "}These totals cover 278-T periodic reports; a further{" "}
+              {annualLaneCount.toLocaleString()} trades read from annual and
+              termination reports are counted on the officials&apos; own pages.
+            </>
+          )}
         </p>
       </header>
 
@@ -127,15 +142,16 @@ export default async function DashboardPage() {
           late-filed transactions
           <span className="text-neutral-400 ml-1">
             ({officials.find((o) => o.slug === "trump-donald-j")
-              ? `${officials
-                  .find((o) => o.slug === "trump-donald-j")!
-                  .transactions.filter((t) => t.lateFilingFlag).length.toLocaleString()} from Trump`
+              ? `${lateStats(
+                  officials.find((o) => o.slug === "trump-donald-j")!.transactions
+                ).late.toLocaleString()} from Trump`
               : ""})
           </span>
         </div>
       </div>
 
       <UnderReviewNote count={underReviewCount} />
+      <AiUseNote className="mb-8" />
       <div className="space-y-16">
         <BuySellRatio
           salesCount={salesCount}

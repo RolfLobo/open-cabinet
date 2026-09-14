@@ -5,6 +5,12 @@
  * Level I, Level II, and Presidential officials. Downloads new PDFs
  * and reports what changed since the last check.
  *
+ * Also lists, separately and without downloading, any annual or
+ * termination 278e newly posted for an official the site tracks. Those
+ * reports feed the annual-report lane (scripts/ingest-annual-reports.ts),
+ * which a person runs after the audit steps it documents; the monitor
+ * only says they exist.
+ *
  * Usage: pnpm run check-filings
  */
 
@@ -18,11 +24,13 @@ import {
   reconcileKnownFilings,
   fetchOgeRecords,
   getTargetFilings,
+  getTargetReports,
   loadDiscoveredFilingUrls,
   writeLastCheckState,
   MIN_DOC_DATE,
   type TargetFiling,
 } from "../lib/oge-filings";
+import { periodicFilings } from "../lib/source-lane";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const PDF_DIR = path.join(DATA_DIR, "pdfs");
@@ -91,13 +99,14 @@ async function projectFilingCadence(): Promise<CadenceProjection[]> {
     if (!file.endsWith(".json")) continue;
     const official = JSON.parse(
       await readFile(path.join(officialsDir, file), "utf-8")
-    ) as { name: string; sourceFilings?: Array<{ date?: string }> };
+    ) as { name: string; sourceFilings?: Array<{ date?: string; kind?: string }> };
 
-    // Restrict to the current administration's window so pre-2025 annual
-    // filings from holdover officials don't distort the gap statistics.
+    // Restrict to 278-Ts in the current administration's window: an annual
+    // or termination report is posted once and would put a false gap into
+    // a filer's periodic cadence.
     const dates = [
       ...new Set(
-        (official.sourceFilings || [])
+        periodicFilings(official.sourceFilings || [])
           .map((f) => f.date?.slice(0, 10))
           .filter((d): d is string => Boolean(d) && d! >= MIN_DOC_DATE)
       ),
@@ -191,6 +200,19 @@ async function main() {
     for (const r of reconciled.redated) console.warn(`  ${r.date} -> ${r.indexDate}  ${r.url.split("/").pop()}`);
   }
   const knownUrls = await loadDiscoveredFilingUrls();
+  // Annual and termination reports of tracked officials: reported apart
+  // from 278-Ts, never downloaded or ingested here.
+  const trackedNames = new Set<string>();
+  for (const file of await readdir(path.join(DATA_DIR, "officials"))) {
+    if (!file.endsWith(".json")) continue;
+    const official = JSON.parse(await readFile(path.join(DATA_DIR, "officials", file), "utf-8")) as { name: string };
+    trackedNames.add(official.name);
+  }
+  const targetReports = getTargetReports(records, trackedNames);
+  const newReports = diffNewFilings(targetReports, knownUrls).map((report) => ({
+    ...report,
+    status: "reported",
+  }));
   const newFilings = diffNewFilings(targetFilings, knownUrls).map(
     (filing): TargetFiling & { status: string } => ({
       ...filing,
@@ -231,11 +253,21 @@ async function main() {
     }
   }
 
+  if (newReports.length === 0) {
+    console.log("\nNo new annual or termination reports for tracked officials.");
+  } else {
+    console.log(`\n${newReports.length} annual/termination report(s) posted for tracked officials (not ingested; see scripts/ingest-annual-reports.ts):`);
+    for (const r of newReports) {
+      console.log(`  ${r.name} — ${r.kind === "termination-278e" ? "Termination" : "Annual"} — posted ${r.docDate.slice(0, 10)}`);
+      console.log(`    ${r.pdfUrl}`);
+    }
+  }
+
   printCadenceProjections(await projectFilingCadence());
 
   // Save updated state
   if (!dryRun) {
-    await writeLastCheckState({ filings: targetFilings, newFilings });
+    await writeLastCheckState({ filings: targetFilings, newFilings, reports: targetReports, newReports });
     console.log("\nState saved to data/meta/last-check.json");
   } else {
     console.log("\nDry run — state not saved.");
