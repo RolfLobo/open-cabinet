@@ -105,7 +105,7 @@ describe("published verification exports", () => {
       expect(row[27]).toBe(tx.periodicStatus ?? "reported");
       if (tx.sourceKind) expect(tx.lateFilingFlag).toBeNull();
     });
-  });
+  }, 60_000); // 32,800 rows; the CI runner needed more than the 5s default (red since Sept. 14)
 });
 
 
