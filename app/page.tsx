@@ -326,7 +326,7 @@ export default async function Home() {
                 href="/askai"
                 className="inline-block bg-neutral-900 text-white px-4 py-2 text-sm hover:bg-neutral-800 transition-colors"
               >
-                Open the question box
+                Ask a question
               </Link>
             </div>
           </div>
