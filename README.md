@@ -35,7 +35,7 @@ The daily OGE monitor compares published URLs with the full index and emails the
 
 Every number in this table is checked against `public/data/full-dataset.json` by an automated test (`lib/readme-stats.test.ts`). CI fails if the table drifts from the published dataset.
 
-Rows by verification state: 11,410 checked; 145 human_verified; 0 deterministic_agree; 0 two_models_agree; 0 audit_only; 21,242 single_read; 6 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
+Rows by verification state: 32,633 checked; 165 human_verified; 0 deterministic_agree; 0 two_models_agree; 0 audit_only; 0 single_read; 5 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
 
 ## Pages
 

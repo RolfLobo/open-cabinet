@@ -32,7 +32,8 @@
     "grok-audit": "tsx scripts/grok-audit.ts",
     "readme-stats": "tsx scripts/update-readme-stats.ts",
     "asset-resolution": "tsx scripts/build-asset-resolution.ts",
-    "fetch-asset-sources": "tsx scripts/fetch-asset-sources.ts"
+    "fetch-asset-sources": "tsx scripts/fetch-asset-sources.ts",
+    "record-annual-verification": "tsx scripts/record-annual-verification.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",

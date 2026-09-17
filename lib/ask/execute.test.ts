@@ -254,7 +254,7 @@ describe("late_share", () => {
       late: 1,
       total: 4,
       percent: 25,
-      display: "1 of 4 checked trades in this query (25 percent) were flagged late",
+      display: "1 of 4 checked 278-T trades in this query (25 percent) were flagged late",
     });
   });
 
@@ -274,7 +274,7 @@ describe("late_share", () => {
       late: 1,
       total: 1,
       percent: 100,
-      display: "1 of 1 checked trades in this query (100 percent) were flagged late",
+      display: "1 of 1 checked 278-T trades in this query (100 percent) were flagged late",
     });
   });
 
@@ -292,7 +292,7 @@ describe("late_share", () => {
       late: 0,
       total: 0,
       percent: 0,
-      display: "0 of 0 checked trades in this query (0 percent) were flagged late",
+      display: "0 of 0 checked 278-T trades in this query (0 percent) were flagged late",
     });
   });
 });

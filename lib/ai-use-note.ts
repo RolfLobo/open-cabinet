@@ -6,7 +6,7 @@
  * everywhere. app/components/ai-use-note.tsx renders it with the links.
  */
 export const AI_USE_NOTE =
-  "Rows are extracted from OGE filings by automated parsing (Claude PDF reading, text-layer and OCR cross-checks) and reviewed by a mix of software and human checks; the status on each row says which. Open the source PDF to confirm any row, and tell us if something is wrong.";
+  "Rows are extracted from OGE filings by automated parsing (Claude PDF reading, PDF-parser and OCR cross-checks) and reviewed by a mix of software and human checks; the status on each row says which. Open the source PDF to confirm any row, and tell us if something is wrong.";
 
 export const AI_USE_METHODOLOGY_PATH = "/methodology#verification";
 export const AI_USE_FEEDBACK_PATH = "/about#feedback";

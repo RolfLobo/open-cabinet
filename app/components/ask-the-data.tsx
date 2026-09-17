@@ -44,8 +44,16 @@ interface ResultRow {
   date: string;
   dateDisplay: string;
   amountLabel: string | null;
-  lateFilingFlag: boolean;
+  lateFilingFlag: boolean | null;
+  sourceKind?: "278-T" | "annual-278e" | "termination-278e";
   sourceUrl: string | null;
+}
+
+/** Link label for the filing a row was read from. */
+function sourceLabel(kind: ResultRow["sourceKind"]): string {
+  if (kind === "annual-278e") return "Annual";
+  if (kind === "termination-278e") return "Termination";
+  return "278-T";
 }
 
 interface RankedOfficial {
@@ -509,7 +517,7 @@ export default function AskTheData({
                             rel="noopener noreferrer"
                             className="text-neutral-500 underline hover:text-neutral-900"
                           >
-                            278-T
+                            {sourceLabel(row.sourceKind)}
                           </a>
                         ) : (
                           <span className="text-neutral-300">None</span>
@@ -576,7 +584,7 @@ export default function AskTheData({
                 <dt className="text-neutral-400">Rows matched</dt><dd>{result ? result.matchedRows.toLocaleString() : "n/a"}</dd>
                 <dt className="text-neutral-400">Aggregate</dt><dd>{result?.aggregate ?? "n/a"}</dd>
                 <dt className="text-neutral-400">Plan from</dt><dd>{response.planSource ?? "n/a"}</dd>
-                <dt className="text-neutral-400">Sentence by</dt><dd>code template (model prose is off in this alpha)</dd>
+                <dt className="text-neutral-400">Sentence by</dt><dd>code template (the AI writes no sentence a reader sees)</dd>
               </dl>
               <p className="uppercase tracking-wider text-neutral-400 mt-3 mb-1">Validated plan the executor ran</p>
               <pre className="overflow-x-auto font-[family-name:var(--font-dm-mono)] text-[11px] leading-relaxed whitespace-pre-wrap">{response.plan ? JSON.stringify(response.plan, null, 2) : "(no plan: the question was declined or not translated before execution)"}</pre>

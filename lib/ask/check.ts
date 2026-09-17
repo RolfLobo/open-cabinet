@@ -42,8 +42,11 @@ export function extractDateTokens(text: string): string[] {
   return text.match(DATE_TOKEN) ?? [];
 }
 
+/** Form names are not figures: "278-T" and "278e" must not read as 278. */
+const FORM_NAME = /\b278(?:-T|e)\b/g;
+
 function withoutDates(text: string): string {
-  return text.replace(DATE_TOKEN, " ").replace(MONTH_NAME, " ");
+  return text.replace(FORM_NAME, " ").replace(DATE_TOKEN, " ").replace(MONTH_NAME, " ");
 }
 
 /**
@@ -389,7 +392,30 @@ export function templateAnswer(
   return readerSentence(plan, result);
 }
 
+/**
+ * The lane note. When an answer's rows came from more than one kind of
+ * filing, the sentence says how many came from an annual or termination
+ * report. Those rows have no late-filing column and are a different
+ * document from a 278-T, so a reader who goes to check should know which
+ * to open. The late-share sentence names its lane itself.
+ */
+function laneNote(plan: QueryPlan, result: ExecuteResult): string {
+  const annual = result.bySource?.annual ?? 0;
+  if (annual === 0 || plan.aggregate === "late_share") return "";
+  const periodic = result.bySource?.periodic ?? 0;
+  if (periodic === 0) {
+    return annual === 1
+      ? " It was read from an annual or termination report, not a 278-T."
+      : " All were read from annual or termination reports, not 278-Ts.";
+  }
+  return ` ${n(annual)} of these ${annual === 1 ? "was" : "were"} read from an annual or termination report rather than a 278-T.`;
+}
+
 export function readerSentence(plan: QueryPlan, result: ExecuteResult): string {
+  return baseSentence(plan, result) + laneNote(plan, result);
+}
+
+function baseSentence(plan: QueryPlan, result: ExecuteResult): string {
   const total = result.matchedRows;
   const noun = tradeNoun(plan, total);
   const { subject, possessive, named } = whoPhrase(result);
@@ -468,7 +494,10 @@ export function readerSentence(plan: QueryPlan, result: ExecuteResult): string {
     case "late_share": {
       const share = result.lateShare;
       if (!share || share.total === 0) return none;
-      return `${n(share.late)} of ${possessive === "Officials'" ? "the" : possessive} ${n(share.total)} ${tradeNoun(plan, share.total)}${asset}${when} (${share.percent} percent) were flagged as reported late.`;
+      const annualNote = (result.bySource?.annual ?? 0) > 0
+        ? ` ${n(result.bySource!.annual)} other ${tradeNoun(plan, result.bySource!.annual)} read from annual or termination reports have no late-filing column and are not counted.`
+        : "";
+      return `${n(share.late)} of ${possessive === "Officials'" ? "the" : possessive} ${n(share.total)} 278-T ${tradeNoun(plan, share.total)}${asset}${when} (${share.percent} percent) were flagged as reported late.${annualNote}`;
     }
     case "first_last_dates": {
       const undated = result.undatedRows ?? 0;

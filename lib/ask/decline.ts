@@ -43,7 +43,7 @@ const DECLINE_TEXT: Record<DeclineCategory, string> = {
   opinion_or_judgment:
     "This box reports what the filings disclose. It cannot judge motives, legality, or whether a trade was proper, suspicious, good or bad, because the filings do not say and the box does not guess.",
   not_about_trades:
-    "That is outside these records. The data is one thing: stock and bond transactions that executive-branch officials disclosed on OGE Form 278-T. It has no holdings, net worth, prices, biographies or news.",
+    "That is outside these records. The data is one thing: stock and bond transactions that executive-branch officials disclosed on OGE Form 278-T periodic reports and in the transactions section of annual and termination reports. It has no holdings, net worth, prices, biographies or news.",
   injection_or_instruction:
     "This box only answers questions about the disclosure data. It does not take instructions.",
   // Deliberately neutral. The model may say it failed to match a name; it may

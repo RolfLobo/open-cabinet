@@ -131,6 +131,24 @@ describe("templateAnswer", () => {
     expect(answer).toBe("Officials in this data reported 142 trades.");
   });
 
+  it("says how many rows came from annual reports and still passes the number check (Sept. 17 lane merge)", () => {
+    const mixed: ExecuteResult = {
+      ...COUNT_RESULT,
+      bySource: { periodic: 100, annual: 42 },
+      numbers: [142, 42, 100],
+      displayStrings: ["142", "42", "100"],
+    };
+    const answer = templateAnswer({ filters: {}, aggregate: "count" }, "Trades, counted.", mixed);
+    expect(answer).toBe(
+      "Officials in this data reported 142 trades. 42 of these were read from an annual or termination report rather than a 278-T."
+    );
+    expect(checkAnswerNumbers(answer, mixed).ok).toBe(true);
+    // The form name is not a figure.
+    expect(extractNumberTokens("41 of the 299 278-T trades")).toEqual(["41", "299"]);
+    const allAnnual: ExecuteResult = { ...COUNT_RESULT, bySource: { periodic: 0, annual: 142 }, numbers: [142, 0], displayStrings: ["142", "0"] };
+    expect(templateAnswer({ filters: {}, aggregate: "count" }, "Trades, counted.", allAnnual)).toContain("All were read from annual or termination reports, not 278-Ts.");
+  });
+
   it("names the excluded unknown-amount rows in a sum sentence", () => {
     const answer = templateAnswer(
       { filters: {}, aggregate: "sum_estimate" },
@@ -303,7 +321,7 @@ describe("templateAnswer for late_share", () => {
         LATE_RESULT
       )
     ).toBe(
-      "41 of the 299 trades (13.7 percent) were flagged as reported late."
+      "41 of the 299 278-T trades (13.7 percent) were flagged as reported late."
     );
   });
 

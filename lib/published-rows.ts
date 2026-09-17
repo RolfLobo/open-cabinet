@@ -180,6 +180,11 @@ async function build(): Promise<PublishedRowsData> {
     const ids = recordIdsFor(official.transactions);
     official.transactions.forEach((tx, i) => {
       if (tx.historical) return;
+      // Both lanes are in scope (Sept. 17, 2026): 278-T rows and the Part 7
+      // rows the annual-report lane reads from annual and termination
+      // reports. sourceKind rides along so every answer can say how many of
+      // its rows came from an annual report, and so late arithmetic can stay
+      // on 278-T rows, the only ones with a late-filing column.
       const id = ids[i];
       const record = verification?.rows[id] ?? null;
       const ticker = publicTicker(assets?.rows[id], record?.gates?.name);

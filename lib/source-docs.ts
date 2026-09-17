@@ -16,6 +16,7 @@ export type DocumentKind =
   | "transaction_278t"
   | "certificate_of_divestiture"
   | "conflict_waiver"
+  | "annual"
   | "termination"
   | "other";
 

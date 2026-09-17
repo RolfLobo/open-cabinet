@@ -13,7 +13,7 @@ Built and maintained by Trevor Brown, a journalist and developer (https://trevor
 
 ## How rows are checked
 
-Each filing is read by a vision model. Where the PDF has a text layer, a program that never saw the model's output reads the same table and the two are compared row for row. Scans are read again by OCR and compared the same way. Where no program can read the page, a second company's model reads it. A third company's model then audits the rows against the page images. A new filing is published only when the reads agree on every row; anything else is held for a person. Rows already on the site that a check later disputes stay up marked under review until a person decides. Details: /methodology.
+Each 278-T filing is read by a vision model. Where a PDF parser can read the PDF's own text, that program, which never saw the model's output, reads the same table and the two are compared row for row. Scans are read again by OCR and compared the same way. Where no program can read the page, a second company's model reads it. A third company's model then audits the rows against the page images. A new filing is published only when the reads agree on every row; anything else is held for a person. Rows already on the site that a check later disputes stay up marked under review until a person decides. Rows from the Part 7 tables of annual and termination reports were read by a PDF parser, agreed with an AI page read of every report (and a second company's model on most pages of the largest), and were found on their PDF page by a row-by-row check; the download carries the per-row state. Details: /methodology.
 
 ## Primary pages
 

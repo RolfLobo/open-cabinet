@@ -66,14 +66,17 @@ export const DISCLOSURE =
       "sentence; every number in the sentence was checked against the code's figures. " +
       "This counts checked rows only, the ones an independent program or a second model " +
       "agreed with and a page audit confirmed. Dollar figures are sums of disclosed range " +
-      "midpoints, not reported prices. Open the linked 278-T before you cite a figure."
+      "midpoints, not reported prices. Open the linked filing before you cite a figure."
     : "Numbers and the sentence come from code, not from the AI. The AI only turned " +
       "your question into the query shown above. This counts checked rows only, the ones " +
       "an independent program or a second model agreed with and a page audit confirmed. " +
       "Dollar figures are sums of disclosed range midpoints, not reported prices. " +
       "\"Late\" means the filer checked the box saying the trade was reported more than " +
       "30 days after notice. A row can be a trade reported for a spouse or dependent child; " +
-      "the filing does not always say which. Open the linked 278-T before you cite a figure.";
+      "the filing does not always say which. Rows come from 278-T periodic reports and from " +
+      "the transactions section of annual and termination reports; only 278-T rows carry a " +
+      "late-filing flag, and the answer says how many rows came from each. Open the linked " +
+      "filing before you cite a figure.";
 
 export type AskStatus = "answered" | "not_in_data" | "declined" | "error";
 
@@ -127,7 +130,7 @@ async function reserveDailyQuota(attempt = 0): Promise<"ok" | "over" | "closed">
     }
     if (missingTable) {
       // Fail closed (Codex, Sept. 7): no shared counter means no paid path.
-      // Run the drizzle migrations (0003_ask_quota) before enabling the alpha.
+      // Run the drizzle migrations (0003_ask_quota) before opening the box.
       console.error("ask_quota table missing; the question box is closed until the migration runs");
       return "closed";
     }
@@ -259,7 +262,7 @@ function planSystemPrompt(
     "Filters select individual transactions, not a person’s trading history. Decline questions about who never sold,",
     "who only bought, or who bought one asset and sold another. These need separate sets of transactions and cannot be represented.",
     "",
-    "The dataset is executive-branch stock transactions disclosed on OGE Form 278-T.",
+    "The dataset is executive-branch stock transactions disclosed on OGE Form 278-T periodic reports and in the transactions section of annual and termination reports.",
     "Each row has: official (name, slug, agency, title), description (the asset as the filing wrote it), ticker (may be absent),",
     "type (Sale, Sale (Partial), Sale (Full), Purchase, Exchange, Unstated), date, amount (a disclosed dollar range, sometimes absent),",
     "lateFilingFlag (the filer certified the report was late), and the source filing URL.",
@@ -480,12 +483,12 @@ export async function POST(request: Request) {
       { status: 403 }
     );
   }
-  // Alpha: the box is open only to people who entered the shared password
-  // on /askai. Closed everywhere when ASKAI_PASSWORD is unset.
+  // Kill switch: ASKAI_CLOSED=1 in the environment turns the box off
+  // everywhere before any spend.
   if (!requestHasAskaiAccess(request)) {
     return NextResponse.json(
-      { status: "error", answer: "Ask the data is in a closed alpha. Enter the access password at /askai." },
-      { status: 403 }
+      { status: "error", answer: "Ask the data is turned off right now. Try again later." },
+      { status: 503 }
     );
   }
   // A JSON content type forces a CORS preflight for a cross-site POST, which
@@ -941,7 +944,7 @@ export async function POST(request: Request) {
     // The answer is already computed. A phrasing call that fails or hangs
     // must not throw that away and return a 500 (Codex, Sept. 6): the reader
     // gets the templated sentence instead.
-    // Alpha default: the model writes no sentence a reader sees. The Sept. 7
+    // Default: the model writes no sentence a reader sees. The Sept. 7
     // red team showed the number check is membership, not meaning (a
     // truncated ranking of 4 rows could ship as "1 checked row"), so until
     // the check binds each figure to its role, the template is the answer.
