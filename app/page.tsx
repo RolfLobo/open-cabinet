@@ -308,6 +308,30 @@ export default async function Home() {
           <AlertSignupForm sourcePage="home-stats" />
         </div>
 
+        {/* Ask the data is linked from here only: not in the nav, not
+            indexed. Same box style as the signup above it. */}
+        <section className="mt-3 border border-neutral-200 bg-white px-4 py-4">
+          <div className="grid gap-4 md:grid-cols-[1fr_1.4fr] md:items-center">
+            <div>
+              <h2 className="font-[family-name:var(--font-source-serif)] text-xl text-neutral-900">
+                Ask the data
+              </h2>
+              <p className="mt-1 text-sm text-neutral-500 leading-relaxed">
+                Type a question about these records. Code counts the rows; an AI
+                model only reads the question. Experimental.
+              </p>
+            </div>
+            <div className="md:text-right">
+              <Link
+                href="/askai"
+                className="inline-block bg-neutral-900 text-white px-4 py-2 text-sm hover:bg-neutral-800 transition-colors"
+              >
+                Open the question box
+              </Link>
+            </div>
+          </div>
+        </section>
+
       </div>
 
       {/* ── DIRECTORY PREVIEW ── */}
@@ -431,15 +455,6 @@ export default async function Home() {
       {/* ── EXPLAINER (scrollytelling) ── */}
       <div className="mx-auto max-w-5xl px-4">
         <Explainer />
-        {/* Ask the data is linked from here only: not in the nav, not
-            indexed. Readers who get this far down the page find it. */}
-        <p className="text-sm text-neutral-500 mt-8 border-t border-neutral-200 pt-4">
-          Have a question about these records?{" "}
-          <Link href="/askai" className="underline decoration-dotted underline-offset-2 hover:text-neutral-900">
-            Ask the data
-          </Link>
-          , an experimental question box. Code counts the rows; an AI model only reads the question.
-        </p>
       </div>
 
       {/* ── IN THE NEWS ── */}
