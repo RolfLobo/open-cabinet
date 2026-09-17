@@ -34,6 +34,21 @@
  *
  * A score is never raised by a program alone above what its lanes support,
  * and a human decision is the only thing that turns 0 into 3.
+ *
+ * Annual-lane rows (Part 7 of an annual or termination report) were not
+ * read by the 278-T pipeline. Their first read was a program (the
+ * pdftotext column parser of the Sep 2026 audit), and the evidence that
+ * checks them lives in data/meta/annual-verification-log.json, written by
+ * scripts/record-annual-verification.ts from the audit's artifacts: an
+ * independent extractor (pdfplumber) or model transcription that agreed
+ * on type, date, amount and description, a model page read, a second
+ * company's model where it covered the page, the row-trace validator's
+ * pass, and the page images a person or the session compared. The same
+ * three gates apply: a program agreed, a model read the page and agreed,
+ * and the row was found on its page.
+ *
+ * The note on each row is public copy. It says what checked the row in
+ * plain words; the gates carry the per-lane verdicts for the admin view.
  */
 import { createHash } from "crypto";
 import { existsSync, readFileSync } from "fs";
@@ -70,6 +85,10 @@ export interface RowVerification {
   /** What each gate said about this row, for the admin view. Absent on
    * rows built before Sep 6, 2026. */
   gates?: RowGates;
+  /** For annual-lane rows: the recorded artifacts that agreed with the
+   * row, by tag (data/meta/annual-verification-log.json). Absent on
+   * 278-T rows, whose lanes are in the gates. */
+  evidence?: string[];
 }
 
 /** Per-gate verdicts for one row. "none" means the gate did not run or
@@ -99,6 +118,9 @@ export interface RowVerificationFile {
   generatedAt: string;
   generatedBy: string;
   checkerVersion: string;
+  /** The annual-lane evidence log the build read, when one was on disk:
+   * when it was recorded and how many rows it covers. */
+  annualLane?: { recordedAt: string; rows: number };
   summary: {
     rows: number;
     byState: Record<VerificationState, number>;
@@ -106,6 +128,75 @@ export interface RowVerificationFile {
   };
   rows: Record<string, RowVerification>;
 }
+
+/**
+ * Evidence recorded for one annual-lane row by
+ * scripts/record-annual-verification.ts. Keyed by record ID, so a row
+ * that changes (a corrected amount, a new date) loses its evidence and
+ * drops back to a single read until the artifacts are matched again.
+ */
+export interface AnnualEvidence {
+  slug: string;
+  sourceUrl: string;
+  sourcePage: number | null;
+  sourceRow: number | null;
+  /** Tags, e.g. "pdfplumber-agree", "sonnet-page-read-agree",
+   * "astra-page-read-agree", "model-transcription-agree",
+   * "row-trace-pass", "image-check", "evidence-strip". */
+  evidence: string[];
+  /** A program independent of the first read agreed on the trade columns. */
+  programAgree: boolean;
+  /** A model read the page and agreed on the trade columns and the name. */
+  modelPageReadAgree: boolean;
+  /** A second company's model also read the page and agreed. */
+  secondCompanyAgree: boolean;
+  /** The row-trace validator found the row on its PDF page. */
+  rowTracePass: boolean;
+  /** A person or the session compared the page image to the rows. */
+  imageChecked: boolean;
+  /** The model page read's name for the row passes sameAssetWording
+   * against the published name. Recorded, not yet applied: the name
+   * gate on lane rows stays "none" until ticker matching by name is
+   * approved for annual rows (Trevor, Sep 14, 2026). */
+  nameAgree: boolean;
+}
+
+export interface AnnualVerificationLog {
+  version: 1;
+  generatedAt: string;
+  generatedBy: string;
+  inputs: Record<string, string>;
+  summary: { laneRows: number; recorded: number; gaps: number };
+  rows: Record<string, AnnualEvidence>;
+  gaps: Array<{ slug: string; sourcePage: number | null; sourceRow: number | null; description: string; reason: string }>;
+}
+
+export const ANNUAL_VERIFICATION_LOG_PATH = path.join(process.cwd(), "data", "meta", "annual-verification-log.json");
+
+export function readAnnualVerificationLog(): AnnualVerificationLog | null {
+  if (!existsSync(ANNUAL_VERIFICATION_LOG_PATH)) return null;
+  return JSON.parse(readFileSync(ANNUAL_VERIFICATION_LOG_PATH, "utf-8")) as AnnualVerificationLog;
+}
+
+/**
+ * Public wording for a row's note. Plain words, no lane names: a reader
+ * of the table should not need the methodology page to follow it.
+ */
+export const NOTE = {
+  /** A program read the PDF's text and agreed with the model on every row; the page audit confirmed the row. */
+  programAndModelChecked: "A PDF parser and an AI model each read this filing and agreed on every row. A page check confirmed this row.",
+  /** OCR of the page image agreed with the model on this row; the page audit confirmed it. */
+  ocrAndModelChecked: "An OCR program and an AI model each read this row and agreed. A page check confirmed this row.",
+  /** No program could vouch for the row; a second company's model agreed; the page audit confirmed it. */
+  twoModelsChecked: "The PDF parser could not read this filing reliably, so two AI models from different companies read it and agreed. A page check confirmed this row.",
+  /** A person compared the row to the PDF. */
+  person: (date: string) => `Checked by a person against the PDF on ${date}.`,
+  /** An annual-lane row: program plus model page read plus row trace. */
+  annualChecked: "A PDF parser and an AI model each read this report and agreed on this row, and a row-by-row check found it on its PDF page.",
+  annualSecondCompany: " A second AI model from a different company also agreed.",
+  /** An annual-lane row with no recorded evidence. */
+  annualSingleRead: "Read from the report's Part 7 transaction table by a PDF parser; no recorded check has compared this row yet",
+} as const;
 
 /** A person's decision on one row, recorded by scripts/review.ts. */
 export interface ReviewDecision {
@@ -215,6 +306,9 @@ export interface DeriveInput {
    * paired description, the session read's. The name gate compares these
    * strictly (sameAssetWording) against the published name. */
   nameReadsByUrl?: Map<string, Array<Map<number, string>>>;
+  /** Recorded evidence for annual-lane rows, by record ID
+   * (data/meta/annual-verification-log.json). Absent until recorded. */
+  annualEvidenceById?: Map<string, AnnualEvidence>;
 }
 
 /**
@@ -325,7 +419,10 @@ export function applyAudit(
   }
   if (audit.confirmed.has(parsedIndex)) {
     if (v.state === "deterministic_agree" || v.state === "two_models_agree") {
-      return { ...v, score: 3, state: "checked", note: `${v.note}; the page audit confirmed it` };
+      // The public note names the route in plain words. The gates keep
+      // the per-lane detail (which lane, which printed row).
+      const note = v.lane === "text" ? NOTE.programAndModelChecked : v.lane === "ocr" ? NOTE.ocrAndModelChecked : NOTE.twoModelsChecked;
+      return { ...v, score: 3, state: "checked", note };
     }
     if (v.state === "single_read") {
       return { ...v, score: 2, state: "audit_only", lane: "audit", note: "The page audit confirmed this row against the page image; no program or second model has read it" };
@@ -379,9 +476,32 @@ export function implausibleValues(tx: Pick<Transaction, "description" | "date" |
  * who decided the row has already looked, so decided rows are left alone. */
 export function applyImplausible(v: RowVerification, reasons: string[]): RowVerification {
   if (reasons.length === 0 || v.state === "human_verified") return v;
-  const why = `Needs a person: ${reasons.join("; ")}`;
+  // A weekend date is shown as the filing prints it; the public wording
+  // says that rather than "cannot be right", since filers do print
+  // settlement or notification dates there. The row still waits for a
+  // person. Any other reason keeps the stronger wording.
+  const why = onlyWeekendReasons(reasons)
+    ? `Date falls on a weekend (${reasons.map((r) => r.replace(/^the trade is dated a /, "").replace(/; markets are closed$/, "")).join("; ")}); shown as printed in the filing. A person decides`
+    : `Needs a person: ${reasons.join("; ")}`;
   if (v.score === 0) return { ...v, note: `${v.note}. ${why}` };
   return { ...v, score: 2, state: "implausible", note: `${why}. Before this check: ${v.note}` };
+}
+
+/** True when every implausible reason is a weekend trade date. */
+export function onlyWeekendReasons(reasons: string[]): boolean {
+  return reasons.length > 0 && reasons.every((r) => /^the trade is dated a (Saturday|Sunday)/.test(r));
+}
+
+/**
+ * The short marker for a table cell. The same as SHORT_LABEL by state,
+ * except that a row held only for a weekend date says so in plain words.
+ */
+export function shortLabelFor(v: RowVerification | null): string {
+  if (!v) return SHORT_LABEL.single_read;
+  if (v.state === "implausible" && v.gates && onlyWeekendReasons(v.gates.implausible)) {
+    return "Date falls on a weekend; shown as printed in the filing";
+  }
+  return SHORT_LABEL[v.state];
 }
 
 /** What each gate said about one row. Pure; used by the derivation. */
@@ -466,7 +586,7 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
       out.push({ ...applyImplausible(applyAudit(v, tx.sourceUrl ? input.auditByUrl?.get(tx.sourceUrl) : undefined, parsedIndex), reasons), gates: gatesAt(parsedIndex) });
     };
     if (decision && decision.decision !== "rejected") {
-      out.push({ ...base, score: 3, state: "human_verified", lane: "human", note: `Decided by ${decision.decidedBy} on ${decision.decidedAt.slice(0, 10)}`, gates: gatesAt(earlyIndex()) });
+      out.push({ ...base, score: 3, state: "human_verified", lane: "human", note: NOTE.person(decision.decidedAt.slice(0, 10)), gates: gatesAt(earlyIndex()) });
       return;
     }
     if (decision) {
@@ -491,13 +611,36 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
     if (!entry) {
       // An annual-lane row was read from Part 7 of an annual or
       // termination report in the Sep 2026 audit, outside the 278-T
-      // pipeline's lanes (no parse cache, no cross-check entry). It is a
-      // single read here, honestly, and the note says which read.
-      const note =
-        tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e"
-          ? "Read from the report's Part 7 transaction table in the Sep 2026 audit; the verification lanes run on 278-T filings only"
-          : "No check has run on this filing";
-      emit({ ...base, score: 1, state: "single_read", lane: null, note }, parsedIndex ?? -1);
+      // pipeline's lanes (no parse cache, no cross-check entry). Its
+      // checks are the recorded artifacts in the annual evidence log; a
+      // row with none recorded is a single read, honestly.
+      const isLane = tx.sourceKind === "annual-278e" || tx.sourceKind === "termination-278e";
+      const ev = isLane ? input.annualEvidenceById?.get(id) : undefined;
+      if (ev && ev.programAgree && ev.modelPageReadAgree && ev.rowTracePass) {
+        const gates: RowGates = {
+          read1Confidence: null,
+          text: "agree",
+          ocr: "none",
+          model2: ev.secondCompanyAgree ? "agree" : "none",
+          session: "agree",
+          // On a lane row the page gate is the model page read plus the
+          // row trace on the printed page, not the 278-T pipeline's
+          // third-company audit; the admin legend says so.
+          audit: "confirm",
+          human: null,
+          implausible: reasons,
+          // Held at "none" by decision (Sep 14, 2026): no ticker is
+          // published from name matching on annual rows until Trevor
+          // approves it. The evidence (ev.nameAgree) is in the log; flip
+          // this to `ev.nameAgree ? "agree" : "none"` to apply it.
+          name: "none",
+        };
+        const note = NOTE.annualChecked + (ev.secondCompanyAgree ? NOTE.annualSecondCompany : "");
+        out.push({ ...applyImplausible({ ...base, score: 3, state: "checked", lane: "text", note, evidence: ev.evidence }, reasons), gates });
+        return;
+      }
+      const note = isLane ? NOTE.annualSingleRead : "No check has run on this filing";
+      emit({ ...base, score: 1, state: "single_read", lane: null, note, ...(ev ? { evidence: ev.evidence } : {}) }, parsedIndex ?? -1);
       return;
     }
     // A filing-level agreement was between the lane and a candidate read.
@@ -513,7 +656,7 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
     const idx = parsedIndex ?? -1;
     switch (entry.state) {
       case "checked_tuple_agreement":
-        emit({ ...base, score: 2, state: "deterministic_agree", lane: "text", note: "Text layer of the filing agrees, row for row" }, idx);
+        emit({ ...base, score: 2, state: "deterministic_agree", lane: "text", note: "A PDF parser and an AI model each read this filing and agreed on every row; the page check has not run yet" }, idx);
         return;
       case "ocr_tuple_agreement":
         emit({ ...base, score: 2, state: "deterministic_agree", lane: "ocr", note: "OCR of the page image agrees, row for row" }, idx);
@@ -524,9 +667,9 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
         // reads agreeing; the page audit settles it. Otherwise the
         // filing's mismatch stands on the row.
         if (m2 && idx >= 0 && m2.agreedIndexes.has(idx)) {
-          emit({ ...base, score: 2, state: "two_models_agree", lane: "model2", note: "A second model read the same values; the text layer disagrees with the model somewhere on this filing" }, idx);
+          emit({ ...base, score: 2, state: "two_models_agree", lane: "model2", note: "A second AI model from a different company read the same values; the PDF parser disagrees with the first model somewhere on this filing" }, idx);
         } else {
-          emit({ ...base, score: 0, state: "disputed", lane: "text", note: "Text layer disagrees with the model on this filing; a person decides" }, idx);
+          emit({ ...base, score: 0, state: "disputed", lane: "text", note: "The PDF parser read this filing differently from the AI model; a person decides" }, idx);
         }
         return;
       case "ocr_tuple_mismatch": {

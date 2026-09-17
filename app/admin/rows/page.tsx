@@ -107,7 +107,7 @@ export default async function RowsPage({ searchParams }: { searchParams: Promise
         </form>
       </div>
       <p className="text-xs text-neutral-500 mb-2">
-        Gate columns: text = program on the PDF text layer; OCR = program on the page image; model 2 = second company&rsquo;s model; session = Claude Code page read; audit = third company&rsquo;s model shown the row. &ldquo;repaired&rdquo; means OCR&rsquo;s row number was fixed by sequence and does not count. Showing {shown.length.toLocaleString("en-US")} of {lines.length.toLocaleString("en-US")} matching rows, lowest score and confidence first.
+        Gate columns: text = program on the PDF text layer; OCR = program on the page image; model 2 = second company&rsquo;s model; session = Claude Code page read; audit = third company&rsquo;s model shown the row (on an annual-lane row: the model page read plus the row-trace program on the printed page). &ldquo;repaired&rdquo; means OCR&rsquo;s row number was fixed by sequence and does not count. Showing {shown.length.toLocaleString("en-US")} of {lines.length.toLocaleString("en-US")} matching rows, lowest score and confidence first.
       </p>
       <div className="overflow-x-auto">
         <table className="w-full text-xs border-collapse">

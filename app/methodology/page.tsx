@@ -6,9 +6,9 @@ import { getAllOfficials, getOfficialBySlug, getOfficialsIndex, officialForTotal
 import UnderReviewNote from "../components/under-review-note";
 import { readCrosscheckLog, summarizeCrosscheckLog } from "@/lib/crosscheck-log";
 import { sumAmountEstimates } from "@/lib/amounts";
-import { readRowVerification } from "@/lib/row-verification";
+import { readRowVerification, recordIdsFor } from "@/lib/row-verification";
 import { readAssetResolution } from "@/lib/asset-resolution";
-import { lateStats } from "@/lib/source-lane";
+import { isPeriodicRow, lateStats } from "@/lib/source-lane";
 import { getTradesByTicker } from "@/lib/data";
 import VerificationSummary from "../components/verification-summary";
 
@@ -62,11 +62,24 @@ export default async function MethodologyPage() {
   // current roster, counted by the same loader the pages use.
   const onCompanyPages = [...(await getTradesByTicker()).values()].reduce((n, c) => n + c.trades.length, 0);
   const coverage = log ? summarizeCrosscheckLog(log, allRows) : null;
-  const agreedRows = coverage?.rows.checked_tuple_agreement ?? 0;
-  const mismatchRows = coverage?.rows.checked_tuple_mismatch ?? 0;
-  const scanRows = coverage?.rows.no_usable_text ?? 0;
-  const layoutRows =
-    (coverage?.rows.unsupported_layout ?? 0) + (coverage?.rows.unsupported_form ?? 0);
+  // What each gate said, counted per row from the verification ledger
+  // over 278-T rows only. The filing-level log cannot give this: annual
+  // rows have no entry there, and its URL keys miss some scans, so a
+  // paragraph built from it did not reconcile with the row states.
+  const gateCounts = { periodic: 0, text: 0, ocr: 0, model2: 0, audit: 0 };
+  for (const o of everyOfficial) {
+    const ids = recordIdsFor(o.transactions);
+    o.transactions.forEach((tx, i) => {
+      if (!isPeriodicRow(tx)) return;
+      gateCounts.periodic += 1;
+      const g = rowVerification?.rows[ids[i]]?.gates;
+      if (!g) return;
+      if (g.text === "agree") gateCounts.text += 1;
+      if (g.ocr === "agree") gateCounts.ocr += 1;
+      if (g.model2 === "agree") gateCounts.model2 += 1;
+      if (g.audit === "confirm") gateCounts.audit += 1;
+    });
+  }
   const ocrFilings =
     (coverage?.filings.ocr_tuple_agreement ?? 0) + (coverage?.filings.ocr_tuple_mismatch ?? 0);
   const totals = sumAmountEstimates(allRows);
@@ -206,9 +219,9 @@ export default async function MethodologyPage() {
               &ldquo;Over $1,000,000&rdquo; (used for spouse- and
               dependent-held assets) at $1.5 million in estimated totals. That
               is a policy, not a midpoint. Today {fmt(openEnded.knownCount)}{" "}
-              such rows, {pct(openEnded.knownCount, totals.knownCount)} percent
-              of transactions, supply{" "}
-              {pct(openEnded.estimate, totals.estimate)} percent of the
+              such rows, {pct(openEnded.knownCount, totals.knownCount)}{" "}
+              percent of transactions, supply{" "}
+              {pct(openEnded.estimate, totals.estimate)}{" "}percent of the
               estimated total. The sum of every range&rsquo;s minimum is{" "}
               ${fmt(Math.round(totals.floor / 1_000_000))} million; the estimate
               is ${fmt(Math.round(totals.estimate / 1_000_000))} million.
@@ -252,10 +265,16 @@ export default async function MethodologyPage() {
               278-T&rdquo; means no 278-T OGE had posted as of the read,
               not that none was filed,
               since OGE&rsquo;s public index omits some reports. Late-filing
-              counts and rates describe
-              278-T rows only, and the annual rows were read once by the
-              audit rather than by the 278-T pipeline&rsquo;s checking
-              lanes, so they carry the &ldquo;not yet checked&rdquo; mark.
+              counts and rates describe 278-T rows only. The annual rows
+              were read by a PDF parser rather than by the 278-T
+              pipeline; the checks recorded on them are the audit&rsquo;s
+              own: an AI page read of every report that agreed row for
+              row (a second company&rsquo;s model on 570 of the 687 pages
+              of the largest report), a second extractor on that report,
+              a row-by-row program that found each row on its PDF page,
+              image checks of 62 of those pages, and 20 rows a person
+              hand-checked on Sept. 14, 2026. Each row&rsquo;s status
+              says which.
             </li>
             <li>
               <strong className="text-neutral-900">
@@ -373,29 +392,26 @@ export default async function MethodologyPage() {
                 &ldquo;Unstated&rdquo; type with a note, eleven dollar ranges or
                 an explicit unknown, calendar dates, and no unexpected fields.
                 Reviewed source exceptions can retain an undated row or an
-                impossible printed date with an explanatory note. Where the PDF has a text
-                layer, an independent program (pdftotext plus a column parser)
-                reads the same table and the two are compared row for row.
+                impossible printed date with an explanatory note. Where the PDF
+                carries its own text (a text layer, as opposed to a scanned
+                image), an independent PDF parser (pdftotext plus a column
+                parser) reads the same table and the two are compared row for row.
               </p>
-              {coverage ? (
+              {rowVerification ? (
                 <p className="text-neutral-500 mt-2">
-                  As of the last check, that comparison agreed on{" "}
-                  {fmt(agreedRows)} of {fmt(coverage.totalRows)} published
-                  rows, across{" "}
-                  {coverage.filings.checked_tuple_agreement} of{" "}
-                  {coverage.totalFilings} filings. {fmt(mismatchRows)} rows in{" "}
-                  {coverage.filings.checked_tuple_mismatch} filings are in
-                  disagreement in that filing-level comparison. Later model
-                  checks or recorded decisions may resolve individual rows;
-                  the row-level totals below show their current status. {fmt(scanRows)}{" "}
-                  rows are in scanned filings with no text layer, where the
-                  text comparison cannot run. {fmt(layoutRows)} rows are in layouts
-                  or form types the text comparison program cannot read.{" "}
-                  {fmt(coverage.unstampedRows)} rows are not yet attributed to
-                  a specific filing. The comparison covers type, date, amount,
+                  As of the last build, of the {fmt(gateCounts.periodic)} rows
+                  from 278-T filings, the PDF parser agreed with the model on{" "}
+                  {fmt(gateCounts.text)}, OCR of the page image on{" "}
+                  {fmt(gateCounts.ocr)}, a second company&rsquo;s model on{" "}
+                  {fmt(gateCounts.model2)}, and the page audit confirmed{" "}
+                  {fmt(gateCounts.audit)}. A row can be counted under more
+                  than one; the row-level totals below show each row&rsquo;s
+                  current status. The comparison covers type, date, amount,
                   late flag and row count, with a limited name-word check.
                   It does not verify ticker symbols; asset resolution and
-                  the independent name check are separate.
+                  the independent name check are separate. Rows from annual
+                  and termination reports are checked by the annual-report
+                  lane&rsquo;s own artifacts, described under known limitations.
                 </p>
               ) : null}
               {coverage && ocrFilings > 0 ? (
@@ -404,7 +420,7 @@ export default async function MethodologyPage() {
                   an image, runs optical character recognition on it
                   (tesseract, locally, ignoring any text the scanner
                   embedded) and compares the result the same way. It has run
-                  on {ocrFilings} filings. When OCR cannot confirm Claude&rsquo;s
+                  on {ocrFilings}{" "}filings. When OCR cannot confirm Claude&rsquo;s
                   rows, an independent model reads the page. Any remaining
                   disagreement holds the filing for a person.
                 </p>
@@ -618,8 +634,11 @@ export default async function MethodologyPage() {
             This tool is for informational and journalism purposes only. Nothing
             here constitutes investment advice. Asset values and transaction
             amounts are reported in ranges as required by federal law. This
-            database may not include all executive branch filers, and covers
-            only trades reported on 278-T periodic transaction reports. Data sourced
+            database may not include all executive branch filers. It covers
+            trades reported on 278-T periodic transaction reports and the
+            Part 7 transaction tables of the annual and termination reports
+            OGE has posted for tracked officials; holdings, income and
+            liabilities are not included. Data sourced
             from the U.S. Office of Government Ethics under the Ethics in
             Government Act (5 U.S.C. Section 13107). Federal government
             documents carry no copyright (17 U.S.C. Section 105).

@@ -45,6 +45,9 @@ interface Props {
   source?: TxSourceFilter;
   /** Render the source pills. Off for officials with 278-T rows only. */
   showSource?: boolean;
+  /** Label for the lane pill: "Annual", or "Termination" when every lane
+   * row came from a termination report. */
+  laneLabel?: string;
 }
 
 export default function TransactionFilters(props: Props) {
@@ -63,6 +66,7 @@ function TransactionFiltersContent({
   filteredCount,
   source = "all",
   showSource = false,
+  laneLabel = "Annual",
 }: Props) {
   const router = useRouter();
   const search = useSearchParams();
@@ -116,7 +120,8 @@ function TransactionFiltersContent({
             Source
           </span>
           <div role="group" aria-label="Filter trades by source form" className="inline-flex border border-neutral-200 text-xs">
-            {SOURCE_PILLS.map((p) => {
+            {SOURCE_PILLS.map((pill) => {
+              const p = pill.value === "annual" ? { ...pill, label: laneLabel } : pill;
               const active = source === p.value;
               return (
                 <button

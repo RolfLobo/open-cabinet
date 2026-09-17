@@ -1,4 +1,4 @@
-import { SHORT_LABEL, type RowVerification } from "@/lib/row-verification";
+import { shortLabelFor, type RowVerification } from "@/lib/row-verification";
 import { NOT_YET_CHECKED_EXPLAINER } from "@/lib/ai-use-note";
 
 export default function VerificationMarker({
@@ -12,7 +12,7 @@ export default function VerificationMarker({
         className={`cursor-pointer ${verification?.score === 0 ? "font-semibold text-amber-900" : ""}`}
         title={verification?.note ?? "No verification record is available for this row"}
       >
-        {verification ? SHORT_LABEL[verification.state] : "Not yet checked"}
+        {shortLabelFor(verification)}
       </summary>
       <p className="mt-1 max-w-sm leading-relaxed">
         {verification?.note ?? "No verification record is available for this row"}

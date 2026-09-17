@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { CrosscheckEntry } from "./crosscheck-log";
 import type { Transaction } from "./types";
-import { applyImplausible, deriveRowVerification, implausibleValues, locateInParseRecord, makeRecordId, printedRowForIndex, recordIdsFor } from "./row-verification";
+import { NOTE, applyImplausible, deriveRowVerification, implausibleValues, locateInParseRecord, makeRecordId, printedRowForIndex, recordIdsFor, type AnnualEvidence } from "./row-verification";
 import { compareSecondRead, describePrimaryIndex } from "./second-read";
 
 const URL = "https://example.gov/f.pdf";
@@ -141,9 +141,11 @@ describe("deriveRowVerification", () => {
       model2ByUrl: new Map([[URL, { agreedIndexes: new Set([0, 1]), disputedIndexes: new Set([2]) }]]),
       auditByUrl: new Map([[URL, { confirmed: new Set([0]), disputed: new Set([1]), notFound: new Set() }]]),
     });
-    // Row 0: OCR disputed, second model agreed, audit confirmed -> checked, OCR noted.
+    // Row 0: OCR disputed, second model agreed, audit confirmed -> checked;
+    // the public note names the two-model route, the gates keep the OCR dispute.
     expect(out[0]).toMatchObject({ score: 3, state: "checked" });
-    expect(out[0].note).toMatch(/OCR read printed row 1 differently/);
+    expect(out[0].note).toBe(NOTE.twoModelsChecked);
+    expect(out[0].gates?.ocr).toBe("disagree");
     // Row 1: second model agreed but the audit disputed -> disputed.
     expect(out[1]).toMatchObject({ score: 0, state: "disputed", lane: "audit" });
     // Row 2: OCR and the second model both disputed -> disputed by OCR.
@@ -342,7 +344,7 @@ describe("implausible values", () => {
       decisionsById: new Map([[ids[1], { recordId: ids[1], slug: "x", decision: "confirmed", evidence: "page 1 row 2", decidedBy: "trevor", decidedAt: "2026-09-06T00:00:00Z" }]]),
     });
     expect(out.map((v) => [v.score, v.state])).toEqual([[2, "implausible"], [3, "human_verified"], [3, "checked"]]);
-    expect(out[0].note).toMatch(/^Needs a person: the trade is dated a Saturday/);
+    expect(out[0].note).toMatch(/^Date falls on a weekend \(Saturday \(2026-02-28\)\); shown as printed in the filing\. A person decides\. Before this check:/);
     const disputed = applyImplausible({ id: "i", slug: "x", sourceUrl: URL, score: 0, state: "disputed", lane: "audit", note: "x" }, ["r"]);
     expect(disputed.score).toBe(0);
     expect(disputed.state).toBe("disputed");
@@ -367,5 +369,71 @@ describe("gates per row", () => {
     expect(out[0].gates).toEqual({ read1Confidence: 0.91, text: "agree", ocr: "none", model2: "agree", session: "none", audit: "confirm", human: null, implausible: [], name: "agree" });
     expect(out[1].gates).toEqual({ read1Confidence: 0.55, text: "agree", ocr: "none", model2: "disagree", session: "none", audit: "dispute", human: "confirmed", implausible: [], name: "agree" });
     expect(out[1].state).toBe("human_verified");
+  });
+});
+
+describe("annual-lane rows", () => {
+  const ANNUAL = "https://example.gov/Some-Official-2026-278ANNU.pdf";
+  const lane = (over: Partial<Transaction> = {}): Transaction =>
+    tx({ sourceUrl: ANNUAL, sourceKind: "annual-278e", lateFilingFlag: null, sourcePage: 12, sourceRow: 3, ...over });
+  const evidence = (over: Partial<AnnualEvidence> = {}): AnnualEvidence => ({
+    slug: "x", sourceUrl: ANNUAL, sourcePage: 12, sourceRow: 3,
+    evidence: ["model-transcription-agree", "row-trace-pass"],
+    programAgree: true, modelPageReadAgree: true, secondCompanyAgree: false, rowTracePass: true, imageChecked: false, nameAgree: true,
+    ...over,
+  });
+  const base = { slug: "x", parseRecordByUrl: new Map(), entriesByUrl: new Map<string, CrosscheckEntry>() };
+
+  it("is a single read with no recorded evidence, and says so in plain words", () => {
+    const out = deriveRowVerification({ ...base, transactions: [lane()] });
+    expect(out[0]).toMatchObject({ score: 1, state: "single_read", note: NOTE.annualSingleRead });
+    expect(out[0].note).not.toMatch(/text layer/i);
+  });
+
+  it("is checked when a program, a model page read and the row trace all agree; the evidence tags ride along", () => {
+    const rows = [lane()];
+    const [id] = recordIdsFor(rows);
+    const out = deriveRowVerification({ ...base, transactions: rows, annualEvidenceById: new Map([[id, evidence()]]) });
+    expect(out[0]).toMatchObject({ score: 3, state: "checked", lane: "text", note: NOTE.annualChecked, evidence: ["model-transcription-agree", "row-trace-pass"] });
+    // The name gate stays "none" on lane rows by decision (Sep 14, 2026):
+    // no ticker publishes from name matching on annual rows yet.
+    expect(out[0].gates).toMatchObject({ text: "agree", session: "agree", audit: "confirm", model2: "none", name: "none" });
+  });
+
+  it("names the second company's model only where it covered the page", () => {
+    const rows = [lane()];
+    const [id] = recordIdsFor(rows);
+    const out = deriveRowVerification({ ...base, transactions: rows, annualEvidenceById: new Map([[id, evidence({ secondCompanyAgree: true, evidence: ["pdfplumber-agree", "sonnet-page-read-agree", "astra-page-read-agree", "row-trace-pass"] })]]) });
+    expect(out[0].note).toBe(NOTE.annualChecked + NOTE.annualSecondCompany);
+    expect(out[0].gates?.model2).toBe("agree");
+  });
+
+  it("stays a single read when any of the three gates is missing", () => {
+    const rows = [lane()];
+    const [id] = recordIdsFor(rows);
+    for (const partial of [{ programAgree: false }, { modelPageReadAgree: false }, { rowTracePass: false }]) {
+      const out = deriveRowVerification({ ...base, transactions: rows, annualEvidenceById: new Map([[id, evidence(partial)]]) });
+      expect(out[0]).toMatchObject({ score: 1, state: "single_read" });
+    }
+  });
+
+  it("loses its evidence when the row changes, because the record ID changes", () => {
+    const rows = [lane()];
+    const [id] = recordIdsFor(rows);
+    const changed = [lane({ amount: "$15,001-$50,000" })];
+    const out = deriveRowVerification({ ...base, transactions: changed, annualEvidenceById: new Map([[id, evidence()]]) });
+    expect(out[0].state).toBe("single_read");
+  });
+
+  it("still needs a person when a value cannot be right, and a person's decision outranks the lanes", () => {
+    const rows = [lane({ date: "2025-08-17" })]; // a Sunday
+    const [id] = recordIdsFor(rows);
+    const out = deriveRowVerification({ ...base, transactions: rows, annualEvidenceById: new Map([[id, evidence()]]) });
+    expect(out[0]).toMatchObject({ score: 2, state: "implausible" });
+    const decided = deriveRowVerification({
+      ...base, transactions: rows, annualEvidenceById: new Map([[id, evidence()]]),
+      decisionsById: new Map([[id, { recordId: id, slug: "x", decision: "confirmed", evidence: "page 12 row 3", decidedBy: "Trevor Brown", decidedAt: "2026-09-14T17:34:00.000Z" }]]),
+    });
+    expect(decided[0]).toMatchObject({ score: 3, state: "human_verified", note: "Checked by a person against the PDF on 2026-09-14." });
   });
 });

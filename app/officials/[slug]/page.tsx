@@ -89,7 +89,7 @@ function sourceDocumentsWithCurrentFilings(
       // a reader does not take it for a periodic report.
       if (kind !== "278-T") {
         return {
-          kind: kind === "termination-278e" ? ("termination" as const) : ("other" as const),
+          kind: kind === "termination-278e" ? ("termination" as const) : ("annual" as const),
           title: SOURCE_KIND_TITLE[kind],
           label: filing.label,
           filedDate: filing.date,
@@ -302,6 +302,21 @@ export default async function OfficialPage({
   const lateScope = lateStats(countedTransactions);
   const lateFilings = lateScope.late;
   const annualLaneCount = lateScope.annualLane;
+  // The stale-summary banner dates the change to the later of the stamp
+  // the ingest wrote and the newest source filing on the record, so a
+  // report added after the stamp (an annual, a late-posted 278-T) is not
+  // attributed to an earlier date.
+  const newestSourceFilingDate = (official.sourceFilings ?? []).reduce<string | null>(
+    (max, f) => (f.date && (!max || f.date > max) ? f.date : max),
+    null
+  );
+  const summaryStaleDate =
+    official.summaryStaleSince && newestSourceFilingDate && newestSourceFilingDate > official.summaryStaleSince
+      ? newestSourceFilingDate
+      : official.summaryStaleSince ?? null;
+  // The source chip names the form the lane rows came from: "Termination"
+  // when every lane row is from a termination report, else "Annual".
+  const laneLabel = official.transactions.some((t) => sourceKindOf(t) === "annual-278e") ? SOURCE_KIND_SHORT["annual-278e"] : SOURCE_KIND_SHORT["termination-278e"];
   const laneKinds = new Set(annualLaneRows(countedTransactions).map(sourceKindOf));
   const laneNoun =
     laneKinds.size > 1
@@ -649,11 +664,12 @@ export default async function OfficialPage({
       {official.summary && (
         <div className="border-l-2 border-neutral-200 pl-4 mb-10">
           <p className="text-sm text-neutral-600 leading-relaxed">{official.summary}</p>
-          {official.summaryStaleSince && (
+          {summaryStaleDate && (
             <p className="mt-2 text-xs text-amber-700">
               This summary was written before filings added on{" "}
-              {formatDate(official.summaryStaleSince)} and has not yet been
-              updated. The table below is current.
+              {formatDate(summaryStaleDate)}
+              {annualLaneCount > 0 && ", including rows read from the annual or termination report,"}
+              {" "}and has not yet been updated. The table below is current.
             </p>
           )}
           {official.summarySource === "template" && (
@@ -889,6 +905,7 @@ export default async function OfficialPage({
         filteredCount={visibleTransactions.length}
         source={sourceFilter}
         showSource={annualLaneCount > 0}
+        laneLabel={laneLabel}
       />
 
       <div id="trades" className="scroll-mt-4">
