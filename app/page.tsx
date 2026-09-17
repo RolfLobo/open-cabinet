@@ -429,6 +429,15 @@ export default async function Home() {
       {/* ── EXPLAINER (scrollytelling) ── */}
       <div className="mx-auto max-w-5xl px-4">
         <Explainer />
+        {/* Ask the data is linked from here only: not in the nav, not
+            indexed. Readers who get this far down the page find it. */}
+        <p className="text-sm text-neutral-500 mt-8 border-t border-neutral-200 pt-4">
+          Have a question about these records?{" "}
+          <Link href="/askai" className="underline decoration-dotted underline-offset-2 hover:text-neutral-900">
+            Ask the data
+          </Link>
+          , an experimental question box. Code counts the rows; an AI model only reads the question.
+        </p>
       </div>
 
       {/* ── IN THE NEWS ── */}

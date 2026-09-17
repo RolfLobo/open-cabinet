@@ -180,6 +180,13 @@ async function build(): Promise<PublishedRowsData> {
     const ids = recordIdsFor(official.transactions);
     official.transactions.forEach((tx, i) => {
       if (tx.historical) return;
+      // 278-T rows only (Sept. 17, 2026). The annual-report lane that shipped
+      // Sept. 14 adds Part 7 rows from annual and termination reports, but
+      // everything the box says about itself, its refusals, its "late"
+      // arithmetic and the 100-question evaluation describe 278-T
+      // transactions. Until the box can name its lane in every sentence,
+      // annual rows stay on the official pages and out of these answers.
+      if ((tx.sourceKind ?? "278-T") !== "278-T") return;
       const id = ids[i];
       const record = verification?.rows[id] ?? null;
       const ticker = publicTicker(assets?.rows[id], record?.gates?.name);

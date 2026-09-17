@@ -65,17 +65,13 @@ vi.mock("@/lib/published-rows", () => ({
   }),
 }));
 
-process.env.ASKAI_PASSWORD = "pw";
-process.env.ASKAI_COOKIE_SECRET = "secret";
 process.env.ANTHROPIC_API_KEY = "test";
 
 import { POST } from "./route";
-import { ASKAI_COOKIE, askaiToken } from "@/lib/askai-access";
 import { resetAskLimiter } from "@/lib/ask/limits";
 
-function post(body: unknown, opts: { cookie?: boolean; origin?: string } = {}) {
+function post(body: unknown, opts: { origin?: string } = {}) {
   const headers: Record<string, string> = { "content-type": "application/json", origin: opts.origin ?? "http://localhost:3000" };
-  if (opts.cookie !== false) headers.cookie = `${ASKAI_COOKIE}=${askaiToken()}`;
   return POST(new Request("http://localhost:3000/api/ask", { method: "POST", headers, body: typeof body === "string" ? body : JSON.stringify(body) }));
 }
 
@@ -157,9 +153,10 @@ describe("POST /api/ask gates", () => {
     expect(res.status).toBe(400);
     expect(quotaCalls).toHaveLength(0);
   });
-  it("refuses without the alpha cookie and spends nothing", async () => {
-    const res = await post({ question: "Who sold Liberty Energy?" }, { cookie: false });
-    expect(res.status).toBe(403);
+  it("refuses while ASKAI_CLOSED is set and spends nothing", async () => {
+    vi.stubEnv("ASKAI_CLOSED", "1");
+    const res = await post({ question: "Who sold Liberty Energy?" });
+    expect(res.status).toBe(503);
     expect(quotaCalls.length).toBe(0);
   });
 

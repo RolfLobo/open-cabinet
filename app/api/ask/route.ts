@@ -127,7 +127,7 @@ async function reserveDailyQuota(attempt = 0): Promise<"ok" | "over" | "closed">
     }
     if (missingTable) {
       // Fail closed (Codex, Sept. 7): no shared counter means no paid path.
-      // Run the drizzle migrations (0003_ask_quota) before enabling the alpha.
+      // Run the drizzle migrations (0003_ask_quota) before opening the box.
       console.error("ask_quota table missing; the question box is closed until the migration runs");
       return "closed";
     }
@@ -480,12 +480,12 @@ export async function POST(request: Request) {
       { status: 403 }
     );
   }
-  // Alpha: the box is open only to people who entered the shared password
-  // on /askai. Closed everywhere when ASKAI_PASSWORD is unset.
+  // Kill switch: ASKAI_CLOSED=1 in the environment turns the box off
+  // everywhere before any spend.
   if (!requestHasAskaiAccess(request)) {
     return NextResponse.json(
-      { status: "error", answer: "Ask the data is in a closed alpha. Enter the access password at /askai." },
-      { status: 403 }
+      { status: "error", answer: "Ask the data is turned off right now. Try again later." },
+      { status: 503 }
     );
   }
   // A JSON content type forces a CORS preflight for a cross-site POST, which
@@ -941,7 +941,7 @@ export async function POST(request: Request) {
     // The answer is already computed. A phrasing call that fails or hangs
     // must not throw that away and return a 500 (Codex, Sept. 6): the reader
     // gets the templated sentence instead.
-    // Alpha default: the model writes no sentence a reader sees. The Sept. 7
+    // Default: the model writes no sentence a reader sees. The Sept. 7
     // red team showed the number check is membership, not meaning (a
     // truncated ranking of 4 rows could ship as "1 checked row"), so until
     // the check binds each figure to its role, the template is the answer.
