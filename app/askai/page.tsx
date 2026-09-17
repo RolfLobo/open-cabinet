@@ -16,7 +16,7 @@ import AskTheData from "../components/ask-the-data";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Ask the data",
-  description: "Ask a question about executive-branch stock trades disclosed on OGE Form 278-T. Code counts the rows; the AI only reads the question.",
+  description: "Ask a question about executive-branch stock trades disclosed to the Office of Government Ethics. Code counts the rows; the AI only reads the question.",
   robots: { index: false, follow: false },
 };
 
@@ -43,7 +43,7 @@ export default async function AskaiPage() {
         <Badge />
         <p className="text-sm text-neutral-600 leading-relaxed max-w-2xl">
           An experimental feature. An AI model reads your question and turns it into a query; code runs the query
-          over checked 278-T rows and writes every number and sentence you see. The AI writes nothing a reader sees.
+          over checked rows from 278-T and annual reports and writes every number and sentence you see. The AI writes nothing a reader sees.
           Check the &ldquo;Interpreted as&rdquo; line on each answer, and open the linked filing before you cite a figure.
         </p>
       </div>
@@ -54,7 +54,7 @@ export default async function AskaiPage() {
         <summary className="cursor-pointer font-medium text-neutral-800">How Ask works, what it covers and what gets logged</summary>
         <div className="mt-4 space-y-3">
           <p>An AI model interprets your question. Code checks that interpretation and calculates the answer from disclosure records that have completed the site’s verification process. Check the “Interpreted as” line to make sure it matches what you meant.</p>
-          <p>The box covers transactions disclosed on OGE Form 278-T periodic transaction reports. Rows the site reads from annual and termination reports appear on each official’s page but are not in these answers. These records report transactions and dollar ranges. They do not establish current holdings, profit, motive or legality. Each question stands alone; Ask does not remember earlier questions.</p>
+          <p>The box covers transactions disclosed on OGE Form 278-T periodic transaction reports and in the transactions section of annual and termination reports. When an answer mixes the two, it says how many rows came from annual reports; only 278-T rows carry a late-filing flag, so late shares count 278-T rows alone. These records report transactions and dollar ranges. They do not establish current holdings, profit, motive or legality. Each question stands alone; Ask does not remember earlier questions.</p>
           <p>Questions, their interpretations and outcomes are logged for review, along with a hashed address used for rate limiting. No account is created. Do not enter personal information.</p>
           <p>This is an experimental feature and can misread a question. Answers are for informational and journalism purposes only and are not investment advice. Every figure traces to a filing you can open yourself.</p>
           <p>Limits: {PER_IP_PER_HOUR} requests per hour per address and {GLOBAL_PER_DAY} new question translations per day across the site.</p>

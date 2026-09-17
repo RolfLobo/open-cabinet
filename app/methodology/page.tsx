@@ -450,8 +450,11 @@ export default async function MethodologyPage() {
               <p className="text-neutral-500 mt-0.5">
                 Claude turns a reader&rsquo;s question into a constrained query
                 plan. Code validates that plan, queries the published checked
-                278-T rows (annual and termination report rows are not in
-                these answers) and calculates the answer. The default answer sentence is
+                rows from both lanes (278-T periodic reports and the
+                transactions section of annual and termination reports) and
+                calculates the answer. Answers that mix lanes say how many
+                rows came from annual reports; late shares count 278-T rows
+                only. The default answer sentence is
                 a fixed template. An optional configuration lets a model phrase
                 the result; number and language checks must pass or the template
                 remains. The answer identifies which process was used.

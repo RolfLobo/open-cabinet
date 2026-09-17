@@ -66,14 +66,17 @@ export const DISCLOSURE =
       "sentence; every number in the sentence was checked against the code's figures. " +
       "This counts checked rows only, the ones an independent program or a second model " +
       "agreed with and a page audit confirmed. Dollar figures are sums of disclosed range " +
-      "midpoints, not reported prices. Open the linked 278-T before you cite a figure."
+      "midpoints, not reported prices. Open the linked filing before you cite a figure."
     : "Numbers and the sentence come from code, not from the AI. The AI only turned " +
       "your question into the query shown above. This counts checked rows only, the ones " +
       "an independent program or a second model agreed with and a page audit confirmed. " +
       "Dollar figures are sums of disclosed range midpoints, not reported prices. " +
       "\"Late\" means the filer checked the box saying the trade was reported more than " +
       "30 days after notice. A row can be a trade reported for a spouse or dependent child; " +
-      "the filing does not always say which. Open the linked 278-T before you cite a figure.";
+      "the filing does not always say which. Rows come from 278-T periodic reports and from " +
+      "the transactions section of annual and termination reports; only 278-T rows carry a " +
+      "late-filing flag, and the answer says how many rows came from each. Open the linked " +
+      "filing before you cite a figure.";
 
 export type AskStatus = "answered" | "not_in_data" | "declined" | "error";
 
@@ -259,7 +262,7 @@ function planSystemPrompt(
     "Filters select individual transactions, not a person’s trading history. Decline questions about who never sold,",
     "who only bought, or who bought one asset and sold another. These need separate sets of transactions and cannot be represented.",
     "",
-    "The dataset is executive-branch stock transactions disclosed on OGE Form 278-T.",
+    "The dataset is executive-branch stock transactions disclosed on OGE Form 278-T periodic reports and in the transactions section of annual and termination reports.",
     "Each row has: official (name, slug, agency, title), description (the asset as the filing wrote it), ticker (may be absent),",
     "type (Sale, Sale (Partial), Sale (Full), Purchase, Exchange, Unstated), date, amount (a disclosed dollar range, sometimes absent),",
     "lateFilingFlag (the filer certified the report was late), and the source filing URL.",

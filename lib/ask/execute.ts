@@ -120,6 +120,14 @@ export interface ExecuteResult {
    */
   missingOfficials?: string[];
   lateShare?: LateShare;
+  /**
+   * How many matched rows came from each lane. The site reads two kinds of
+   * filing: 278-T periodic transaction reports and Part 7 of annual and
+   * termination reports (Sept. 14, 2026). A sentence that mixes them has to
+   * say so, because only 278-T rows carry a late-filing column and because
+   * the two lanes are different documents a reader might open.
+   */
+  bySource?: { periodic: number; annual: number };
   firstDate?: string | null;
   lastDate?: string | null;
   /** Every raw figure in this result. */
@@ -288,6 +296,14 @@ export function execute(plan: QueryPlan, data: PublishedRowsData): ExecuteResult
     displayStrings: [],
   };
   addNumber(matched.length);
+  {
+    const annual = matched.filter((r) => r.sourceKind !== "278-T").length;
+    result.bySource = { periodic: matched.length - annual, annual };
+    if (annual > 0) {
+      addNumber(annual);
+      addNumber(matched.length - annual);
+    }
+  }
 
   // The query's own figures. A sentence may restate the date range or the
   // dollar floor it was given, and those came from the validated plan, not
@@ -483,7 +499,7 @@ export function execute(plan: QueryPlan, data: PublishedRowsData): ExecuteResult
       // rows in this query, which are checked rows, not the whole record.
       const display =
         `${late.toLocaleString("en-US")} of ${total.toLocaleString("en-US")} checked ` +
-        `trades in this query (${percent} percent) were flagged late`;
+        `278-T trades in this query (${percent} percent) were flagged late`;
       result.lateShare = { late, total, percent, display };
       addNumber(late);
       addNumber(total);

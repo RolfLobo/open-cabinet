@@ -44,8 +44,16 @@ interface ResultRow {
   date: string;
   dateDisplay: string;
   amountLabel: string | null;
-  lateFilingFlag: boolean;
+  lateFilingFlag: boolean | null;
+  sourceKind?: "278-T" | "annual-278e" | "termination-278e";
   sourceUrl: string | null;
+}
+
+/** Link label for the filing a row was read from. */
+function sourceLabel(kind: ResultRow["sourceKind"]): string {
+  if (kind === "annual-278e") return "Annual";
+  if (kind === "termination-278e") return "Termination";
+  return "278-T";
 }
 
 interface RankedOfficial {
@@ -509,7 +517,7 @@ export default function AskTheData({
                             rel="noopener noreferrer"
                             className="text-neutral-500 underline hover:text-neutral-900"
                           >
-                            278-T
+                            {sourceLabel(row.sourceKind)}
                           </a>
                         ) : (
                           <span className="text-neutral-300">None</span>
