@@ -429,3 +429,44 @@ export async function loadKnownFilingsFromData(root = process.cwd()): Promise<Ar
   }
   return out;
 }
+
+// ── Monitor resilience ──────────────────────────────────────────────────
+// OGE's portal has two known bad moods: it refuses connections outright for a
+// while (Sept 14 and Sept 20, 2026, both at the 10:00 UTC slot), and it
+// sometimes returns the full record count with some rows' type/level fields
+// blanked (Aug 11, Aug 13 and Sept 19, 2026). The helpers below let the cron
+// route tell those apart from real news.
+
+/** Node's fetch reports network failures as a bare "fetch failed" TypeError
+ * with the real reason (ECONNRESET, ETIMEDOUT, ENOTFOUND, a TLS error) hidden
+ * on `cause`. Surface the whole chain so a failure email is diagnosable. */
+export function describeFetchError(err: unknown): string {
+  const parts: string[] = [];
+  let current: unknown = err;
+  for (let depth = 0; current && depth < 5; depth++) {
+    const e = current as { message?: string; code?: string; name?: string; cause?: unknown };
+    const label = [e.name && e.name !== "Error" ? e.name : "", e.code ? `[${e.code}]` : "", e.message ?? String(current)]
+      .filter(Boolean)
+      .join(" ");
+    if (label && !parts.includes(label)) parts.push(label);
+    current = e.cause;
+  }
+  return parts.join(" <- ") || "Unknown error";
+}
+
+/** A tracked count that drops sharply between two consecutive runs means the
+ * index came back with rows stripped, not that filings were removed. OGE does
+ * not un-post dozens of 278-Ts in four hours; it did return 92 targets at
+ * 10:00 UTC and 124 at 14:00 UTC on Sept 19, 2026. */
+export function indexLooksIncomplete(currentTargets: number, previousTargets: number | null | undefined): boolean {
+  if (typeof previousTargets !== "number" || !Number.isFinite(previousTargets) || previousTargets <= 0) return false;
+  return currentTargets < previousTargets * 0.95;
+}
+
+/** The last cron slot of the day (vercel.json). A failure before it has a
+ * retry coming; a failure at or after it does not. */
+export const LAST_CRON_SLOT_UTC_HOUR = 14;
+
+export function retrySlotPending(now: Date = new Date()): boolean {
+  return now.getUTCHours() < LAST_CRON_SLOT_UTC_HOUR;
+}

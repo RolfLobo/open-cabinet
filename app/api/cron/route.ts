@@ -7,15 +7,20 @@
  * Protected by CRON_SECRET to prevent unauthorized triggers.
  * Vercel Cron sends this automatically in the Authorization header.
  *
- * Config in vercel.json: { "crons": [{ "path": "/api/cron", "schedule": "0 10 * * *" }] }
+ * Config in vercel.json: two slots, 10:00 and 14:00 UTC. A failure at the first
+ * slot is recorded but not emailed; the 14:00 run is the retry.
  */
 import { NextRequest, NextResponse } from "next/server";
 import { timingSafeEqual } from "node:crypto";
 import { getDb } from "@/lib/db";
 import { notify } from "@/lib/notify";
 import {
+  describeFetchError,
   diffNewFilings,
   fetchOgeRecords,
+  indexLooksIncomplete,
+  LAST_CRON_SLOT_UTC_HOUR,
+  retrySlotPending,
   getTargetFilings,
   loadDiscoveredFilingUrls,
   loadKnownFilingsFromData,
@@ -91,15 +96,35 @@ export async function GET(request: NextRequest) {
     const knownUrls = await loadDiscoveredFilingUrls();
     const newFilings = diffNewFilings(targetFilings, knownUrls);
     if (records.length !== totalRecords) throw new Error("Incomplete OGE index; source comparison skipped");
-    const sourceChanges = reconcileKnownFilings(getAllIndexedFilings(records), await loadKnownFilingsFromData());
+
+    const { and, desc, eq, ne } = await import("drizzle-orm");
+
+    // OGE sometimes returns every record but with some rows' type/level fields
+    // blanked (Sept 19, 2026: 92 target 278-Ts at 10:00 UTC, 124 at 14:00).
+    // Diffing known filings against such a list would report dozens of real
+    // reports as "no longer listed." Compare the target count with the last
+    // completed run and skip the source comparison when it drops sharply.
+    const [previousRun] = await db
+      .select({ tokenUsage: pipelineRuns.tokenUsage })
+      .from(pipelineRuns)
+      .where(and(eq(pipelineRuns.status, "completed"), ne(pipelineRuns.id, run.id)))
+      .orderBy(desc(pipelineRuns.id))
+      .limit(1);
+    const previousTargets =
+      (previousRun?.tokenUsage as { target278TFilings?: number } | null)?.target278TFilings ?? null;
+    const indexIncomplete = indexLooksIncomplete(targetFilings.length, previousTargets);
+
+    const sourceChanges = indexIncomplete
+      ? { missing: [], redated: [] }
+      : reconcileKnownFilings(getAllIndexedFilings(records), await loadKnownFilingsFromData());
     const previousSources = readSourceAvailability();
     const newlyMissing = sourceChanges.missing.filter((f) =>
       previousSources?.filings[sourceKey(f.url)]?.indexListed !== false);
-    const sourceNote = newlyMissing.length
+    const sourceNote = indexIncomplete
+      ? `\n\nOGE's list looked incomplete this run: ${targetFilings.length} tracked 278-Ts came back, against ${previousTargets} on the last check. This usually means OGE sent some rows with blank fields, not that filings were removed. The source-listing comparison was skipped and will run again on the next check.`
+      : newlyMissing.length
       ? `\n\n${newlyMissing.length} tracked report(s) are no longer listed in OGE's index. This does not establish that the PDFs were deleted. Review their original links:\n${newlyMissing.map((f) => f.url).join("\n")}`
       : "";
-
-    const { eq } = await import("drizzle-orm");
 
     await db
       .update(pipelineRuns)
@@ -113,7 +138,9 @@ export async function GET(request: NextRequest) {
           note: "OGE new-filing and source-listing monitor",
           totalOgeRecords: totalRecords,
           target278TFilings: targetFilings.length,
-          missingSourceListings: sourceChanges.missing.length,
+          missingSourceListings: indexIncomplete ? null : sourceChanges.missing.length,
+          indexIncomplete,
+          previousTarget278TFilings: previousTargets,
         },
       })
       .where(eq(pipelineRuns.id, run.id));
@@ -147,7 +174,9 @@ export async function GET(request: NextRequest) {
       await notify({
         type: "new_filings",
         headline:
-          newlyMissing.length > 0
+          indexIncomplete
+            ? `OGE check: ${newFilings.length} new filings, OGE's list looked incomplete`
+            : newlyMissing.length > 0
             ? `OGE check: ${newFilings.length} new filings, ${newlyMissing.length} missing source listings`
             : newFilings.length === 0
             ? "OGE check OK · subscriber digest ready"
@@ -173,7 +202,8 @@ export async function GET(request: NextRequest) {
       totalOgeRecords: totalRecords,
       target278TFilings: targetFilings.length,
       newFilingsFound: newFilings.length,
-      missingSourceListings: sourceChanges.missing.length,
+      missingSourceListings: indexIncomplete ? null : sourceChanges.missing.length,
+      indexIncomplete,
       duration: `${((Date.now() - startTime) / 1000).toFixed(1)}s`,
       message:
         newFilings.length === 0
@@ -181,9 +211,18 @@ export async function GET(request: NextRequest) {
           : "New OGE filings found. Run the GitHub Actions pipeline or pnpm ingest-filings for JSON ingestion.",
     });
   } catch (err) {
+    // "fetch failed" alone says nothing; the cause chain (ETIMEDOUT, ECONNRESET,
+    // ENOTFOUND, a TLS error) says whether OGE was down or DNS broke.
+    const message = describeFetchError(err);
+    // vercel.json runs this route at 10:00 and 14:00 UTC. A failure at the
+    // first slot has a retry coming; the pipelineRuns row records it and the
+    // email waits. Both Sept 2026 failures were 10:00 UTC outages at OGE that
+    // the 14:00 retry cleared.
+    const retryPending = retrySlotPending();
+    let earlierFailureNote = "";
     if (runId && db) {
       try {
-        const { eq } = await import("drizzle-orm");
+        const { desc, eq, ne, and } = await import("drizzle-orm");
         const { pipelineRuns } = await import("@/lib/schema");
         await db
           .update(pipelineRuns)
@@ -191,27 +230,53 @@ export async function GET(request: NextRequest) {
             status: "failed",
             duration: Date.now() - startTime,
             completedAt: new Date(),
-            errors: [{ step: "cron", error: (err as Error).message }],
+            errors: [{ step: "cron", error: message, retryPending }],
           })
           .where(eq(pipelineRuns.id, runId));
+        if (!retryPending) {
+          const [thisRun] = await db
+            .select({ ranAt: pipelineRuns.ranAt })
+            .from(pipelineRuns)
+            .where(eq(pipelineRuns.id, runId));
+          const [previous] = await db
+            .select({ status: pipelineRuns.status, ranAt: pipelineRuns.ranAt, errors: pipelineRuns.errors })
+            .from(pipelineRuns)
+            .where(and(eq(pipelineRuns.trigger, "cron"), ne(pipelineRuns.id, runId)))
+            .orderBy(desc(pipelineRuns.id))
+            .limit(1);
+          const sixHours = 6 * 60 * 60 * 1000;
+          if (
+            previous?.status === "failed" &&
+            thisRun?.ranAt &&
+            previous.ranAt &&
+            thisRun.ranAt.getTime() - previous.ranAt.getTime() < sixHours
+          ) {
+            const prevError = (previous.errors as Array<{ error?: string }> | null)?.[0]?.error ?? "unknown";
+            earlierFailureNote = `\n\nThe earlier check today also failed (${prevError}). No successful OGE check today.`;
+          }
+        }
       } catch {
         // The notification below is the durable failure signal.
       }
     }
 
-    // Notify admin of failure
-    await notify({
-      type: "pipeline_error",
-      details: `Cron job failed: ${(err as Error).message}`,
-      metadata: {
-        duration: `${((Date.now() - startTime) / 1000).toFixed(1)}s`,
-        environment: process.env.VERCEL_ENV || "local",
-      },
-    });
+    if (retryPending) {
+      console.warn(`[cron] OGE check failed, retry pending at ${LAST_CRON_SLOT_UTC_HOUR}:00 UTC: ${message}`);
+    } else {
+      await notify({
+        type: "pipeline_error",
+        details: `Cron job failed: ${message}${earlierFailureNote}`,
+        metadata: {
+          duration: `${((Date.now() - startTime) / 1000).toFixed(1)}s`,
+          environment: process.env.VERCEL_ENV || "local",
+        },
+      });
+    }
 
     return NextResponse.json(
       {
-        error: (err as Error).message,
+        error: message,
+        retryPending,
         duration: `${((Date.now() - startTime) / 1000).toFixed(1)}s`,
       },
       { status: 500 }

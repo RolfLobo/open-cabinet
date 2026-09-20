@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
-import { diffNewFilings, loadDiscoveredFilingUrls, loadImportedFilingUrls, reconcileKnownFilings, writeLastCheckState } from "./oge-filings";
+import { describeFetchError, diffNewFilings, indexLooksIncomplete, LAST_CRON_SLOT_UTC_HOUR, loadDiscoveredFilingUrls, loadImportedFilingUrls, reconcileKnownFilings, retrySlotPending, writeLastCheckState } from "./oge-filings";
 
 const roots: string[] = [];
 afterEach(async () => {
@@ -90,5 +90,41 @@ describe("amendedFlag", () => {
     expect(amendedFlag({ amended: "2025-08-12T00:00:00" }, "https://x/$FILE/a.pdf")).toBe("2025-08-12T00:00:00");
     expect(amendedFlag({ amended: "" }, "https://x/$FILE/Donald-J-Trump-08.12.2025-278T(2)%20AMENDED.pdf")).toBe("filename");
     expect(amendedFlag({}, "https://x/$FILE/Scott-A-Kupor-07.28.2025-278T.pdf")).toBeUndefined();
+  });
+});
+
+describe("monitor resilience helpers", () => {
+  it("describeFetchError surfaces the hidden cause chain", () => {
+    const cause = Object.assign(new Error("connect ETIMEDOUT 1.2.3.4:443"), { code: "ETIMEDOUT" });
+    const err = new TypeError("fetch failed", { cause });
+    expect(describeFetchError(err)).toBe("TypeError fetch failed <- [ETIMEDOUT] connect ETIMEDOUT 1.2.3.4:443");
+    expect(describeFetchError(new Error("plain"))).toBe("plain");
+    expect(describeFetchError(undefined)).toBe("Unknown error");
+  });
+
+  it("indexLooksIncomplete flags the Sept 19 shape and ignores normal drift", () => {
+    expect(indexLooksIncomplete(92, 124)).toBe(true);
+    expect(indexLooksIncomplete(124, 124)).toBe(false);
+    expect(indexLooksIncomplete(122, 124)).toBe(false);
+    expect(indexLooksIncomplete(126, 124)).toBe(false);
+    expect(indexLooksIncomplete(92, null)).toBe(false);
+    expect(indexLooksIncomplete(92, undefined)).toBe(false);
+    expect(indexLooksIncomplete(92, 0)).toBe(false);
+  });
+
+  it("retrySlotPending is true before the 14:00 UTC slot and false after", () => {
+    expect(retrySlotPending(new Date("2026-09-20T10:01:00Z"))).toBe(true);
+    expect(retrySlotPending(new Date("2026-09-20T13:59:00Z"))).toBe(true);
+    expect(retrySlotPending(new Date("2026-09-20T14:01:00Z"))).toBe(false);
+    expect(retrySlotPending(new Date("2026-09-20T23:30:00Z"))).toBe(false);
+  });
+});
+
+describe("cron schedule contract", () => {
+  it("LAST_CRON_SLOT_UTC_HOUR matches the last slot in vercel.json", async () => {
+    const { readFile } = await import("node:fs/promises");
+    const cfg = JSON.parse(await readFile(path.resolve(__dirname, "../vercel.json"), "utf8")) as { crons: Array<{ path: string; schedule: string }> };
+    const hours = cfg.crons.filter((c) => c.path === "/api/cron").map((c) => Number(c.schedule.split(" ")[1]));
+    expect(Math.max(...hours)).toBe(LAST_CRON_SLOT_UTC_HOUR);
   });
 });
