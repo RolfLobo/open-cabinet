@@ -27,7 +27,9 @@ import path from "node:path";
 export const CORRECTIONS_PATH = path.resolve("data/review/corrections.json");
 
 export type CorrectableField = "type" | "date" | "amount" | "lateFilingFlag" | "description" | "ticker";
-export type CorrectionStatus = "proposed" | "ruled" | "withdrawn";
+/** confirmed: a person looked at the page and the model's value stands.
+ * Recorded so the row counts as ruled without changing it. */
+export type CorrectionStatus = "proposed" | "ruled" | "withdrawn" | "confirmed";
 
 export interface ReadCorrection {
   /** Stable id: sha256 of sourceUrl|pdfSha256|position|field, 16 hex chars. */
@@ -114,6 +116,27 @@ export function ruleCorrection(id: string, ruledBy: string, ruling: string | und
   record.ruledBy = ruledBy;
   record.ruledAt = new Date().toISOString();
   if (ruling) record.ruling = ruling;
+  writeCorrections(data, file);
+  return record;
+}
+
+/** A person confirms the model's value against the page. No change is
+ * applied; the record shows the row was looked at. */
+export function confirmRead(
+  input: Omit<ReadCorrection, "id" | "status" | "proposedAt" | "corrected" | "ruledBy" | "ruledAt"> & { ruledBy: string; ruling?: string },
+  file = CORRECTIONS_PATH
+): ReadCorrection {
+  const data = readCorrections(file);
+  const id = correctionId(input);
+  const existing = data.corrections.find((c) => c.id === id);
+  if (existing && existing.status === "ruled") {
+    throw new Error(`correction ${id} was ruled by ${existing.ruledBy} on ${existing.ruledAt}; withdraw it first`);
+  }
+  const now = new Date().toISOString();
+  const record: ReadCorrection = {
+    ...input, id, corrected: input.original, status: "confirmed", proposedAt: now, ruledBy: input.ruledBy, ruledAt: now,
+  };
+  data.corrections = data.corrections.filter((c) => c.id !== id).concat(record);
   writeCorrections(data, file);
   return record;
 }

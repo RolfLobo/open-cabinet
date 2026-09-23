@@ -39,7 +39,7 @@ export default async function ReviewPage({ searchParams }: {
         {held.map((item) => (
           <article key={item.id} className={panel}>
             <h3 className="text-lg font-semibold">{item.officialName}</h3>
-            <p>Filing date: {item.filing.date ?? "unavailable"} · <FilingLink url={item.filing.url} /></p>
+            <p>Filing date: {item.filing.date ?? "unavailable"} · <FilingLink url={item.filing.url} />{item.kind === "lane_disagreement" && <> · <a className="underline" href={`/admin/review/filing/${encodeURIComponent(item.id)}`}>Open the review sheet</a></>}</p>
             <p>Held back: {item.holding}</p>
             {item.problems.map((problem, index) => (
               <div key={index} className="space-y-2 border-t border-neutral-200 pt-3">
