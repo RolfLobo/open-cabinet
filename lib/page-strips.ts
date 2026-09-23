@@ -13,7 +13,10 @@
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import sharp from "sharp";
+
+/** sharp is loaded on first use so the module can be imported (and the
+ * build traced) without pulling the native binary into every route. */
+async function loadSharp() { return (await import("sharp")).default; }
 
 export const PAGE_CACHE_DIR = path.resolve("data/cache/pages");
 const DPI = 120;
@@ -35,6 +38,7 @@ export function renderPage(pdfPath: string, page: number): string {
 
 /** Row bands (y0, y1) between horizontal table rules, top to bottom. */
 export async function detectBands(pngPath: string): Promise<Array<[number, number]>> {
+  const sharp = await loadSharp();
   const { data, info } = await sharp(pngPath).greyscale().raw().toBuffer({ resolveWithObject: true });
   const W = info.width, H = info.height, x0 = Math.floor(W * 0.08), x1 = Math.floor(W * 0.92);
   const dark = new Float32Array(H);
@@ -62,6 +66,7 @@ const bandCache = new Map<string, Array<[number, number]>>();
 /** PNG bytes for one printed row on a page. `index` is 0-based within the
  * page's rows; `count` is how many rows the page holds. */
 export async function rowStrip(pdfPath: string, page: number, index: number, count: number): Promise<{ png: Buffer; exact: boolean }> {
+  const sharp = await loadSharp();
   const png = renderPage(pdfPath, page);
   let bands = bandCache.get(png);
   if (!bands) { bands = await detectBands(png); bandCache.set(png, bands); }
