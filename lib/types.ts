@@ -89,6 +89,19 @@ export interface Transaction {
    * or by backfill-tx-source.ts). When absent the UI falls back to the
    * date heuristic in getSourceFilingForTransaction. */
   sourceUrl?: string;
+  /** Which read produced the row: parser version, model and the first 8
+   * characters of the prompt hash, stamped at merge. Absent on rows merged
+   * before Sept. 23, 2026; the parse-cache envelope still holds it. */
+  read?: ReadProvenance;
+  /** Ids of the recorded corrections (data/review/corrections.json) a
+   * person applied to this row's read before it was published. */
+  corrections?: string[];
+}
+
+export interface ReadProvenance {
+  parser: string;
+  model: string;
+  prompt: string;
 }
 
 export interface SourceFiling {

@@ -1,0 +1,44 @@
+{
+  "key": "b52df3d4ec9f52ac",
+  "pdfSha256": "0179a7f6a5c3192a696050ea005b787ea137dd45e81b7225612cf2e9b61aaf19",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
+  "chunk": null,
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:31:32.244Z",
+  "transactions": [
+    {
+      "description": "Baron Growth Fund Retail Shares (BGRFX)",
+      "ticker": "BGRFX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.97
+    },
+    {
+      "description": "Cambiar Opportunity Fund Investor Class Shares (CAMOX)",
+      "ticker": "CAMOX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.97
+    },
+    {
+      "description": "Gabelli Utilities Fund Class AAA Shares (GABUX)",
+      "ticker": "GABUX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.97
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 6704,
+    "outputTokens": 288,
+    "estimatedCostUsd": 0.0244
+  }
+}

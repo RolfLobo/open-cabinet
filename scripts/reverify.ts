@@ -132,6 +132,8 @@ async function reverifyOfficial(slug: string, apply: boolean, skipScans: boolean
           ? `${pdfFile}: ${gate.lane === "text" ? "text layer" : "OCR"} agrees (${rows.length} rows)`
           : gate.verdict === "two_models"
             ? `${pdfFile}: second model agrees (${rows.length} rows)`
+            : gate.verdict === "person_decided"
+              ? `${pdfFile}: a person decided it publishes (${gate.reviewId}, ${gate.decidedBy})`
             : independent
               ? `${pdfFile}: gate held (${gate.reason.split("\n")[0]}); ${independent}; disputed rows publish marked disputed`
               : `${pdfFile}: NOT CONFIRMED, ${gate.reason}`

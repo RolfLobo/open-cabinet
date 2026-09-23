@@ -4,7 +4,9 @@ import { tmpdir } from "os";
 import path from "path";
 import {
   decideReview,
+  findDecidedMerge,
   listOpenReviews,
+  mergeDecisionMarker,
   openReviewItem,
   problemsFromCrosscheck,
   renderReviewRequest,
@@ -90,5 +92,30 @@ describe("review queue", () => {
     );
     expect(third.id).not.toBe(first.id);
     expect(listOpenReviews(f).map((i) => i.id)).toEqual([third.id]);
+  });
+});
+
+describe("findDecidedMerge", () => {
+  const filing = { url: "https://example.org/held.pdf", pdfFile: "held.pdf", date: "2026-09-22" };
+  const open = (f: string) =>
+    openReviewItem({ kind: "lane_disagreement", slug: "x", officialName: "X", filing, problems: [], holding: "all rows" }, { send: false, file: f });
+
+  it("returns nothing while the item is open", async () => {
+    const f = file();
+    await open(f);
+    expect(findDecidedMerge(filing.url, "abc", f)).toBeNull();
+  });
+
+  it("requires the marker for these exact rows", async () => {
+    const f = file();
+    const item = await open(f);
+    decideReview(item.id, "checked pages 7 and 28 against the images", "Trevor Brown", f);
+    expect(findDecidedMerge(filing.url, "abc", f)).toBeNull();
+    const g = file();
+    const item2 = await open(g);
+    decideReview(item2.id, `checked pages 7 and 28; ${mergeDecisionMarker("abc")}`, "Trevor Brown", g);
+    expect(findDecidedMerge(filing.url, "abc", g)?.id).toBe(item2.id);
+    expect(findDecidedMerge(filing.url, "other", g)).toBeNull();
+    expect(findDecidedMerge("https://example.org/else.pdf", "abc", g)).toBeNull();
   });
 });

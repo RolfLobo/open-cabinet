@@ -5,8 +5,53 @@
   "agency": "Office of Personnel Management",
   "level": "Sub-Cabinet",
   "filingType": "278-T Periodic Transaction Report",
-  "mostRecentFilingDate": "2026-08-21",
+  "mostRecentFilingDate": "2026-09-19",
   "transactions": [
+    {
+      "description": "Airbnb Inc. Class A Common Stock (ABNB)",
+      "ticker": "ABNB",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf"
+    },
+    {
+      "description": "Baron Growth Fund Retail Shares (BGRFX)",
+      "ticker": "BGRFX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
+    },
+    {
+      "description": "Cambiar Opportunity Fund Investor Class Shares (CAMOX)",
+      "ticker": "CAMOX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
+    },
+    {
+      "description": "Figma Class A Shares",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf"
+    },
+    {
+      "description": "Gabelli Utilities Fund Class AAA Shares (GABUX)",
+      "ticker": "GABUX",
+      "type": "Sale",
+      "date": "2026-08-07",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
+    },
     {
       "description": "Okta, Inc. (OKTA)",
       "ticker": "OKTA",
@@ -981,6 +1026,16 @@
   "party": "R",
   "sourceFilings": [
     {
+      "date": "2026-09-19",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
+      "label": "Scott-A-Kupor-08.07.2026-278T(1)"
+    },
+    {
+      "date": "2026-09-19",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
+      "label": "Scott-A-Kupor-08.07.2026-278T"
+    },
+    {
       "date": "2026-08-21",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7B58D078A7F838FE85258E5A002DB8C1/$FILE/Scott-A-Kupor-07.20.2026-278T.pdf",
       "label": "Scott-A-Kupor-07.20.2026-278T"
@@ -1041,48 +1096,53 @@
       "label": "278-T"
     }
   ],
-  "lastIngestedDate": "2026-08-22",
+  "lastIngestedDate": "2026-09-23",
   "lastIngestedNewCount": 5,
   "lastIngestedTrades": [
     {
-      "description": "Okta, Inc. (OKTA)",
-      "ticker": "OKTA",
+      "description": "Airbnb Inc. Class A Common Stock (ABNB)",
+      "ticker": "ABNB",
       "type": "Sale",
-      "date": "2026-07-17",
+      "date": "2026-08-07",
       "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf"
     },
     {
-      "description": "Okta, Inc. (OKTA)",
-      "ticker": "OKTA",
+      "description": "Baron Growth Fund Retail Shares (BGRFX)",
+      "ticker": "BGRFX",
       "type": "Sale",
-      "date": "2026-07-17",
-      "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "date": "2026-08-07",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
     },
     {
-      "description": "Robinhood Markets Inc. Class A Common Stock (HOOD)",
-      "ticker": "HOOD",
+      "description": "Cambiar Opportunity Fund Investor Class Shares (CAMOX)",
+      "ticker": "CAMOX",
       "type": "Sale",
-      "date": "2026-07-17",
-      "amount": "$100,001-$250,000",
-      "lateFilingFlag": false
+      "date": "2026-08-07",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
     },
     {
-      "description": "Omada Common Stock (OMDA)",
-      "ticker": "OMDA",
+      "description": "Figma Class A Shares",
+      "ticker": null,
       "type": "Sale",
-      "date": "2026-07-14",
+      "date": "2026-08-07",
       "amount": "$500,001-$1,000,000",
-      "lateFilingFlag": false
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf"
     },
     {
-      "description": "Samsara Inc. Class A Common Stock (IOT)",
-      "ticker": "IOT",
+      "description": "Gabelli Utilities Fund Class AAA Shares (GABUX)",
+      "ticker": "GABUX",
       "type": "Sale",
-      "date": "2026-07-14",
-      "amount": "$1,000,001-$5,000,000",
-      "lateFilingFlag": false
+      "date": "2026-08-07",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
     }
   ],
   "summaryStaleSince": "2026-09-06"

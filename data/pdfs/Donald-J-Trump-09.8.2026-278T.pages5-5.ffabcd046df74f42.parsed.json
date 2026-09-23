@@ -1,0 +1,317 @@
+{
+  "key": "ffabcd046df74f42",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 5,
+    "last": 5
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T15:57:18.617Z",
+  "transactions": [
+    {
+      "description": "ULTA BEAUTY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BLUE OWL CAPITAL INC CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "UNITEDHEALTH GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MONOLITHIC POWER SYSTEM INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VERIZON COMMUNICATIONS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "LUMENTUM HOLDINGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SLB LTD",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WILLIAMS COS INC DEL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TERADYNE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SYNOPSYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MEDTRONIC PLC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "META PLATFORMS INC CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "O REILLY AUTOMOTIVE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SPACE EXPLORATION TECHNOLOGIES CORP CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WALMART INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BOOKING HOLDINGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NXP SEMICONDUCTORS N V",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DOORDASH INC CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "COREWEAVE INC CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MICROSOFT CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PEPSICO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TEXAS INSTRUMENTS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NVIDIA CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TESLA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ADOBE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "EOG RESOURCES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "QUALCOMM INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTUIT INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "Ishares Tr Russell 1000 Etf",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "Broadcom Inc",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-01",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "Mobility Global Inc",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-06",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "Ge Healthcare Technologies Inc",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "Lennar Corp Cl A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3585,
+    "outputTokens": 2744,
+    "estimatedCostUsd": 0.0519
+  }
+}

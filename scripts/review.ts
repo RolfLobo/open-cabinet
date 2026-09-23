@@ -6,6 +6,15 @@
  *   npx tsx scripts/review.ts demo <slug> <pdf file name>
  *   npx tsx scripts/review.ts rows <slug> [text]        list rows with their record ids and state
  *   npx tsx scripts/review.ts row <slug> <recordId> confirmed|rejected "<evidence: page, printed row, what you saw>"
+ *   npx tsx scripts/review.ts corrections [slug]                 list proposed and ruled corrections to model reads
+ *   npx tsx scripts/review.ts corrections rule <id> "<who>" ["<note>"]   a person confirms a proposed correction against the page
+ *   npx tsx scripts/review.ts corrections withdraw <id> "<who>" "<why>"
+ *   npx tsx scripts/review.ts corrections replay <slug> <pdf file name>   original read + corrections vs the current candidate
+ *
+ * "corrections" are a person's changes to one value of one row of a model
+ * read, recorded in data/review/corrections.json beside the read instead
+ * of edited into the parse cache (lib/corrections.ts). Only ruled
+ * corrections change what the ingest compares and merges.
  *
  * "row" records a person's decision on one published row in
  * data/review/decisions.json. A confirmed row scores 3 (human_verified) the
@@ -28,6 +37,7 @@ import { findParseRecord, promptHash, sha256File } from "../lib/parse-cache";
 import { EXTRACTION_PROMPT, SYSTEM_PROMPT, PARSER_VERSION, DEFAULT_MODEL } from "./parse-pdf.js";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
 import { REVIEW_DECISIONS_PATH, recordIdsFor, verificationForOfficial, type ReviewDecision } from "../lib/row-verification";
+import { readCorrections, replayMatches, ruleCorrection, withdrawCorrection } from "../lib/corrections";
 import {
   decideReview,
   listOpenReviews,
@@ -119,6 +129,55 @@ async function main() {
     console.log(`recorded ${decision} for ${recordId} by ${entry.decidedBy}. Run pnpm row-verification to apply.`);
     return;
   }
+  if (cmd === "corrections") {
+    const [sub, ...args] = rest;
+    if (sub === "rule") {
+      const [id, who, note] = args;
+      if (!id || !who) throw new Error('usage: corrections rule <id> "<who>" ["<note>"]');
+      const c = ruleCorrection(id, who, note);
+      console.log(`ruled ${c.id}: row ${c.position} (page ${c.page ?? "?"}, printed ${c.printedRow ?? "?"}) ${c.field} ${JSON.stringify(c.original)} -> ${JSON.stringify(c.corrected)} by ${who}`);
+      return;
+    }
+    if (sub === "withdraw") {
+      const [id, who, why] = args;
+      if (!id || !who || !why) throw new Error('usage: corrections withdraw <id> "<who>" "<why>"');
+      withdrawCorrection(id, who, why);
+      console.log(`withdrew ${id}`);
+      return;
+    }
+    if (sub === "replay") {
+      const [slug, pdfFile] = args;
+      if (!slug || !pdfFile) throw new Error("usage: corrections replay <slug> <pdf file name>");
+      const official = JSON.parse(readFileSync(path.resolve(`data/officials/${slug}.json`), "utf-8"));
+      const filing = (official.sourceFilings ?? []).find(
+        (f: { url: string | null }) => f.url && decodeURIComponent(f.url.split("/").pop() || "") === pdfFile
+      );
+      const pdfPath = path.resolve("data/pdfs", pdfFile);
+      const sha = sha256File(pdfPath);
+      const record = findParseRecord(pdfPath, {
+        pdfSha256: sha, sourceUrl: filing?.url ?? "", parserVersion: PARSER_VERSION,
+        promptSha256: promptHash(SYSTEM_PROMPT, EXTRACTION_PROMPT), model: DEFAULT_MODEL,
+      });
+      if (!record) throw new Error(`no parse record on disk for ${pdfFile}`);
+      const original = record.transactions as Array<Record<string, unknown>>;
+      const published = (official.transactions as Array<Record<string, unknown>>).filter((t) => t.sourceUrl === filing?.url);
+      const result = replayMatches(original, { sourceUrl: filing?.url ?? "", pdfSha256: sha }, readCorrections().corrections, published);
+      console.log(`${pdfFile}: ${original.length} rows in the read, ${published.length} published, ${result.applied} ruled correction(s) applied, ${result.skipped.length} skipped`);
+      for (const d of result.differences.slice(0, 40)) console.log(`  - ${d}`);
+      console.log(result.ok ? "REPLAY OK: original read + corrections reproduces the published rows" : `REPLAY DIFFERS: ${result.differences.length} difference(s)`);
+      process.exitCode = result.ok ? 0 : 1;
+      return;
+    }
+    const slug = sub;
+    const all = readCorrections().corrections.filter((c) => !slug || c.slug === slug);
+    if (!all.length) { console.log("no corrections recorded"); return; }
+    for (const c of all) {
+      console.log(`${c.id}  ${c.status.padEnd(9)} ${c.slug}  ${decodeURIComponent(c.sourceUrl.split("/").pop() || "")}  row ${c.position} (page ${c.page ?? "?"}, printed ${c.printedRow ?? "?"})  ${c.field}: ${JSON.stringify(c.original)} -> ${JSON.stringify(c.corrected)}  ${c.status === "ruled" ? `ruled by ${c.ruledBy} ${c.ruledAt?.slice(0, 10)}` : `proposed by ${c.proposedBy} ${c.proposedAt.slice(0, 10)}`}`);
+      console.log(`      ${c.evidence}`);
+    }
+    return;
+  }
+
   if (cmd === "demo") {
     const [slug, pdfFile] = rest;
     if (!slug || !pdfFile) throw new Error("usage: review.ts demo <slug> <pdf file name>");

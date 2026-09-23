@@ -1,0 +1,317 @@
+{
+  "key": "2f4b2dfc644bc49b",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 35,
+    "last": 35
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:11:00.981Z",
+  "transactions": [
+    {
+      "description": "TEXAS PACIFIC LAND CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "LUMENTUM HOLDINGS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "APPLE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PALANTIR TECHNOLOGIES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "XCEL ENERGY INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SOUTHERN CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "WELLTOWER INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PUBLIC STORAGE",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "CORTEVA INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "CH ROBINSON WORLDWIDE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "RTX CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PROCTER & GAMBLE",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "DOORDASH INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "EXTRA SPACE STORAGE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "AT&T INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "TJX COMPANIES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "T MOBILE US INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "NEWMONT CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ZIMMER BIOMET HOLDINGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "YUM BRANDS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "WALT DISNEY CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "VERSIGENT LTD",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "MONDELEZ INTERNATIONAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "APPLOVIN CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "LINDE PLC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SLB LIMITED",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PRUDENTIAL FINANCIAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ALLSTATE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "APTIV PLC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SHERWIN WILLIAMS CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "LYONDELLBASELL INDUSTRIES NV",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "QUEST DIAGNOSTICS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "BAXTER INTERNATIONAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3614,
+    "outputTokens": 1761,
+    "estimatedCostUsd": 0.0373
+  }
+}

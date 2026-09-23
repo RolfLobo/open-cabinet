@@ -288,7 +288,7 @@ async function ingestForOfficial(
       }
       throw err;
     }
-    console.log(`  [${slug}] publication gate: ${gate.verdict}${gate.verdict === "two_lane" ? ` (${gate.lane})` : ""}`);
+    console.log(`  [${slug}] publication gate: ${gate.verdict}${gate.verdict === "two_lane" ? ` (${gate.lane})` : gate.verdict === "person_decided" ? ` (${gate.reviewId})` : ""}`);
     if (PARSE_ONLY) {
       console.log(`  [${slug}] --parse-only: ${rows.length} rows read and checked; not merged`);
       continue;

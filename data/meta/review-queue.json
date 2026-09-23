@@ -147653,5 +147653,528 @@
     "decision": "Closed Sep 6, 8:40 PM: the only difference is the text layer's 'See Endnote' cross-reference appended to the HP INC COM name; the form's endnote marker is not part of the asset name. Trade columns agree. Rows are published and checked.",
     "decidedBy": "home",
     "decidedAt": "2026-09-07T00:17:21.846Z"
+  },
+  {
+    "id": "trump-donald-j-lane_disagreement-2026-09-23-011",
+    "status": "open",
+    "createdAt": "2026-09-23T16:31:21.291Z",
+    "kind": "lane_disagreement",
+    "slug": "trump-donald-j",
+    "officialName": "Trump, Donald J.",
+    "filing": {
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+      "pdfFile": "Donald-J-Trump-09.8.2026-278T.pdf",
+      "date": "2026-09-22"
+    },
+    "problems": [
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "second model: 1121 of 1156 rows agree, 34 differ, 1 unread, 1 extra"
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 177 of the parse record: second model [Purchase|2026-07-08|$1,000,001-$5,000,000|late] vs primary [Purchase|2026-07-08|$1,000,001-$5,000,000|ontime] for \"VANGUARD DIVIDEND APPRECIATION INDEX FUND ETF SHARES\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 860 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"PENTAIR PLC F\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 861 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"TRIMBLE INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 862 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"CDW CORP\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 863 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"DISNEY WALT CO\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 864 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"APTARGROUP INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 865 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"CONSTELLATION BRANDS INC CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 866 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"REPUBLIC SVCS INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 867 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"HUBSPOT INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 868 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"T-MOBILE US INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 869 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"ARCHER AVIATION INC CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 870 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"INGREDION INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 871 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"RESMED INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 872 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"ESAB CORP\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 873 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"CHEWY INC CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 874 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"CROWN CASTLE INC REIT REIT\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 875 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"BOOKING HLDGS INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 876 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"STRATEGY INC CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 877 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"WHIRLPOOL CORP\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 878 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"GARTNER INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 879 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"ROPER TECHNOLOGIES INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 880 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"APPLOVIN CORP CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 881 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"HOME DEPOT INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 882 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"EXLSERVICE HLDGS INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 883 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"IDEXX LABS INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 884 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"PROCORE TECHNOLOGIES INC\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 885 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"VISTRA CORP\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 886 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"THE CIGNA GROUP\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 887 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"WORKDAY INC CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 888 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"COSTCO WHSL CORP NEW\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 889 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"BERKSHIRE HATHAWAY CLASS B\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 890 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"PILGRIMS PRIDE CORP NEW\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 891 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"VICI PPTYS INC REIT\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "position 892 of the parse record: second model [Sale|2026-07-08|$1,001-$15,000|late] vs primary [Sale|2026-07-08|$1,001-$15,000|ontime] for \"PALANTIR TECHNOLOGIES IN CLASS CLASS A\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "second model also read: Sale 2026-07-23 $1,001-$15,000 \"VERISIGN LTD\""
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": null,
+          "parsedRow": null,
+          "description": null
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "5 printed row number(s) repaired by sequence (11, 134, 189, 628, 652); repaired rows are not counted as agreement"
+      },
+      {
+        "location": {
+          "page": 2,
+          "printedRow": 3,
+          "parsedRow": 3,
+          "description": "MIAMI DADE CNTY FL AVIATION REV RFDG SER A B/E PTC 5.00 % Due Oct 1, 2032"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 3 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 2,
+          "printedRow": 7,
+          "parsedRow": 7,
+          "description": "NEW MEXICO ST HOSP EQUIP LN COUNCIL REV SYS PRESBYTERIAN HCA B/E 5.00 % Due Aug 1, 2027"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 7 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 2,
+          "printedRow": 9,
+          "parsedRow": 9,
+          "description": "RANDALL TOWN WI PROM NT SER A B/E B/Q 5.00 % Due May 1, 2027"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 9 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 2,
+          "printedRow": 13,
+          "parsedRow": 13,
+          "description": "STARKVILLE MS WTR & SWR REV COMB SYS 2026 B/E CR ENH 5.00 % Due Mar 1, 2027"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 13 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": null,
+          "printedRow": 24,
+          "parsedRow": 24,
+          "description": "MEMPHIS TN GENL IMPT RFDG B/E 4.00 % Due May 1, 2035"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 24 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 3,
+          "printedRow": 66,
+          "parsedRow": 66,
+          "description": "KEURIG DR PEPPER INC"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 66 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 7,
+          "printedRow": 182,
+          "parsedRow": 182,
+          "description": "CME GROUP INC CLASS A"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 182 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 7,
+          "printedRow": 185,
+          "parsedRow": 185,
+          "description": "FIDELITY NATL INFORMATIO"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 185 missing from OCR extraction (rows run 1..1156)"
+      },
+      {
+        "location": {
+          "page": 7,
+          "printedRow": 190,
+          "parsedRow": 190,
+          "description": "ABBOTT LABS"
+        },
+        "modelSaid": null,
+        "textLayerSaid": null,
+        "detail": "printed row 190 missing from OCR extraction (rows run 1..1156)"
+      }
+    ],
+    "holding": "every row of Donald-J-Trump-09.8.2026-278T.pdf; nothing from it is published until this is decided",
+    "emailSentAt": "2026-09-23T16:31:22.148Z"
   }
 ]

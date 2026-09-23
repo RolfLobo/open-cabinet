@@ -1,0 +1,326 @@
+{
+  "key": "ddd2e55bcc800876",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 23,
+    "last": 23
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:24:57.109Z",
+  "transactions": [
+    {
+      "description": "BOSTON SCIENTIFIC CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INTUIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ADOBE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NIKE INC CLASS CLASS B",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "IBM CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "STRATEGY INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UNITED RENTALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ROCKET LAB CORP CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "HOME DEPOT INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AUTOZONE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LOWES COS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BERKSHIRE HATHAWAY CLASS B",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TRANSDIGM GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GE HEALTHCARE TECHNOLOGI",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.97
+    },
+    {
+      "description": "MOBILITY GLOBAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LULULEMON ATHLETICA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PILGRIMS PRIDE CORP NEW",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WINGSTOP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "POOL CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PEGASYSTEMS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WESTLAKE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ERIE INDTY CO CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SBA COMMUNICATIONS CORP REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DISNEY WALT CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AT&T INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "YUM BRANDS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MCCORMICK & CO INC CLASS N",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CONSTELLATION BRANDS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SPROUTS FMRS MKT INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CLOROX CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CHARTER COMMUNICATIONS I CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "PLANET FITNESS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LUCID GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MARVELL TECHNOLOGY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-27",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1768,
+    "estimatedCostUsd": 0.1247
+  }
+}

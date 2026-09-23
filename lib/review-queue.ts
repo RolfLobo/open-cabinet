@@ -88,6 +88,38 @@ export function listOpenReviews(file = REVIEW_QUEUE_PATH): ReviewItem[] {
   return readQueue(file).filter((i) => i.status === "open");
 }
 
+/** The marker a person's decision must carry for the gate to merge a held
+ * filing. It names the exact candidate rows (hashRows of the primary record
+ * after any corrections), so a decision cannot be applied to rows the person
+ * never saw. */
+export function mergeDecisionMarker(candidateSha256: string): string {
+  return `merge rows:${candidateSha256}`;
+}
+
+/**
+ * A person's decision to publish a held filing. The publication rule is
+ * "two independent reads agree on every row, or a person has decided"; this
+ * is the second half. The item must be decided, name this filing's URL, and
+ * its decision text must carry the marker for these exact rows.
+ */
+export function findDecidedMerge(
+  filingUrl: string,
+  candidateSha256: string,
+  file = REVIEW_QUEUE_PATH
+): ReviewItem | null {
+  const marker = mergeDecisionMarker(candidateSha256);
+  return (
+    readQueue(file).find(
+      (i) =>
+        i.kind === "lane_disagreement" &&
+        i.status === "decided" &&
+        i.filing.url === filingUrl &&
+        typeof i.decision === "string" &&
+        i.decision.includes(marker)
+    ) ?? null
+  );
+}
+
 /**
  * Which page of the PDF prints a given row number. Splits the text layer
  * on form feeds and looks for a line that starts with the number. Returns

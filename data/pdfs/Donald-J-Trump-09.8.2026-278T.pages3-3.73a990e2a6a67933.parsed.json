@@ -1,0 +1,317 @@
+{
+  "key": "73a990e2a6a67933",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 3,
+    "last": 3
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T15:56:18.784Z",
+  "transactions": [
+    {
+      "description": "PITTSBURGH & ALLEGHENY CNTY PA SPORTS & EXHIB AUTH REV AGM B/E 5.00 % Due Feb 1, 2027",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "PEARLAND TX CTF OBLIG SER C DB B/E 5.00 % Due Sep 1, 2026",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-09",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.95
+    },
+    {
+      "description": "ALACHUA CNTY FL HLTH FAC REV RFDG SHANDS TEACHING HOSP & CLINICS B1 B/E 5.00 % Due Dec 1, 2026",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-09",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.95
+    },
+    {
+      "description": "BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR CO PLANT VOGTLE PJ B/E 3.375 % Due Nov 1, 2048",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-09",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.95
+    },
+    {
+      "description": "NORTH TAMA CNTY IA CMNTY SCH DIST 2024 BAM B/E B/Q CR ENH 5.00 % Due Jun 1, 2027",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "BREVARD CNTY FL HSG FIN AUTH MLTIFAM HSG REV EMERALD PLACE APTS B/E 3.30 % Due Feb 1, 2028",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-16",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "ARIZONA IDA NATL CHTR SCH REVLVG SR EQUITABLE SCH FD SER A B/E 5.00 % Due Nov 1, 2026",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-09",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.95
+    },
+    {
+      "description": "GAINESVILLE & HALL CNTY GA HOSP REV ANTIC CTF NRTHEST HLTH SER B B/E 5.00 % Due Feb 15, 2027",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "BERKS CNTY PA SER A B/E 4.00 % Due Nov 15, 2029",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-07",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.95
+    },
+    {
+      "description": "EAST ALDINE MGMT DIST TX SALES TAX REV RFDG AGM B/E PTC 4.00 % Due Feb 15, 2027",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-16",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "MINNEAPOLIS & ST PAUL MN HSG & REDEV AUTH HLTH CARE REV RFDG SER A B/E 5.00 % Due Nov 15, 2026",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "CYPRESS FAIRBANKS TX INDPT SCH DIST BLDG PSF GTD SER A B/E 5.00 % Due Feb 15, 2027",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "SPACE EXPLORATION TECHNOLOGIES CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-10",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "AUTOMATIC DATA PROCESSING INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "INTUITIVE SURGICAL INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "COMCAST CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "PALANTIR TECHNOLOGIES INC CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "INSMED INC PAR $.01",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "ALNYLAM PHARMACEUTICALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "COMCAST CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "ENTEGRIS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "NETFLIX INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "COPART INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "APPLOVIN CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "CROWDSTRIKE HOLDINGS INC CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "COGNIZANT TECHNOLOGY SOLUTIONS CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "ARES MANAGEMENT CORP CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "APPLIED MATERIALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "TRUIST FINANCIAL CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "PHILIP MORRIS INTL INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "ACCENTURE PLC IRELAND CL A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "REGENERON PHARMACEUTICALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    },
+    {
+      "description": "KEURIG DR PEPPER INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.95
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 4105,
+    "outputTokens": 3203,
+    "estimatedCostUsd": 0.0604
+  }
+}
