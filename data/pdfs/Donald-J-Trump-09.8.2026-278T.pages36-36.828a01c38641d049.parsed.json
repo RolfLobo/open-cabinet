@@ -1,0 +1,317 @@
+{
+  "key": "828a01c38641d049",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 36,
+    "last": 36
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:11:21.338Z",
+  "transactions": [
+    {
+      "description": "CMS ENERGY CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "HALLIBURTON COMPANY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARES MANAGEMENT CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CORNING INC AVG",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ZOETIS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "KROGER CO (THE)",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CROWN CASTLE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PFIZER INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VERIZON COMMUNICATIONS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VULCAN MATERIALS CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "UNITED AIRLINES HOLDINGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DOVER CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TESLA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "FOX CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "IDEXX LABORATORIES CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NIKE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BOSTON SCIENTIFIC CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "O REILLY AUTOMOTIVE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CME GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JOHNSON CONTROLS INTERNATIONAL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MASTERCARD INCORPORATED",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AMERICAN TOWER CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PARAMOUNT SKYDANCE CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ACCENTURE PLC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "COSTCO WHOLESALE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTUITIVE SURGICAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PEPSICO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "META PLATFORMS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NETFLIX INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MCDONALDS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTERNATIONAL BUSINESS MACHINES CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ORACLE CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3591,
+    "outputTokens": 1755,
+    "estimatedCostUsd": 0.0371
+  }
+}

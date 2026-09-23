@@ -1,0 +1,317 @@
+{
+  "key": "2c8678fb4305eb16",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 10,
+    "last": 10
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T15:59:37.407Z",
+  "transactions": [
+    {
+      "description": "MIDERA FOOD PROCESSING I",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SHAKE SHACK INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "FRESHPET INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "BLACKSTONE MTG TR INC REIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SOLARIS ENERGY INFRSTR CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PRIMORIS SVCS CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "ATMUS FILTRATION TECHNOL",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "GULFPORT ENERGY CORP EQU CLASS EQUITY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "WAYSTAR HLDG CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "DIEBOLD NIXDORF INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "KEMPER CORP DEL",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "VIASAT INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "GROUP 1 AUTOMOTIVE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "PENGUIN SOLUTIONS INC DE",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "FULLER H B CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DXC TECHNOLOGY CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "AGILYSYS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "POOL CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "PERRIGO CO PLC F",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MGE ENERGY INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "CREDIT ACCEP CORP MICH",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARBOR RLTY TR INC REIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "O-I GLASS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "ALPHA & OMEGA SEMICOND F",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "HNI CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "GOOSEHEAD INS INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "VSE CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CORE NAT RES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INSPIRE MED SYS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "LAKELAND FINL CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MILLROSE PPTYS INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SOLARIS ENERGY INFRSTR CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "GULFPORT ENERGY CORP EQU CLASS EQUITY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3713,
+    "outputTokens": 1836,
+    "estimatedCostUsd": 0.0387
+  }
+}

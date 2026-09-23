@@ -1,0 +1,317 @@
+{
+  "key": "051502af66046063",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 19,
+    "last": 19
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:23:04.586Z",
+  "transactions": [
+    {
+      "description": "GENWORTH FINL INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ELEMENT SOLUTIONS IN",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WARBY PARKER INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PATTERSON-UTI ENERGY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TELEPHONE & DATA SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INNOVIVA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "KARMAN HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WD 40 CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NORTHERN OIL & GAS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "BUCKLE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "VERACYTE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ULTRA CLEAN HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "COVISTA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "EPLUS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ARGAN INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "A10 NETWORKS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GREEN BRICK PARTNERS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SOLARIS ENERGY INFRSTR CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MUELLER WATER PRODUC CLASS SERIES A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "HORACE MANN EDUCATORS CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PIPER SANDLER COS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MARKETAXESS HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BGC GROUP INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ATLANTIC UN BANKSHARES C",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "STEWART INFORMATION SVCS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PROTAGONIST THERAPEUTICS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CSW INDUSTRIALS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BRINKER INTL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "STONEX GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ACM RESH INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ENPHASE ENERGY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INDIVIOR PHARMACEUTICALS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CORE NAT RES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1774,
+    "estimatedCostUsd": 0.125
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "key": "a5d30e7b76126eed",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 11,
+    "last": 11
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:00:12.311Z",
+  "transactions": [
+    {
+      "description": "PRIMORIS SVCS CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TANDEM DIABETES CARE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "FIRST ADVANTAGE CORP NEW",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "VIRTUS INVT PARTNERS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-17",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MOHAWK INDS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "SYLVAMO CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "SIMPLY GOOD FOODS CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "MASTERBRAND INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "U S PHYSICAL THERAPY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "EVERTEC INC F",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "NETSTREIT CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "VERRA MOBILITY CORP CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "MERIT MED SYS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "PALOMAR HLDGS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "COMSTOCK RES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "ITRON INC EQUITY CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "ROGERS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CHESAPEAKE UTILS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NTNL BK HLDGS CORP A CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SIX FLAGS ENTMT CORP CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "OSI SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTERFACE INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JETBLUE AWYS CORP EQUITY CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DAVE INC CLASS CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "RENASANT CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CALIX INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "LAMB WESTON HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "FRANKLIN ELEC INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PRIVIA HEALTH GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARTISAN PARTNERS ASSET M CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "SHENANDOAH TELECOMMUNICA",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JBG SMITH PPTYS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MONRO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3685,
+    "outputTokens": 2782,
+    "estimatedCostUsd": 0.0528
+  }
+}

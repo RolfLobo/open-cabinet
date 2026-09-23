@@ -1,0 +1,19 @@
+{
+  "key": "0318ba19ecc67a5c",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 37,
+    "last": 37
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:11:24.897Z",
+  "transactions": [],
+  "tokenUsage": {
+    "inputTokens": 3477,
+    "outputTokens": 4,
+    "estimatedCostUsd": 0.0105
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "key": "b943e40539c2172e",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 21,
+    "last": 21
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:05:01.096Z",
+  "transactions": [
+    {
+      "description": "TELEPHONE & DATA SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "PATRICK INDS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "RADIAN GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "GULFPORT ENERGY CORP EQU CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CONSTRUCTION PARTNERS IN CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "LCI INDS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "OSI SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "RPC INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ATMUS FILTRATION TECHNOL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARGAN INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "STRATEGIC ED INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AVISTA CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PTC THERAPEUTICS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MARA HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NETSCOUT SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VSE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "COMMUNITY FINL SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WILLSCOT HOLDINGS CO A CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "FULLER H B CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MIRION TECHNOLOGIES INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PENNYMAC MTG INVT TR REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "GLAUKOS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VICTORIAS SECRET & CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "STEPSTONE GROUP INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": true,
+      "confidence": 0.9
+    },
+    {
+      "description": "MADISON SQUARE GARDEN SP CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "LIQUIDIA CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DIODES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "UNITED CMNTY BK BLAIRSVI",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "OPENLANE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ALKERMES PLC F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "POOL CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MDU RES GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PEOPLE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3621,
+    "outputTokens": 2753,
+    "estimatedCostUsd": 0.0522
+  }
+}

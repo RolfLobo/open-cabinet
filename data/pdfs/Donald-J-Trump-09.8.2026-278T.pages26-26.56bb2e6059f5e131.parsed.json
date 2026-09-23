@@ -1,0 +1,317 @@
+{
+  "key": "56bb2e6059f5e131",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 26,
+    "last": 26
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:26:18.658Z",
+  "transactions": [
+    {
+      "description": "NEWMONT CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FABRINET F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NEXTPOWER INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FOX CORP CLASS CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SYNOPSYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LENNAR CORP CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BAKER HUGHES CO. A CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COSTCO WHSL CORP NEW",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TRACTOR SUPPLY CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "HILTON WORLDWIDE HLDGS I",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "API GROUP CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UBER TECHNOLOGIES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ZILLOW GROUP INC CLASS C",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MARSH & MCLENNAN COS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ALBERTSONS CO SHS CL A CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AMERICAN TOWER CORP NEW REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PHILIP MORRIS INTL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CHARTER COMMUNICATIONS I CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "ROLLINS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BOEING CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CRH PUBLIC LIMITED CO F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DISNEY WALT CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ORACLE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SALESFORCE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "KROGER CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "EXXONMOBIL HLDGS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "VERIZON COMMUNICATIONS I",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "SHERWIN-WILLIAMS CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NETFLIX INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PALANTIR TECHNOLOGIES IN CLASS CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INTUITIVE SURGICAL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TESLA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MICROSOFT CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1773,
+    "estimatedCostUsd": 0.1249
+  }
+}

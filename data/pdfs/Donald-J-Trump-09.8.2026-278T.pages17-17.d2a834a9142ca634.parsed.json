@@ -1,0 +1,317 @@
+{
+  "key": "d2a834a9142ca634",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 17,
+    "last": 17
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:22:09.045Z",
+  "transactions": [
+    {
+      "description": "ORGANON & CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ICHOR HLDGS LTD F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "VITA COCO CO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UNIVERSAL CORP VA",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FIRST ADVANTAGE CORP NEW",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AGILYSYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ALIGNMENT HEALTHCARE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DIGI INTL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "QUAKER HOUGHTON",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "HNI CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TWO HARBORS INVESTME",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "SIX FLAGS ENTMT CORP CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MGE ENERGY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ADT INC DEL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MILLROSE PPTYS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FRONTDOOR INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SONOS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SONIC AUTOMOTIVE INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PATHWARD FINL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "APOLLO COML REAL ESTATE REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "OMNICELL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PITNEY BOWES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PLEXUS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CTS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WESBANCO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CELANESE CORP DEL CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "JACKSON FINL INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "RADNET INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GREENBRIER COS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ENOVA INTL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CENTERSPACE REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "VERSANT MEDIA GROUP INC CLASS CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LIVERAMP HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1781,
+    "estimatedCostUsd": 0.1253
+  }
+}

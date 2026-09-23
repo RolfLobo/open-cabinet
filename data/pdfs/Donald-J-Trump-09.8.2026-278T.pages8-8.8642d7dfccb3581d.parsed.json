@@ -1,0 +1,317 @@
+{
+  "key": "8642d7dfccb3581d",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 8,
+    "last": 8
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T15:58:42.616Z",
+  "transactions": [
+    {
+      "description": "IBM CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WEC ENERGY GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "OMNICOM GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WALMART INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PARKER-HANNIFIN CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BLACKROCK INC NEW",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "WATSCO INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PPG INDS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JOHNSON & JOHNSON",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "META PLATFORMS INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NIKE INC CLASS CLASS B",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VISA INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TRUIST FINL CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "REPUBLIC SVCS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CATERPILLAR INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PUBLIC STORAGE REIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "S&P GLOBAL INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ACCENTURE PLC IRELAND F CLASS CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AMERICAN EXPRESS CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ABBVIE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PNC FINL SERVICES",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "MOTOROLA SOLUTIONS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "EVERSOURCE ENERGY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "LINDE PLC F",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ECOLAB INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JPMORGAN CHASE & CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CME GROUP INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "KINDER MORGAN INC DEL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "STARBUCKS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NEXTERA ENERGY INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CONOCOPHILLIPS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CHEVRON CORP NEW",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BOOKING HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-31",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3626,
+    "outputTokens": 1777,
+    "estimatedCostUsd": 0.0375
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "key": "3d737066ad74e3bb",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 13,
+    "last": 13
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:01:12.841Z",
+  "transactions": [
+    {
+      "description": "WORTHINGTON ENTERPRI",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.82
+    },
+    {
+      "description": "CONCENTRA GROUP HOLD EQU CLASS EQUITY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ADMA BIOLOGICS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "VICI PPTYS INC REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PRICESMART INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "NMI HLDGS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SUNSTONE HOTEL INVS INC REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "XENCOR INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "BRIGHT HORIZONS FAMILY S",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "HOPE BANCORP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SIGNET JEWELERS LIMITE F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "AMERISAFE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "LYFT INC CLASS CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.85
+    },
+    {
+      "description": "ONESPAWORLD HLDGS LTD F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "INSPIRE MED SYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "UNIFIRST CORP MASS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "MIDERA FOOD PROCESSING I",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "RXO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "LEGGETT & PLATT INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "TRANSMEDICS GROUP INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ADT INC DEL",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.85
+    },
+    {
+      "description": "STAAR SURGICAL CO",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "CHEFS WHSE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "U S PHYSICAL THERAPY",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "PAPA JOHNS INTL INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": true,
+      "confidence": 0.85
+    },
+    {
+      "description": "URBAN OUTFITTERS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ADEIA INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ELLINGTON FINL INC REIT",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "INSIGHT ENTERPRISES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "CONAGRA BRANDS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "BENCHMARK ELECTRS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "SABRE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    },
+    {
+      "description": "ANDERSONS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-29",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.85
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3665,
+    "outputTokens": 2774,
+    "estimatedCostUsd": 0.0526
+  }
+}

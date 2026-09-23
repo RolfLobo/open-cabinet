@@ -1,0 +1,317 @@
+{
+  "key": "e4711123412b340c",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 33,
+    "last": 33
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:29:52.909Z",
+  "transactions": [
+    {
+      "description": "SERVICENOW INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "Interactive Brokers Group Inc",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-20",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COPART INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UBER TECHNOLOGIES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TE CONNECTIVITY PLC ORD SHS",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "HCA HEALTHCARE, INC.",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ORACLE CORPORATION",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CONSTELLATION BRANDS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TYSON FOODS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SYNOPSYS INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "APOLLO GLOBAL MGMT INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MICROSOFT CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$5,000,001-$25,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ACCENTURE PLC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CARVANA CO CL A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AMAZON INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$5,000,001-$25,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COSTCO WHOLESALE CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DIGITAL RLTY TR INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UNIVERSAL HEALTH SVCS INC CL B",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NORTHROP GRUMMAN CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PEPSICO INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "The Cigna Group",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INTERCONTINENTALEXCHANGE INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "NXP SEMICONDUCTORS N V",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-20",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ARISTA NETWORKS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WALMART INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CHARLES SCHWAB CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MICROSOFT CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UBER TECHNOLOGIES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SALESFORCE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DANAHER CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LOWES COMPANIES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CONSTELLATION ENERGY CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ADOBE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1744,
+    "estimatedCostUsd": 0.1235
+  }
+}

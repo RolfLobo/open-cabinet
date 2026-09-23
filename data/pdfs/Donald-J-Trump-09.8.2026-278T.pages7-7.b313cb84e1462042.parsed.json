@@ -1,0 +1,317 @@
+{
+  "key": "b313cb84e1462042",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 7,
+    "last": 7
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:17:22.305Z",
+  "transactions": [
+    {
+      "description": "Alphabet Inc",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "Meta Platforms Inc",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "Amazon Com Inc",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "Microsoft Corp",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "Nvidia Corp",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-17",
+      "amount": "$500,001-$1,000,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "STATE STREET SPDR BLOOMBERG INTERNATIONAL TREASURY BOND ETF",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "FIDELITY MSCI COMMUNICATION SERVICES INDEX ETF",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "VANGUARD SHORT-TERM BOND INDEX FUND ETF SHARES",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "ISHARES U.S. TREASURY BOND ETF",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "STATE STREET COMMUNICATION SERVICES SELECT SECTOR SPDR ETF",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "ISHARES INTERNATIONAL TREASURY BOND ETF",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "VANGUARD DIVIDEND APPRECIATION INDEX FUND ETF SHARES",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-08",
+      "amount": "$1,000,001-$5,000,000",
+      "lateFilingFlag": true,
+      "confidence": 0.99
+    },
+    {
+      "description": "HOME DEPOT INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TEXAS INSTRS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BROADCOM INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "S&P GLOBAL INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-16",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CME GROUP INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-16",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PROCTER & GAMBLE CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "EXXONMOBIL HLDGS CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FIDELITY NATL INFORMATIO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "NIKE INC CLASS CLASS B",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PHILIP MORRIS INTL INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CISCO SYS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "VERIZON COMMUNICATIONS I",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$250,001-$500,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "ABBOTT LABS",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "WATSCO INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-22",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "BECTON DICKINSON & CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "DUKE ENERGY CORP NEW",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FASTENAL CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PFIZER INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "AVALONBAY CMNTYS INC REIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ALTRIA GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "UNITEDHEALTH GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-31",
+      "amount": "$100,001-$250,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3692,
+    "outputTokens": 1831,
+    "estimatedCostUsd": 0.1285
+  }
+}

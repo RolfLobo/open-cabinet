@@ -1,0 +1,317 @@
+{
+  "key": "bdf26104ede8387a",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 34,
+    "last": 34
+  },
+  "parserVersion": "2026-09-05.2",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "claude-sonnet-4-6",
+  "parsedAt": "2026-09-23T16:10:40.455Z",
+  "transactions": [
+    {
+      "description": "ABBVIE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTERCONTINENTAL EXCHANGE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "COMCAST CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "INTUIT INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "SYNOPSYS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CRH PUBLIC LIMITED COMPANY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "TE CONNECTIVITY PLC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "HCA HEALTHCARE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CIENA CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AIRBNB INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AUTOZONE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "REGENERON PHARMACEUTICALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$50,001-$100,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AUTODESK INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "GILEAD SCIENCES INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARCHER-DANIELS-MIDLAND CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CARVANA CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CBRE GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "HERSHEY COMPANY (THE)",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "NORTHROP GRUMMAN CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "VERTEX PHARMACEUTICALS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "CHURCH & DWIGHT CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ELI LILLY & CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "JPMORGAN CHASE & CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ELECTRONIC ARTS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ALPHABET INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ILLINOIS TOOL WORKS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "PARKER HANNIFIN CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$15,001-$50,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "UNITED PARCEL SVC INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "ARCH CAPITAL GROUP LTD",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "BAKER HUGHES COMPANY",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "AMAZON.COM INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "EQT CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    },
+    {
+      "description": "DOLLAR GENERAL CORPORATION",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-23",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.9
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3679,
+    "outputTokens": 1778,
+    "estimatedCostUsd": 0.0377
+  }
+}

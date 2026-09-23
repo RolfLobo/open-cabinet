@@ -1,0 +1,317 @@
+{
+  "key": "401a2dcfc80ff18e",
+  "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+  "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+  "chunk": {
+    "first": 25,
+    "last": 25
+  },
+  "parserVersion": "2026-09-05.2+images-200dpi",
+  "promptSha256": "2662c84e26709fb0594c77aee41ff5452ee5aa86631b73d88f296929a5ab7bb8",
+  "model": "gpt-6-astra",
+  "parsedAt": "2026-09-23T16:25:51.378Z",
+  "transactions": [
+    {
+      "description": "PEPSICO INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "APPLE INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CROWN CASTLE INC REIT REIT",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GENERAC HLDGS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MARTIN MARIETTA MATLS IN",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ROBLOX CORP CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "MASTERCARD INC CLASS CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "LOWES COS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "OMNICOM GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PROCTER & GAMBLE CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "FISERV INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COSTAR GROUP INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PAYPAL HLDGS INC",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CAPITAL ONE FINL CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COINBASE GLOBAL INC CLASS CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "INTERCONTINENTAL EXCHANG",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "EQT CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "OTIS WORLDWIDE CORP",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CME GROUP INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GENERAL MTRS CO",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "SNOWFLAKE INC CLASS A",
+      "ticker": null,
+      "type": "Purchase",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GENPACT LTD F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "META PLATFORMS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "ZOETIS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GE HEALTHCARE TECHNOLOGI",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.98
+    },
+    {
+      "description": "MCDONALDS CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "PENTAIR PLC F",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "IBM CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "GILEAD SCIENCES INC",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "TJX COS INC NEW",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "CONSTELLATION BRANDS INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "POOL CORP",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    },
+    {
+      "description": "COUPANG INC CLASS A",
+      "ticker": null,
+      "type": "Sale",
+      "date": "2026-07-24",
+      "amount": "$1,001-$15,000",
+      "lateFilingFlag": false,
+      "confidence": 0.99
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 3625,
+    "outputTokens": 1719,
+    "estimatedCostUsd": 0.1222
+  }
+}

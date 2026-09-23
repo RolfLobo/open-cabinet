@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-11T14:58:39.908Z",
+  "lastChecked": "2026-09-23T16:31:46.582Z",
   "knownFilingUrls": [
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/024D876AAE518C5085258CEB006E7E2E/$FILE/Donald-J-Trump-08.12.2025-278T(2)%20AMENDED.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/038F222E7B084F8C85258E3F002DB296/$FILE/Markwayne-Mullin-06.24.2026-278T.pdf",
@@ -39,6 +39,7 @@
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/3B5D301E5EACE5C885258DB300345F78/$FILE/Scott-A-Kupor-01.09.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/3F589CB2A272619D85258DD5002DC58C/$FILE/Arjun-Mody-02.27.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/405E4EC4E27BE8D185258DF7002DD1C0/$FILE/Trump%2C%20Donald%20J.-05.08.2026-278T(2).pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42F9603BA8CD51AE85258C86002C7C13/$FILE/Michael-J-Kratsios-04.18.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/4570FD57E16F594E85258CC8002C7DA3/$FILE/Douglas-J-Burgum-06.12.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/4AFD3C0AAAA300E285258DFE002D984E/$FILE/Douglas-J-Burgum-02.27.2026-278T.pdf",
@@ -50,6 +51,7 @@
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/574C5AAD33A157FE85258DEA002DB4F0/$FILE/Scott-A-Kupor-04.20.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/5B8B5CEB2359CA1D85258CC4002C8A8E/$FILE/Paul-R-Lawrence-06.11.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/6439C8BBFB85065585258DCC002DC69B/$FILE/Linda-McMahon-07.02.2025-278T.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/6669428412F0329885258DCC002DC6FF/$FILE/Sean-McMaster-02.27.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/66A69EB879848CF885258CC9002C8582/$FILE/Howard-Lutnick-06.17.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/68666D69BEFB693D85258DC6002DC641/$FILE/John-Phelan-01.09.2026-278T.pdf",
@@ -107,6 +109,7 @@
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E39628A503BB83E685258E0C002DCEFA/$FILE/John-Phelan-10.02.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3BE4EA1BA0AC06885258E0D002DCD71/$FILE/John-Phelan-03.12.2026-278T(1).pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E3D897DB72CEF27F85258DB9002EEB15/$FILE/Sean-McMaster-01.20.2026-278T.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E7B021C3112F2B3485258CFD002C03E5/$FILE/Katharine-MacGregor-08.07.2025-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E856C1C9F19C67C785258E3F002DB290/$FILE/Markwayne-Mullin-06.26.2026-278T.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E9C024E25C9E4B2085258CEB006E7E23/$FILE/Donald-J-Trump-08.12.2025-278T.pdf",
@@ -125,11 +128,11 @@
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FED6F4F51D33882F85258C8A002C760E/$FILE/Sean-Duffy-04.23.2025-278T.pdf"
   ],
   "knownFilingsByOfficial": {
+    "Trump, Donald J.": 19,
+    "Kupor, Scott A": 14,
     "Warsh, Kevin": 2,
     "Ueland, Eric M": 1,
     "McMaster, Sean": 7,
-    "Trump, Donald J.": 18,
-    "Kupor, Scott A": 12,
     "Kratsios, Michael J": 12,
     "Duffy, Sean": 2,
     "Bisignano, Frank J": 6,
@@ -166,31 +169,76 @@
   },
   "newFilings": [
     {
-      "name": "Warsh, Kevin",
-      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/CC5D2BAFDF8EB24085258E6E002DF7E9/$FILE/Kevin-Warsh-08.06.2026-278T.pdf",
-      "docDate": "2026-09-10T04:22:05",
-      "agency": "Federal Reserve System Board of Governors",
-      "title": "Governor & Chairman",
+      "name": "Trump, Donald J.",
+      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+      "docDate": "2026-09-22T04:21:09",
+      "agency": "White House Office",
+      "title": "President",
+      "level": "n/a",
+      "status": "held"
+    },
+    {
+      "name": "Kupor, Scott A",
+      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
+      "docDate": "2026-09-19T04:20:28",
+      "agency": "Office of Personnel Management",
+      "title": "Director",
+      "level": "Level II",
+      "status": "imported"
+    },
+    {
+      "name": "Kupor, Scott A",
+      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
+      "docDate": "2026-09-19T04:20:27",
+      "agency": "Office of Personnel Management",
+      "title": "Director",
+      "level": "Level II",
+      "status": "imported"
+    }
+  ],
+  "knownReportUrls": [
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/00B0A050F80312EE85258D16002C0536/$FILE/Michael-W-Faulkender-2025-278TERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0E9ECA729ECF6EC285258C360032069C/$FILE/Michael-Whitaker-2025-278TERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/10C11027DC4E0DD085258E5F002DA955/$FILE/Sean-Duffy-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1172B1A86AB0DFB485258E21002DDE72/$FILE/Eric-M-Ueland-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18EEC1F42BF175A385258E27002DD95F/$FILE/Keith-Sonderling-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/1A46A8A64E2D990B85258C53002C77D4/$FILE/Stacey-Dixon-2025-278TERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/35548DC3322E8D4A85258E35002DD6AA/$FILE/Sean-McMaster-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/4EC9A8E6DD078F2985258CA9002C9377/$FILE/Trump%2C%20Donald%20J.%202025%20Annual%20278.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/5A7DD536E124894585258E7A002D9D3E/$FILE/Pam-Bondi-2026-278TERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7C8BAED3285A48DD85258E6D002DDCCB/$FILE/Linda-E-McMahon-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/8DF5AC8371D7B9F885258E50002DB6FC/$FILE/Katharine-MacGregor-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/901766015D893E9D85258E4B002DD08C/$FILE/Eric-Scott-Turner-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/90B635E73246485485258E5F002D9B30/$FILE/Frank-J-Bisignano-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/955DE0E9C04C939585258C440031F292/$FILE/Deanne-Criswell-2025-278TERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/9571A107C326B4A985258E52002D9096/$FILE/Bryan-Bedford-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/A91705E58BCA51B085258E73002D9F9B/$FILE/Todd-Blanche-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/A9F88F6167796EF985258E04002DDA12/$FILE/Lee-Zeldin-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/D87640BF89C748E285258E35002DCCEE/$FILE/Michael-J-Kratsios-2026-278ANNU.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/EC65511E5F52C0FB85258E5F002DC612/$FILE/Stephen-I-Miran-2026-278ANNTERM.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FE0053885B75FD0E85258DD5002DC5B4/$FILE/Marcus-Molinaro-2026-278TERM.pdf"
+  ],
+  "newReports": [
+    {
+      "name": "Bondi, Pam",
+      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/5A7DD536E124894585258E7A002D9D3E/$FILE/Pam-Bondi-2026-278TERM.pdf",
+      "docDate": "2026-09-22T04:18:13",
+      "agency": "Department of Justice",
+      "title": "Attorney General",
       "level": "Level I",
-      "status": "imported"
+      "kind": "termination-278e",
+      "status": "reported"
     },
     {
-      "name": "Ueland, Eric M",
-      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/D4003325FAE6858085258E6E002DF6AB/$FILE/Eric-M-Ueland-08.06.2026-278T.pdf",
-      "docDate": "2026-09-10T04:22:02",
-      "agency": "Office of Management and Budget",
-      "title": "Deputy Director for Management",
+      "name": "Blanche, Todd",
+      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/A91705E58BCA51B085258E73002D9F9B/$FILE/Todd-Blanche-2026-278ANNU.pdf",
+      "docDate": "2026-09-15T04:18:19",
+      "agency": "Department of Justice",
+      "title": "Deputy Attorney General",
       "level": "Level II",
-      "status": "imported"
-    },
-    {
-      "name": "McMaster, Sean",
-      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
-      "docDate": "2026-09-09T04:20:57",
-      "agency": "Department of Transportation",
-      "title": "Administrator, Federal Highway Administration",
-      "level": "Level II",
-      "status": "imported"
+      "kind": "annual-278e",
+      "status": "reported"
     }
   ]
 }

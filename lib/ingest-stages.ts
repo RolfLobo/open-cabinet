@@ -45,7 +45,8 @@ import {
 } from "./crosscheck-log";
 import { crossCheckByOcr, type OcrCheck } from "./ocr-lane";
 import { recordSecondRead, secondReadFiling, SECOND_READ_MODEL } from "./second-read";
-import { openReviewItem, problemsFromCrosscheck } from "./review-queue";
+import { findDecidedMerge, openReviewItem, problemsFromCrosscheck } from "./review-queue";
+import { applyCorrections, readCorrections } from "./corrections";
 import { notify } from "./notify";
 import { PdfRequestTooLargeError } from "./pdf/request-size";
 import type { TargetFiling } from "./oge-filings";
@@ -405,7 +406,7 @@ export async function readFiling(
     pdfSha256: sha256, sourceUrl, chunk: null, parserVersion: PARSER_VERSION, promptSha256: PROMPT_SHA256, model: DEFAULT_MODEL,
   };
   if (!stageOptions.forceReparse && readParseCache(pdfPath, wholeKey)) {
-    return parseUnitWithRetry({ path: pdfPath, chunk: null }, sha256, sourceUrl);
+    return overlayCorrections(await parseUnitWithRetry({ path: pdfPath, chunk: null }, sha256, sourceUrl), sha256, sourceUrl);
   }
   const { units, pageCount } = await splitPdfIfNeeded(pdfPath);
   for (const unit of units) {
@@ -423,7 +424,22 @@ export async function readFiling(
       units.map((u) => u.chunk!).filter(Boolean)
     );
   }
-  return rows;
+  return overlayCorrections(rows, sha256, sourceUrl);
+}
+
+/** A person's recorded corrections (data/review/corrections.json) are laid
+ *  over the model's rows here, so the candidate the gate compares and the
+ *  merge publishes is "the read plus the rulings" and the cache stays the
+ *  model's own answer. Only ruled corrections apply; one whose recorded
+ *  original no longer matches the read is reported and skipped. */
+function overlayCorrections(rows: ParsedTransaction[], sha256: string, sourceUrl: string): ParsedTransaction[] {
+  const all = readCorrections().corrections;
+  const result = applyCorrections(rows as unknown as Array<Record<string, unknown>>, { sourceUrl, pdfSha256: sha256 }, all);
+  const proposed = all.filter((c) => c.sourceUrl === sourceUrl && c.pdfSha256 === sha256 && c.status === "proposed").length;
+  if (result.applied.length) console.log(`           ${result.applied.length} ruled correction(s) applied to the read`);
+  if (proposed) console.log(`           ${proposed} proposed correction(s) await a person's ruling (pnpm review corrections)`);
+  for (const s of result.skipped) console.warn(`           correction ${s.id} skipped: ${s.reason}`);
+  return result.rows as unknown as ParsedTransaction[];
 }
 
 /** CHECK. A second program that never sees the model's output reads the
@@ -437,6 +453,9 @@ export type GateVerdict =
   | { verdict: "two_lane"; lane: "text" | "ocr" }
   /** A second company's model agreed on every row; no program could read the page. */
   | { verdict: "two_models"; agreed: number }
+  /** No two reads agreed, and a person decided the filing publishes with
+   *  the primary record as it stands (after any recorded corrections). */
+  | { verdict: "person_decided"; reviewId: string; decidedBy: string }
   /** Held for a person. Nothing from the filing merges. */
   | { verdict: "held"; reason: string };
 
@@ -475,7 +494,17 @@ export async function checkFiling(
   const check = crossCheckParsedFiling(pdfPath, rows);
   recordCrosscheck(slug, filing, pdfPath, sha256, rows, check);
   const filingRef = { url: filing.pdfUrl, pdfFile: path.basename(pdfPath), date: filing.docDate.slice(0, 10) };
-  const hold = async (reason: string, problems: string[]): Promise<never> => {
+  const hold = async (reason: string, problems: string[]): Promise<GateVerdict> => {
+    // "Or a person has decided": a decided review item for this filing that
+    // names these exact rows (see mergeDecisionMarker) publishes them. The
+    // decision text records what the person checked; the marker ties it to
+    // the primary record as corrected, so a later re-read with different
+    // rows holds again.
+    const decided = findDecidedMerge(filing.pdfUrl, hashRows(rows));
+    if (decided) {
+      console.log(`           a person decided ${path.basename(pdfPath)} publishes (${decided.id}, ${decided.decidedBy ?? "unknown"})`);
+      return { verdict: "person_decided", reviewId: decided.id, decidedBy: decided.decidedBy ?? "unknown" };
+    }
     await openReviewItem({
       kind: "lane_disagreement",
       slug,
@@ -673,7 +702,10 @@ export function mergeRows(
       // carry it into a review file).
       const rest: Partial<ParsedTransaction> & { confidence?: number } = { ...tx };
       delete rest.confidence;
-      addedTxs.push({ ...rest, sourceUrl: newPdfs[fi].pdfUrl } as unknown as ParsedTransaction);
+      // Provenance: which read produced the row. The cache envelope keeps
+      // the full key; the published row carries enough to find it.
+      const read = { parser: PARSER_VERSION, model: DEFAULT_MODEL, prompt: PROMPT_SHA256.slice(0, 8) };
+      addedTxs.push({ ...rest, sourceUrl: newPdfs[fi].pdfUrl, read } as unknown as ParsedTransaction);
     }
   }
   return addedTxs;

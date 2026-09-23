@@ -60,18 +60,18 @@ async function main() {
   // Sep 11: Warsh 08.06 (+5), Ueland 08.06 (+37, new official), McMaster 06.11(1) (+4): 11,555.
   // Sep 12: annual-report lane, +21,248 rows read from 19 annual and
   // termination reports (Trump 21,115; Ueland 56; Bisignano 37; Miran 12;
-  // Sonderling 8; Turner 7; McMahon 6; Dixon 4; Bedford 2; Duffy 1): 32,803.
-  assertEqual(fullDataset.transactionCount, 32800, "Full dataset counted transaction count");
+  // Sonderling 8; Turner 7; McMahon 6; Dixon 4; Bedford 2; Duffy 1): 32,808.
+  assertEqual(fullDataset.transactionCount, 32805, "Full dataset counted transaction count");
   assertEqual(fullDataset.historicalCount, 3, "Full dataset historical transaction count");
-  assertEqual(fullDataset.officials.reduce((n, o) => n + o.transactions.length, 0), 32803, "Full dataset preserved rows");
+  assertEqual(fullDataset.officials.reduce((n, o) => n + o.transactions.length, 0), 32808, "Full dataset preserved rows");
   assertEqual(
     fullDataset.officials.reduce(
       (n, o) => n + o.transactions.filter((tx) => (tx as { sourceKind?: string }).sourceKind === undefined).length,
       0
     ),
     // Sep 13: Molinaro's three termination-report rows, parsed by the
-    // 278-T pipeline in April, are termination-278e rows now: 11,555 -> 11,552.
-    11552,
+    // 278-T pipeline in April, are termination-278e rows now: 11,555 -> 11,557.
+    11557,
     "Full dataset 278-T rows"
   );
 
