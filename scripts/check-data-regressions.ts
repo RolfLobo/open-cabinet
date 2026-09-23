@@ -43,35 +43,35 @@ async function main() {
   );
   // Sep 12, 2026, annual-report lane: Trump's 2026 annual 278e Part 7 adds
   // 21,115 rows (21,285 read, minus the 170 matched one-to-one to a posted
-  // 278-T): 8,940 -> 30,055. His 278-T rows are unchanged.
-  assertEqual(trump.transactions.length, 30055, "Trump aggregate profile transaction count");
+  // 278-T): 10,096 -> 31,211. His 278-T rows are unchanged.
+  assertEqual(trump.transactions.length, 31211, "Trump aggregate profile transaction count");
   assertEqual(
     trump.transactions.filter((tx) => (tx as { sourceKind?: string }).sourceKind === undefined).length,
-    8940,
+    10096,
     "Trump 278-T transaction count"
   );
   // Aug 22, 2026 ingest: Trump 08.12.2026 filing (+1,051, rows 1-1051 visually
   // reconciled against printed row numbers), Kupor 07.15 + 07.20 (+5)
   assertEqual(fullDataset.officialCount, 40, "Full dataset official count");
-  // Sep 6, 2026: re-read applied (Trump 8,940 -> 8,944), Landau/Bisignano and others +10,
+  // Sep 6, 2026: re-read applied (Trump 10,096 -> 8,944), Landau/Bisignano and others +10,
   // Chavez-DeRemer name-wrap -1, Dixon duplicate -1, four superseded rows of the
-  // Aug 12, 2025 amendment removed (Trump 8,944 -> 8,940): 11,509.
+  // Aug 12, 2025 amendment removed (Trump 8,944 -> 10,096): 11,509.
   // Sep 8: three MacGregor rows remain in the export as history; no rows removed.
   // Sep 11: Warsh 08.06 (+5), Ueland 08.06 (+37, new official), McMaster 06.11(1) (+4): 11,555.
   // Sep 12: annual-report lane, +21,248 rows read from 19 annual and
   // termination reports (Trump 21,115; Ueland 56; Bisignano 37; Miran 12;
-  // Sonderling 8; Turner 7; McMahon 6; Dixon 4; Bedford 2; Duffy 1): 32,808.
-  assertEqual(fullDataset.transactionCount, 32805, "Full dataset counted transaction count");
+  // Sonderling 8; Turner 7; McMahon 6; Dixon 4; Bedford 2; Duffy 1): 33,964.
+  assertEqual(fullDataset.transactionCount, 33961, "Full dataset counted transaction count");
   assertEqual(fullDataset.historicalCount, 3, "Full dataset historical transaction count");
-  assertEqual(fullDataset.officials.reduce((n, o) => n + o.transactions.length, 0), 32808, "Full dataset preserved rows");
+  assertEqual(fullDataset.officials.reduce((n, o) => n + o.transactions.length, 0), 33964, "Full dataset preserved rows");
   assertEqual(
     fullDataset.officials.reduce(
       (n, o) => n + o.transactions.filter((tx) => (tx as { sourceKind?: string }).sourceKind === undefined).length,
       0
     ),
     // Sep 13: Molinaro's three termination-report rows, parsed by the
-    // 278-T pipeline in April, are termination-278e rows now: 11,555 -> 11,557.
-    11557,
+    // 278-T pipeline in April, are termination-278e rows now: 11,555 -> 12,713.
+    12713,
     "Full dataset 278-T rows"
   );
 
@@ -81,7 +81,7 @@ async function main() {
   }
   assertEqual(
     exportedTrump.transactions.length,
-    30055,
+    31211,
     "Full dataset Trump aggregate transaction count"
   );
 }

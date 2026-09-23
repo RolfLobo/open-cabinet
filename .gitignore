@@ -88,3 +88,6 @@ scripts/__pycache__/
 /CODEBASE_AUDIT*.md
 /*.md
 !/README.md
+
+# Page images rendered on demand for the local review sheet (lib/page-strips.ts)
+data/cache/pages/

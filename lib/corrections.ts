@@ -27,7 +27,9 @@ import path from "node:path";
 export const CORRECTIONS_PATH = path.resolve("data/review/corrections.json");
 
 export type CorrectableField = "type" | "date" | "amount" | "lateFilingFlag" | "description" | "ticker";
-export type CorrectionStatus = "proposed" | "ruled" | "withdrawn";
+/** confirmed: a person looked at the page and the model's value stands.
+ * Recorded so the row counts as ruled without changing it. */
+export type CorrectionStatus = "proposed" | "ruled" | "withdrawn" | "confirmed";
 
 export interface ReadCorrection {
   /** Stable id: sha256 of sourceUrl|pdfSha256|position|field, 16 hex chars. */
@@ -118,6 +120,27 @@ export function ruleCorrection(id: string, ruledBy: string, ruling: string | und
   return record;
 }
 
+/** A person confirms the model's value against the page. No change is
+ * applied; the record shows the row was looked at. */
+export function confirmRead(
+  input: Omit<ReadCorrection, "id" | "status" | "proposedAt" | "corrected" | "ruledBy" | "ruledAt"> & { ruledBy: string; ruling?: string },
+  file = CORRECTIONS_PATH
+): ReadCorrection {
+  const data = readCorrections(file);
+  const id = correctionId(input);
+  const existing = data.corrections.find((c) => c.id === id);
+  if (existing && existing.status === "ruled") {
+    throw new Error(`correction ${id} was ruled by ${existing.ruledBy} on ${existing.ruledAt}; withdraw it first`);
+  }
+  const now = new Date().toISOString();
+  const record: ReadCorrection = {
+    ...input, id, corrected: input.original, status: "confirmed", proposedAt: now, ruledBy: input.ruledBy, ruledAt: now,
+  };
+  data.corrections = data.corrections.filter((c) => c.id !== id).concat(record);
+  writeCorrections(data, file);
+  return record;
+}
+
 export function withdrawCorrection(id: string, by: string, reason: string, file = CORRECTIONS_PATH): ReadCorrection {
   const data = readCorrections(file);
   const record = data.corrections.find((c) => c.id === id);
@@ -174,6 +197,15 @@ export function applyCorrections<T extends Record<string, unknown>>(
     (row as Record<string, unknown>)[c.field] = c.corrected;
     row.corrections = [...(row.corrections ?? []), c.id];
     applied.push(c.id);
+  }
+  // A confirmed record changes nothing but is a person's ruling on the row;
+  // tag it so the row's verification can show who looked and when.
+  if (status === "ruled") {
+    for (const c of corrections) {
+      if (c.sourceUrl !== read.sourceUrl || c.pdfSha256 !== read.pdfSha256 || c.status !== "confirmed") continue;
+      const row = out[c.position];
+      if (row && sameValue(row[c.field], c.original) && !(row.corrections ?? []).includes(c.id)) row.corrections = [...(row.corrections ?? []), c.id];
+    }
   }
   return { rows: out, applied, skipped };
 }

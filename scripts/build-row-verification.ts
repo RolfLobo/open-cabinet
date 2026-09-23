@@ -12,6 +12,7 @@ import { readdirSync, readFileSync, writeFileSync, existsSync } from "fs";
 import path from "path";
 import { readCrosscheckLog, type CrosscheckEntry } from "../lib/crosscheck-log";
 import { findParseRecord } from "../lib/parse-cache";
+import { applyCorrections, readCorrections } from "../lib/corrections";
 import { CHECKER_VERSION } from "./text-layer-crosscheck";
 import { EXTRACTION_PROMPT, SYSTEM_PROMPT, PARSER_VERSION, DEFAULT_MODEL } from "./parse-pdf.js";
 import { promptHash } from "../lib/parse-cache";
@@ -41,6 +42,8 @@ function main() {
   const log = readCrosscheckLog();
   if (!log) throw new Error("no cross-check log; run pnpm crosscheck-sweep first");
   const decisions = readReviewDecisions();
+  const allCorrections = readCorrections().corrections;
+  const correctionsById = new Map(allCorrections.map((c) => [c.id, c] as const));
   const secondRead = readSecondReadLog();
   // A read by a person or by the Claude Code session looking at page
   // images (scripts/session-read.ts): a second independent read, merged
@@ -77,7 +80,12 @@ function main() {
         pdfSha256: e.pdfSha256, sourceUrl: url, parserVersion: PARSER_VERSION, promptSha256: PROMPT_SHA256, model: DEFAULT_MODEL,
       });
       if (!record) continue;
-      parseRecordByUrl.set(url, record.transactions as Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean }>);
+      // The published candidate is the read plus a person's ruled
+      // corrections (lib/ingest-stages readFiling); locate rows against that.
+      const overlaid = e.pdfSha256
+        ? applyCorrections(record.transactions as Array<Record<string, unknown>>, { sourceUrl: url, pdfSha256: e.pdfSha256 }, allCorrections).rows
+        : record.transactions;
+      parseRecordByUrl.set(url, overlaid as Array<{ description: string; type: string; date: string | null; amount: string | null; lateFilingFlag?: boolean }>);
       const agreed = new Set<number>();
       const disputed = new Set<number>();
       let anySecond = false;
@@ -127,6 +135,7 @@ function main() {
       auditByUrl,
       nameReadsByUrl,
       decisionsById: decisions,
+      correctionsById,
       filingDateByUrl: new Map((official.sourceFilings ?? []).flatMap((f) => (f.url ? [[f.url, f.date] as [string, string]] : []))),
       annualEvidenceById,
     })) {

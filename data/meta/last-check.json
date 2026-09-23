@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-23T16:31:46.582Z",
+  "lastChecked": "2026-09-23T21:39:04.569Z",
   "knownFilingUrls": [
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/024D876AAE518C5085258CEB006E7E2E/$FILE/Donald-J-Trump-08.12.2025-278T(2)%20AMENDED.pdf",
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/038F222E7B084F8C85258E3F002DB296/$FILE/Markwayne-Mullin-06.24.2026-278T.pdf",
@@ -175,24 +175,6 @@
       "agency": "White House Office",
       "title": "President",
       "level": "n/a",
-      "status": "held"
-    },
-    {
-      "name": "Kupor, Scott A",
-      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
-      "docDate": "2026-09-19T04:20:28",
-      "agency": "Office of Personnel Management",
-      "title": "Director",
-      "level": "Level II",
-      "status": "imported"
-    },
-    {
-      "name": "Kupor, Scott A",
-      "pdfUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
-      "docDate": "2026-09-19T04:20:27",
-      "agency": "Office of Personnel Management",
-      "title": "Director",
-      "level": "Level II",
       "status": "imported"
     }
   ],

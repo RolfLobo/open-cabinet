@@ -1,7 +1,7 @@
 {
   "version": 1,
   "model": "grok-4.6",
-  "generatedAt": "2026-09-11T15:02:32.890Z",
+  "generatedAt": "2026-09-23T22:45:05.941Z",
   "filings": {
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/B410FFBD2E16727285258C8D002C7DC5/$FILE/Robert-F-Kennedy-Jr-05.09.2025-278T.pdf": {
       "slug": "kennedy-robert-f",
@@ -14415,6 +14415,25 @@
       "pagesAudited": 3,
       "costUsd": 0.0156,
       "checkedAt": "2026-09-11T15:02:32.889Z"
+    },
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf": {
+      "slug": "trump-donald-j",
+      "pdfFile": "Donald-J-Trump-09.8.2026-278T.pdf",
+      "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+      "candidateSha256": "e8ba84b3129e23153e837a7ae059364c2228ca25e6f0f513c578dc7e54395447",
+      "model": "grok-4.6",
+      "promptVersion": "2026-09-06.1",
+      "rows": 1156,
+      "confirmedIndexes": [],
+      "disputedIndexes": [],
+      "notFoundIndexes": [],
+      "missing": [],
+      "differences": [
+        "audit incomplete: Connection error."
+      ],
+      "pagesAudited": 1,
+      "costUsd": 0,
+      "checkedAt": "2026-09-23T22:45:05.934Z"
     }
   }
 }

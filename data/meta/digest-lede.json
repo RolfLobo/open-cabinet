@@ -1,6 +1,6 @@
 {
-  "sendKey": "c7a8215c7159814ed18c04b18f752ffe74b0f0a46f61be1a2f833b5595d9965d",
-  "lede": "Three filings posted this week add 46 trades to the site, including the first report from a newly tracked official.\n\nFederal Reserve Chairman Kevin Warsh’s report, posted Sept. 10, discloses five sales from July and August: three more numbered series of THSDFS LLC, a stake in Arcana Analytics, Inc. reported at $1,000,001 to $5,000,000, and Goat Growth Fund II LP.\n\nEric M. Ueland, deputy director for management at the Office of Management and Budget, appears on Open Cabinet for the first time. His report, also posted Sept. 10, lists 37 mutual fund and ETF trades dated July 15, 2026: 19 purchases and 18 sales, none reported above $50,000.\n\nFederal Highway Administrator Sean McMaster’s report, posted Sept. 9, lists four sales of ASGN, Inc. from August 2025, more than a year after the trades. Each is marked on the filing as received more than 30 days late.",
-  "generated": "2026-09-11",
-  "model": "claude-opus-4-8 draft, rewritten by hand (Claude Code, Sep 11, 2026) after the draft conflated cumulative totals with the new filings"
+  "sendKey": "c34154abc3124ce50dfbf229d6a44c5253f5cf6fe92b408060b57379e6f5f7ae",
+  "lede": "The Office of Government Ethics on Sept. 22 posted a periodic transaction report from President Donald Trump disclosing 1,156 trades dated July 1 to July 31, 2026: 716 sales and 440 purchases, with 260 flagged as filed late, meaning the filing certifies those trades were reported more than 30 days after notification. The additions bring Trump's periodic-report total to 10,096 transactions since January 2025, 73 percent of them flagged late. Separately, OGE on Sept. 19 posted two reports from Office of Personnel Management Director Scott A. Kupor disclosing five sales dated Aug. 7, 2026, none flagged late: Airbnb ($1,000,001 to $5,000,000), Figma ($500,001 to $1,000,000) and three mutual funds, together between $1.57 million and $6.17 million in reported ranges.",
+  "generated": "2026-09-23",
+  "model": "claude-opus-4-8 draft, hand-corrected by Claude Code (Kupor details were from the August digest)"
 }
