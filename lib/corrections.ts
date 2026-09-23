@@ -198,6 +198,15 @@ export function applyCorrections<T extends Record<string, unknown>>(
     row.corrections = [...(row.corrections ?? []), c.id];
     applied.push(c.id);
   }
+  // A confirmed record changes nothing but is a person's ruling on the row;
+  // tag it so the row's verification can show who looked and when.
+  if (status === "ruled") {
+    for (const c of corrections) {
+      if (c.sourceUrl !== read.sourceUrl || c.pdfSha256 !== read.pdfSha256 || c.status !== "confirmed") continue;
+      const row = out[c.position];
+      if (row && sameValue(row[c.field], c.original) && !(row.corrections ?? []).includes(c.id)) row.corrections = [...(row.corrections ?? []), c.id];
+    }
+  }
   return { rows: out, applied, skipped };
 }
 

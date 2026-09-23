@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-23",
+  "lede": "The Office of Government Ethics on Sept. 22 posted a periodic transaction report from President Donald Trump disclosing 1,156 trades dated July 1 to July 31, 2026: 716 sales and 440 purchases, with 260 flagged as filed late, meaning the filing certifies those trades were reported more than 30 days after notification. The additions bring Trump's periodic-report total to 10,096 transactions since January 2025, 73 percent of them flagged late. Separately, OGE on Sept. 19 posted two reports from Office of Personnel Management Director Scott A. Kupor disclosing five sales dated Aug. 7, 2026, none flagged late: Airbnb ($1,000,001 to $5,000,000), Figma ($500,001 to $1,000,000) and three mutual funds, together between $1.57 million and $6.17 million in reported ranges.",
+  "items": [
+    {
+      "slug": "trump-donald-j",
+      "name": "Trump, Donald J.",
+      "title": "President of the United States",
+      "agency": "Executive Office of the President",
+      "newCount": 1156,
+      "primaryFilingUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+      "postedDate": "2026-09-22",
+      "filingUrls": [
+        "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf"
+      ],
+      "trades": [
+        {
+          "description": "ABBOTT LABS",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$100,001-$250,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "ABBVIE INC",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$50,001-$100,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "ACCENTURE PLC IRELAND F CLASS CLASS A",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$50,001-$100,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "ALLY FINL INC PERP -D NT 7.1000%",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$15,001-$50,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "ALTRIA GROUP INC",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$100,001-$250,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "AMERICAN EXPRESS CO",
+          "ticker": null,
+          "type": "Purchase",
+          "amount": "$50,001-$100,000",
+          "date": "2026-07-31",
+          "lateFilingFlag": false
+        }
+      ]
+    },
+    {
+      "slug": "kupor-scott-a",
+      "name": "Kupor, Scott A",
+      "title": "Director, Office of Personnel Management",
+      "agency": "Office of Personnel Management",
+      "newCount": 5,
+      "primaryFilingUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
+      "postedDate": "2026-09-19",
+      "filingUrls": [
+        "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
+        "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf"
+      ],
+      "trades": [
+        {
+          "description": "Airbnb Inc. Class A Common Stock (ABNB)",
+          "ticker": "ABNB",
+          "type": "Sale",
+          "amount": "$1,000,001-$5,000,000",
+          "date": "2026-08-07",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "Baron Growth Fund Retail Shares (BGRFX)",
+          "ticker": "BGRFX",
+          "type": "Sale",
+          "amount": "$50,001-$100,000",
+          "date": "2026-08-07",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "Cambiar Opportunity Fund Investor Class Shares (CAMOX)",
+          "ticker": "CAMOX",
+          "type": "Sale",
+          "amount": "$1,001-$15,000",
+          "date": "2026-08-07",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "Figma Class A Shares",
+          "ticker": null,
+          "type": "Sale",
+          "amount": "$500,001-$1,000,000",
+          "date": "2026-08-07",
+          "lateFilingFlag": false
+        },
+        {
+          "description": "Gabelli Utilities Fund Class AAA Shares (GABUX)",
+          "ticker": "GABUX",
+          "type": "Sale",
+          "amount": "$15,001-$50,000",
+          "date": "2026-08-07",
+          "lateFilingFlag": false
+        }
+      ]
+    }
+  ],
+  "alsoNew": [
+    {
+      "name": "Ueland, Eric M",
+      "slug": "ueland-eric-m",
+      "title": "Deputy Director for Management",
+      "agency": "Office of Management and Budget",
+      "newTradeCount": 37,
+      "postedDate": "2026-09-10"
+    },
+    {
+      "name": "Warsh, Kevin",
+      "slug": "warsh-kevin",
+      "title": "Chairman",
+      "agency": "Federal Reserve System Board of Governors",
+      "newTradeCount": 5,
+      "postedDate": "2026-09-10"
+    },
+    {
+      "name": "McMaster, Sean",
+      "slug": "mcmaster-sean",
+      "title": "Administrator, Federal Highway Administration",
+      "agency": "Department of Transportation",
+      "newTradeCount": 4,
+      "postedDate": "2026-09-09"
+    }
+  ],
+  "trackedOfficialCount": 37
+}

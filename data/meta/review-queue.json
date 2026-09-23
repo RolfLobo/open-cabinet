@@ -147656,7 +147656,7 @@
   },
   {
     "id": "trump-donald-j-lane_disagreement-2026-09-23-011",
-    "status": "open",
+    "status": "decided",
     "createdAt": "2026-09-23T16:31:21.291Z",
     "kind": "lane_disagreement",
     "slug": "trump-donald-j",
@@ -148175,6 +148175,9 @@
       }
     ],
     "holding": "every row of Donald-J-Trump-09.8.2026-278T.pdf; nothing from it is published until this is decided",
-    "emailSentAt": "2026-09-23T16:31:22.148Z"
+    "emailSentAt": "2026-09-23T16:31:22.148Z",
+    "decision": "Every disputed row ruled in the review sheet by Trevor Brown on Sept. 23, 2026: 34 late flags corrected to late (page 7 row 177; page 28 rows 860-892), row 1112 confirmed as VERSIGENT LTD. Publish the read plus the rulings (1156 rows). merge rows:b1905d89adfe012be78d661e33456f26cff5b6072bb482cd5ed03e62c7d6d594",
+    "decidedBy": "Trevor Brown",
+    "decidedAt": "2026-09-23T21:37:18.566Z"
   }
 ]

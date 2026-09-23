@@ -50,6 +50,7 @@
  * The note on each row is public copy. It says what checked the row in
  * plain words; the gates carry the per-lane verdicts for the admin view.
  */
+import type { ReadCorrection } from "./corrections";
 import { createHash } from "crypto";
 import { existsSync, readFileSync } from "fs";
 import path from "path";
@@ -299,6 +300,10 @@ export interface DeriveInput {
   /** Audit lane verdicts per filing, by parsed index. Absent until it runs. */
   auditByUrl?: Map<string, { confirmed: Set<number>; disputed: Set<number>; notFound: Set<number> }>;
   decisionsById?: Map<string, ReviewDecision>;
+  /** Read corrections (data/review/corrections.json) by id. A published row
+   * whose `corrections` list names a ruled or confirmed record was decided
+   * by a person before publication; it counts like a row decision. */
+  correctionsById?: Map<string, ReadCorrection>;
   /** Posting date of each source filing, by URL, for the after-the-filing check. */
   filingDateByUrl?: Map<string, string>;
   /** Independent readings of each row's asset name, by filing URL and
@@ -555,6 +560,22 @@ export function gatesForRow(
   return { read1Confidence: conf, text, ocr, model2, session, audit, human, implausible, name };
 }
 
+/** The latest ruled or confirmed correction named on a row, as a decision. */
+export function decisionFromCorrections(
+  recordId: string, slug: string, tx: Pick<Transaction, "corrections">, byId?: Map<string, ReadCorrection>
+): ReviewDecision | undefined {
+  if (!byId || !tx.corrections?.length) return undefined;
+  const records = tx.corrections.map((cid) => byId.get(cid)).filter((c): c is ReadCorrection => !!c && (c.status === "ruled" || c.status === "confirmed") && !!c.ruledAt);
+  if (!records.length) return undefined;
+  const latest = records.reduce((a, b) => ((a.ruledAt ?? "") >= (b.ruledAt ?? "") ? a : b));
+  const corrected = records.some((c) => c.status === "ruled");
+  return {
+    recordId, slug, decision: corrected ? "corrected" : "confirmed",
+    evidence: records.map((c) => `${c.field}${c.status === "ruled" ? ` ${JSON.stringify(c.original)} -> ${JSON.stringify(c.corrected)}` : " confirmed"}: ${c.evidence}`).join(" | "),
+    decidedBy: latest.ruledBy ?? "unknown", decidedAt: latest.ruledAt ?? latest.proposedAt,
+  };
+}
+
 export function deriveRowVerification(input: DeriveInput): RowVerification[] {
   const ids = recordIdsFor(input.transactions);
   const out: RowVerification[] = [];
@@ -568,7 +589,7 @@ export function deriveRowVerification(input: DeriveInput): RowVerification[] {
 
   input.transactions.forEach((tx, i) => {
     const id = ids[i];
-    const decision = input.decisionsById?.get(id);
+    const decision = input.decisionsById?.get(id) ?? decisionFromCorrections(id, input.slug, tx, input.correctionsById);
     const base = { id, slug: input.slug, sourceUrl: tx.sourceUrl ?? null };
     // Every row of a filing consumes one slot of its located positions,
     // decided rows included; otherwise a human decision on one row would
