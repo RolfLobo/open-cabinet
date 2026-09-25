@@ -173,35 +173,65 @@ export async function auditPages(input: {
   const list = input.rows
     .map((r, i) => `${i}. ${r.description} | ${r.type} | ${r.date} | ${r.amount ?? "value not readily ascertainable"} | notification ${r.lateFilingFlag ? "Yes" : "No"}`)
     .join("\n");
-  const request = () => client.chat.completions.create({
-    model: GROK_AUDIT_MODEL,
-    max_completion_tokens: 16000,
-    messages: [
-      { role: "system", content: AUDIT_SYSTEM_PROMPT },
-      {
-        role: "user",
-        content: [
-          ...images.map((url) => ({ type: "image_url" as const, image_url: { url, detail: "high" as const } })),
-          { type: "text" as const, text: `Pages ${input.first} to ${input.last} of the filing are above, in order.\n\nDatabase rows for these pages:\n${list}\n\nAnswer with the JSON only.` },
-        ],
-      },
-    ],
-  });
-  // Transport errors are retried; a bad answer is not.
+  // The answer is streamed and reassembled. x.ai closes an unstreamed
+  // connection after about 60 seconds ("other side closed" at 60.2s on
+  // Sept. 24, 2026), and a dense 33-row page takes grok-4.6 about two
+  // minutes; the same request completed streamed in 119 seconds. A stream
+  // keeps the socket alive while the model works. The model is asked for
+  // one JSON object, so the deltas are joined and parsed exactly as an
+  // unstreamed reply would be.
+  const request = async () => {
+    const stream = await client.chat.completions.create({
+      model: GROK_AUDIT_MODEL,
+      max_completion_tokens: 16000,
+      stream: true,
+      stream_options: { include_usage: true },
+      messages: [
+        { role: "system", content: AUDIT_SYSTEM_PROMPT },
+        {
+          role: "user",
+          content: [
+            ...images.map((url) => ({ type: "image_url" as const, image_url: { url, detail: "high" as const } })),
+            { type: "text" as const, text: `Pages ${input.first} to ${input.last} of the filing are above, in order.\n\nDatabase rows for these pages:\n${list}\n\nAnswer with the JSON only.` },
+          ],
+        },
+      ],
+    });
+    let content = "";
+    let finishReason: string | null = null;
+    let usage: { prompt_tokens?: number; completion_tokens?: number } | undefined;
+    for await (const chunk of stream) {
+      const choice = chunk.choices?.[0];
+      if (choice?.delta?.content) content += choice.delta.content;
+      if (choice?.finish_reason) finishReason = choice.finish_reason;
+      if (chunk.usage) usage = chunk.usage;
+    }
+    return { content, finishReason, usage };
+  };
+  // Transport errors are retried; a bad answer is not. A socket dropped
+  // mid-stream surfaces as a plain Error from the reader, so the message
+  // is checked as well as the SDK's error classes.
   let response: Awaited<ReturnType<typeof request>> | null = null;
   for (let attempt = 1; attempt <= 6; attempt++) {
     try {
       response = await request();
       break;
     } catch (err) {
-      const transient = err instanceof OpenAI.APIConnectionError || err instanceof OpenAI.RateLimitError || (err instanceof OpenAI.APIError && (err.status ?? 0) >= 500);
+      const message = String((err as Error)?.message ?? "");
+      const causeCode = String(((err as Error)?.cause as { code?: string } | undefined)?.code ?? "");
+      const transient =
+        err instanceof OpenAI.APIConnectionError ||
+        err instanceof OpenAI.RateLimitError ||
+        (err instanceof OpenAI.APIError && (err.status ?? 0) >= 500) ||
+        /socket|ECONNRESET|terminated|fetch failed|other side closed|premature close/i.test(message) ||
+        /^UND_ERR|ECONNRESET|ETIMEDOUT/.test(causeCode);
       if (attempt === 6 || !transient) throw err;
       await new Promise((r) => setTimeout(r, Math.min(60_000, 5000 * 2 ** (attempt - 1))));
     }
   }
   if (!response) throw new Error("no response");
-  if (response.choices[0]?.finish_reason === "length") throw new Error(`audit response hit the token cap on pages ${input.first}-${input.last}`);
-  const raw = (response.choices[0]?.message?.content ?? "").trim().replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
+  if (response.finishReason === "length") throw new Error(`audit response hit the token cap on pages ${input.first}-${input.last}`);
+  const raw = response.content.trim().replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
   let parsed: { verdicts?: AuditVerdict[]; missing?: AuditChunkResult["missing"] };
   try {
     parsed = JSON.parse(raw);

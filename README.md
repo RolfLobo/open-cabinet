@@ -23,7 +23,7 @@ Congress has well-known stock trackers like Capitol Trades and Quiver Quantitati
 | Rows under review (not counted in totals) | 0 |
 | Estimated value | ~$6.0B |
 | Late filings | 8,009 |
-| Companies searchable | 1,188 |
+| Companies searchable | 1,190 |
 | News articles linked | 35 |
 | Source filing PDFs linked | 189 |
 
@@ -35,7 +35,7 @@ The daily OGE monitor compares published URLs with the full index and emails the
 
 Every number in this table is checked against `public/data/full-dataset.json` by an automated test (`lib/readme-stats.test.ts`). CI fails if the table drifts from the published dataset.
 
-Rows by verification state: 32,633 checked; 200 human_verified; 1,054 deterministic_agree; 72 two_models_agree; 0 audit_only; 0 single_read; 5 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
+Rows by verification state: 33,758 checked; 206 human_verified; 0 deterministic_agree; 0 two_models_agree; 0 audit_only; 0 single_read; 0 implausible; 0 disputed. Counts are checked against `data/meta/row-verification.json` at test time.
 
 ## Pages
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "model": "gpt-6-astra",
-  "generatedAt": "2026-09-23T21:39:02.036Z",
+  "generatedAt": "2026-09-24T17:24:29.315Z",
   "filings": {
     "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/B410FFBD2E16727285258C8D002C7DC5/$FILE/Robert-F-Kennedy-Jr-05.09.2025-278T.pdf": {
       "slug": "kennedy-robert-f",
@@ -19345,7 +19345,7 @@
       "slug": "trump-donald-j",
       "pdfFile": "Donald-J-Trump-09.8.2026-278T.pdf",
       "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
-      "candidateSha256": "b1905d89adfe012be78d661e33456f26cff5b6072bb482cd5ed03e62c7d6d594",
+      "candidateSha256": "c821512cad91213e7c7edd31e24ae42f2f42173f719f24b21e710f0dcb234a26",
       "model": "gpt-6-astra",
       "rowsPrimary": 1156,
       "rowsSecond": 1156,
@@ -21678,7 +21678,7 @@
       },
       "differences": [],
       "costUsd": 0,
-      "checkedAt": "2026-09-23T21:39:02.034Z",
+      "checkedAt": "2026-09-24T17:24:29.313Z",
       "failed": null
     }
   }

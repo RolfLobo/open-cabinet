@@ -40,6 +40,7 @@ import {
   type CrosscheckState,
 } from "../lib/crosscheck-log";
 import { findParseRecord, isTerminationForm, promptHash, sha256File } from "../lib/parse-cache";
+import { overlayParseRecord } from "../lib/corrections";
 import { crossCheckByOcr, extractOcrRows, ocrEngine, ocrPdfToText, OCR_LANE_VERSION } from "../lib/ocr-lane";
 import { EXTRACTION_PROMPT, SYSTEM_PROMPT, PARSER_VERSION, DEFAULT_MODEL } from "./parse-pdf.js";
 
@@ -90,6 +91,14 @@ function main() {
     const txs: Array<{ sourceUrl?: string | null }> = official.transactions ?? [];
     allRows.push(...txs);
     for (const filing of official.sourceFilings ?? []) {
+      // Annual and termination reports are not this lane's. Their Part 7
+      // rows are checked by the annual lane (scripts/record-annual-
+      // verification.ts, data/meta/annual-verification-log.json), and row
+      // verification routes a row to that lane only when no cross-check
+      // entry exists for its filing. Writing an entry here (the PDF is
+      // not under data/pdfs, so it would say "missing local document")
+      // pulled 21,223 annual rows out of their lane on Sept. 24, 2026.
+      if (filing.kind === "annual-278e" || filing.kind === "termination-278e") continue;
       const filingDate = String(filing.date ?? "").slice(0, 10);
       const publishedRows = filing.url ? txs.filter((t) => t.sourceUrl === filing.url).length : 0;
       const base = {
@@ -127,7 +136,11 @@ function main() {
             promptSha256: PROMPT_SHA256,
             model: DEFAULT_MODEL,
           });
-          const rows = record ? (record.transactions as Parameters<typeof crossCheckParsedFiling>[1]) : null;
+          // The candidate is the read plus a person's ruled corrections,
+          // hashed as the ingest hashes it (lib/corrections).
+          const rows = record
+            ? (overlayParseRecord(record as Parameters<typeof overlayParseRecord>[0], { sourceUrl: filing.url, pdfSha256 }).transactions as unknown as Parameters<typeof crossCheckParsedFiling>[1])
+            : null;
           if (extraction.kind === "no-text") {
             entry = { ...base, pdfFile, pdfSha256, candidateSha256: rows ? hashRows(rows) : null, state: "no_usable_text", rowsCompared: null };
           } else if (extraction.kind === "tool-error") {

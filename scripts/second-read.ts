@@ -20,6 +20,7 @@ import dotenv from "dotenv";
 import { PDFDocument } from "pdf-lib";
 import { readCrosscheckLog } from "../lib/crosscheck-log";
 import { findParseRecord, promptHash } from "../lib/parse-cache";
+import { overlayParseRecord } from "../lib/corrections";
 import { recordSpend, spend, stageOptions, SpendCeilingError } from "../lib/ingest-stages";
 import { splitPdfIfNeeded } from "../lib/pdf/chunks";
 import { readSecondReadLog, recordSecondRead, secondReadFiling, SECOND_READ_MODEL, type SecondReadLog } from "../lib/second-read";
@@ -80,7 +81,7 @@ async function main() {
       continue;
     }
     const pages = await pageCount(pdfPath);
-    const rows = record.transactions.length;
+    const rows = overlayParseRecord(record as Parameters<typeof overlayParseRecord>[0], { sourceUrl: e.sourceUrl!, pdfSha256: e.pdfSha256! }).transactions.length;
     // Rough: 1,500 input tokens per page image, 40 output tokens per row.
     estimate += (pages * 1500 * 10 + rows * 40 * 50) / 1_000_000;
     plan.push({ e, pdfPath, pages, rows });
@@ -92,14 +93,18 @@ async function main() {
   for (const p of plan) {
     const e = p.e;
     const record = findParseRecord(p.pdfPath, { pdfSha256: e.pdfSha256!, sourceUrl: e.sourceUrl!, parserVersion: PARSER_VERSION, promptSha256: PROMPT_SHA256, model: DEFAULT_MODEL })!;
+    // The second model is compared against the rows as published: the
+    // primary read plus a person's ruled corrections (lib/corrections).
+    const candidate = overlayParseRecord(record as Parameters<typeof overlayParseRecord>[0], { sourceUrl: e.sourceUrl!, pdfSha256: e.pdfSha256! });
+    for (const s of candidate.skipped) console.warn(`  ${e.slug} ${e.pdfFile}: correction ${s.id} skipped: ${s.reason}`);
     process.stdout.write(`  ${e.slug} ${e.pdfFile} (${p.pages} pp, ${p.rows} rows) `);
     const { units } = await splitPdfIfNeeded(p.pdfPath);
     let entry;
     try {
       entry = await secondReadFiling({
         slug: e.slug, pdfPath: p.pdfPath, pdfSha256: e.pdfSha256!, sourceUrl: e.sourceUrl!, candidateSha256: e.candidateSha256!,
-        primary: record.transactions as Parameters<typeof secondReadFiling>[0]["primary"],
-        primaryUnits: record.units ?? null,
+        primary: candidate.transactions as unknown as Parameters<typeof secondReadFiling>[0]["primary"],
+        primaryUnits: (candidate.units ?? null) as Parameters<typeof secondReadFiling>[0]["primaryUnits"],
         units, parserVersion: PARSER_VERSION, systemPrompt: SYSTEM_PROMPT, extractionPrompt: EXTRACTION_PROMPT,
         read: (unitPath) => parsePdf(unitPath, SECOND_READ_MODEL, { asImages: true }),
         onSpend: recordSpend,

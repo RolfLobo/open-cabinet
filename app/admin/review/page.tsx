@@ -68,12 +68,13 @@ export default async function ReviewPage({ searchParams }: {
 
       <section aria-labelledby="disputed-rows" className="space-y-5">
         <h2 id="disputed-rows" className="text-2xl font-semibold">Disputed rows</h2>
+        <p>Rows a lane disputed, plus rows held as implausible (for example a trade dated on a weekend). Confirming records the row as the filing prints it.</p>
         {!verificationAvailable ? <p>Row verification file unavailable. Rebuild row states to create it.</p>
           : disputedCount === 0 && <p>No disputed rows.</p>}
         {groups.map((group) => (
           <section key={group.slug} aria-labelledby={`official-${group.slug}`} className="space-y-3">
             <h3 id={`official-${group.slug}`} className="text-xl font-semibold">{group.name}</h3>
-            {group.rows.map(({ verification, transaction, detail, decision }) => (
+            {group.rows.map(({ verification, transaction, detail, decision, strip }) => (
               <article key={verification.id} className={panel}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
@@ -98,6 +99,10 @@ export default async function ReviewPage({ searchParams }: {
                     {detail && !detail.audit && !detail.second && !detail.unavailable && <p>No audit or second-model detail was recorded for this row.</p>}
                   </div>
                 </div>
+                {strip && transaction && <div className="space-y-1">
+                  <p className="text-sm">The printed row, page {strip.page}, row {strip.row}:</p>
+                  <img src={strip.url} alt={`Printed row ${strip.row} from page ${strip.page}`} className="block h-auto w-full border border-neutral-300" loading="lazy" />
+                </div>}
                 {decision && <p className="text-sm"><strong>Recorded: {decision.decision}</strong> by {decision.decidedBy} on {decision.decidedAt}. {decision.evidence} {decision.decision === "rejected" ? "Needs a patch." : "Rebuild row states to apply."}</p>}
                 {transaction && <form action={recordRowDecision} className="space-y-3">
                   <input type="hidden" name="slug" value={group.slug} />

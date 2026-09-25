@@ -1,7 +1,7 @@
 {
   "version": 1,
   "checkerVersion": "2026-09-06.1",
-  "generatedAt": "2026-09-23T21:39:01.977Z",
+  "generatedAt": "2026-09-24T17:27:00.409Z",
   "entries": [
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/EC797C6A3CC5ABA085258DD4002D9D81/$FILE/Bryan-Bedford-02.27.2026-278T.pdf",
@@ -18,7 +18,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Bryan-Bedford-02.27.2026-278T.pdf",
       "pdfSha256": "706794753054c5fd56401dfc4b48a59c9ccca8f5e9403956cc2ceedf478c537f",
       "candidateSha256": "41bda5caa1bbe56b78eaaaa449425051629ab346ae603cee8d35f26fca3b6d68",
@@ -78,7 +78,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 75,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Bryan-Bedford-10.07.2025-278T.pdf",
       "pdfSha256": "ff1bf7eddcd0f604187b6fe4dec55a0b3f7d83d85afc0d2302877d873cffd6ae",
       "candidateSha256": "49fc0e0e3d1f07fcc2b4737a6d700bca42d62d73c0f84d99f5aa4346e3e5680c",
@@ -101,7 +101,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 5,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Bryan-Bedford-09.02.2025-278T.pdf",
       "pdfSha256": "86e3fd4ce3bb50cb9cb20dec76a55bb4d2a75ff3015d699ea3407599c24932da",
       "candidateSha256": "0da26a01b8773c0b694bec7d3d191506f723abad26134fc1d86a991ab695c8a6",
@@ -124,7 +124,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-Bessent-12.05.2025-278T.pdf",
       "pdfSha256": "90c274f9606865f41a1766a802798af12d32da268f8b0954123217d615c7e2aa",
       "candidateSha256": "b73faac14c355ead4443cd5dd060691aa4b805cc00863e28402c9a350b9cab7c",
@@ -147,7 +147,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 24,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-Bessent-07.14.2025-278T.pdf",
       "pdfSha256": "e5ea5435bb6f16bc189ba42db5af03f6d5199a103301ced5799f00b044135fdb",
       "candidateSha256": "e7616f1b48e7febb1583466a91a024f9f67241671ed1c5a0805abf6d8f593360",
@@ -170,7 +170,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-07.07.2026-278T.pdf",
       "pdfSha256": "b93a6a5162780c0e0c2d1ef382d1decc1bbd38302fae5c19a022c6fb7442b8ee",
       "candidateSha256": "040856197a05b9298108a829de19fb61dc2336a45cd662ebf9f3e43a60265aae",
@@ -193,7 +193,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 14,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-02.10.2026-278T.pdf",
       "pdfSha256": "828efbc456097acb8f9536bc66431efb4392d177944eeeee40ccb968c1df6b77",
       "candidateSha256": "07aaab15a8656070cfcde195868cc25a2a2b56b5c4c2e39dd55011df5b37e61e",
@@ -216,7 +216,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 14,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-09.09.2025-278T.pdf",
       "pdfSha256": "a6b5c154fdc16b15c5cbc8dfa419cd4ad5e9dbbaa038528c9f0179540522a574",
       "candidateSha256": "a2ea78c2c8fbb57c5bdea4ca78d5366e154709ddf3f1c4388b571d56a0661ca6",
@@ -239,7 +239,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 77,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-08.08.2025-278T.pdf",
       "pdfSha256": "6de6dea45f79cd8fd5e470a45f24818ecd67d407556a4ceb137bbfce1e6dbcc0",
       "candidateSha256": "f3d9dde8d04c69ce3e6e7fc6f3c6cd3e5f06d490cf20121464c0595a514cbf2b",
@@ -262,7 +262,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-07.03.2025-278T.pdf",
       "pdfSha256": "667219f435e9867f8745bec3322c6b5a2fc87b03ad4ff54a7cd33b73512536e9",
       "candidateSha256": "e7f45a03b7131a1b3ecd5117c9292d40bdcd81e0b0685cfa93f6002e8a6db383",
@@ -285,7 +285,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 15,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Frank-J-Bisignano-06.26.2025-278T.pdf",
       "pdfSha256": "f8c11f59863a6b708840ebf2e941d1ecdbc47bf126b98c30db386976bb767569",
       "candidateSha256": "02b6cc11b960229fc03d545100d5d9dd5521c8b7a3faf11df526f589573c4f49",
@@ -308,7 +308,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 15,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Todd-Blanche-06.03.2025-278T.pdf",
       "pdfSha256": "580c5c53539fe733d2e9d2c770781d694984ea6fd9656b1218decd4b574ce0a7",
       "candidateSha256": "a6818291c0efe9340dba12b290f8103fdcaa9930d86b9aa4b8455a8b35e0f16f",
@@ -331,7 +331,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Pam-Bondi-05.05.2025-278T.pdf",
       "pdfSha256": "39619c87318662d6cf1f235feac1ecbeae7239a70f6847a8c8bdc526e0d59f23",
       "candidateSha256": "3f41ff8a5ef9e6410e8602becb227d11698785dd8938dfb07927fa9e60502863",
@@ -354,7 +354,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 6,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Douglas-J-Burgum-05.12.2026-278T.pdf",
       "pdfSha256": "1a5ae8936c686cf5cddf3c7bb3c12d4107c16b613e15538358fa67536b8331ca",
       "candidateSha256": "bea7213c6470b9bf9d30b736acf1c7b7ef4c6ef8272f779944ca38d66d0ebb34",
@@ -377,7 +377,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 20,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Douglas-J-Burgum-02.27.2026-278T.pdf",
       "pdfSha256": "d0cb1340b1532574f33e928509c6fcfb98e12f7986044c84065f0ef223626c9e",
       "candidateSha256": "2a27e5d21662fd4be85bee23927780ff15f0abb2643c847d95b1cf1730debbfe",
@@ -400,7 +400,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Douglas-J-Burgum-11.13.2025-278T.pdf",
       "pdfSha256": "cf0c0015ea46063dc322ca5306688ddd26bff3ce8e354b42f63dc5cb8c72f7e8",
       "candidateSha256": "437fefdf7c8199523dbec2d1812cec7bb1907d368162768c2c94d4418a5b13e6",
@@ -423,7 +423,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 14,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Doug-Burgum-09.18.2025-278T.pdf",
       "pdfSha256": "be646d40c1c95bada0bbf40046bebee88f6d2ca65db8b832b4bfe8b68615d10a",
       "candidateSha256": "f7fa0b5ee8ad01cebfa34242ec3c799ca57b82e9a9e1f8406b49d859d66c8579",
@@ -446,7 +446,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 6,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Douglas-J-Burgum-06.12.2025-278T.pdf",
       "pdfSha256": "14bedb8d94097a8dd7c203912a2c308aa2209eff97e15932601f979d187a7df9",
       "candidateSha256": "45243a4da729a465a82a927c1b00682bc98098f5eb871166dfea1a5a30d92633",
@@ -469,7 +469,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 104,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Douglas-J-Burgum-04.30.2025-278T.pdf",
       "pdfSha256": "3f467fcff16d5540d1ea1770dba84494ae0c67bc2b5f0736b09ccfe64e827c92",
       "candidateSha256": "ddee5d70b85db6025c23d0aa4f72ef073604c8f356f90a4b5532a924e4bcdec1",
@@ -492,7 +492,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 97,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Lori-Chavez-DeRemer-07.02.2025-278T.pdf",
       "pdfSha256": "7e379cfaade9bc14ee617da4572d17cc60f8c0f49776e303c2f72f7b646ab93c",
       "candidateSha256": "9ec812eab3553b32e6d8469adb73922e81523ef30a28da49fdebd39196449ff6",
@@ -519,7 +519,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-12.19.2024-278T.pdf",
       "pdfSha256": "cf0ff6c3aa5d3209b0b2ffad9bfbde67369cb47eeac11f2bf83be52f6da6261d",
       "candidateSha256": "461d65aa5e245d2e88a9a446dbfd9cb7454e613c33c1a5cd9004c17b69b3360b",
@@ -542,7 +542,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-06.24.2024-278T.pdf",
       "pdfSha256": "225926ded7a8c82bbb9023f561bb4152827769f979d961b814e51d238ee223ac",
       "candidateSha256": "dc41701341e0ce9edd328d37bb95603d6cd18ffd7e06ad6e968201176cadd0f3",
@@ -565,7 +565,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-04.02.2024-278T.pdf",
       "pdfSha256": "de0d4cd8df1410ce19d3d0b8b4020a87aaa4d62e6e136d1cb1a1a040f38baba0",
       "candidateSha256": "1ad5e35772f04853423e92042a6962c124a1682f6cf25476cc71b5c38d36e6e1",
@@ -588,7 +588,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 8,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Dianne-Criswell-12.19.2023-278T.pdf",
       "pdfSha256": "49ce5d3a2994f3bc1886bf1fdc0e5c9c0123ae685a91e1152cee530665ab4fcc",
       "candidateSha256": "fcbfe87cc14ebcdfee62468bc4b0d57b81d78ec6e6cee6519c05d13fde4e6e8a",
@@ -611,7 +611,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-09.08.2023-278T.pdf",
       "pdfSha256": "c980d3f88312c6ddd4f38c272eb386f968317e79c32e1d4da4407f1a179db93b",
       "candidateSha256": "39eed57785cf6ec4d5c3a143c5d7857df4449a3624558e1ce936faa36098c230",
@@ -634,7 +634,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-06.09.2023-278T.pdf",
       "pdfSha256": "b27994c065f212b416b364a47b3822c40024ca13240e51a870c76f7e0086a952",
       "candidateSha256": "d8241d1a23d6bf36c6be9992342229603922ce67d702d4fedc1ac1896a4e08e8",
@@ -657,7 +657,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 8,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-01.04.2023-278T.pdf",
       "pdfSha256": "ac4c9bdb285c439ae40480028a3c8b0c8e1b71e492b666d46a5d2982bee39672",
       "candidateSha256": "e1b0108d129ffb524adc1d9c9074128018c55213a5a341c00bc387eaef786568",
@@ -680,7 +680,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-08.10.2022-278T.pdf",
       "pdfSha256": "50c57312ba7df78de44e4b21e80e13db32251ea149d7f0108182f0e1bc4f327e",
       "candidateSha256": "380cacf29d95a1bad0b6f5ab434c39e2697c5f547a24a8e0ef6376a250d2a5e6",
@@ -703,7 +703,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-07.01.2022-278T.pdf",
       "pdfSha256": "68a1f12c206126c8ae1eed3e1461594cb0471360f6fbfb033e6c48bcf9b2bc73",
       "candidateSha256": "c187c23e7eab2ea5d7a33e687b770c73107e2490cd887f52a781b0750f49e791",
@@ -726,7 +726,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 11,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-05.18.2022-278T.pdf",
       "pdfSha256": "78545c97b70a084339981e49054a5f8531ae35d416aef3c99e984b6dad90f0cf",
       "candidateSha256": "7f0db1b00bbf8552b70decbd5efd58183db07e1f95d734d9aead16976653fdbf",
@@ -749,7 +749,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-02.04.2022-278T.pdf",
       "pdfSha256": "eb1776ae128f57d79356de810f725ab8d43a6ab8821f948c4891b7d59bdc137e",
       "candidateSha256": "716e97034440f49b917dfb6ffd92ba348757a898c86095d9bdaea966ad88d71d",
@@ -772,7 +772,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 5,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-01.20.2022-278T.pdf",
       "pdfSha256": "db4897e5d59a90f5ea195a1d891dbddaee5cd7fdcfd191115778f60d779d18ac",
       "candidateSha256": "b44832b1168b1075335d724db538ed24ea62b08c5f07c3347be8b7416832d178",
@@ -795,7 +795,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-12.01.2021-278T.pdf",
       "pdfSha256": "37db3dc0e5e8d597f5b5814816d413012725e78ba5675165c36e9e17b35c4525",
       "candidateSha256": "be6b77fb54a21a8f511969475df0a72f7354dd7a236b11c3571e3d772c6b2bf8",
@@ -818,7 +818,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-09.06.2021-278T.pdf",
       "pdfSha256": "9a9902e2f2da5648cc5822ea353c02fe860d79b398bf62dc282bd8cad54b394d",
       "candidateSha256": "879e4f42d35d0e8be35e6e5974fb3a2dbd96eb11c5ce973505698f310e76afc0",
@@ -841,7 +841,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-08.23.2021-278T.pdf",
       "pdfSha256": "aa7a964f08b2510ba1f63da85e19cead38ec5106d0ffbd008c778d5c1c8fd7cd",
       "candidateSha256": "8127f9699d4b45cb4b039554285d03c85d0ff0a9c18b2ee2d69625de4fbca676",
@@ -864,7 +864,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 4,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Criswell-08.10.2021-278T.pdf",
       "pdfSha256": "7a0ffd5a8c86e77a6d62e9531ac6b8227846b4877548163b971edf5a796e4081",
       "candidateSha256": "86df8db05d34a8149d3ac370a4272187fe0942f57569b6a9282a4b7550367070",
@@ -887,7 +887,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Deanne-Chriswell-08.05.2021-278T.pdf",
       "pdfSha256": "30e3c21f1a79019a2163f112322f25ca3bfe64d0599a6e14b2bb4ad67e80d86c",
       "candidateSha256": "bea567677483b4bb4e32c78698c92445bd53ec176d47e4d4c188c90eca35ea85",
@@ -910,7 +910,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 47,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stacey-Dixon-02.10.2025-278T.pdf",
       "pdfSha256": "a0e5874ce831e2cc59f5b0c5970a112a2040a7bd5523f6191d8c87f82e34a961",
       "candidateSha256": "c45ea94f114a4c3863bfa78dbb5dc86543f3dac4e871a488e610bfdaa79b16f8",
@@ -933,7 +933,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 44,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stacey-Dixon-08.24.2021-278T.pdf",
       "pdfSha256": "2cecbecdbb1bbca01589223ca4f193bf49f1ee94fea7efca8f9b9634d5ac29e8",
       "candidateSha256": "7c143dcf05b6c8a92f99505bf9c208b4edc0316059a192c97f7448e095bfbad6",
@@ -956,7 +956,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stacey-Dixon-08.24.2021-278T(1).pdf",
       "pdfSha256": "890cb40888804b27378afebdce354682c2e002845196bec913d68cf5785f03ce",
       "candidateSha256": "20c0efaf87da5e5f335213567e96a1fc5c243a6a9e63a3870925901141fc8757",
@@ -979,7 +979,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 19,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stacy-Dixon-08.12.2021-278T.pdf",
       "pdfSha256": "a0120e608c5a8adfb57797015dbe830dd63f1957b79938246f769f87c80362d8",
       "candidateSha256": "cf55f81eb1fbfb0aedd41976d03f98addb061148aa70f6d22a17893013bad6a3",
@@ -1002,7 +1002,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-Duffy-06.09.2026-278T.pdf",
       "pdfSha256": "0e06173565cffbace82d6ee75da2dad392a0722788e34235e8a86048293838ba",
       "candidateSha256": "48e81b232d68743e1e87e74a77114f088bb75d255450ef113c628eedf83b5eac",
@@ -1025,7 +1025,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 38,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-Duffy-04.23.2025-278T.pdf",
       "pdfSha256": "08994ec70a46ad69214398f7940a38db8bda7f6b1b289c304cd8f13de361a786",
       "candidateSha256": "8647798a21904bab3c93595acc81640646d44c4f8351ae23b8151b51ea48ec2d",
@@ -1048,7 +1048,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 63,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Troy-D-Edgar-05.01.2025-278T.pdf",
       "pdfSha256": "4d912c67fea78c163ffb495f8ee0e7c212190b66246aa2f6b4bc771bb3311dff",
       "candidateSha256": "30234eae0bba4715a2373c12f84f629fe52909a87c13aa0feecb65b8945d27fa",
@@ -1071,7 +1071,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-W-Faulkender-06.26.2025-278T.pdf",
       "pdfSha256": "95919236a2422304a07f801f3aaca73f147a90058e47d2d66088a498c3309be3",
       "candidateSha256": "0518bd4371e41dc0b3782b8e96e35d46f3112881bfe61b0925528021d4c4270c",
@@ -1094,7 +1094,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 13,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Tulsi-Gabbard-05.21.2025-278T.pdf",
       "pdfSha256": "506c65da204d62421c1e713bb2aa51cb75b88bbe9c659776e727e7ebbbf9e075",
       "candidateSha256": "8ca48a49f9e528960cd4dca0a1a56eb263d322ecce7b5d0f71ae99e5bb6b596f",
@@ -1117,7 +1117,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 29,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Pete-Hegseth-04.11.2025-278T.pdf",
       "pdfSha256": "3294082f5072d67a379b543afb9157f1275e6014cd617e4e19d48531f2e38f3e",
       "candidateSha256": "7b71b8a21affa1705fb54d62aeaec8915a3c7202ee27eb801a14222c9ffae3ab",
@@ -1140,7 +1140,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Jared-Isaacman-05.27.2026-278T.pdf",
       "pdfSha256": "5778d741596d59fdc3064a5a225515f9caf4f936dc91ff64864daaddd6e92da7",
       "candidateSha256": "5bb1711a49eecd7de07b8a9c9659a08eb3e696b00fdd34a24a8ce039cdeca3fa",
@@ -1163,7 +1163,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 145,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Jared-Isaacman-03.16.2026-278T.pdf",
       "pdfSha256": "1c5167f6e2c55f6d9ab32de561ba31b1da0303864cab50e8cca2816f810f8352",
       "candidateSha256": "d84311c1a02fb8842be840d5a0b410610770d7314d80af313744c74129531fc5",
@@ -1186,7 +1186,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 9,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Robert-F-Kennedy-Jr-05.09.2025-278T.pdf",
       "pdfSha256": "08033bab01420d02939eaab8644e24825b40a7dd1081fc48dc023cf6bedca486",
       "candidateSha256": "00957c5c04624bb9f1f3ad122f5c55d8b96b196a1e74ecf70ed24cc4a0c765a8",
@@ -1212,7 +1212,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-07.09.2026-278T.pdf",
       "pdfSha256": "a93f851b3b64673ff1377d6ac2f13b4e1df819f1be53bf10a1ba149bcc57bf8d",
       "candidateSha256": "ff93bd1e20a39335da13918a8bcaf71db84f5ee3ad2135d039a6cb7285250092",
@@ -1235,7 +1235,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Kratsios-06.10.2026-278T.pdf",
       "pdfSha256": "fcbe4183d6864a6199daaddf4c6c97642d22cf1691a9326a545101763bb47a03",
       "candidateSha256": "47b619637f0ead7c09446c90c0e79cb3b9cdfd36172a952657af58a5d05cf537",
@@ -1258,7 +1258,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-03.29.2026-278T.pdf",
       "pdfSha256": "ba631c1551161f138a5deb1a93548dc8fc68156ed7690ae5baf0268eaf50348b",
       "candidateSha256": "41724cbefc40209ebecfb8a8df97af9917e1570a6a65d2fd871b92f0429051de",
@@ -1281,7 +1281,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-01.10.2026-278T.pdf",
       "pdfSha256": "533d6af2b4429eed807883782ceb35dec2bc7bbe4a644b8b6cf9bd11936e0b17",
       "candidateSha256": "737f1a65b16fa73f1a8f86b8bcd1e0a533a670ce20c0450f3ce726ab45666cc5",
@@ -1304,7 +1304,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Kratsios-08.19.2025-278T.pdf",
       "pdfSha256": "2313f6ca1ba847f33d80c9d1e1b1333a25f6a28c15873c26a61fe8c917bc951d",
       "candidateSha256": "8ab90afec2a09f3355579fe7a46120ec781370f9c8e8473098eb27a931002373",
@@ -1327,7 +1327,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-07.25.2025-278T.pdf",
       "pdfSha256": "7021e5b5839c309c78d928867774a3d6a37ecff713d0b142fe324fac84d21496",
       "candidateSha256": "5900ee916e44f55d99bea43eec6fce37e11cf6e8e888f4a75ba7c52e8be095e4",
@@ -1350,7 +1350,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-07.15.2025-278T.pdf",
       "pdfSha256": "4a29d817d81fefd1cda5171c6b53f4a0f55ffe5efda166e9dd7fd34ac618b69d",
       "candidateSha256": "a0d8982fb7f0d4043b4bce1638d67c2345755b766780146729afcf9a92d0f57c",
@@ -1373,7 +1373,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-06.24.2025-278T.pdf",
       "pdfSha256": "1100aadef45b1399b695fc23fb1939935c7007abdaacd74bc059ff2e49b83a0d",
       "candidateSha256": "b7871db3681dd18c80258665807a1c1b80dd6974bb75a614efdb17e258457bba",
@@ -1396,7 +1396,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-06.09.2025-278T.pdf",
       "pdfSha256": "92c647b1fb8deb879fc5abd7ba80edf559eb40f3f26bb3e66e5c983368a56ba1",
       "candidateSha256": "fddb3a870980d9f3244ccb1335652d149daf8d4879313af0a004d8da983f1f99",
@@ -1419,7 +1419,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-05.11.2025-278T.pdf",
       "pdfSha256": "23a3f8982b558edcd32e6b61fe4fcb089e95e6eb7c4846d8c6c45a6b7005047b",
       "candidateSha256": "c131679572408f0dde00d68634eefdb2279014b1f5b76729ae5aa5934cfb0e39",
@@ -1442,7 +1442,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 17,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-04.18.2025-278T.pdf",
       "pdfSha256": "af80c8ef4e071ef016d676e36d17fbb7bc75b2b3c5453f3f6f6afe547d32efc2",
       "candidateSha256": "a69f477ed43f5f16ffa090bcb0cb6bae6aee335387d2e85fa3f65afd35aba057",
@@ -1465,7 +1465,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 20,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-J-Kratsios-03.18.2025-278T.pdf",
       "pdfSha256": "2ba72452d5bbd67dab8aeba4f69fd66a82efd76ef6f70a9a363760995d2e6dff",
       "candidateSha256": "b8a577dbc843c067c50dbf9cb24b6d58fdc45ce41435e52adfea276abeef5281",
@@ -1477,11 +1477,7 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/42300720A4227E9E85258E77002DD1B3/$FILE/Scott-A-Kupor-08.07.2026-278T(1).pdf",
       "slug": "kupor-scott-a",
       "filingDate": "2026-09-19",
-      "pdfFile": "Scott-A-Kupor-08.07.2026-278T(1).pdf",
-      "pdfSha256": "0179a7f6a5c3192a696050ea005b787ea137dd45e81b7225612cf2e9b61aaf19",
-      "candidateSha256": "0cf049fe970a15435291b9d33c033346041a2f3613ef3e70e9e6909f9f3bd056",
       "checkerVersion": "2026-09-06.1",
-      "state": "checked_tuple_agreement",
       "comparedFields": [
         "type",
         "date",
@@ -1491,20 +1487,20 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 3,
       "publishedRows": 3,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-23T16:31:33.773Z"
+      "checkedAt": "2026-09-24T17:26:56.747Z",
+      "pdfFile": "Scott-A-Kupor-08.07.2026-278T(1).pdf",
+      "pdfSha256": "0179a7f6a5c3192a696050ea005b787ea137dd45e81b7225612cf2e9b61aaf19",
+      "candidateSha256": "0cf049fe970a15435291b9d33c033346041a2f3613ef3e70e9e6909f9f3bd056",
+      "state": "checked_tuple_agreement",
+      "rowsCompared": 3,
+      "parseRecord": "current"
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/661FD7E5862DFE1485258E77002DD1AB/$FILE/Scott-A-Kupor-08.07.2026-278T.pdf",
       "slug": "kupor-scott-a",
       "filingDate": "2026-09-19",
-      "pdfFile": "Scott-A-Kupor-08.07.2026-278T.pdf",
-      "pdfSha256": "8cd922fadb4a6af533a45df15b9112201666dde9a967a709128fb83aeeb08fb7",
-      "candidateSha256": "78c7175cbea1f4e1c7c7c4d523cd86a545615f2ca23a4ac9733c11dab30699cd",
       "checkerVersion": "2026-09-06.1",
-      "state": "checked_tuple_agreement",
       "comparedFields": [
         "type",
         "date",
@@ -1514,10 +1510,14 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 2,
       "publishedRows": 2,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-23T16:31:44.119Z"
+      "checkedAt": "2026-09-24T17:26:56.747Z",
+      "pdfFile": "Scott-A-Kupor-08.07.2026-278T.pdf",
+      "pdfSha256": "8cd922fadb4a6af533a45df15b9112201666dde9a967a709128fb83aeeb08fb7",
+      "candidateSha256": "78c7175cbea1f4e1c7c7c4d523cd86a545615f2ca23a4ac9733c11dab30699cd",
+      "state": "checked_tuple_agreement",
+      "rowsCompared": 2,
+      "parseRecord": "current"
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/7B58D078A7F838FE85258E5A002DB8C1/$FILE/Scott-A-Kupor-07.20.2026-278T.pdf",
@@ -1534,7 +1534,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-07.20.2026-278T.pdf",
       "pdfSha256": "7c34ca037948e36594ec1eae52278e394e24de95759facd37787b2541bdbe400",
       "candidateSha256": "23836ead1552bc55f41ae66504a52f6b74f7bbc6afc9c09d3b97d7a1fb5f2347",
@@ -1557,7 +1557,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-07.15.2026-278T.pdf",
       "pdfSha256": "f3f83220ed894d22838c74571323035b3c8604cbfabba075ee6cb667c2b48d9b",
       "candidateSha256": "7ffba143e6c61d81eb5011fa003e444720e5a96e541743e64c1257b50b97c2db",
@@ -1580,7 +1580,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 9,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-06.22.2026-278T(1).pdf",
       "pdfSha256": "364f89b967939a77a05d154c9cbecc3e2b91a5a72677689ff27a5448acc6ce4e",
       "candidateSha256": "ded221d296bb4281c95f29b091fbc4728dbdf48856ebd08aebbbc739fdc6c836",
@@ -1603,7 +1603,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 0,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-06.22.2026-278T.pdf",
       "pdfSha256": "0ca4bc6a42b7d34dad5b78ede46893222c842125f8217a80e391ba350b43d7f3",
       "candidateSha256": "58f4c92bf8e1388b2d1a4a25f16f51ec4c1a584e5eb7f717b686e3aaa29bda51",
@@ -1626,7 +1626,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-04.20.2026-278T.pdf",
       "pdfSha256": "c939b028b9c08d134e30b59be87c5902c2ae614ce13f052d9ba212e2fa34c9d2",
       "candidateSha256": "b92b1cb3bb64bf873346df1f00673e324f54419d020b79fc210dc8f18d474f6a",
@@ -1649,7 +1649,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-02.06.2026-278T.pdf",
       "pdfSha256": "4bb6e2fbe0d7243f6f6dee7202eb76a53080bd0d6d25be95d8a667f4748b192c",
       "candidateSha256": "9825eb8cbf0503f91ca61eabc8b134ccc73a9a41553302b464953c1c44585d49",
@@ -1672,7 +1672,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-01.09.2026-278T.pdf",
       "pdfSha256": "d4ac7a51fdfc054377325a5de00c51487643b2d94dc81bd1986d5a7bf02847e1",
       "candidateSha256": "8277fe35d0b5be2cae3cef47aa8b056cd6ab34a4637dd38fece04d7f108b7eff",
@@ -1695,7 +1695,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-10.08.2025-278T.pdf",
       "pdfSha256": "2069ff7b3c7360a7065806a1f0f2dcc8592ae026e31e7cd7ac0892f3ae7c6d98",
       "candidateSha256": "850eee2982676ff65f337f16318284a4dc18a8c00d7bcccdae0ec4ce98858c6e",
@@ -1718,7 +1718,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-07.28.2025-278T.pdf",
       "pdfSha256": "373854537a93c222118f6f5e131ec588abcf46183100e391d7c36af17228c8c6",
       "candidateSha256": "8df023afe61fbfa7af62d292aa7ddb7913d1cea329c1a96178d38bdd277e79cf",
@@ -1741,7 +1741,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-09.26.2025-278T.pdf",
       "pdfSha256": "eb4b16b0f68f3caf3e7391e9f3806d894c96020fd544c47fdbe5efa9197bb227",
       "candidateSha256": "be2ac48847752ae5402860705d0ab5ae49000ab6b5d499c644c6fca0a24ed05e",
@@ -1764,7 +1764,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 54,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-09.12.2025-278T.pdf",
       "pdfSha256": "dc3135bd5e3d4473cebea048f432db01a519711690147e38411a12c2f8451603",
       "candidateSha256": "e26f50988f5a4fc999bfa237145b5f0324433a0859e0520fd5cf79a6452899c0",
@@ -1787,7 +1787,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Scott-A-Kupor-09.02.2025-278T.pdf",
       "pdfSha256": "78047b9539c3f8b9675960d330b26f09fc0e473fead814e4143d7c5d265fc858",
       "candidateSha256": "aa21cabf01b43a984ecfe0e78b3afa795c3b042b8218ec316a155e1d80092065",
@@ -1810,7 +1810,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 89,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Christopher-Lundau-05.22.2025-278T.pdf",
       "pdfSha256": "c45f4166dd0f8d40b626119f69941e08bbd28c20f6963b3da77f846f32fee5a1",
       "candidateSha256": "e6e6fd8222b42c388710366a656c6225bd17d59466720b8bcb87ba12057c1916",
@@ -1833,7 +1833,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Paul-R-Lawrence-06.11.2025-278T.pdf",
       "pdfSha256": "130c187c3d4a5395bb9d56a0ef03aa4b4050f7cd850c2c12749f73f852bba8e2",
       "candidateSha256": "ac4a4ced0cd3cd6ffaf9b40d189ec9c4dbafca04277c198d2a693fad707991b2",
@@ -1856,7 +1856,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Howard-Lutnick-11.05.2025-278T.pdf",
       "pdfSha256": "2a5fe1c4fe602306735c88fb7de9aec17262d37344996b4873f9fb222fea9f51",
       "candidateSha256": "212e0f61e62e7402470cff6ad1c29bbc68fe5d6a6d79c994aca86c374a78c8c9",
@@ -1879,7 +1879,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Howard-Lutnick-06.17.2025-278T.pdf",
       "pdfSha256": "b70b1a120e7bb5f0c5af46869bdbf309527d8d0739580e46f5c9065330ccfe45",
       "candidateSha256": "3335686169ac1baf3230c6508f6529c754719416d454988d5fbf2bc3dab0f3d9",
@@ -1902,7 +1902,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 20,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Katharine-MacGregor-08.07.2025-278T.pdf",
       "pdfSha256": "e51f4c8b18006502acf5aef6ce9a604cbdc093f9bf1ddb93a1fcee8445cc607b",
       "candidateSha256": "7c3232308d62cbf3b405a249c2de913f12f9d27e87e6f4661bd7363c701f64df",
@@ -1925,7 +1925,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Katharine-MacGregor-08.13.2020-278T.pdf",
       "pdfSha256": "ce557a4c76e112678c18b7eeef54731252e7f8759d94b7ac212a28bbd1274898",
       "candidateSha256": "bf960cd0977bd3a9e266107ba18ff278396825ce60985d238223cb2737c92b23",
@@ -1948,7 +1948,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Katharine-MacGregor-07.01.2020-278T.pdf",
       "pdfSha256": "7cf850053b4e7f0782855d89fbe3d2b4cf2a02a8d84342f2b13ea023965a3042",
       "candidateSha256": "897ab85e24702f2f6edd3c4c6216b9b07ec0deace74b1c29f307e7d58021b274",
@@ -1971,7 +1971,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Katharine-MacGregor-04.21.2020-278T.pdf",
       "pdfSha256": "35516f62f84f665619f88ba9c79060233a80d492848476cddd2fc0b02b21a064",
       "candidateSha256": "28b9d31352ee6b6226f15eaaf6a1ffde2b93da4ff36226ffde54c98780f3592a",
@@ -1994,7 +1994,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 68,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Markwayne-Mullin-06.24.2026-278T.pdf",
       "pdfSha256": "2232e039f5fc9c98f1a187b60fe275675215a91bcd779120b0d0184ccdb8d3ec",
       "candidateSha256": "58c295560450eab56881aa9d3561a8168c7802a0a7bf4420a35182f502c0a3dc",
@@ -2017,7 +2017,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 30,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Markwayne-Mullin-06.26.2026-278T.pdf",
       "pdfSha256": "c9b43fa518cb59f2018f101b6937c0e25cfbdbcdaafe692c966a4f895c7af84e",
       "candidateSha256": "3d7bff7cbc34500065f57599c18a5494e765052181ca6f45b05a4c43efc5ffb3",
@@ -2040,7 +2040,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Linda-McMahon-07.02.2025-278T.pdf",
       "pdfSha256": "60abbd4b74c17668d9d30d277020e12447ef8b3a334dc9a378ef350234239c50",
       "candidateSha256": "8fb4ea0dae9ef5deea493b439c24a17cf1f0bf1e6c90d3ade5e72b0cf45b46c6",
@@ -2063,7 +2063,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 155,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Linda-E-McMahon-05.30.2025-278T.pdf",
       "pdfSha256": "e8fa170270e39c45aa4a2632cb4526c295e9e4b945b8507e104ade4fa5c85cdd",
       "candidateSha256": "13334d2bea16768a3121353f0d89c71149c50220b446f2d07263affcfa8d5884",
@@ -2075,11 +2075,7 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87D4C3BB9C104B3E85258E6D002DDD05/$FILE/Sean-McMaster-06.11.2026-278T(1).pdf",
       "slug": "mcmaster-sean",
       "filingDate": "2026-09-09",
-      "pdfFile": "Sean-McMaster-06.11.2026-278T(1).pdf",
-      "pdfSha256": "8c630bbfe61a63602a4208892de85460b1dabb1b6620b5fb9875679a5685e147",
-      "candidateSha256": "81b498afea549531499e4f00223ba21d5f8710fa3b834aa513d0b0bbc104e215",
       "checkerVersion": "2026-09-06.1",
-      "state": "checked_tuple_agreement",
       "comparedFields": [
         "type",
         "date",
@@ -2089,10 +2085,14 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 4,
       "publishedRows": 4,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-11T14:58:37.534Z"
+      "checkedAt": "2026-09-24T17:26:56.747Z",
+      "pdfFile": "Sean-McMaster-06.11.2026-278T(1).pdf",
+      "pdfSha256": "8c630bbfe61a63602a4208892de85460b1dabb1b6620b5fb9875679a5685e147",
+      "candidateSha256": "81b498afea549531499e4f00223ba21d5f8710fa3b834aa513d0b0bbc104e215",
+      "state": "checked_tuple_agreement",
+      "rowsCompared": 4,
+      "parseRecord": "current"
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/ADE89624CD8D7F1D85258E35002DD6B1/$FILE/Sean-McMaster-06.11.2026-278T.pdf",
@@ -2109,7 +2109,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 5,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-06.11.2026-278T.pdf",
       "pdfSha256": "5e6c887a09d313b7843c6b57739a91fb38f22c592a08522d07d099ee8fa5ed9e",
       "candidateSha256": "ecf8c85b13f77d54501b63ebcf98a0fd3d91423f19ebb6f87e1ec7bc5d897f34",
@@ -2132,7 +2132,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-02.27.2026-278T.pdf",
       "pdfSha256": "9a7aacbca34f060129b1b998689ada521b148f6c5861563ea69f2f08194fcd79",
       "candidateSha256": "c09648ac24a0fe3b085dcf26f64bfe3f5301a16c3553bcf5cf91f420ebc7e298",
@@ -2155,7 +2155,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 4,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-01.20.2026-278T.pdf",
       "pdfSha256": "9e4d9717fc2d3f4b5ad2dbd4a295f152b9c7de9316d06f16c43aceead4084253",
       "candidateSha256": "ab9c4aeddcaabc95bf9fe962f1586cbf0a81850c02efdb4933cf11bca22aead7",
@@ -2178,7 +2178,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-12.01.2025-278T.pdf",
       "pdfSha256": "9be70ed7cc43b2afb8fc2a5c510213d8e32c7f78645b568677074d71141c7adf",
       "candidateSha256": "1e7c6e399e46473c6dd2077ead88ee76bf6628353672df3c781c148bf7e91575",
@@ -2201,7 +2201,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-12.11.2025-278T.pdf",
       "pdfSha256": "7358213723c4daf165dfba0bf0da563b337db059f0a72388f7e233cc53722a90",
       "candidateSha256": "57777af7f0252a20cb28b2b1d98633e60a033b623c16cf03313c515e517f96f5",
@@ -2224,7 +2224,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sean-McMaster-09.29.2025-278T.pdf",
       "pdfSha256": "d9222c496071d4d35a82e4392cb1b38c4784c6af60dc5b49e04aa714cac0e293",
       "candidateSha256": "d88c82ffe22c57fa9c00225a542fe8756bfd6087bdd25ff9d9bc24f53da327ef",
@@ -2247,7 +2247,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stephen-I-Miran-04.03.2026-278T.pdf",
       "pdfSha256": "929019c094c9b9d3a291422cfa087b06871629a6d1b9821313589723c18b98ef",
       "candidateSha256": "be2f5430e52b75eb027f0c7cfcc96c91a3ade74c8abad53681fc1afe357ba41c",
@@ -2270,7 +2270,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stephen-I-Miran-12.03.2025-278T.pdf",
       "pdfSha256": "890c8d26358200f20a6c8351694d0918030da6a7208b360f8f6bfa19afa7d3d7",
       "candidateSha256": "7d5f884f56d267797bf0b2073042ad5eff5aeb7f92af9a64137a9972b10fb75a",
@@ -2293,7 +2293,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 69,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stephen-I-Miran-07.21.2025-278T.pdf",
       "pdfSha256": "afeecc9c3aa44ac6feb73d2a9d81a0c1aa087fc1a7875b6435346499869b2a58",
       "candidateSha256": "bb16911f29b0dba4215064a63ca152e5ab31401416337417769076720a93402f",
@@ -2316,7 +2316,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 306,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Arjun-Mody-02.27.2026-278T.pdf",
       "pdfSha256": "fa2bbdd1e7d0e183f84362bbf67fb94b27944392bec222078ac7eaea103841c7",
       "candidateSha256": "f8892274957673a5b51cb9e459d90729b126c21507438b8230f74de14a05becb",
@@ -2334,31 +2334,6 @@
       "parseRecord": "legacy"
     },
     {
-      "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/FE0053885B75FD0E85258DD5002DC5B4/$FILE/Marcus-Molinaro-2026-278TERM.pdf",
-      "slug": "molinaro-marcus",
-      "filingDate": "2026-04-10",
-      "checkerVersion": "2026-09-06.1",
-      "comparedFields": [
-        "type",
-        "date",
-        "amount",
-        "lateFilingFlag",
-        "rowCount",
-        "printedRowContinuity",
-        "assetNameSharedWord"
-      ],
-      "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
-      "pdfFile": "Marcus-Molinaro-2026-278TERM.pdf",
-      "pdfSha256": "2c5c1edd0fa54cb8018a0df0d1a51e253cacebc8fb61e6665e1b5502256b7cc1",
-      "candidateSha256": null,
-      "state": "unsupported_form",
-      "rowsCompared": null,
-      "problems": [
-        "278-TERM termination report; the column parser reads 278-T only"
-      ]
-    },
-    {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2B62CBA20DBEA2EF85258CDA002C951F/$FILE/Kristi-Noem-07.23.2025-278T.pdf",
       "slug": "noem-kristi",
       "filingDate": "2025-08-02",
@@ -2373,7 +2348,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Kristi-Noem-07.23.2025-278T.pdf",
       "pdfSha256": "5a6a0c26b1fd2cdfe2faec1c85f0d5ad991532e95560f0f731e0d48643d5898f",
       "candidateSha256": "6b3ef1a1e17bc5c95fc24aec588817ac952dead5330273f60e34e1683ae3732f",
@@ -2396,7 +2371,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 0,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-03.12.2026-278T(2).pdf",
       "pdfSha256": "0ae4c98a270d1a3553c5e43e7287da0370f57c6aa463a3939bdf7264ae3ea60a",
       "candidateSha256": "34191fa8e2ba6ff87c5df57388a184a35164773af3f3632c63b8fed3bb427a71",
@@ -2419,7 +2394,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-03.12.2026-278T(1).pdf",
       "pdfSha256": "a0615d308f18f2feba99fb7aa30912d92b94963a65f622520a5ec5bea84cd381",
       "candidateSha256": "b3616af598f682f5747a2a83a20dbe262e57923881f7865813df7bd156b94445",
@@ -2442,7 +2417,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 18,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-05.12.2026-278T(1).pdf",
       "pdfSha256": "353456fff07d69092fbb1985ba456814fd789df0a61defcd7c49c2ebfaf347d2",
       "candidateSha256": "abfbe0a46211ffe2b67c57e059d6986c814b17e50f66971e97ccdf5109c746c9",
@@ -2465,7 +2440,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 10,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-05.12.2026-278T.pdf",
       "pdfSha256": "7fd93cc4fc3086f4c8e38e08429c2ac0f7286b3ac5674cde7fd6682cefb708ef",
       "candidateSha256": "217b61b50b9a37d93ce1e0184092e050f0d02bf08476255d8246ce2fcedd6236",
@@ -2488,7 +2463,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 15,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-03.12.2026-278T(3).pdf",
       "pdfSha256": "543e4185f77cff4e09c10531720e9fd82a11d1cc82e0afdcd5ab3bac7714c898",
       "candidateSha256": "34191fa8e2ba6ff87c5df57388a184a35164773af3f3632c63b8fed3bb427a71",
@@ -2511,7 +2486,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 19,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-10.02.2025-278T.pdf",
       "pdfSha256": "e93a881074db6a6060cf747317cd78a2748c81743fc76f901b87afbe97b825f5",
       "candidateSha256": "87ffb6805974ed2f3b3724cd98cefc2c8824755e5f743bf473319dd2f0070366",
@@ -2534,7 +2509,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 18,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-11.17.2025-278T(2).pdf",
       "pdfSha256": "fbe7e2d78d4947c2d7d67861d48fe57bc4975f86e67f81ee1009f78192efca38",
       "candidateSha256": "8b493c3c47a0ad8a7628644e444b7fd452408b56d6bce9cc1fcbf253e6bf6380",
@@ -2557,7 +2532,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 23,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-05.20.2025-278T.pdf",
       "pdfSha256": "88bc32a4d07a0ab286afef84fbb4cf6dbdc6580319a20c41b816e132dc54943f",
       "candidateSha256": "9089bdb749005d76e7abbb17c0bf6da28c6d195f1c556301d0102f7bcae75bfe",
@@ -2580,7 +2555,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 14,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-03.12.2026-278T.pdf",
       "pdfSha256": "26f538f2d104f9a98b0f11556d0c82f43aa6333ba47fc6ba7eee3a613a776a07",
       "candidateSha256": "b4e5ed9d7bfee7ee8134d1f609d0dcf17249d4dd15320db5c8b4cb4d8dd6328f",
@@ -2603,7 +2578,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 13,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-01.09.2026-278T.pdf",
       "pdfSha256": "17f4259b31cf681a662b33de7236085fa1466092bffaf537fdc96ad956728239",
       "candidateSha256": "57e69c27c0b48360bad2cdde6e26b23e77585bbbaf0c66e7d140698d84eb58fa",
@@ -2626,7 +2601,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 8,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-10.02.2025-278T(2).pdf",
       "pdfSha256": "7eb2846e2334cc5ba566d79d14ec735decd781788722cdff3513c16b96bd63b7",
       "candidateSha256": "1378dbc3a07e305552e19500ba484bc820b3d38dd731edce67151a66fe7f801b",
@@ -2649,7 +2624,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 15,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-07.28.2025-278T(2).pdf",
       "pdfSha256": "cf2f0543a6364c7a033f2554eae70b54dd2162cf4ca2fa0d10724d41e83fc3e1",
       "candidateSha256": "a1e472a0e6d2824a04790b17bbed4c25017792685a4acb98a13cd021769a53ab",
@@ -2672,7 +2647,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 21,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "John-Phelan-11.17.2025-278T(1).pdf",
       "pdfSha256": "0807b1695f5948c622c9d92a2ef1f78be4fe4602e0c4660faf7324f50b835703",
       "candidateSha256": "5cfc0d0b25ce75de1fe3646ee8c14ba0a19a0f837d2c223480965db1c6b5e452",
@@ -2695,7 +2670,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 5,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Sara-Bailey-04.01.2026-278T.pdf",
       "pdfSha256": "06cbe788308083198ba078b321606b71738f3f41c264adc3134298a74483502b",
       "candidateSha256": "e995f3b4229bf979868cd2b05f1646003e1657ea68b15d35ff589aafc867d0a7",
@@ -2718,7 +2693,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 33,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Keith-Sonderling-04.21.2025-278T.pdf",
       "pdfSha256": "3fc2ac6ede6e2892be4b40146a6fa50382457cda8e6118e7c3c0e3fd8d8fe865",
       "candidateSha256": "8dc6ef31ebf68bbce5d6d54042450a7286d82a0421cc5f0c09682767d34ed332",
@@ -2730,11 +2705,7 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
       "slug": "trump-donald-j",
       "filingDate": "2026-09-22",
-      "pdfFile": "Donald-J-Trump-09.8.2026-278T.pdf",
-      "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
-      "candidateSha256": "b1905d89adfe012be78d661e33456f26cff5b6072bb482cd5ed03e62c7d6d594",
       "checkerVersion": "2026-09-06.1",
-      "state": "ocr_tuple_mismatch",
       "comparedFields": [
         "type",
         "date",
@@ -2744,81 +2715,15 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 1105,
       "publishedRows": 1156,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-23T21:39:01.914Z",
+      "checkedAt": "2026-09-24T17:23:47.850Z",
+      "pdfFile": "Donald-J-Trump-09.8.2026-278T.pdf",
+      "pdfSha256": "833c3b4810eaf2e83a3b27867af149634e65145dc4577c753ef20f6b6d515dcf",
+      "candidateSha256": "c821512cad91213e7c7edd31e24ae42f2f42173f719f24b21e710f0dcb234a26",
+      "state": "ocr_tuple_mismatch",
+      "rowsCompared": 1105,
+      "parseRecord": "current-chunks",
       "lane": "ocr",
-      "problems": [
-        "5 printed row number(s) repaired by sequence (11, 134, 189, 628, 652); repaired rows are not counted as agreement",
-        "printed row 3 missing from OCR extraction (rows run 1..1156)",
-        "printed row 7 missing from OCR extraction (rows run 1..1156)",
-        "printed row 9 missing from OCR extraction (rows run 1..1156)",
-        "printed row 13 missing from OCR extraction (rows run 1..1156)",
-        "printed row 24 missing from OCR extraction (rows run 1..1156)",
-        "printed row 66 missing from OCR extraction (rows run 1..1156)",
-        "printed row 182 missing from OCR extraction (rows run 1..1156)",
-        "printed row 185 missing from OCR extraction (rows run 1..1156)",
-        "printed row 190 missing from OCR extraction (rows run 1..1156)",
-        "printed row 192 missing from OCR extraction (rows run 1..1156)",
-        "printed row 196 missing from OCR extraction (rows run 1..1156)",
-        "printed row 197 missing from OCR extraction (rows run 1..1156)",
-        "printed row 201 missing from OCR extraction (rows run 1..1156)",
-        "printed row 241 missing from OCR extraction (rows run 1..1156)",
-        "printed row 271 missing from OCR extraction (rows run 1..1156)",
-        "printed row 297 missing from OCR extraction (rows run 1..1156)",
-        "printed row 325 missing from OCR extraction (rows run 1..1156)",
-        "printed row 362 missing from OCR extraction (rows run 1..1156)",
-        "printed row 396 missing from OCR extraction (rows run 1..1156)",
-        "printed row 442 missing from OCR extraction (rows run 1..1156)",
-        "printed row 481 missing from OCR extraction (rows run 1..1156)",
-        "printed row 495 missing from OCR extraction (rows run 1..1156)",
-        "printed row 522 missing from OCR extraction (rows run 1..1156)",
-        "printed row 542 missing from OCR extraction (rows run 1..1156)",
-        "printed row 548 missing from OCR extraction (rows run 1..1156)",
-        "printed row 561 missing from OCR extraction (rows run 1..1156)",
-        "printed row 660 missing from OCR extraction (rows run 1..1156)",
-        "printed row 690 missing from OCR extraction (rows run 1..1156)",
-        "printed row 695 missing from OCR extraction (rows run 1..1156)",
-        "printed row 698 missing from OCR extraction (rows run 1..1156)",
-        "printed row 714 missing from OCR extraction (rows run 1..1156)",
-        "printed row 730 missing from OCR extraction (rows run 1..1156)",
-        "printed row 758 missing from OCR extraction (rows run 1..1156)",
-        "printed row 763 missing from OCR extraction (rows run 1..1156)",
-        "printed row 765 missing from OCR extraction (rows run 1..1156)",
-        "printed row 766 missing from OCR extraction (rows run 1..1156)",
-        "printed row 795 missing from OCR extraction (rows run 1..1156)",
-        "printed row 798 missing from OCR extraction (rows run 1..1156)",
-        "printed row 800 missing from OCR extraction (rows run 1..1156)",
-        "printed row 806 missing from OCR extraction (rows run 1..1156)",
-        "printed row 825 missing from OCR extraction (rows run 1..1156)",
-        "printed row 890 missing from OCR extraction (rows run 1..1156)",
-        "printed row 923 missing from OCR extraction (rows run 1..1156)",
-        "printed row 924 missing from OCR extraction (rows run 1..1156)",
-        "printed row 929 missing from OCR extraction (rows run 1..1156)",
-        "printed row 931 missing from OCR extraction (rows run 1..1156)",
-        "printed row 965 missing from OCR extraction (rows run 1..1156)",
-        "printed row 972 missing from OCR extraction (rows run 1..1156)",
-        "printed row 985 missing from OCR extraction (rows run 1..1156)",
-        "printed row 1096 missing from OCR extraction (rows run 1..1156)",
-        "printed row 1140 missing from OCR extraction (rows run 1..1156)",
-        "row 184: notification (Yes/No) column unreadable",
-        "row 195: notification (Yes/No) column unreadable",
-        "row 520: notification (Yes/No) column unreadable",
-        "row 570: notification (Yes/No) column unreadable",
-        "row 617: notification (Yes/No) column unreadable",
-        "row 671: notification (Yes/No) column unreadable",
-        "row 747: notification (Yes/No) column unreadable",
-        "row 771: notification (Yes/No) column unreadable",
-        "row 831: notification (Yes/No) column unreadable",
-        "row 837: notification (Yes/No) column unreadable",
-        "row 895: notification (Yes/No) column unreadable",
-        "row 932: notification (Yes/No) column unreadable",
-        "row 940: notification (Yes/No) column unreadable",
-        "row count: OCR has 1105, AI parse has 1156",
-        "printed rows with no model row of the same type, date, amount and late flag: 1, 42, 129, 184, 195, 520, 570, 575, 617, 671, 747, 771, 831, 837, 895, 932, 940",
-        "model rows with no OCR row of the same tuple: 68"
-      ],
       "ocr": {
         "engine": "tesseract",
         "version": "5.5.3",
@@ -3968,7 +3873,77 @@
           ],
           "placeholderRows": []
         }
-      }
+      },
+      "problems": [
+        "5 printed row number(s) repaired by sequence (11, 134, 189, 628, 652); repaired rows are not counted as agreement",
+        "printed row 3 missing from OCR extraction (rows run 1..1156)",
+        "printed row 7 missing from OCR extraction (rows run 1..1156)",
+        "printed row 9 missing from OCR extraction (rows run 1..1156)",
+        "printed row 13 missing from OCR extraction (rows run 1..1156)",
+        "printed row 24 missing from OCR extraction (rows run 1..1156)",
+        "printed row 66 missing from OCR extraction (rows run 1..1156)",
+        "printed row 182 missing from OCR extraction (rows run 1..1156)",
+        "printed row 185 missing from OCR extraction (rows run 1..1156)",
+        "printed row 190 missing from OCR extraction (rows run 1..1156)",
+        "printed row 192 missing from OCR extraction (rows run 1..1156)",
+        "printed row 196 missing from OCR extraction (rows run 1..1156)",
+        "printed row 197 missing from OCR extraction (rows run 1..1156)",
+        "printed row 201 missing from OCR extraction (rows run 1..1156)",
+        "printed row 241 missing from OCR extraction (rows run 1..1156)",
+        "printed row 271 missing from OCR extraction (rows run 1..1156)",
+        "printed row 297 missing from OCR extraction (rows run 1..1156)",
+        "printed row 325 missing from OCR extraction (rows run 1..1156)",
+        "printed row 362 missing from OCR extraction (rows run 1..1156)",
+        "printed row 396 missing from OCR extraction (rows run 1..1156)",
+        "printed row 442 missing from OCR extraction (rows run 1..1156)",
+        "printed row 481 missing from OCR extraction (rows run 1..1156)",
+        "printed row 495 missing from OCR extraction (rows run 1..1156)",
+        "printed row 522 missing from OCR extraction (rows run 1..1156)",
+        "printed row 542 missing from OCR extraction (rows run 1..1156)",
+        "printed row 548 missing from OCR extraction (rows run 1..1156)",
+        "printed row 561 missing from OCR extraction (rows run 1..1156)",
+        "printed row 660 missing from OCR extraction (rows run 1..1156)",
+        "printed row 690 missing from OCR extraction (rows run 1..1156)",
+        "printed row 695 missing from OCR extraction (rows run 1..1156)",
+        "printed row 698 missing from OCR extraction (rows run 1..1156)",
+        "printed row 714 missing from OCR extraction (rows run 1..1156)",
+        "printed row 730 missing from OCR extraction (rows run 1..1156)",
+        "printed row 758 missing from OCR extraction (rows run 1..1156)",
+        "printed row 763 missing from OCR extraction (rows run 1..1156)",
+        "printed row 765 missing from OCR extraction (rows run 1..1156)",
+        "printed row 766 missing from OCR extraction (rows run 1..1156)",
+        "printed row 795 missing from OCR extraction (rows run 1..1156)",
+        "printed row 798 missing from OCR extraction (rows run 1..1156)",
+        "printed row 800 missing from OCR extraction (rows run 1..1156)",
+        "printed row 806 missing from OCR extraction (rows run 1..1156)",
+        "printed row 825 missing from OCR extraction (rows run 1..1156)",
+        "printed row 890 missing from OCR extraction (rows run 1..1156)",
+        "printed row 923 missing from OCR extraction (rows run 1..1156)",
+        "printed row 924 missing from OCR extraction (rows run 1..1156)",
+        "printed row 929 missing from OCR extraction (rows run 1..1156)",
+        "printed row 931 missing from OCR extraction (rows run 1..1156)",
+        "printed row 965 missing from OCR extraction (rows run 1..1156)",
+        "printed row 972 missing from OCR extraction (rows run 1..1156)",
+        "printed row 985 missing from OCR extraction (rows run 1..1156)",
+        "printed row 1096 missing from OCR extraction (rows run 1..1156)",
+        "printed row 1140 missing from OCR extraction (rows run 1..1156)",
+        "row 184: notification (Yes/No) column unreadable",
+        "row 195: notification (Yes/No) column unreadable",
+        "row 520: notification (Yes/No) column unreadable",
+        "row 570: notification (Yes/No) column unreadable",
+        "row 617: notification (Yes/No) column unreadable",
+        "row 671: notification (Yes/No) column unreadable",
+        "row 747: notification (Yes/No) column unreadable",
+        "row 771: notification (Yes/No) column unreadable",
+        "row 831: notification (Yes/No) column unreadable",
+        "row 837: notification (Yes/No) column unreadable",
+        "row 895: notification (Yes/No) column unreadable",
+        "row 932: notification (Yes/No) column unreadable",
+        "row 940: notification (Yes/No) column unreadable",
+        "row count: OCR has 1105, AI parse has 1156",
+        "printed rows with no model row of the same type, date, amount and late flag: 1, 42, 129, 184, 195, 520, 570, 575, 617, 671, 747, 771, 831, 837, 895, 932, 940",
+        "model rows with no OCR row of the same tuple: 68"
+      ]
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BF91F890F718ACB85258E5B002DE16B/$FILE/Donald-J-Trump-08.12.2026-278T.pdf",
@@ -23793,7 +23768,7 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "publishedRows": 149,
+      "publishedRows": 145,
       "checkedAt": "2026-09-06T21:27:39.011Z",
       "pdfFile": "Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf",
       "pdfSha256": "69eebaec96c824352bf5a60a7664c1941f77ce10dd12b14dec020f0c410b5ff1",
@@ -24758,7 +24733,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Eric-Scott-Turner-01.16.2026-278T.pdf",
       "pdfSha256": "890ece088abe439a2998484ae070e56462922cab32931dc14e376bce14ddfc75",
       "candidateSha256": "ae28b7c8b820828daf8e1773e7b8430098ee9656a7e77b65289b6dfee8313530",
@@ -24781,7 +24756,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Eric-Scott-Turner-03.04.2025-278T.pdf",
       "pdfSha256": "47a44f646309c5612168cca4c8f7626f64c3bf3b14e69072da939f25b24796c5",
       "candidateSha256": "4acc71830ed6c4c7e6faa80d0e9ea2940c41d9e09cb877c688465abb6bbb15c7",
@@ -24793,11 +24768,7 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/D4003325FAE6858085258E6E002DF6AB/$FILE/Eric-M-Ueland-08.06.2026-278T.pdf",
       "slug": "ueland-eric-m",
       "filingDate": "2026-09-10",
-      "pdfFile": "Eric-M-Ueland-08.06.2026-278T.pdf",
-      "pdfSha256": "39706d0bc76702e5f6e011d879715e021e8f04d5e91271172c2bd5b2c9315244",
-      "candidateSha256": "6d1b2c7d77e9127e43cc8b138c648755b47761c34c8a76c028dc5d3b3a4fd04e",
       "checkerVersion": "2026-09-06.1",
-      "state": "checked_tuple_agreement",
       "comparedFields": [
         "type",
         "date",
@@ -24807,10 +24778,14 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 37,
       "publishedRows": 37,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-11T14:58:26.865Z"
+      "checkedAt": "2026-09-24T17:26:56.747Z",
+      "pdfFile": "Eric-M-Ueland-08.06.2026-278T.pdf",
+      "pdfSha256": "39706d0bc76702e5f6e011d879715e021e8f04d5e91271172c2bd5b2c9315244",
+      "candidateSha256": "6d1b2c7d77e9127e43cc8b138c648755b47761c34c8a76c028dc5d3b3a4fd04e",
+      "state": "checked_tuple_agreement",
+      "rowsCompared": 37,
+      "parseRecord": "current"
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/26AA499A708D62B285258DDC002DD79C/$FILE/Stephen-A-Vaden-03.19.2026-278T.pdf",
@@ -24827,7 +24802,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 6,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Stephen-A-Vaden-03.19.2026-278T.pdf",
       "pdfSha256": "c9e8ca643d4598e6d51f08c4faafac4bad6e4cb37f72e5f4b199ef9e2e9b7639",
       "candidateSha256": "b6d7347f965f8fa6142837203f53359c0c7f62c4e8d36b2385464b65ce6584dd",
@@ -24839,11 +24814,7 @@
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/CC5D2BAFDF8EB24085258E6E002DF7E9/$FILE/Kevin-Warsh-08.06.2026-278T.pdf",
       "slug": "warsh-kevin",
       "filingDate": "2026-09-10",
-      "pdfFile": "Kevin-Warsh-08.06.2026-278T.pdf",
-      "pdfSha256": "6578304224ce3d5225cb4f07837934fd9a11f5ad817411ca45bfeaeaa301dc06",
-      "candidateSha256": "40ddd80b9f91445c61ed9bf3348114a8d6912f571a31699d32c283e95fc817fd",
       "checkerVersion": "2026-09-06.1",
-      "state": "checked_tuple_agreement",
       "comparedFields": [
         "type",
         "date",
@@ -24853,10 +24824,14 @@
         "printedRowContinuity",
         "assetNameSharedWord"
       ],
-      "rowsCompared": 5,
       "publishedRows": 5,
-      "parseRecord": "current",
-      "checkedAt": "2026-09-11T14:57:54.245Z"
+      "checkedAt": "2026-09-24T17:26:56.747Z",
+      "pdfFile": "Kevin-Warsh-08.06.2026-278T.pdf",
+      "pdfSha256": "6578304224ce3d5225cb4f07837934fd9a11f5ad817411ca45bfeaeaa301dc06",
+      "candidateSha256": "40ddd80b9f91445c61ed9bf3348114a8d6912f571a31699d32c283e95fc817fd",
+      "state": "checked_tuple_agreement",
+      "rowsCompared": 5,
+      "parseRecord": "current"
     },
     {
       "sourceUrl": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0933B220C51FFFB485258E52002DD2D9/$FILE/Kevin-Warsh-06.25.2026-278T.pdf",
@@ -24873,7 +24848,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 60,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Kevin-Warsh-06.25.2026-278T.pdf",
       "pdfSha256": "a7ec25526fc3b7f6aff99a2ee44eb4031302f9e429d071047fc77dae94de5694",
       "candidateSha256": "6db2963f2949e9927a97f86a2ec75fc1e20c317f85f32d129754cce0bd712964",
@@ -24896,7 +24871,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-01.02.2025-278T.pdf",
       "pdfSha256": "76fa2cc48a04053c1d1913ccfefaff19d54dd473c6d016501905089f7a18800f",
       "candidateSha256": "a56a20d663c0318d0410ee4d2ae4df5ce89976cb52a900fa56310740aea2c32b",
@@ -24919,7 +24894,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-09.04.2024-278T.pdf",
       "pdfSha256": "ec6902cc3f85335263ce6745cf5fb42d035c625f66a1b0b2468b9665265f5276",
       "candidateSha256": "5e2f287ae542acbbf19a46ca28860c9e18f24ebea150dd126a9d58e21a9721de",
@@ -24942,7 +24917,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-07.01.2024-278T.pdf",
       "pdfSha256": "a0848c97a333b244047c8711b96bb62d6c71ce810f99995d87cfce74776c6370",
       "candidateSha256": "6a0476040b16c3dc47bcf14c4b2057a4cd472dfbf93da2168b8e8475e12d0dc7",
@@ -24965,7 +24940,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-03.07.2024-278T.pdf",
       "pdfSha256": "ad71e651ab5c42db559e13570cc4cee1d47646b4767d4c5d881947952f07e272",
       "candidateSha256": "dc0c8f7f57c5a432d06c9edc7ae8acceba2d09b9e2da195923ceabafcaee5c65",
@@ -24988,7 +24963,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 4,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-01.24.2024-278T.pdf",
       "pdfSha256": "865fe597943a66066ba12490a0efcc1bc31c5d36ee2b5886b4e6b7007c4edfaa",
       "candidateSha256": "ae9065ac9b942b2b0bae8e34a6599ac74edc49b40df6cf1651422c7d48f38be4",
@@ -25011,7 +24986,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 7,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Michael-Whitaker-12.05.2023-278T.pdf",
       "pdfSha256": "d6663d21eb76d6baf77e88e7a61d194ddcc8b636c5033ee1247048c69f071ace",
       "candidateSha256": "cae6f4c3d5744f6fd648911f3f0d30b32c19798941bb505d3fedfafbab11fb7a",
@@ -25034,7 +25009,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Christopher-A-Wright-01.13.2026-278T.pdf",
       "pdfSha256": "5ab084646441d56424f9d3730a5a9aac00f6167190010d4e7225b20218fbc40f",
       "candidateSha256": "8567330e53b836a9dac3933ff5d4ece9824cd51a9a332d80c864eae5e7ef1f2b",
@@ -25057,7 +25032,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 2,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Christopher-A-Wright-07.01.2025-278T.pdf",
       "pdfSha256": "2f43ebfc9eb46bdc01d1c2d183f5018f641ede9257f8881080e1d1b3e45e51d3",
       "candidateSha256": "b9278f018c5c1c3735c76d9f15f86f84e276619d86b8823d55d99806e7ea06e9",
@@ -25080,7 +25055,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 173,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Christopher-A-Wright-04.29.2025-278T.pdf",
       "pdfSha256": "774d769177dd44310378d2a973f376915bfbc65c040bd711eb37a2e5e09a3b82",
       "candidateSha256": "cd76b7d9254db26b0ef7cd365fcb2f6aa28b4117a0d76c530dfa700cee2a3948",
@@ -25103,7 +25078,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 124,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Christopher-A-Wright-03.19.2025-278T.pdf",
       "pdfSha256": "d6e8b20a4d37e47d7e4b2638a35591c886a0a03cf585be5532de508b1e36a6f5",
       "candidateSha256": "3f080587de0aa1819d1d93ca61c3e0aee520acec3bcae6fe5be44d2e491fd5a2",
@@ -25126,7 +25101,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 1,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Lee-Zeldin-09-24-2025-278T.pdf",
       "pdfSha256": "eaeffae8e77e32ad987041e4dbd104d9bfe206d016c491bbf856e1ab0edcb356",
       "candidateSha256": "7622aa449309e6a46534908a71de108c390acae843a85d7fc94bf1d66cc21f47",
@@ -25149,7 +25124,7 @@
         "assetNameSharedWord"
       ],
       "publishedRows": 3,
-      "checkedAt": "2026-09-07T00:26:25.089Z",
+      "checkedAt": "2026-09-24T17:26:56.747Z",
       "pdfFile": "Lee-Zeldin-06.17.2025-278T.pdf",
       "pdfSha256": "c6eb08c043740cfbc8b5325143d40ba085792a50e139224db475d67de4ff3a81",
       "candidateSha256": "cb42c58dff7674089ad0fc661d503b24510140749baf770e027aca45f72af26d",

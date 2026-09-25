@@ -22,6 +22,10 @@ vi.mock("@/lib/crosscheck-log", async (original) => ({ ...await original<object>
 vi.mock("@/lib/grok-audit", () => ({ readGrokAuditLog: vi.fn() }));
 vi.mock("@/lib/second-read", () => ({ readSecondReadLog: vi.fn() }));
 vi.mock("@/lib/parse-cache", async (original) => ({ ...await original<object>(), findParseRecord: vi.fn() }));
+// No corrections in these fixtures: the overlay returns the record as read.
+vi.mock("@/lib/corrections", () => ({
+  overlayParseRecord: (record: { transactions: unknown[]; units?: unknown[] }) => ({ ...record, applied: [], skipped: [] }),
+}));
 vi.mock("@/lib/review-queue", () => ({ listOpenReviews: vi.fn(), REVIEW_QUEUE_PATH: "/fixture/review-queue.json" }));
 vi.mock("@/lib/row-verification", async (original) => ({
   ...await original<object>(), readRowVerification: vi.fn(), readReviewDecisions: vi.fn(),

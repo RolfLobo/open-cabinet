@@ -211,6 +211,38 @@ export function applyCorrections<T extends Record<string, unknown>>(
 }
 
 /**
+ * A parse record as the ingest publishes it: the model's read with a
+ * person's ruled corrections laid over it, whole and per unit (readFiling
+ * in lib/ingest-stages applies the same overlay). Every program that keys
+ * a comparison on the candidate hash (the cross-check sweep, the second
+ * read, the page audit) must read the record through this. Hashing the
+ * raw read instead gave a filing with ruled corrections a different
+ * candidate hash in each log, and row verification could not match the
+ * lanes to it (Trump 09.8.2026, Sept. 24, 2026). Corrections are
+ * positioned in the whole read, so units are sliced from the corrected
+ * whole, in order.
+ */
+export function overlayParseRecord<T extends Record<string, unknown>>(
+  record: { transactions: T[]; units?: Array<{ first: number; last: number; transactions: T[] }> },
+  read: { sourceUrl: string; pdfSha256: string },
+  corrections: ReadCorrection[] = readCorrections().corrections
+): {
+  transactions: Array<T & { corrections?: string[] }>;
+  units?: Array<{ first: number; last: number; transactions: Array<T & { corrections?: string[] }> }>;
+  applied: string[];
+  skipped: Array<{ id: string; reason: string }>;
+} {
+  const result = applyCorrections(record.transactions, read, corrections);
+  let at = 0;
+  const units = record.units?.map((u) => {
+    const transactions = result.rows.slice(at, at + u.transactions.length);
+    at += u.transactions.length;
+    return { first: u.first, last: u.last, transactions };
+  });
+  return { transactions: result.rows, ...(units ? { units } : {}), applied: result.applied, skipped: result.skipped };
+}
+
+/**
  * Replay check: does the original read plus its corrections reproduce an
  * expected set of rows, field for field? Used before any cache that was
  * edited by hand is restored to the model's answer. Compares only the
