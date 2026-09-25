@@ -3,7 +3,7 @@
     "version": 1,
     "generatedBy": "scripts/seed-asset-registry.ts",
     "reason": "symbols filed on published rows that the SEC company list does not carry; identity awaits a person",
-    "entries": 178
+    "entries": 192
   },
   "pending": {
     "AAGIY": {
@@ -254,6 +254,28 @@
         "evidence": null
       }
     },
+    "BGRFX": {
+      "symbol": "BGRFX",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "mutual_fund",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Baron Growth Fund Retail Shares (BGRFX)"
+      ],
+      "filedSymbols": [
+        "BGRFX"
+      ],
+      "aliases": [],
+      "rows": 1,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "BIL": {
       "symbol": "BIL",
       "reason": "not in SEC company_tickers.json",
@@ -351,6 +373,7 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
+        "Vanguard Total International Bond Index Fund ETF Shares (BNDX)",
         "Vanguard Total International Bond Index Fund ETF Shares"
       ],
       "filedSymbols": [
@@ -358,7 +381,7 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 4,
+      "rows": 10,
       "officials": 2,
       "review": {
         "status": "unreviewed",
@@ -405,6 +428,28 @@
       ],
       "aliases": [],
       "rows": 3,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "CAMOX": {
+      "symbol": "CAMOX",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "mutual_fund",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Cambiar Opportunity Fund Investor Class Shares (CAMOX)"
+      ],
+      "filedSymbols": [
+        "CAMOX"
+      ],
+      "aliases": [],
+      "rows": 1,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -1092,6 +1137,28 @@
         "evidence": null
       }
     },
+    "GABUX": {
+      "symbol": "GABUX",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "mutual_fund",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Gabelli Utilities Fund Class AAA Shares (GABUX)"
+      ],
+      "filedSymbols": [
+        "GABUX"
+      ],
+      "aliases": [],
+      "rows": 1,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "GAJPX": {
       "symbol": "GAJPX",
       "reason": "not in SEC company_tickers.json",
@@ -1168,7 +1235,8 @@
       "displayName": null,
       "filedAs": [
         "iShares US Treasury Bond ETF",
-        "ISHARES U.S. TREASURY BOND ETF"
+        "ISHARES U.S. TREASURY BOND ETF",
+        "iShares US Treasury Bond ETF (GOVT)"
       ],
       "filedSymbols": [
         "GOVT",
@@ -1176,8 +1244,8 @@
         "resolved:R2"
       ],
       "aliases": [],
-      "rows": 7,
-      "officials": 2,
+      "rows": 9,
+      "officials": 3,
       "review": {
         "status": "unreviewed",
         "reviewer": null,
@@ -1208,6 +1276,29 @@
         "evidence": null
       }
     },
+    "GRNY": {
+      "symbol": "GRNY",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Fundstrat Granny Shots US Large Cap ETF (GRNY)"
+      ],
+      "filedSymbols": [
+        "GRNY",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 2,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "GSIMX": {
       "symbol": "GSIMX",
       "reason": "not in SEC company_tickers.json",
@@ -1219,6 +1310,29 @@
       ],
       "filedSymbols": [
         "GSIMX"
+      ],
+      "aliases": [],
+      "rows": 2,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "HDV": {
+      "symbol": "HDV",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "iShares Core High Dividend ETF (HDV)"
+      ],
+      "filedSymbols": [
+        "HDV",
+        "resolved:R1"
       ],
       "aliases": [],
       "rows": 2,
@@ -1303,13 +1417,14 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
-        "VanEck Vectors High-Yield Municipal Index ETF"
+        "VanEck Vectors High-Yield Municipal Index ETF",
+        "VanEck Vectors High-Yield Municipal Index ETF (HYD)"
       ],
       "filedSymbols": [
         "HYD"
       ],
       "aliases": [],
-      "rows": 1,
+      "rows": 2,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -1333,7 +1448,7 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 8,
+      "rows": 10,
       "officials": 3,
       "review": {
         "status": "unreviewed",
@@ -1349,14 +1464,15 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
-        "iShares Core MSCI EAFE ETF"
+        "iShares Core MSCI EAFE ETF",
+        "iShares Core MSCI EAFE ETF (IEFA)"
       ],
       "filedSymbols": [
         "IEFA",
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 2,
+      "rows": 4,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -1373,7 +1489,8 @@
       "displayName": null,
       "filedAs": [
         "iShares Core MSCI Emerging Markets ETF",
-        "ISHARES CORE MSCI EMERGING MARKETS ETF"
+        "ISHARES CORE MSCI EMERGING MARKETS ETF",
+        "iShares Core MSCIEmerging Markets ETF (IEMG)"
       ],
       "filedSymbols": [
         "IEMG",
@@ -1381,7 +1498,7 @@
         "resolved:R2"
       ],
       "aliases": [],
-      "rows": 11,
+      "rows": 13,
       "officials": 3,
       "review": {
         "status": "unreviewed",
@@ -1427,6 +1544,29 @@
       ],
       "aliases": [],
       "rows": 1,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "IJR": {
+      "symbol": "IJR",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "iShares Core S&P Small-Cap ETF (IJR)"
+      ],
+      "filedSymbols": [
+        "IJR",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 2,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -1558,7 +1698,8 @@
       "displayName": null,
       "filedAs": [
         "iShares Russell 1000 Growth ETF",
-        "IWF - ISHARES RUSSELL 1000 GRW ETF"
+        "IWF - ISHARES RUSSELL 1000 GRW ETF",
+        "iShares Russell 1000 Growth ETF (IWF)"
       ],
       "filedSymbols": [
         "IWF",
@@ -1566,7 +1707,7 @@
         "resolved:R2"
       ],
       "aliases": [],
-      "rows": 13,
+      "rows": 15,
       "officials": 3,
       "review": {
         "status": "unreviewed",
@@ -1957,6 +2098,29 @@
         "evidence": null
       }
     },
+    "MBB": {
+      "symbol": "MBB",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "iShares MBS ETF (MBB)"
+      ],
+      "filedSymbols": [
+        "MBB",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 6,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "MEIIX": {
       "symbol": "MEIIX",
       "reason": "not in SEC company_tickers.json",
@@ -2180,6 +2344,29 @@
         "evidence": null
       }
     },
+    "NOBL": {
+      "symbol": "NOBL",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Proshares S&P 500 Dividend Aristocrats ETF (NOBL)"
+      ],
+      "filedSymbols": [
+        "NOBL",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 2,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "NSRGY": {
       "symbol": "NSRGY",
       "reason": "not in SEC company_tickers.json",
@@ -2348,6 +2535,28 @@
       "filedSymbols": [
         "PCY",
         "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 2,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "PGX": {
+      "symbol": "PGX",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Invesco Preferred ETF (PGX)"
+      ],
+      "filedSymbols": [
+        "PGX"
       ],
       "aliases": [],
       "rows": 2,
@@ -2547,7 +2756,8 @@
       "filedAs": [
         "Schwab US Small Cap ETF",
         "Schwab Fund US Small Cap ETF",
-        "Schwab US Small-Cap ETF"
+        "Schwab US Small-Cap ETF",
+        "Schwab US Small-Cap ETF (SCHA)"
       ],
       "filedSymbols": [
         "SCHA",
@@ -2555,8 +2765,8 @@
         "resolved:R2"
       ],
       "aliases": [],
-      "rows": 35,
-      "officials": 2,
+      "rows": 37,
+      "officials": 3,
       "review": {
         "status": "unreviewed",
         "reviewer": null,
@@ -2733,13 +2943,14 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
-        "SPDRNuveen Bloomberg Barclays Short Term Municipal Bond ETF"
+        "SPDRNuveen Bloomberg Barclays Short Term Municipal Bond ETF",
+        "SPDRNuveen Bloomberg Barclays Short Term Municipal Bond ETF (SHM)"
       ],
       "filedSymbols": [
         "SHM"
       ],
       "aliases": [],
-      "rows": 1,
+      "rows": 2,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -2963,6 +3174,29 @@
       ],
       "aliases": [],
       "rows": 1,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "SPHB": {
+      "symbol": "SPHB",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Invesco S&P 500 High Beta ETF (SPHB)"
+      ],
+      "filedSymbols": [
+        "SPHB",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 2,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -3198,6 +3432,29 @@
         "evidence": null
       }
     },
+    "TIP": {
+      "symbol": "TIP",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "iShares TIPS Bond ETF (TIP)"
+      ],
+      "filedSymbols": [
+        "TIP",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 4,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
     "TLT": {
       "symbol": "TLT",
       "reason": "not in SEC company_tickers.json",
@@ -3212,8 +3469,8 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 4,
-      "officials": 1,
+      "rows": 10,
+      "officials": 2,
       "review": {
         "status": "unreviewed",
         "reviewer": null,
@@ -3272,15 +3529,16 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
-        "iShares Broad USD High Yield Corporate Bond ETF"
+        "iShares Broad USD High Yield Corporate Bond ETF",
+        "iShares Broad USD High Yield Corporate Bond ETF (USHY)"
       ],
       "filedSymbols": [
         "USHY",
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 12,
-      "officials": 2,
+      "rows": 14,
+      "officials": 3,
       "review": {
         "status": "unreviewed",
         "reviewer": null,
@@ -3340,14 +3598,15 @@
       "instrumentTypeSource": "inferred_from_name",
       "displayName": null,
       "filedAs": [
-        "Vanguard Small-Cap Growth Index Fund ETF Class Shares"
+        "Vanguard Small-Cap Growth Index Fund ETF Class Shares",
+        "Vanguard Small-Cap Growth Index Fund ETF Class Shares (VBK)"
       ],
       "filedSymbols": [
         "VBK",
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 4,
+      "rows": 6,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -3371,8 +3630,54 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 8,
+      "rows": 10,
       "officials": 2,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "VCIT": {
+      "symbol": "VCIT",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Vanguard Intermediate-Term Corporate Bond Index Fund ETF Class Shares (VCIT)"
+      ],
+      "filedSymbols": [
+        "VCIT",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 6,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "VCSH": {
+      "symbol": "VCSH",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Vanguard Short-Term Corporate Bond Index Fund ETF Class Shares (VCSH)"
+      ],
+      "filedSymbols": [
+        "VCSH",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 6,
+      "officials": 1,
       "review": {
         "status": "unreviewed",
         "reviewer": null,
@@ -3462,6 +3767,29 @@
       ],
       "aliases": [],
       "rows": 2,
+      "officials": 1,
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "reviewedAt": null,
+        "evidence": null
+      }
+    },
+    "VGIT": {
+      "symbol": "VGIT",
+      "reason": "not in SEC company_tickers.json",
+      "instrumentType": "etf",
+      "instrumentTypeSource": "inferred_from_name",
+      "displayName": null,
+      "filedAs": [
+        "Vanguard Intermediate-Term Treasury Index Fund ETF Class Shares (VGIT)"
+      ],
+      "filedSymbols": [
+        "VGIT",
+        "resolved:R1"
+      ],
+      "aliases": [],
+      "rows": 6,
       "officials": 1,
       "review": {
         "status": "unreviewed",
@@ -3579,7 +3907,7 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 22,
+      "rows": 24,
       "officials": 3,
       "review": {
         "status": "unreviewed",
@@ -3596,8 +3924,8 @@
       "displayName": null,
       "filedAs": [
         "VANGUARD S&P 500 ETF UNSOLICITED",
-        "Vanguard 500 Index Fund ETF Shares",
         "VANGUARD S&P 500 ETF",
+        "Vanguard 500 Index Fund ETF Shares",
         "vanguard S&P 500 (VOO)",
         "Vanguard S&P 500 (VOO)"
       ],
@@ -3607,7 +3935,7 @@
         "resolved:R2"
       ],
       "aliases": [],
-      "rows": 11,
+      "rows": 12,
       "officials": 3,
       "review": {
         "status": "unreviewed",
@@ -3725,7 +4053,7 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 7,
+      "rows": 9,
       "officials": 2,
       "review": {
         "status": "unreviewed",
@@ -3749,7 +4077,7 @@
         "resolved:R1"
       ],
       "aliases": [],
-      "rows": 10,
+      "rows": 12,
       "officials": 2,
       "review": {
         "status": "unreviewed",

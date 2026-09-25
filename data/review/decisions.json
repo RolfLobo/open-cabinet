@@ -1507,6 +1507,54 @@
       "evidence": "Trevor Brown, Sept. 14, 2026, hand-checked against the PDF (spot-check-2026-09-14.txt, seed 20260914): page 664, printed row 8644, MONGODB INC | Purchase | 2025-01-29 | $15,001-$50,000 match the page",
       "decidedBy": "Trevor Brown",
       "decidedAt": "2026-09-14T17:34:00.000Z"
+    },
+    {
+      "recordId": "6365fdf5df877a8bc75c76b6",
+      "slug": "trump-donald-j",
+      "decision": "confirmed",
+      "evidence": "Page 3, printed row 65: REGENERON PHARMACEUTICALS INC | purchase | 7/17/2026 | No | $1,001 - $15,000. Grok reported not found; the page and the cropped strip show it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:06.405Z"
+    },
+    {
+      "recordId": "373a9ab9f2fbb08dce9dfab2",
+      "slug": "sonderling-keith",
+      "decision": "confirmed",
+      "evidence": "Annual report page 9, printed row 34: State Street Dow Jones Industrial Average (DIA) | Purchase | 02/02/2025 | $1,001 - $15,000. Sunday date recorded as the filing prints it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:06.833Z"
+    },
+    {
+      "recordId": "fb07ddd57a9bb32bc2a5ae86",
+      "slug": "sonderling-keith",
+      "decision": "confirmed",
+      "evidence": "Annual report page 9, printed row 36: iShares Core S&P Small-Cap ETF (IJR) | Purchase | 02/02/2025 | $1,001 - $15,000. Sunday date recorded as the filing prints it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:07.203Z"
+    },
+    {
+      "recordId": "7c4328482860676afb359b1e",
+      "slug": "sonderling-keith",
+      "decision": "confirmed",
+      "evidence": "Annual report page 9, printed row 38: Invesco S&P 500 Equal Weight Industrials ETF (RGI) | Purchase | 02/02/2025 | $1,001 - $15,000. Sunday date recorded as the filing prints it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:07.570Z"
+    },
+    {
+      "recordId": "785c3af41f5afef98df97c45",
+      "slug": "sonderling-keith",
+      "decision": "confirmed",
+      "evidence": "Annual report page 9, printed row 40: Invesco S&P 500 High Beta ETF (SPHB) | Purchase | 02/02/2025 | $1,001 - $15,000. Sunday date recorded as the filing prints it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:07.939Z"
+    },
+    {
+      "recordId": "7d2e89a5996b564333016d4b",
+      "slug": "sonderling-keith",
+      "decision": "confirmed",
+      "evidence": "Annual report page 9, printed row 41: State Street SPDR S&P 500 ETF Trust | Purchase | 02/02/2025 | $1,001 - $15,000. Sunday date recorded as the filing prints it. Confirmed by Trevor Brown in chat, Sept. 24, 2026.",
+      "decidedBy": "Trevor Brown",
+      "decidedAt": "2026-09-25T00:44:08.315Z"
     }
   ]
 }

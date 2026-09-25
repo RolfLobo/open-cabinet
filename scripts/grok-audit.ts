@@ -4,7 +4,7 @@
  * holds for those pages, the way a person would with the PDF open.
  *
  *   pnpm grok-audit --dry-cost                 list what would be audited
- *   pnpm grok-audit [--only <text>] [--slug <slug>] [--ceiling <usd>]
+ *   pnpm grok-audit [--only <text>] [--slug <slug>] [--ceiling <usd>] [--concurrency <n>]
  *
  * Every filing with a parse record on disk is a candidate. Whole-file
  * reads are audited as one call with all pages; chunked reads are audited
@@ -18,6 +18,7 @@ import path from "path";
 import dotenv from "dotenv";
 import { readCrosscheckLog, hashRows } from "../lib/crosscheck-log";
 import { findParseRecord, promptHash } from "../lib/parse-cache";
+import { overlayParseRecord } from "../lib/corrections";
 import { recordSpend, spend, stageOptions, SpendCeilingError } from "../lib/ingest-stages";
 import { auditPages, foldAudit, pageCount, readGrokAuditLog, recordGrokAudit, GROK_AUDIT_MODEL, GROK_AUDIT_PROMPT_VERSION, type GrokAuditFiling, type Row } from "../lib/grok-audit";
 import { EXTRACTION_PROMPT, SYSTEM_PROMPT, PARSER_VERSION, DEFAULT_MODEL } from "./parse-pdf.js";
@@ -37,6 +38,10 @@ async function main() {
   const excluded = new Set<string>();
   for (let i = 0; i < args.length; i++) if (args[i] === "--exclude" && args[i + 1]) excluded.add(args[++i]);
   stageOptions.ceilingUsd = args.includes("--ceiling") ? Number(args[args.indexOf("--ceiling") + 1]) : 25;
+  // A dense page takes grok-4.6 about two minutes, so a 37-page filing one
+  // page at a time is over an hour. A few pages in flight at once is well
+  // inside x.ai's limits; the fold below does not depend on finish order.
+  const concurrency = Math.max(1, args.includes("--concurrency") ? Number(args[args.indexOf("--concurrency") + 1]) || 3 : 3);
 
   const crosscheck = readCrosscheckLog();
   if (!crosscheck) throw new Error("no cross-check log; run pnpm crosscheck-sweep first");
@@ -57,15 +62,19 @@ async function main() {
       console.log(`  skip ${e.slug} ${e.pdfFile}: no parse record on disk`);
       continue;
     }
-    const candidateSha256 = hashRows(record.transactions);
+    // The audit judges the rows as published: the read plus a person's
+    // ruled corrections, hashed the way the ingest hashes its candidate.
+    const candidate = overlayParseRecord(record as Parameters<typeof overlayParseRecord>[0], { sourceUrl: e.sourceUrl, pdfSha256: e.pdfSha256 });
+    for (const s of candidate.skipped) console.warn(`  ${e.slug} ${e.pdfFile}: correction ${s.id} skipped: ${s.reason}`);
+    const candidateSha256 = hashRows(candidate.transactions);
     const prior = previous?.filings[e.sourceUrl];
     const priorComplete = prior && !prior.differences.some((d) => d.startsWith("audit incomplete"));
     if (priorComplete && prior.pdfSha256 === e.pdfSha256 && prior.candidateSha256 === candidateSha256 && prior.promptVersion === GROK_AUDIT_PROMPT_VERSION) continue;
     const pages = pageCount(pdfPath);
-    const units = record.units
-      ? record.units.map((u) => ({ first: u.first, last: u.last, rows: u.transactions as Row[] }))
-      : [{ first: 1, last: pages, rows: record.transactions as Row[] }];
-    const rows = record.transactions.length;
+    const units = candidate.units
+      ? candidate.units.map((u) => ({ first: u.first, last: u.last, rows: u.transactions as unknown as Row[] }))
+      : [{ first: 1, last: pages, rows: candidate.transactions as unknown as Row[] }];
+    const rows = candidate.transactions.length;
     // Rough: 1,100 input tokens per page image at 150 dpi, 45 per row shown, 12 output per row.
     estimate += (pages * 1100 * 2 + rows * 45 * 2 + rows * 12 * 6) / 1_000_000;
     plan.push({ e, pdfPath, pages, rows, units, candidateSha256 });
@@ -79,24 +88,33 @@ async function main() {
   for (const p of plan) {
     process.stdout.write(`  ${p.e.slug} ${p.e.pdfFile} (${p.pages} pp, ${p.rows} rows, ${p.units.length} calls) `);
     const chunks: Array<{ offset: number; rows: number; result: Awaited<ReturnType<typeof auditPages>> }> = [];
-    let offset = 0;
     let cost = 0;
     let failed: string | null = null;
-    try {
-      for (const u of p.units) {
-        const result = await auditPages({ pdfPath: p.pdfPath, pdfSha256: p.e.pdfSha256!, first: u.first, last: u.last, rows: u.rows });
-        if (!result.cached) {
-          await recordSpend(result.usage.estimatedCostUsd);
-          cost += result.usage.estimatedCostUsd;
-          process.stdout.write(".");
+    // Each unit's offset into the candidate list is fixed before anything
+    // runs, so units can finish in any order. The first failure stops new
+    // units from starting; units already answered are kept and their page
+    // caches make the rerun free.
+    const units = p.units.map((u, i) => ({ ...u, offset: p.units.slice(0, i).reduce((n, x) => n + x.rows.length, 0) }));
+    let nextUnit = 0;
+    const worker = async () => {
+      while (nextUnit < units.length && !failed) {
+        const u = units[nextUnit++];
+        try {
+          const result = await auditPages({ pdfPath: p.pdfPath, pdfSha256: p.e.pdfSha256!, first: u.first, last: u.last, rows: u.rows });
+          if (!result.cached) {
+            await recordSpend(result.usage.estimatedCostUsd);
+            cost += result.usage.estimatedCostUsd;
+            process.stdout.write(".");
+          }
+          chunks.push({ offset: u.offset, rows: u.rows.length, result });
+        } catch (err) {
+          if (err instanceof SpendCeilingError) throw err;
+          if (!failed) failed = (err as Error).message;
         }
-        chunks.push({ offset, rows: u.rows.length, result });
-        offset += u.rows.length;
       }
-    } catch (err) {
-      if (err instanceof SpendCeilingError) throw err;
-      failed = (err as Error).message;
-    }
+    };
+    await Promise.all(Array.from({ length: Math.min(concurrency, units.length) }, worker));
+    chunks.sort((a, b) => a.offset - b.offset);
     if (failed && chunks.length === 0) {
       console.log(` could not audit: ${failed}`);
       continue;
